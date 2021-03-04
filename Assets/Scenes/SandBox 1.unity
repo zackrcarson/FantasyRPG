@@ -269,18 +269,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4034864811188728929, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 4034864811188728929, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 4034864811188728930, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
-      propertyPath: portalFromName
-      value: Town-1
-      objectReference: {fileID: 0}
     - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -328,10 +316,6 @@ PrefabInstance:
     - target: {fileID: 4034864811277451189, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
       propertyPath: m_Name
       value: Portal
-      objectReference: {fileID: 0}
-    - target: {fileID: 4034864812919195199, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
@@ -446,10 +430,6 @@ PrefabInstance:
     - target: {fileID: 7278419065052470393, guid: d75b39106035cbe4691ae33bce039e1b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7278419065052470394, guid: d75b39106035cbe4691ae33bce039e1b, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75b39106035cbe4691ae33bce039e1b, type: 3}

@@ -5,6 +5,8 @@ public class PlayerController : MonoBehaviour
     // Config Parameters
     [SerializeField] float verticalWalkSpeed = 1f;
     [SerializeField] float horizontalWalkSpeed = 1f;
+    [SerializeField] float xBoundaryOffset = 0.5f;
+    [SerializeField] float yBoundaryOffset = 0.5f;
 
     // State Variables
     [HideInInspector] public string portalName = null;
@@ -12,6 +14,8 @@ public class PlayerController : MonoBehaviour
     // Cached References
     Rigidbody2D rigidBody = null;
     Animator animator = null;
+    Vector3 bottomLeftBound = new Vector3(0f, 0f, 0f);
+    Vector3 topRightBound = new Vector3(0f, 0f, 0f);
 
     private void Awake()
     {
@@ -43,6 +47,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         MovePlayer();
+
+        ClampPlayerInBounds();
     }
 
     private void MovePlayer()
@@ -63,5 +69,22 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("lastMoveX", xThrow);
             animator.SetFloat("lastMoveY", yThrow);
         }
+    }
+
+    private void ClampPlayerInBounds()
+    {
+        float xPos = Mathf.Clamp(transform.position.x, bottomLeftBound.x, topRightBound.x);
+        float yPos = Mathf.Clamp(transform.position.y, bottomLeftBound.y, topRightBound.y);
+        float zPos = transform.position.z;
+
+        transform.position = new Vector3(xPos, yPos, zPos);
+    }
+
+    public void SetBounds(Vector3 bottomLeft, Vector3 topRight)
+    {
+        Vector3 offsetVector = new Vector3(xBoundaryOffset, yBoundaryOffset, 0f);
+
+        bottomLeftBound = bottomLeft + offsetVector;
+        topRightBound = topRight - offsetVector;
     }
 }
