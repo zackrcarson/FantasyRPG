@@ -14,6 +14,8 @@ public class PortalEntrance : MonoBehaviour
         {
             player.transform.position = transform.position;
         }
+
+        UIFade.instance.CallFadeIn();
     }
 
     private PlayerController GetPlayer()
