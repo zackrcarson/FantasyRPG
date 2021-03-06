@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
     // State Variables
     [HideInInspector] public string portalName = null;
+    bool canMove = true;
 
     // Cached References
     Rigidbody2D rigidBody = null;
@@ -56,18 +57,30 @@ public class PlayerController : MonoBehaviour
         float xThrow = Input.GetAxisRaw("Horizontal");
         float yThrow = Input.GetAxisRaw("Vertical");
 
-        float xSpeed = xThrow * horizontalWalkSpeed;
-        float ySpeed = yThrow * verticalWalkSpeed;
+        if (canMove)
+        {
+            float xSpeed = xThrow * horizontalWalkSpeed;
+            float ySpeed = yThrow * verticalWalkSpeed;
 
-        rigidBody.velocity = new Vector2(xSpeed, ySpeed);
+            rigidBody.velocity = new Vector2(xSpeed, ySpeed);
 
-        animator.SetFloat("moveX", xThrow);
-        animator.SetFloat("moveY", yThrow);
+            animator.SetFloat("moveX", xThrow);
+            animator.SetFloat("moveY", yThrow);
+        }
+        else
+        {
+            rigidBody.velocity = Vector2.zero;
+        }
+
+        
 
         if (xThrow == 1 || xThrow == -1 || yThrow == 1 || yThrow == -1)
         {
-            animator.SetFloat("lastMoveX", xThrow);
-            animator.SetFloat("lastMoveY", yThrow);
+            if (canMove)
+            {
+                animator.SetFloat("lastMoveX", xThrow);
+                animator.SetFloat("lastMoveY", yThrow);
+            }
         }
     }
 
@@ -86,5 +99,10 @@ public class PlayerController : MonoBehaviour
 
         bottomLeftBound = bottomLeft + offsetVector;
         topRightBound = topRight - offsetVector;
+    }
+
+    public void CanMove(bool movementAllowed)
+    {
+        canMove = movementAllowed;
     }
 }

@@ -6,10 +6,8 @@ public class UIFade : MonoBehaviour
     public static UIFade instance;
 
     // Config Params
+    [SerializeField] Image fadeImage = null;
     [SerializeField] float fadeSpeed = 1f;
-
-    // Cached References
-    Image fadeImage = null;
 
     // State Variables
     public bool shouldFadeOut = false;
@@ -19,12 +17,6 @@ public class UIFade : MonoBehaviour
     {
         instance = this;
         DontDestroyOnLoad(gameObject);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        fadeImage = GetComponentInChildren<Image>();
     }
 
     // Update is called once per frame
