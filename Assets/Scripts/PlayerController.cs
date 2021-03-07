@@ -70,6 +70,9 @@ public class PlayerController : MonoBehaviour
         else
         {
             rigidBody.velocity = Vector2.zero;
+
+            animator.SetFloat("moveX", 0f);
+            animator.SetFloat("moveY", 0f);
         }
 
         
