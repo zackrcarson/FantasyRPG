@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Elliot
   characterImage: {fileID: 21300000, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
-  playerLevel: 3
+  playerLevel: 8
   currentEXP: 860
   maxLevel: 99
   expToNextLevel: 
@@ -53,8 +53,8 @@ MonoBehaviour:
   exponentialLevelCurveFactor: 1.05
   exponentialHPCurveFactor: 1.05
   exponentialMPCurveFactor: 1.05
-  currentHP: 100
-  currentMP: 30
+  currentHP: 15
+  currentMP: 10
   maxHP: 150
   maxMP: 25
   strength: 22
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Alice
   characterImage: {fileID: 21300000, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
-  playerLevel: 6
+  playerLevel: 15
   currentEXP: 999
   maxLevel: 99
   expToNextLevel: 
@@ -239,3 +239,6 @@ MonoBehaviour:
   - {fileID: 6519322530871344573}
   - {fileID: 6519322530812674044}
   - {fileID: 6519322531081472485}
+  gameMenuOpen: 0
+  dialogueActive: 0
+  fadingScreen: 0

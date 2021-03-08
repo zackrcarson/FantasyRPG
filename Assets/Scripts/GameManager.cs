@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     // Config Parameters
-    [SerializeField] CharacterStats[] playerStatsArray = null;
+    [SerializeField] public CharacterStats[] playerStatsArray = null;
 
     // Cached References
     PlayerController player = null;
