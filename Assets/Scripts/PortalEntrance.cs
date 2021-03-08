@@ -16,6 +16,7 @@ public class PortalEntrance : MonoBehaviour
         }
 
         UIFade.instance.CallFadeIn();
+        GameManager.instance.fadingScreen = false;
     }
 
     private PlayerController GetPlayer()

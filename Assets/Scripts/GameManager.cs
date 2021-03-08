@@ -7,7 +7,15 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     // Config Parameters
-    [SerializeField] CharacterStats[] playerStatsArray = null; 
+    [SerializeField] CharacterStats[] playerStatsArray = null;
+
+    // Cached References
+    PlayerController player = null;
+
+    // State Variables
+    [HideInInspector] public bool gameMenuOpen = false;
+    [HideInInspector] public bool dialogueActive = false;
+    [HideInInspector] public bool fadingScreen = false;
 
     private void Awake()
     {
@@ -16,15 +24,21 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        player = FindObjectOfType<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (gameMenuOpen || dialogueActive || fadingScreen)
+        {
+            player.CanMove(false);
+        }
+        else
+        {
+            player.CanMove(true);
+        }
     }
 }

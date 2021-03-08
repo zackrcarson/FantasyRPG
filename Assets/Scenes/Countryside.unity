@@ -73947,6 +73947,10 @@ PrefabInstance:
       value: Poppy
       objectReference: {fileID: 0}
     - target: {fileID: 4465692176157038548, guid: 42d34492a41c5fb4198c56bb2132cc77, type: 3}
+      propertyPath: NPCName
+      value: Poppy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465692176157038548, guid: 42d34492a41c5fb4198c56bb2132cc77, type: 3}
       propertyPath: dialogueLines.Array.size
       value: 9
       objectReference: {fileID: 0}
@@ -74038,12 +74042,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 893750636}
     m_Modifications:
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
+      propertyPath: NPCName
+      value: SIGN
+      objectReference: {fileID: 0}
+    - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[0]
       value: Welcome to Fillory!        - Umber
+      objectReference: {fileID: 0}
+    - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: 'WASD/Arrows to move
+
+        ESC/Right Mouse to pause/unpause
+
+        Space/Enter/Left
+        Mouse to talk'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632070, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: m_RootOrder

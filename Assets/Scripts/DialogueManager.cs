@@ -63,7 +63,7 @@ public class DialogueManager : MonoBehaviour
                         currentLine = 0;
 
                         dialogueBox.SetActive(false);
-                        player.CanMove(true);
+                        GameManager.instance.dialogueActive = false; 
                     }
                 }
                 else
@@ -106,7 +106,7 @@ public class DialogueManager : MonoBehaviour
         justStarted = true;
 
         if (!player) { player = FindObjectOfType<PlayerController>(); }
-        player.CanMove(false);
+        GameManager.instance.dialogueActive = true;
     }
 
     void CheckIfName()

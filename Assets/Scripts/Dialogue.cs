@@ -5,8 +5,8 @@ using UnityEngine;
 public class Dialogue : MonoBehaviour
 {
     // Config Parameters
-    [SerializeField] string name = null;
-    [SerializeField] string[] dialogueLines = null;
+    [SerializeField] string NPCName = null;
+    [TextArea] [SerializeField] string[] dialogueLines = null;
 
     // State variables
     bool canActivate = false;
@@ -17,7 +17,7 @@ public class Dialogue : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump") || Input.GetButtonDown("Submit"))
             {
-                DialogueManager.instance.ShowNewDialogue(dialogueLines, name);
+                DialogueManager.instance.ShowNewDialogue(dialogueLines, NPCName);
             }
         }
     }

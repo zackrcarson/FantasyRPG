@@ -149,6 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de8677f7b932f84eb834a0ef2c5d3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: ???
+  NPCName: Poppy
   dialogueLines:
   - n-NPC

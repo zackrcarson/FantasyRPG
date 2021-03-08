@@ -31,6 +31,8 @@ public class PortalExit : MonoBehaviour
         if (otherCollider.tag == "Player")
         {
             shouldLoadAfterFade = true;
+
+            GameManager.instance.fadingScreen = true;
             UIFade.instance.CallFadeOut();
 
             FindObjectOfType<PlayerController>().portalName = portalName;
