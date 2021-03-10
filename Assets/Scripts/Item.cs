@@ -26,15 +26,65 @@ public class Item : MonoBehaviour
     [SerializeField] public int weaponStrength = 0;
     [SerializeField] public int armorStrength = 0;
 
-    // Start is called before the first frame update
-    void Start()
+    public void UseItem(int characterToUseOn)
     {
-        
-    }
+        CharacterStats selectedCharacter = GameManager.instance.playerStatsArray[characterToUseOn];
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (isItem)
+        {
+            if (affectHP)
+            {
+                selectedCharacter.currentHP += amountToChange;
+
+                if (selectedCharacter.currentHP > selectedCharacter.maxHP)
+                {
+                    selectedCharacter.currentHP = selectedCharacter.maxHP;
+                }
+            }
+            
+            if (affectMP)
+            {
+                selectedCharacter.currentMP += amountToChange;
+
+                if (selectedCharacter.currentMP > selectedCharacter.maxMP)
+                {
+                    selectedCharacter.currentMP = selectedCharacter.maxMP;
+                }
+            }
+            
+            if (affectStrength)
+            {
+                selectedCharacter.strength += amountToChange;
+            }
+            
+            if (affectDefense)
+            {
+                selectedCharacter.defense += amountToChange;
+            }
+        }
+
+        if (isWeapon)
+        {
+            if (selectedCharacter.equippedWeapon != "")
+            {
+                GameManager.instance.AddItem(selectedCharacter.equippedWeapon);
+            }
+
+            selectedCharacter.equippedWeapon = itemName;
+            selectedCharacter.weaponPower = weaponStrength;
+        }
+
+        if (isArmor)
+        {
+            if (selectedCharacter.equippedArmor != "")
+            {
+                GameManager.instance.AddItem(selectedCharacter.equippedArmor);
+            }
+
+            selectedCharacter.equippedArmor = itemName;
+            selectedCharacter.armorPower = armorStrength;
+        }
+
+        GameManager.instance.RemoveItem(itemName);
     }
 }

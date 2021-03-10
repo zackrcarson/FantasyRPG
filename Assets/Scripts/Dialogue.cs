@@ -13,6 +13,8 @@ public class Dialogue : MonoBehaviour
 
     private void Update()
     {
+        if (GameMenu.instance.isPaused()) { return; }
+
         if (canActivate && !DialogueManager.instance.dialogueBox.activeInHierarchy)
         {
             if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump") || Input.GetButtonDown("Submit"))

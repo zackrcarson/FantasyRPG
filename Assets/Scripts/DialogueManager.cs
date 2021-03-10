@@ -45,6 +45,8 @@ public class DialogueManager : MonoBehaviour
 
     private void UpdateDialogue()
     {
+        if (GameMenu.instance.isPaused()) { return; }
+
         if (dialogueBox.activeInHierarchy && dialogueLines.Length != 0)
         {
             if (Input.GetButtonUp("Fire1") || Input.GetButtonUp("Jump") || Input.GetButtonUp("Submit"))
@@ -136,5 +138,10 @@ public class DialogueManager : MonoBehaviour
             
             currentLine++;
         }
+    }
+
+    public bool isTalking()
+    {
+        return dialogueBox.activeInHierarchy;
     }
 }

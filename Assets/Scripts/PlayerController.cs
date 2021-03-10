@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 
     // State Variables
     [HideInInspector] public string portalName = null;
-    bool canMove = true;
+    [HideInInspector] public bool canMove = true;
 
     // Cached References
     Rigidbody2D rigidBody = null;

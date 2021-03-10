@@ -18,6 +18,12 @@ public class GameMenu : MonoBehaviour
     [SerializeField] Text itemName = null;
     [SerializeField] Text itemDescription = null;
     [SerializeField] Text useButtonText = null;
+    [SerializeField] GameObject useButton = null;
+    [SerializeField] GameObject discardButton = null;
+
+    [Header("Items Character Select Panel Config")]
+    [SerializeField] GameObject itemCharacterSelectionMenu = null;
+    [SerializeField] Text[] itemCharacterNames = null;
 
     [Header("Character Quick Stat Arrays")]
     [SerializeField] Text[] nameTexts = null;
@@ -44,8 +50,9 @@ public class GameMenu : MonoBehaviour
     [SerializeField] Text statsEXP = null;
 
     // State Variables
-    string selectedItem = null;
+    // string selectedItem = null;
     Item activeItem = null;
+    bool isInventoryEmpty = false;
 
     // Cached References
     CharacterStats[] characterStats = null;
@@ -72,6 +79,8 @@ public class GameMenu : MonoBehaviour
 
     private void CheckPauseButton()
     {
+        if (DialogueManager.instance.isTalking()) { return; }
+
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Fire2"))
         {
             if (menu.activeInHierarchy)
@@ -145,6 +154,8 @@ public class GameMenu : MonoBehaviour
 
             i++;
         }
+
+        itemCharacterSelectionMenu.SetActive(false);
     }
 
     public void CloseMenu()
@@ -161,6 +172,7 @@ public class GameMenu : MonoBehaviour
 
         // Close the menu
         menu.SetActive(false);
+        itemCharacterSelectionMenu.SetActive(false);
 
         // Activate walking again
         GameManager.instance.gameMenuOpen = false;
@@ -207,8 +219,8 @@ public class GameMenu : MonoBehaviour
         statsImage.sprite = characterStats[playerNumber].characterImage;
         statsName.text = "" + characterStats[playerNumber].characterName;
 
-        statsHP.text = "" + characterStats[playerNumber].currentMP + "/" + characterStats[playerNumber].maxMP;
-        statsMP.text = "" + characterStats[playerNumber].currentHP + "/" + characterStats[playerNumber].maxHP;
+        statsHP.text = "" + characterStats[playerNumber].currentHP + "/" + characterStats[playerNumber].maxHP;
+        statsMP.text = "" + characterStats[playerNumber].currentMP + "/" + characterStats[playerNumber].maxMP;
         statsStrength.text = characterStats[playerNumber].strength.ToString();
         statsDefense.text = characterStats[playerNumber].defense.ToString();
 
@@ -265,6 +277,35 @@ public class GameMenu : MonoBehaviour
             i++;
         }
 
+        isInventoryEmpty = CheckIfInventoryIsEmpty();
+        if (isInventoryEmpty)
+        {
+            itemName.text = "Nothing";
+            itemDescription.text = "Your inventory is empty! Go find something to keep.";
+
+            useButton.SetActive(false);
+            discardButton.SetActive(false);
+        }
+    }
+
+    private bool CheckIfInventoryIsEmpty()
+    {
+        bool isInventoryEmpty = true;
+        int[] itemNumbers = GameManager.instance.numberOfItems;
+
+        foreach (int number in itemNumbers)
+        {
+            if (number > 0)
+            {
+                isInventoryEmpty = false;
+            }
+        }
+
+        return isInventoryEmpty;
+    }
+
+    public void SelectFirstItem()
+    {
         // Select the first item
         string firstItemName = GameManager.instance.itemsHeld[0];
         int firstItemNumber = GameManager.instance.numberOfItems[0];
@@ -303,5 +344,53 @@ public class GameMenu : MonoBehaviour
 
         itemName.text = activeItem.itemName;
         itemDescription.text = activeItem.description;
+    }
+
+    public void AddItem()
+    {
+        if (isInventoryEmpty)
+        {
+            useButton.SetActive(true);
+            discardButton.SetActive(true);
+
+            ShowItems();
+            SelectFirstItem();
+        }
+    }
+
+    public void DiscardItem()
+    {
+        if (activeItem != null)
+        {
+            GameManager.instance.RemoveItem(activeItem.itemName);
+        }
+    }
+
+    public void OpenItemPlayerChoicePanel()
+    {
+        itemCharacterSelectionMenu.SetActive(true);
+
+        for (int i = 0; i < itemCharacterNames.Length; i++)
+        {
+            itemCharacterNames[i].text = GameManager.instance.playerStatsArray[i].characterName;
+            itemCharacterNames[i].transform.parent.gameObject.SetActive(GameManager.instance.playerStatsArray[i].gameObject.activeInHierarchy); // Deactivate buttons if player not active
+        }
+    }
+
+    public void CloseItemPlayerChoicePanel()
+    {
+        itemCharacterSelectionMenu.SetActive(false);
+    }
+
+    public void UseItem(int selectedCharacter)
+    {
+        activeItem.UseItem(selectedCharacter);
+
+        CloseItemPlayerChoicePanel();
+    }
+
+    public bool isPaused()
+    {
+        return menu.activeInHierarchy;
     }
 }

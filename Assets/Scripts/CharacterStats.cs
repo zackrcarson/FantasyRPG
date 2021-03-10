@@ -39,14 +39,6 @@ public class CharacterStats : MonoBehaviour
         SetUpLevelEXPs();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            AddEXP(1000);
-        }
-    }
-
     public void SetUpLevelEXPs()
     {
         expToNextLevel = new int[maxLevel];
