@@ -3,12 +3,21 @@ using UnityEngine.UI;
 
 public class GameMenu : MonoBehaviour
 {
+    public static GameMenu instance;
+
     // Config Parameters
     [Header("Configs")]
     [SerializeField] GameObject menu = null;
     [SerializeField] GameObject[] characterStatHolders = null;
     [SerializeField] GameObject[] menuWindows = null;
     [SerializeField] ButtonToggle[] menuButtons = null;
+
+    [Header("Items Panel Config")]
+    [SerializeField] ItemButton[] itemButtons = null;
+    ButtonToggle[] itemButtonToggles = null;
+    [SerializeField] Text itemName = null;
+    [SerializeField] Text itemDescription = null;
+    [SerializeField] Text useButtonText = null;
 
     [Header("Character Quick Stat Arrays")]
     [SerializeField] Text[] nameTexts = null;
@@ -34,9 +43,26 @@ public class GameMenu : MonoBehaviour
     [SerializeField] Text statsArmorPower = null;
     [SerializeField] Text statsEXP = null;
 
+    // State Variables
+    string selectedItem = null;
+    Item activeItem = null;
 
     // Cached References
     CharacterStats[] characterStats = null;
+
+    private void Awake()
+    {
+        instance = this;    
+    }
+
+    private void Start()
+    {
+        itemButtonToggles = new ButtonToggle[itemButtons.Length];
+        for (int i = 0; i < itemButtons.Length; i++)
+        {
+            itemButtonToggles[i] = itemButtons[i].gameObject.GetComponent<ButtonToggle>();
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -207,5 +233,75 @@ public class GameMenu : MonoBehaviour
         statsArmorPower.text = characterStats[playerNumber].armorPower.ToString();
 
         statsEXP.text = (characterStats[playerNumber].expToNextLevel[characterStats[playerNumber].playerLevel] - characterStats[playerNumber].currentEXP).ToString();
+    }
+
+    public void ShowItems()
+    {
+        GameManager.instance.SortItems();
+
+        int i = 0;
+        foreach (ItemButton itemButton in itemButtons)
+        {
+            itemButton.buttonValue = i;
+
+            string currentItem = GameManager.instance.itemsHeld[i];
+            int currentItemAmount = GameManager.instance.numberOfItems[i];
+
+            if (currentItem == "" || currentItemAmount == 0)
+            {
+                itemButton.buttonImage.gameObject.SetActive(false);
+                itemButton.amountText.text = "";
+                itemButton.gameObject.SetActive(false);
+            }
+            else
+            {
+                itemButton.gameObject.SetActive(true);
+                itemButton.buttonImage.gameObject.SetActive(true);
+
+                itemButton.buttonImage.sprite = GameManager.instance.GetItemDetails(currentItem).itemSprite;
+                itemButton.amountText.text = currentItemAmount.ToString();
+            }
+
+            i++;
+        }
+
+        // Select the first item
+        string firstItemName = GameManager.instance.itemsHeld[0];
+        int firstItemNumber = GameManager.instance.numberOfItems[0];
+        if (firstItemName != "" && firstItemNumber != 0)
+        {
+            Item firstItem = GameManager.instance.GetItemDetails(firstItemName);
+            SelectItem(firstItem);
+        }
+    }
+
+    public void SelectItem(Item selectedItem)
+    {
+        // Highlight selected item, un-highlight all others
+        string selectedItemString = selectedItem.itemName;
+        int i = 0;
+        foreach(ItemButton itemButton in itemButtons)
+        {
+            string currentItemString = GameManager.instance.itemsHeld[i];
+
+            itemButtonToggles[i].ToggleButton(currentItemString == selectedItemString);
+
+            i++;
+        }
+
+        activeItem = selectedItem;
+
+        if (activeItem.isItem)
+        {
+            useButtonText.text = "Use";
+        }
+
+        if (activeItem.isWeapon || activeItem.isArmor)
+        {
+            useButtonText.text = "Equip";
+        }
+
+        itemName.text = activeItem.itemName;
+        itemDescription.text = activeItem.description;
     }
 }

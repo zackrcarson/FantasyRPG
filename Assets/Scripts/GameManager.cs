@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -8,6 +6,9 @@ public class GameManager : MonoBehaviour
 
     // Config Parameters
     [SerializeField] public CharacterStats[] playerStatsArray = null;
+    [SerializeField] Item[] referenceItems = null;
+    [SerializeField] public string[] itemsHeld = null; // TODO: Remove serialize
+    [SerializeField] public int[] numberOfItems = null; // TODO: Remove serialize
 
     // Cached References
     PlayerController player = null;
@@ -39,6 +40,46 @@ public class GameManager : MonoBehaviour
         else
         {
             player.CanMove(true);
+        }
+    }
+
+    public Item GetItemDetails(string itemToGrab)
+    {
+        foreach (Item item in referenceItems)
+        {
+            if (item.itemName == itemToGrab)
+            {
+                return item;
+            }
+        }
+
+        return null;
+    }
+
+    public void SortItems()
+    {
+        bool itemAfterSpace = true;
+
+        while (itemAfterSpace)
+        {
+            itemAfterSpace = false;
+
+            for (int i = 0; i < itemsHeld.Length - 1; i++)
+            {
+                if (itemsHeld[i] == "" || numberOfItems[i] == 0)
+                {
+                    itemsHeld[i] = itemsHeld[i + 1];
+                    itemsHeld[i + 1] = "";
+
+                    numberOfItems[i] = numberOfItems[i + 1];
+                    numberOfItems[i + 1] = 0;
+
+                    if (itemsHeld[i] != "")
+                    {
+                        itemAfterSpace = true;
+                    }
+                }
+            }
         }
     }
 }
