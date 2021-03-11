@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Item[] referenceItems = null;
     [SerializeField] public string[] itemsHeld = null;
     [SerializeField] public int[] numberOfItems = null;
+    [SerializeField] public int currentGold = 100;
 
     // Cached References
     PlayerController player = null;
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public bool gameMenuOpen = false;
     [HideInInspector] public bool dialogueActive = false;
     [HideInInspector] public bool fadingScreen = false;
+    [HideInInspector] public bool shopActive = false;
 
     private void Awake()
     {
@@ -35,7 +37,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameMenuOpen || dialogueActive || fadingScreen)
+        if (gameMenuOpen || dialogueActive || fadingScreen || shopActive)
         {
             player.CanMove(false);
         }
@@ -130,6 +132,33 @@ public class GameManager : MonoBehaviour
         }
 
         GameMenu.instance.ShowItems();
+    }
+
+    public int FindSelectedItemAmount(string itemName)
+    {
+        int itemPosition = 0;
+        bool foundItem = false;
+
+        for (int i = 0; i < itemsHeld.Length; i++)
+        {
+            if (itemsHeld[i] == itemName)
+            {
+                itemPosition = i;
+
+                foundItem = true;
+
+                break;
+            }
+        }
+
+        if (foundItem)
+        {
+            return numberOfItems[itemPosition];
+        }
+        else
+        {
+            return -1;
+        }
     }
 
     public void RemoveItem(string itemToRemove)

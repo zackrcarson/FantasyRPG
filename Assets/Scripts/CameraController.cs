@@ -6,6 +6,7 @@ public class CameraController : MonoBehaviour
 {
     // Config Params
     [SerializeField] Tilemap tilemap = null;
+    [SerializeField] bool doesFollowPlayer = true;
 
     // State Variables
     Transform target = null;
@@ -54,6 +55,8 @@ public class CameraController : MonoBehaviour
     // Late Update is called once per frame, after normal Update
     void LateUpdate()
     {
+        if (!doesFollowPlayer) { return; }
+
         if (!target) { GetPlayer(); }
 
         FollowTargetAndClampToBounds();

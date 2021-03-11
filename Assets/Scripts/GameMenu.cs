@@ -7,7 +7,7 @@ public class GameMenu : MonoBehaviour
 
     // Config Parameters
     [Header("Configs")]
-    [SerializeField] GameObject menu = null;
+    [SerializeField] public GameObject menu = null;
     [SerializeField] GameObject[] characterStatHolders = null;
     [SerializeField] GameObject[] menuWindows = null;
     [SerializeField] ButtonToggle[] menuButtons = null;
@@ -20,6 +20,7 @@ public class GameMenu : MonoBehaviour
     [SerializeField] Text useButtonText = null;
     [SerializeField] GameObject useButton = null;
     [SerializeField] GameObject discardButton = null;
+    [SerializeField] Text goldText = null;
 
     [Header("Items Character Select Panel Config")]
     [SerializeField] GameObject itemCharacterSelectionMenu = null;
@@ -79,7 +80,7 @@ public class GameMenu : MonoBehaviour
 
     private void CheckPauseButton()
     {
-        if (DialogueManager.instance.isTalking()) { return; }
+        if (DialogueManager.instance.isTalking() || Shop.instance.IsShopping()) { return; }
 
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Fire2"))
         {
@@ -119,6 +120,8 @@ public class GameMenu : MonoBehaviour
 
             i++;
         }
+
+        goldText.text = GameManager.instance.currentGold.ToString() + "g";
     }
 
     private void UpdateStats(int characterNumber, CharacterStats characterStat)
