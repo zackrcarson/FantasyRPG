@@ -22,6 +22,10 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] Text dialogueText = null;
     [SerializeField] Text nameText = null;
 
+    string questToMark = null;
+    bool markQuestComplete = true;
+    bool shouldMarkQuest = true;
+
     // Cached References
     PlayerController player = null;
 
@@ -66,6 +70,20 @@ public class DialogueManager : MonoBehaviour
 
                         dialogueBox.SetActive(false);
                         GameManager.instance.dialogueActive = false; 
+
+                        if (shouldMarkQuest)
+                        {
+                            shouldMarkQuest = false;
+
+                            if (markQuestComplete)
+                            {
+                                QuestManager.instance.MarkQuestComplete(questToMark);
+                            }
+                            else
+                            {
+                                QuestManager.instance.MarkQuestIncomplete(questToMark);
+                            }
+                        }
                     }
                 }
                 else
@@ -143,5 +161,13 @@ public class DialogueManager : MonoBehaviour
     public bool isTalking()
     {
         return dialogueBox.activeInHierarchy;
+    }
+
+    public void ShouldActivateQuestAtEnd(string questName, bool markComplete)
+    {
+        questToMark = questName;
+        markQuestComplete = markComplete;
+
+        shouldMarkQuest = true;
     }
 }

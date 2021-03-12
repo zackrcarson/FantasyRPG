@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!player) { player = FindObjectOfType<PlayerController>(); }
+
         if (gameMenuOpen || dialogueActive || fadingScreen || shopActive)
         {
             player.CanMove(false);

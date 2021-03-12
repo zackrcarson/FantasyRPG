@@ -7,6 +7,9 @@ public class Dialogue : MonoBehaviour
     // Config Parameters
     [SerializeField] string NPCName = null;
     [TextArea] [SerializeField] string[] dialogueLines = null;
+    [SerializeField] bool shouldActivateQuest = false;
+    [SerializeField] string questToMark = null;
+    [SerializeField] bool markQuestComplete = true;
 
     // State variables
     bool canActivate = false;
@@ -20,6 +23,7 @@ public class Dialogue : MonoBehaviour
             if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump") || Input.GetButtonDown("Submit"))
             {
                 DialogueManager.instance.ShowNewDialogue(dialogueLines, NPCName);
+                DialogueManager.instance.ShouldActivateQuestAtEnd(questToMark, markQuestComplete);
             }
         }
     }
