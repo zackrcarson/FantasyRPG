@@ -36,7 +36,6 @@ public class UIFade : MonoBehaviour
     private void FadeOut()
     {
         float newAlpha = Mathf.MoveTowards(fadeImage.color.a, 1f, fadeSpeed * Time.deltaTime);
-
         fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, newAlpha);
 
         if (fadeImage.color.a == 1f)

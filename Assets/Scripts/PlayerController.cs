@@ -75,7 +75,6 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("moveY", 0f);
         }
 
-        
 
         if (xThrow == 1 || xThrow == -1 || yThrow == 1 || yThrow == -1)
         {
@@ -107,5 +106,16 @@ public class PlayerController : MonoBehaviour
     public void CanMove(bool movementAllowed)
     {
         canMove = movementAllowed;
+    }
+
+    public Vector2 GetIdleDirection()
+    {
+        return new Vector2(animator.GetFloat("lastMoveX"), animator.GetFloat("lastMoveY"));
+    }
+
+    public void SetIdleDirection(Vector2 idleDirection)
+    {
+        animator.SetFloat("lastMoveX", idleDirection.x);
+        animator.SetFloat("lastMoveY", idleDirection.y);
     }
 }

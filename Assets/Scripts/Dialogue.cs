@@ -18,7 +18,7 @@ public class Dialogue : MonoBehaviour
     {
         if (GameMenu.instance.isPaused()) { return; }
 
-        if (canActivate && !DialogueManager.instance.dialogueBox.activeInHierarchy)
+        if (shouldActivateQuest && canActivate && !DialogueManager.instance.dialogueBox.activeInHierarchy)
         {
             if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump") || Input.GetButtonDown("Submit"))
             {

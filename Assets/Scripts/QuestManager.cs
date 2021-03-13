@@ -82,4 +82,54 @@ public class QuestManager : MonoBehaviour
             questObject.CheckCompletion();
         }
     }
+
+    public void SaveQuestData()
+    {
+        int i = 0;
+        foreach (string questMarker in questMarkerNames)
+        {
+            // 1 means true (quest marker is completed), 0 is false.
+            if (questMarkersComplete[i])
+            {
+                PlayerPrefs.SetInt("QuestMarker_" + questMarker, 1);
+            }
+            else
+            {
+                PlayerPrefs.SetInt("QuestMarker_" + questMarker, 0);
+            }
+
+            i++;
+        }
+    }
+
+    public void LoadQuestData()
+    {
+        int i = 0;
+        foreach (string questMarker in questMarkerNames)
+        {
+            // If a new marker is not found in the PlayerPrefs, set it to 0 (false). Else, set it to the saved value.
+            int valueToSet = 0;
+            if (PlayerPrefs.HasKey("QuestMarker_" + questMarker))
+            {
+                valueToSet = PlayerPrefs.GetInt("QuestMarker_" + questMarker);
+            }
+
+            if (valueToSet == 0)
+            {
+                questMarkersComplete[i] = false;
+            }
+            else
+            {
+                questMarkersComplete[i] = true;
+            }
+
+            i++;
+        }
+
+        QuestObjectActivator[] questObjectActivatos = FindObjectsOfType<QuestObjectActivator>();
+        foreach (QuestObjectActivator questActivator in questObjectActivatos)
+        {
+            questActivator.CheckCompletion();
+        }
+    }
 }

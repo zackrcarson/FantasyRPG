@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -395,5 +396,28 @@ public class GameMenu : MonoBehaviour
     public bool isPaused()
     {
         return menu.activeInHierarchy;
+    }
+
+    public void SaveGame()
+    {
+        GameManager.instance.SaveData();
+        QuestManager.instance.SaveQuestData();
+    }
+
+    public void LoadGame()
+    {
+        StartCoroutine(FadeInLoadAndFadeOut());
+    }
+
+    private IEnumerator FadeInLoadAndFadeOut()
+    {
+        GameManager.instance.fadingScreen = true;
+        UIFade.instance.CallFadeOut();
+
+        yield return new WaitForSeconds(1f);
+
+        CloseMenu();
+        GameManager.instance.LoadData();
+        QuestManager.instance.LoadQuestData();
     }
 }
