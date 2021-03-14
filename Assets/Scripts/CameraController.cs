@@ -7,9 +7,11 @@ public class CameraController : MonoBehaviour
     // Config Params
     [SerializeField] Tilemap tilemap = null;
     [SerializeField] bool doesFollowPlayer = true;
+    [SerializeField] int musicToPlay = 0;
 
     // State Variables
     Transform target = null;
+    bool musicStarted = false;
 
     // Cached References
     Vector3 bottomLeftBound = new Vector3(0f, 0f, 0f);
@@ -55,11 +57,18 @@ public class CameraController : MonoBehaviour
     // Late Update is called once per frame, after normal Update
     void LateUpdate()
     {
+        if (!musicStarted)
+        {
+            musicStarted = true;
+
+            AudioManager.instance.PlayMusic(musicToPlay);
+        }
+
         if (!doesFollowPlayer) { return; }
 
         if (!target) { GetPlayer(); }
 
-        FollowTargetAndClampToBounds();
+        FollowTargetAndClampToBounds();        
     }
 
     private void FollowTargetAndClampToBounds()

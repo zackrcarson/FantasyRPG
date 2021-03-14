@@ -43,6 +43,7 @@ public class Shop : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()

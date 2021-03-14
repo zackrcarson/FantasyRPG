@@ -12,7 +12,8 @@ public class QuestManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;    
+        instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update

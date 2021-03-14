@@ -297,6 +297,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7518215078483112839}
     - target: {fileID: 7278419065052470394, guid: d75b39106035cbe4691ae33bce039e1b, type: 3}
+      propertyPath: musicToPlay
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278419065052470394, guid: d75b39106035cbe4691ae33bce039e1b, type: 3}
       propertyPath: doesFollowPlayer
       value: 0
       objectReference: {fileID: 0}

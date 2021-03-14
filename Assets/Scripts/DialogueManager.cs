@@ -39,6 +39,7 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame

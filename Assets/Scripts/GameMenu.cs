@@ -13,6 +13,11 @@ public class GameMenu : MonoBehaviour
     [SerializeField] GameObject[] menuWindows = null;
     [SerializeField] ButtonToggle[] menuButtons = null;
 
+    [Header("SFX")]
+    [SerializeField] int openCloseMenuSound = 6;
+    [SerializeField] int menuButtonsSound = 5;
+    [SerializeField] int itemSlotSound = 8;
+
     [Header("Items Panel Config")]
     [SerializeField] ItemButton[] itemButtons = null;
     ButtonToggle[] itemButtonToggles = null;
@@ -61,7 +66,8 @@ public class GameMenu : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;    
+        instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
@@ -97,6 +103,8 @@ public class GameMenu : MonoBehaviour
                 UpdateMainStats();
 
             }
+
+            AudioManager.instance.PlaySFX(openCloseMenuSound);
         }
     }
 
@@ -419,5 +427,15 @@ public class GameMenu : MonoBehaviour
         CloseMenu();
         GameManager.instance.LoadData();
         QuestManager.instance.LoadQuestData();
+    }
+
+    public void PlayButtonSound()
+    {
+        AudioManager.instance.PlaySFX(menuButtonsSound);
+    }
+
+    public void PlaySlotClickSound()
+    {
+        AudioManager.instance.PlaySFX(itemSlotSound);
     }
 }

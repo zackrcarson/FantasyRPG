@@ -73,10 +73,11 @@
     <Compile Include="Assets\Scripts\PickupItem.cs" />
     <Compile Include="Assets\Scripts\PortalExit.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\QuestMarker.cs" />
+    <Compile Include="Assets\Scripts\QuestObjectActivator.cs" />
     <Compile Include="Assets\Scripts\QuestManager.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\QuestObjectActivator.cs" />
-    <Compile Include="Assets\Scripts\QuestMarker.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Udemy RPG Assets\Licence.txt" />
