@@ -12,6 +12,7 @@ public class GameMenu : MonoBehaviour
     [SerializeField] GameObject[] characterStatHolders = null;
     [SerializeField] GameObject[] menuWindows = null;
     [SerializeField] ButtonToggle[] menuButtons = null;
+    [SerializeField] string mainMenuName = "Main Menu";
 
     [Header("SFX")]
     [SerializeField] int openCloseMenuSound = 6;
@@ -192,7 +193,31 @@ public class GameMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        StartCoroutine(FadeAndQuit());
+    }
+
+    private IEnumerator FadeAndQuit()
+    {
+        UIFade.instance.CallFadeOut();
+        AudioManager.instance.StopMusic();
+
+        yield return new WaitForSeconds(2.5f);
+        UIFade.instance.QuitGame();
+
+        Destroy(GameManager.instance.gameObject);
+        Destroy(FindObjectOfType<PlayerController>().gameObject);
+        Destroy(AudioManager.instance.gameObject);
+
+        SceneLoader.LoadSceneByName(mainMenuName);
+
+        yield return null;
+
+        Destroy(gameObject);
+    }
+
+    public void QuitAfterFade()
+    {
+        SceneLoader.LoadSceneByName(mainMenuName);
     }
 
     public void OpenStatus()

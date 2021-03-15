@@ -43,6 +43,36 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void StopMusic()
+    {
+        StartCoroutine(FadeOut(defaultFadeTime));
+    }
+
+    private IEnumerator FadeOut(float fadeTime)
+    {
+        while (isFading)
+        {
+            yield return null;
+        }
+
+        isFading = true;
+
+        currentSongVolume = currentSongPlaying.volume;
+
+        while (currentSongPlaying.volume > 0f)
+        {
+            currentSongPlaying.volume -= currentSongVolume * Time.deltaTime / fadeTime;
+
+            yield return null;
+        }
+        currentSongPlaying.volume = 0f;
+
+        currentSongPlaying.Stop();
+        currentSongPlaying.volume = currentSongVolume;
+
+        isFading = false;
+    }
+
     private IEnumerator FadeOutAndIn(int songToPlay, float fadeTime)
     {
         while (isFading)

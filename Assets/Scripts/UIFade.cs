@@ -12,6 +12,7 @@ public class UIFade : MonoBehaviour
     // State Variables
     public bool shouldFadeOut = false;
     public bool shouldFadeIn = false;
+    public bool quitGame = false;
 
     private void Awake()
     {
@@ -22,6 +23,11 @@ public class UIFade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (quitGame)
+        {
+            fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, 1.0f);
+        }
+
         if (shouldFadeOut)
         {
             FadeOut();
@@ -66,5 +72,10 @@ public class UIFade : MonoBehaviour
     {
         shouldFadeOut = false;
         shouldFadeIn = true;
+    }
+
+    public void QuitGame()
+    { 
+        quitGame = true; 
     }
 }

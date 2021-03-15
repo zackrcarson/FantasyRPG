@@ -37450,9 +37450,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 4193811351346673976}
-  fadeSpeed: 1
+  fadeSpeed: 2
   shouldFadeOut: 0
   shouldFadeIn: 0
+  quitGame: 0
 --- !u!114 &136609800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37500,6 +37501,10 @@ MonoBehaviour:
   menuButtons:
   - {fileID: 519098167}
   - {fileID: 514238942}
+  mainMenuName: Main Menu
+  openCloseMenuSound: 6
+  menuButtonsSound: 5
+  itemSlotSound: 8
   itemButtons:
   - {fileID: 1572349366}
   - {fileID: 361259443}
