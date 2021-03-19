@@ -461,6 +461,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
   m_PrefabInstance: {fileID: 173082104}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &218306678
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 333509909}
+    m_Modifications:
+    - target: {fileID: 4034864811188728929, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 38.895
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811188728929, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.056
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811188728930, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: portalFromName
+      value: Cave-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -43.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451189, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Name
+      value: Portal (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8611374
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4232893
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.033706665
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.2393198
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195185, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: portalName
+      value: Countryside-4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195185, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: sceneToLoad
+      value: Cave
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195199, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 38.949
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195199, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.64
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+--- !u!4 &218306679 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+  m_PrefabInstance: {fileID: 218306678}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &333509908
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +596,10 @@ Transform:
   m_Children:
   - {fileID: 173082105}
   - {fileID: 90172630}
+  - {fileID: 751905708}
+  - {fileID: 218306679}
+  - {fileID: 433998954}
+  - {fileID: 1268476527}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -46267,6 +46377,112 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &433998953
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 333509909}
+    m_Modifications:
+    - target: {fileID: 4034864811188728929, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 38.831
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811188728929, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.283
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811188728930, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: portalFromName
+      value: Cave-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -59.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451189, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Name
+      value: Portal (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8611374
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4232893
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.033706665
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.2393198
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195185, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: portalName
+      value: Countryside-5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195185, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: sceneToLoad
+      value: Cave
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195199, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 38.887
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195199, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.982
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+--- !u!4 &433998954 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+  m_PrefabInstance: {fileID: 433998953}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &555200702
 GameObject:
   m_ObjectHideFlags: 0
@@ -47479,6 +47695,112 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6418701924469632070, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
   m_PrefabInstance: {fileID: 6418701923773803683}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &751905707
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 333509909}
+    m_Modifications:
+    - target: {fileID: 4034864811188728929, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 38.477
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811188728929, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.283
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811188728930, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: portalFromName
+      value: Cave-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451189, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Name
+      value: Portal (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8611374
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4232893
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.033706665
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.2393198
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195185, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: portalName
+      value: Countryside-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195185, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: sceneToLoad
+      value: Cave
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195199, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 38.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195199, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.842
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+--- !u!4 &751905708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+  m_PrefabInstance: {fileID: 751905707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &828566767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1811540186967258850, guid: f0b9ca6591102f1498f3a623c6f5f436, type: 3}
@@ -47643,6 +47965,112 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66ea1e133d997af4890efb0041eb700f, type: 3}
+--- !u!1001 &1268476526
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 333509909}
+    m_Modifications:
+    - target: {fileID: 4034864811188728929, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 39.165
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811188728929, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.323
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811188728930, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: portalFromName
+      value: Cave-4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -76.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864811277451189, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Name
+      value: Portal (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8611374
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4232893
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.033706665
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195184, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.2393198
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195185, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: portalName
+      value: Countryside-6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195185, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: sceneToLoad
+      value: Cave
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195199, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 39.177
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195199, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+--- !u!4 &1268476527 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4034864811277451188, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+  m_PrefabInstance: {fileID: 1268476526}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1355532091
 GameObject:
   m_ObjectHideFlags: 0
