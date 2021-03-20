@@ -88,7 +88,7 @@ public class GameMenu : MonoBehaviour
 
     private void CheckPauseButton()
     {
-        if (DialogueManager.instance.isTalking() || Shop.instance.IsShopping()) { return; }
+        if (DialogueManager.instance.isTalking() || Shop.instance.IsShopping() || BattleManager.instance.isBattleActive) { return; }
 
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Fire2"))
         {

@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\ButtonToggle.cs" />
     <Compile Include="Assets\Scripts\ItemButton.cs" />
     <Compile Include="Assets\Scripts\LoadingScene.cs" />
+    <Compile Include="Assets\Scripts\BattleCharacter.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Shop.cs" />
     <Compile Include="Assets\Scripts\PortalEntrance.cs" />
@@ -81,7 +82,7 @@
     <Compile Include="Assets\Scripts\QuestObjectActivator.cs" />
     <Compile Include="Assets\Scripts\QuestManager.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\BattleCharacter.cs" />
+    <Compile Include="Assets\Scripts\BattleManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Udemy RPG Assets\Licence.txt" />

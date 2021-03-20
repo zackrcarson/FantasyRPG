@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour
     // Config Params
     [SerializeField] Tilemap tilemap = null;
     [SerializeField] bool doesFollowPlayer = true;
-    [SerializeField] int musicToPlay = 0;
+    [SerializeField] public int musicToPlay = 0;
 
     // State Variables
     Transform target = null;

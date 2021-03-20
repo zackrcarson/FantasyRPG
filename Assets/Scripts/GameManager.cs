@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public bool dialogueActive = false;
     [HideInInspector] public bool fadingScreen = false;
     [HideInInspector] public bool shopActive = false;
+    [HideInInspector] public bool isBattleActive = false;
 
     private void Awake()
     {
@@ -40,7 +41,7 @@ public class GameManager : MonoBehaviour
     {
         if (!player) { player = FindObjectOfType<PlayerController>(); }
 
-        if (gameMenuOpen || dialogueActive || fadingScreen || shopActive)
+        if (gameMenuOpen || dialogueActive || fadingScreen || shopActive || isBattleActive)
         {
             player.CanMove(false);
         }

@@ -6,7 +6,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     // Cached References
-    [SerializeField] float defaultFadeTime = 1f;
+    [SerializeField] float defaultFadeTime = 1.5f;
     [SerializeField] AudioSource[] soundEffects = null;
     [SerializeField] AudioSource[] backgroundMusic = null;
 
