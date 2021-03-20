@@ -56,3 +56,9 @@ TagManager:
   - name: BuildingTops
     uniqueID: 1665534741
     locked: 0
+  - name: BattleBackground
+    uniqueID: 4260162061
+    locked: 0
+  - name: BattleCharacters
+    uniqueID: 2882284739
+    locked: 0
