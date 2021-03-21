@@ -1872,6 +1872,36 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: MP -
+--- !u!1 &4978548603417080052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6739533478879846282}
+  m_Layer: 0
+  m_Name: Effects Parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6739533478879846282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4978548603417080052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2725507095678531025}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5118952950753300558
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,6 +2643,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 726636586467262090}
+  - {fileID: 6739533478879846282}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2651,6 +2682,11 @@ MonoBehaviour:
     movePower: 85
     moveCost: 10
     effect: {fileID: 5817468755299716964, guid: abd36e05b93ceec4d83f1a1f2a454a19, type: 3}
+  damageRandomFactorMinimum: 0.9
+  damageRandomFactorMaximum: 1.1
+  effectsParent: {fileID: 4978548603417080052}
+  enemyAttackEffect: {fileID: 7234392262408426064, guid: 556c3e592d3148342b8268163672614c, type: 3}
+  damageDisplay: {fileID: 2464126967210551093, guid: 5c66be3960e484647916f37e9110e376, type: 3}
   playerPositions:
   - {fileID: 8804116622600945377}
   - {fileID: 8868419616398514354}
@@ -2665,11 +2701,24 @@ MonoBehaviour:
   playerPrefabs:
   - {fileID: 3508371957092982748, guid: 2794dcca340f05a408633e1b2c54392a, type: 3}
   - {fileID: 18006969467699390, guid: 99ff07ee509fea744a848c0cde08b5b6, type: 3}
+  - {fileID: 18006969467699390, guid: 6515bf4cec801d14ebef2e7d14272ec8, type: 3}
   enemyPrefabs:
   - {fileID: 182824727857279878, guid: 7195cc7aa1b871840a157cb8589b9680, type: 3}
   - {fileID: 7121131871234954939, guid: c76a5144d26fa7b4695e9dfb74e966a4, type: 3}
   - {fileID: 1833168519116500116, guid: 52291a6bfd4a39944adf6b944de97cb4, type: 3}
   uiButtons: {fileID: 1094270006135604321}
+  playerNames:
+  - {fileID: 110701684631990816}
+  - {fileID: 3037697382375745211}
+  - {fileID: 6515972916609342733}
+  playerHPs:
+  - {fileID: 4067974468123657406}
+  - {fileID: 1769334391850393868}
+  - {fileID: 2244064503015369703}
+  playerMPs:
+  - {fileID: 1295320192569354333}
+  - {fileID: 1136432919365792271}
+  - {fileID: 3017413451960841660}
   isBattleActive: 0
 --- !u!1 &6972995941970286357
 GameObject:
@@ -2870,7 +2919,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6411486917022574275}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6561285622672769438}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
+        m_MethodName: PlayerAttack
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Slash
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7323002422403472413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2965,7 +3026,7 @@ GameObject:
   - component: {fileID: 5673804491219560453}
   - component: {fileID: 7260542912266260138}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

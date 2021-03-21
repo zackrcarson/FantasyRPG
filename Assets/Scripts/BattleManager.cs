@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,11 @@ public class BattleManager : MonoBehaviour
     [SerializeField] float damageRandomFactorMinimum = 0.9f;
     [SerializeField] float damageRandomFactorMaximum = 1.1f;
 
+    [Header("Effects")]
+    [SerializeField] GameObject effectsParent = null;
+    [SerializeField] GameObject enemyAttackEffect = null;
+    [SerializeField] DamageDisplay damageDisplay = null;
+
     [Header("Battle Character Positions and Prefabs")]
     [SerializeField] Transform[] playerPositions = null;
     [SerializeField] Transform[] enemyPositions = null;
@@ -29,8 +35,11 @@ public class BattleManager : MonoBehaviour
     [SerializeField] BattleCharacter[] playerPrefabs = null;
     [SerializeField] BattleCharacter[] enemyPrefabs = null;
 
-    [Header("UI Buttons")]
+    [Header("UI Buttons and Stats")]
     [SerializeField] GameObject uiButtons = null;
+    [SerializeField] Text[] playerNames = null;
+    [SerializeField] Text[] playerHPs = null;
+    [SerializeField] Text[] playerMPs = null;
 
     // State Variables
     [HideInInspector] public bool isBattleActive = false;
@@ -87,6 +96,7 @@ public class BattleManager : MonoBehaviour
         turnWaiting = true;
 
         UpdateBattle();
+        UpdateUIStats();
     }
 
     private void UpdateBattle()
@@ -131,6 +141,17 @@ public class BattleManager : MonoBehaviour
 
             StartCoroutine(FadeOutBattleScene());
         }
+        else
+        {
+            while(activeBattlers[currentTurn].currentHP == 0)
+            {
+                currentTurn++;
+                if (currentTurn >= activeBattlers.Count)
+                {
+                    currentTurn = 0;
+                }
+            }
+        }
     }
 
     private void BattleStart(string[] enemiesToSpawn)
@@ -166,6 +187,7 @@ public class BattleManager : MonoBehaviour
         LoadInPlayers();
         LoadInEnemies(enemiesToSpawn);
         StartTurns();
+        UpdateUIStats();
     }
 
     private IEnumerator FadeOutBattleScene()
@@ -281,10 +303,13 @@ public class BattleManager : MonoBehaviour
         {
             if (move.moveName == activeBattlers[currentTurn].movesAvailable[selectedAttack])
             {
-                Instantiate(move.effect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation);
+                Instantiate(move.effect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
+
                 movePower = move.movePower;
             }
         }
+
+        Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
 
         DealDamage(selectedTarget, movePower);
     }
@@ -316,8 +341,65 @@ public class BattleManager : MonoBehaviour
 
         int damageToGive = Mathf.RoundToInt(totalDamage);
 
-        Debug.Log(activeBattlers[currentTurn].characterName + " is dealing " + totalDamage + " (" + damageToGive + ") damage to " + activeBattlers[targetNumber].characterName + ".");
-
         activeBattlers[targetNumber].currentHP -= damageToGive;
+
+        Instantiate(damageDisplay, activeBattlers[targetNumber].transform.position, activeBattlers[targetNumber].transform.rotation, effectsParent.transform).SetDamage(damageToGive);
+
+        UpdateUIStats();
+    }
+
+    private void UpdateUIStats()
+    {
+        List<BattleCharacter> activePlayers = new List<BattleCharacter>();
+
+        foreach (BattleCharacter battler in activeBattlers)
+        {
+            if (battler.isPlayer)
+            {
+                activePlayers.Add(battler);
+            }
+        }
+
+        for (int i = 0; i < playerNames.Length; i++)
+        {
+            if (activePlayers.Count > i)
+            {
+                BattleCharacter playerData = activePlayers[i];
+
+                playerNames[i].gameObject.SetActive(true);
+                playerNames[i].text = playerData.characterName;
+                playerHPs[i].text = Mathf.Clamp(playerData.currentHP, 0, int.MaxValue).ToString() + "/" + playerData.maxHP;
+                playerMPs[i].text = Mathf.Clamp(playerData.currentMP, 0, int.MaxValue).ToString() + "/" + playerData.maxMP;
+            }
+            else
+            {
+                playerNames[i].gameObject.SetActive(false);
+            }
+        }
+    }
+
+    public void PlayerAttack(string moveName/*, int selectedTarget*/)
+    {
+        int selectedTarget = 0; // TODO: Remove this
+        while (activeBattlers[selectedTarget].isPlayer)
+        {
+            selectedTarget++;
+        }
+
+        int movePower = 0;
+        foreach (BattleMove move in movesList)
+        {
+            if (move.moveName == moveName)
+            {
+                Instantiate(move.effect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
+                movePower = move.movePower;
+            }
+        }
+
+        Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
+        DealDamage(selectedTarget, movePower);
+
+        uiButtons.SetActive(false);
+        NextTurn();
     }
 }

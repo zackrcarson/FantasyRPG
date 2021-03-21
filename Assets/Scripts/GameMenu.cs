@@ -102,7 +102,7 @@ public class GameMenu : MonoBehaviour
                 GameManager.instance.gameMenuOpen = true;
 
                 UpdateMainStats();
-
+                ShowItems();
             }
 
             AudioManager.instance.PlaySFX(openCloseMenuSound);
