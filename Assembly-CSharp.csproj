@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\BattleMove.cs" />
     <Compile Include="Assets\Scripts\DestroyOverLifetime.cs" />
     <Compile Include="Assets\Scripts\DamageDisplay.cs" />
+    <Compile Include="Assets\Scripts\BattleTargetButton.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Udemy RPG Assets\Licence.txt" />

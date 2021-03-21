@@ -18,7 +18,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] float backgroundFadeTime = 1f;
 
     [Header("Battle Settings")]
-    [SerializeField] float enemyAttackDelay = 1f;
+    [SerializeField] float enemyAttackDelay = 1.25f;
     [SerializeField] BattleMove[] movesList = null;
     [SerializeField] float damageRandomFactorMinimum = 0.9f;
     [SerializeField] float damageRandomFactorMaximum = 1.1f;
@@ -40,6 +40,8 @@ public class BattleManager : MonoBehaviour
     [SerializeField] Text[] playerNames = null;
     [SerializeField] Text[] playerHPs = null;
     [SerializeField] Text[] playerMPs = null;
+    [SerializeField] GameObject targetMenu = null;
+    [SerializeField] BattleTargetButton[] battleTargetButtons = null;
 
     // State Variables
     [HideInInspector] public bool isBattleActive = false;
@@ -64,6 +66,18 @@ public class BattleManager : MonoBehaviour
         {
             CurrentTurn();
         }
+    }
+
+    private void BattleStart(string[] enemiesToSpawn)
+    {
+        if (isBattleActive) { return; }
+
+        isBattleActive = true;
+        GameManager.instance.isBattleActive = true;
+
+        transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.x);
+
+        StartCoroutine(FadeInBattleScene(enemiesToSpawn));
     }
 
     private void CurrentTurn()
@@ -152,18 +166,6 @@ public class BattleManager : MonoBehaviour
                 }
             }
         }
-    }
-
-    private void BattleStart(string[] enemiesToSpawn)
-    {
-        if (isBattleActive) { return; }
-
-        isBattleActive = true;
-        GameManager.instance.isBattleActive = true;
-
-        transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.x);
-
-        StartCoroutine(FadeInBattleScene(enemiesToSpawn)); 
     }
 
     private IEnumerator FadeInBattleScene(string[] enemiesToSpawn)
@@ -378,14 +380,8 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    public void PlayerAttack(string moveName/*, int selectedTarget*/)
+    public void PlayerAttack(string moveName, int selectedTarget)
     {
-        int selectedTarget = 0; // TODO: Remove this
-        while (activeBattlers[selectedTarget].isPlayer)
-        {
-            selectedTarget++;
-        }
-
         int movePower = 0;
         foreach (BattleMove move in movesList)
         {
@@ -400,6 +396,40 @@ public class BattleManager : MonoBehaviour
         DealDamage(selectedTarget, movePower);
 
         uiButtons.SetActive(false);
+        targetMenu.SetActive(false);
+
         NextTurn();
+    }
+
+    public void OpenTargetMenu(string moveName)
+    {
+        targetMenu.SetActive(true);
+
+        List<int> enemies = new List<int>();
+        int i = 0;
+        foreach (BattleCharacter battler in activeBattlers)
+        {
+            if (!battler.isPlayer)
+            {
+                enemies.Add(i);
+            }
+
+            i++;
+        }
+
+        i = 0;
+        foreach (BattleTargetButton targetButton in battleTargetButtons)
+        {
+            targetButton.gameObject.SetActive(enemies.Count > i);
+
+            if (enemies.Count > i)
+            {
+                targetButton.moveName = moveName;
+                targetButton.activeBattlerTarget = enemies[i];
+                targetButton.targetName.text = activeBattlers[enemies[i]].characterName;
+            }
+
+            i++;
+        }
     }
 }
