@@ -15,6 +15,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] GameObject battleUI = null;
     [SerializeField] int battleMusic = 0;
     [SerializeField] float backgroundFadeTime = 1f;
+    [SerializeField] float enemyAttackDelay = 1f;
 
     [Header("Battle Character Positions and Prefabs")]
     [SerializeField] Transform[] playerPositions = null;
@@ -59,7 +60,7 @@ public class BattleManager : MonoBehaviour
 
             if (!activeBattlers[currentTurn].isPlayer)
             {
-                // TODO: Enemy Attack!
+                StartCoroutine(DelayedEnemyAttack());
             }
         }
 
@@ -250,5 +251,46 @@ public class BattleManager : MonoBehaviour
 
         battleUI.SetActive(true);
         uiButtons.SetActive(activeBattlers[currentTurn].isPlayer);
+    }
+
+    private IEnumerator DelayedEnemyAttack()
+    {
+        turnWaiting = false;
+
+        yield return new WaitForSeconds(enemyAttackDelay);
+
+        EnemyAttack();
+
+        yield return new WaitForSeconds(enemyAttackDelay);
+
+        NextTurn();
+    }
+
+    private void EnemyAttack()
+    {
+        int selectedTarget = ChooseRandomPlayer();
+
+        int enemyDamage = (activeBattlers[currentTurn].strength + activeBattlers[currentTurn].weaponPower) * 2;
+        int playerDefense = activeBattlers[selectedTarget].defense + activeBattlers[selectedTarget].armorPower;
+
+        activeBattlers[selectedTarget].currentHP -= (enemyDamage - playerDefense);
+    }
+
+    private int ChooseRandomPlayer()
+    {
+        List<int> players = new List<int>();
+
+        int i = 0;
+        foreach (BattleCharacter battler in activeBattlers)
+        {
+            if (battler.isPlayer && battler.currentHP > 0)
+            {
+                players.Add(i);
+            }
+
+            i++;
+        }
+
+        return players[UnityEngine.Random.Range(0, players.Count)]; // TODO: Throws index out or range error?? i.e. returns 5 for list of length 2........
     }
 }

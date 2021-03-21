@@ -2631,7 +2631,9 @@ MonoBehaviour:
   battleScene: {fileID: 6303332377405215787}
   battleBackground: {fileID: 8117630805066623653}
   battleUI: {fileID: 7436284874194673275}
+  battleMusic: 0
   backgroundFadeTime: 1.5
+  enemyAttackDelay: 1
   playerPositions:
   - {fileID: 8804116622600945377}
   - {fileID: 8868419616398514354}
@@ -2652,6 +2654,7 @@ MonoBehaviour:
   - {fileID: 1833168519116500116, guid: 52291a6bfd4a39944adf6b944de97cb4, type: 3}
   uiButtons: {fileID: 1094270006135604321}
   isBattleActive: 0
+  activeBattlers: []
   currentTurn: 0
 --- !u!1 &6972995941970286357
 GameObject:
