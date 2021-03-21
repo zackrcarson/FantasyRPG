@@ -15,7 +15,12 @@ public class BattleManager : MonoBehaviour
     [SerializeField] GameObject battleUI = null;
     [SerializeField] int battleMusic = 0;
     [SerializeField] float backgroundFadeTime = 1f;
+
+    [Header("Battle Settings")]
     [SerializeField] float enemyAttackDelay = 1f;
+    [SerializeField] BattleMove[] movesList = null;
+    [SerializeField] float damageRandomFactorMinimum = 0.9f;
+    [SerializeField] float damageRandomFactorMaximum = 1.1f;
 
     [Header("Battle Character Positions and Prefabs")]
     [SerializeField] Transform[] playerPositions = null;
@@ -270,10 +275,18 @@ public class BattleManager : MonoBehaviour
     {
         int selectedTarget = ChooseRandomPlayer();
 
-        int enemyDamage = (activeBattlers[currentTurn].strength + activeBattlers[currentTurn].weaponPower) * 2;
-        int playerDefense = activeBattlers[selectedTarget].defense + activeBattlers[selectedTarget].armorPower;
+        int selectedAttack = UnityEngine.Random.Range(0, activeBattlers[currentTurn].movesAvailable.Length);
+        int movePower = 0;
+        foreach(BattleMove move in movesList)
+        {
+            if (move.moveName == activeBattlers[currentTurn].movesAvailable[selectedAttack])
+            {
+                Instantiate(move.effect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation);
+                movePower = move.movePower;
+            }
+        }
 
-        activeBattlers[selectedTarget].currentHP -= (enemyDamage - playerDefense);
+        DealDamage(selectedTarget, movePower);
     }
 
     private int ChooseRandomPlayer()
@@ -292,5 +305,19 @@ public class BattleManager : MonoBehaviour
         }
 
         return players[UnityEngine.Random.Range(0, players.Count)]; // TODO: Throws index out or range error?? i.e. returns 5 for list of length 2........
+    }
+
+    private void DealDamage(int targetNumber, int movePower)
+    {
+        float offensivePower = activeBattlers[currentTurn].strength + activeBattlers[currentTurn].weaponPower;
+        float defensivePower = activeBattlers[targetNumber].defense + activeBattlers[targetNumber].armorPower;
+
+        float totalDamage = (offensivePower / defensivePower) * movePower * UnityEngine.Random.Range(damageRandomFactorMinimum, damageRandomFactorMaximum);
+
+        int damageToGive = Mathf.RoundToInt(totalDamage);
+
+        Debug.Log(activeBattlers[currentTurn].characterName + " is dealing " + totalDamage + " (" + damageToGive + ") damage to " + activeBattlers[targetNumber].characterName + ".");
+
+        activeBattlers[targetNumber].currentHP -= damageToGive;
     }
 }

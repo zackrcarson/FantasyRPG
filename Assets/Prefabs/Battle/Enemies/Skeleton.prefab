@@ -97,7 +97,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 0
   characterName: Skeleton
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Fire
   currentHP: 400
   maxHP: 400
   currentMP: 0

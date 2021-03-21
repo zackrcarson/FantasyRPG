@@ -120,8 +120,8 @@ MonoBehaviour:
   currentMP: 30
   maxHP: 100
   maxMP: 30
-  strength: 1
-  defense: 1
+  strength: 7
+  defense: 7
   weaponPower: 0
   armorPower: 0
   equippedWeapon: 
@@ -294,6 +294,7 @@ MonoBehaviour:
   dialogueActive: 0
   fadingScreen: 0
   shopActive: 0
+  isBattleActive: 0
 --- !u!114 &73720190
 MonoBehaviour:
   m_ObjectHideFlags: 0

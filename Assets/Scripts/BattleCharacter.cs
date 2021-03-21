@@ -6,7 +6,7 @@ public class BattleCharacter : MonoBehaviour
     [Header("Administrative Parameters")]
     [SerializeField] public bool isPlayer = false;
     [SerializeField] public string characterName = null;
-    [SerializeField] string[] movesAvailable = null;
+    [SerializeField] public string[] movesAvailable = null;
 
     [Header("Character Stats")]
     [SerializeField] public int currentHP = 0;

@@ -2634,6 +2634,23 @@ MonoBehaviour:
   battleMusic: 0
   backgroundFadeTime: 1.5
   enemyAttackDelay: 1
+  movesList:
+  - moveName: Slash
+    movePower: 40
+    moveCost: 0
+    effect: {fileID: 4245709494503376989, guid: 8e439676e74781046a6b4ffc1818b97e, type: 3}
+  - moveName: Fire
+    movePower: 50
+    moveCost: 5
+    effect: {fileID: 5558668274046910815, guid: c030124b2166fe1468c8e9f63be22a7f, type: 3}
+  - moveName: Ice
+    movePower: 65
+    moveCost: 5
+    effect: {fileID: 991644926657327980, guid: bc296ed40dad26046881f3d710363216, type: 3}
+  - moveName: Plasma
+    movePower: 85
+    moveCost: 10
+    effect: {fileID: 5817468755299716964, guid: abd36e05b93ceec4d83f1a1f2a454a19, type: 3}
   playerPositions:
   - {fileID: 8804116622600945377}
   - {fileID: 8868419616398514354}
@@ -2654,8 +2671,6 @@ MonoBehaviour:
   - {fileID: 1833168519116500116, guid: 52291a6bfd4a39944adf6b944de97cb4, type: 3}
   uiButtons: {fileID: 1094270006135604321}
   isBattleActive: 0
-  activeBattlers: []
-  currentTurn: 0
 --- !u!1 &6972995941970286357
 GameObject:
   m_ObjectHideFlags: 0
