@@ -97,7 +97,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 1
   characterName: Alice
-  movesAvailable: []
+  movesAvailable:
+  - Fire
+  - Ice
+  - Plasma
   currentHP: 0
   maxHP: 0
   currentMP: 0

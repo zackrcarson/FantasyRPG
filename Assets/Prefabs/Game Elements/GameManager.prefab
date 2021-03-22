@@ -54,7 +54,7 @@ MonoBehaviour:
   exponentialHPCurveFactor: 1.05
   exponentialMPCurveFactor: 1.05
   currentHP: 350
-  currentMP: 10
+  currentMP: 5
   maxHP: 500
   maxMP: 25
   strength: 22

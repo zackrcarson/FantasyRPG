@@ -97,7 +97,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 1
   characterName: Elliot
-  movesAvailable: []
+  movesAvailable:
+  - Ice
+  - Plasma
   currentHP: 0
   maxHP: 0
   currentMP: 0
