@@ -57,11 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Menus\ShopKeeper.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattleMove.cs" />
     <Compile Include="Assets\Scripts\Game Management\EssentialsLoader.cs" />
     <Compile Include="Assets\Scripts\Scene Management\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattleMagicButton.cs" />
     <Compile Include="Assets\Scripts\Menus\MainMenuAudio.cs" />
     <Compile Include="Assets\Scripts\Menus\ButtonToggle.cs" />
     <Compile Include="Assets\Scripts\Items\ItemButton.cs" />
+    <Compile Include="Assets\Scripts\Battle\AttackEffect.cs" />
     <Compile Include="Assets\Scripts\Menus\LoadingScene.cs" />
     <Compile Include="Assets\Scripts\Battle\BattleCharacter.cs" />
     <Compile Include="Assets\Scripts\Game Management\AudioManager.cs" />
@@ -71,26 +74,24 @@
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Scene Management\UIFade.cs" />
+    <Compile Include="Assets\Scripts\Battle\DestroyOverLifetime.cs" />
     <Compile Include="Assets\Scripts\Menus\GameMenu.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Battle\BattleManager.cs" />
+    <Compile Include="Assets\Scripts\Battle\DamageDisplay.cs" />
+    <Compile Include="Assets\Scripts\Battle\ManaDisplay.cs" />
     <Compile Include="Assets\Scripts\Menus\CharacterStats.cs" />
     <Compile Include="Assets\Scripts\Items\PickupItem.cs" />
     <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Scene Management\PortalExit.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattleTargetButton.cs" />
     <Compile Include="Assets\Scripts\Game Management\CameraController.cs" />
     <Compile Include="Assets\Scripts\Quests\QuestMarker.cs" />
     <Compile Include="Assets\Scripts\Quests\QuestObjectActivator.cs" />
     <Compile Include="Assets\Scripts\Quests\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Game Management\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Battle\AttackEffect.cs" />
-    <Compile Include="Assets\Scripts\Battle\BattleMove.cs" />
-    <Compile Include="Assets\Scripts\Battle\DestroyOverLifetime.cs" />
-    <Compile Include="Assets\Scripts\Battle\DamageDisplay.cs" />
-    <Compile Include="Assets\Scripts\Battle\BattleTargetButton.cs" />
-    <Compile Include="Assets\Scripts\Battle\BattleMagicButton.cs" />
-    <Compile Include="Assets\Scripts\Battle\ManaDisplay.cs" />
     <Compile Include="Assets\Scripts\Battle\BattleNotification.cs" />
+    <Compile Include="Assets\ItemDisplayEffect.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Udemy RPG Assets\Licence.txt" />

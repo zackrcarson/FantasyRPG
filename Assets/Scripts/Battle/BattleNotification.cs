@@ -4,13 +4,14 @@ using UnityEngine.UI;
 public class BattleNotification : MonoBehaviour
 {
     // Config Parameters
-    [SerializeField] float awakeTime = 2f;
+    [SerializeField] public float awakeTime = 2f;
 
     // Cached References
     [SerializeField] public Text notificationMessage = null;
 
     // State Variables
     float awakeCounter = 0f;
+
     // Update is called once per frame
     void Update()
     {

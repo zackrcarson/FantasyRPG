@@ -28,61 +28,123 @@ public class Item : MonoBehaviour
 
     public void UseItem(int characterToUseOn)
     {
-        CharacterStats selectedCharacter = GameManager.instance.playerStatsArray[characterToUseOn];
+        // Dummy holders - won't ever be used in the alternative situation
+        int activeBattler = 0;
+        CharacterStats selectedCharacter = GameManager.instance.playerStatsArray[0]; 
+
+        bool isBattleActive = BattleManager.instance.isBattleActive;
+
+        if (isBattleActive)
+        {
+            activeBattler = characterToUseOn;
+        }
+        else
+        {
+            selectedCharacter = GameManager.instance.playerStatsArray[characterToUseOn];
+        }
 
         if (isItem)
         {
             if (affectHP)
             {
-                selectedCharacter.currentHP += amountToChange;
-
-                if (selectedCharacter.currentHP > selectedCharacter.maxHP)
+                if (isBattleActive)
                 {
-                    selectedCharacter.currentHP = selectedCharacter.maxHP;
+                    BattleManager.instance.DisplayItemBoost(activeBattler, amountToChange, "Health");
+
+                    BattleManager.instance.activeBattlers[activeBattler].currentHP += amountToChange;
+
+                    if (BattleManager.instance.activeBattlers[activeBattler].currentHP > BattleManager.instance.activeBattlers[activeBattler].maxHP)
+                    {
+                        BattleManager.instance.activeBattlers[activeBattler].currentHP = BattleManager.instance.activeBattlers[activeBattler].maxHP;
+                    }
+                }
+                else
+                {
+                    selectedCharacter.currentHP += amountToChange;
+
+                    if (selectedCharacter.currentHP > selectedCharacter.maxHP)
+                    {
+                        selectedCharacter.currentHP = selectedCharacter.maxHP;
+                    }
                 }
             }
             
             if (affectMP)
             {
-                selectedCharacter.currentMP += amountToChange;
-
-                if (selectedCharacter.currentMP > selectedCharacter.maxMP)
+                if (isBattleActive)
                 {
-                    selectedCharacter.currentMP = selectedCharacter.maxMP;
+                    BattleManager.instance.DisplayItemBoost(activeBattler, amountToChange, "Mana");
+
+                    BattleManager.instance.activeBattlers[activeBattler].currentMP += amountToChange;
+
+                    if (BattleManager.instance.activeBattlers[activeBattler].currentMP > BattleManager.instance.activeBattlers[activeBattler].maxMP)
+                    {
+                        BattleManager.instance.activeBattlers[activeBattler].currentMP = BattleManager.instance.activeBattlers[activeBattler].maxMP;
+                    }
+                }
+                else
+                {
+                    selectedCharacter.currentMP += amountToChange;
+
+                    if (selectedCharacter.currentMP > selectedCharacter.maxMP)
+                    {
+                        selectedCharacter.currentMP = selectedCharacter.maxMP;
+                    }
                 }
             }
             
             if (affectStrength)
             {
-                selectedCharacter.strength += amountToChange;
+                if (isBattleActive)
+                {
+                    BattleManager.instance.DisplayItemBoost(activeBattler, amountToChange, "Strength");
+
+                    BattleManager.instance.activeBattlers[activeBattler].strength += amountToChange;
+                }
+                else
+                {
+                    selectedCharacter.strength += amountToChange;
+                }
             }
             
             if (affectDefense)
             {
-                selectedCharacter.defense += amountToChange;
+                if (isBattleActive)
+                {
+                    BattleManager.instance.DisplayItemBoost(activeBattler, amountToChange, "Defense");
+
+                    BattleManager.instance.activeBattlers[activeBattler].defense += amountToChange;
+                }
+                else
+                {
+                    selectedCharacter.defense += amountToChange;
+                }
             }
         }
 
-        if (isWeapon)
+        if (!isBattleActive)
         {
-            if (selectedCharacter.equippedWeapon != "")
+            if (isWeapon)
             {
-                GameManager.instance.AddItem(selectedCharacter.equippedWeapon);
+                if (selectedCharacter.equippedWeapon != "")
+                {
+                    GameManager.instance.AddItem(selectedCharacter.equippedWeapon);
+                }
+
+                selectedCharacter.equippedWeapon = itemName;
+                selectedCharacter.weaponPower = weaponStrength;
             }
 
-            selectedCharacter.equippedWeapon = itemName;
-            selectedCharacter.weaponPower = weaponStrength;
-        }
-
-        if (isArmor)
-        {
-            if (selectedCharacter.equippedArmor != "")
+            if (isArmor)
             {
-                GameManager.instance.AddItem(selectedCharacter.equippedArmor);
-            }
+                if (selectedCharacter.equippedArmor != "")
+                {
+                    GameManager.instance.AddItem(selectedCharacter.equippedArmor);
+                }
 
-            selectedCharacter.equippedArmor = itemName;
-            selectedCharacter.armorPower = armorStrength;
+                selectedCharacter.equippedArmor = itemName;
+                selectedCharacter.armorPower = armorStrength;
+            }
         }
 
         GameManager.instance.RemoveItem(itemName);

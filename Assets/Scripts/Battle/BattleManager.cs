@@ -18,6 +18,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] float backgroundFadeTime = 1f;
 
     [Header("Battle Settings")]
+    [SerializeField] int percentChanceToFlee = 35;
     [SerializeField] float enemyAttackDelay = 1.25f;
     [SerializeField] BattleMove[] movesList = null;
     [SerializeField] float damageRandomFactorMinimum = 0.9f;
@@ -28,6 +29,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] GameObject enemyAttackEffect = null;
     [SerializeField] DamageDisplay damageDisplay = null;
     [SerializeField] ManaDisplay manaDisplay = null;
+    [SerializeField] ItemDisplayEffect itemDisplay = null;
 
     [Header("Battle Character Positions and Prefabs")]
     [SerializeField] Transform[] playerPositions = null;
@@ -38,6 +40,7 @@ public class BattleManager : MonoBehaviour
     [Header("UI")]
     [Header("Misc. UI")]
     [SerializeField] int beepSound = 5;
+    [SerializeField] int itemSlotSound = 8;
     [SerializeField] GameObject uiButtons = null;
     [SerializeField] public BattleNotification battleNotification = null;
 
@@ -45,6 +48,16 @@ public class BattleManager : MonoBehaviour
     [SerializeField] Text[] playerNames = null;
     [SerializeField] Text[] playerHPs = null;
     [SerializeField] Text[] playerMPs = null;
+
+    [Header("Items Menu")]
+    [SerializeField] public GameObject itemsMenu = null;
+    [SerializeField] ItemButton[] itemButtons = null;
+    ButtonToggle[] itemButtonToggles = null;
+    [SerializeField] Text itemName = null;
+    [SerializeField] Text itemDescription = null;
+    [SerializeField] GameObject useButton = null;
+    [SerializeField] GameObject itemCharacterSelectionMenu = null;
+    [SerializeField] Text[] itemCharacterNames = null;
 
     [Header("Target Menu")]
     [SerializeField] public GameObject targetMenu = null;
@@ -66,7 +79,11 @@ public class BattleManager : MonoBehaviour
     [HideInInspector] public int currentTurn = 0;
     [HideInInspector] public bool isCastingSpell = false;
     [HideInInspector] public int currentSpellCost = 0;
+    [HideInInspector] public int selectedCharacterTurnSlot = 0;
+    List<int> activePlayerBattlerSlots = new List<int>();
+    Item activeItem = null;
     bool turnWaiting = false;
+    bool isInventoryEmpty = false;
 
     private void Awake()
     {
@@ -78,13 +95,19 @@ public class BattleManager : MonoBehaviour
     {
         enoughManaNameColor = battleMagicButtons[0].nameText.color;
         enoughManaCostColor = battleMagicButtons[0].costText.color;
+
+        itemButtonToggles = new ButtonToggle[itemButtons.Length];
+        for (int i = 0; i < itemButtons.Length; i++)
+        {
+            itemButtonToggles[i] = itemButtons[i].gameObject.GetComponent<ButtonToggle>();
+        }
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
-            BattleStart(new string[] { "Eyeball", "Spider", "Skeleton" , "Spider"});
+            BattleStart(new string[] { "Eyeball", "Spider", "Skeleton"});
         }
 
         if (isBattleActive)
@@ -173,7 +196,7 @@ public class BattleManager : MonoBehaviour
                 // TODO: End Battle in Failure. Turn off remaining battlers before fading out
             }
 
-            StartCoroutine(FadeOutBattleScene());
+            EndBattle();
         }
         else
         {
@@ -212,9 +235,23 @@ public class BattleManager : MonoBehaviour
         UpdateUIStats();
     }
 
+    private void EndBattle()
+    {
+        StartCoroutine(FadeOutBattleScene());
+    }
+
     private IEnumerator FadeOutBattleScene()
     {
         AudioManager.instance.PlayMusic(FindObjectOfType<CameraController>().musicToPlay);
+
+        uiButtons.SetActive(false);
+        battleUI.SetActive(false);
+
+        // TODO: Figure out how to make other battles happen again.
+        foreach (BattleCharacter battler in activeBattlers)
+        {
+            Destroy(battler.gameObject);
+        }
 
         while (true)
         {
@@ -511,5 +548,208 @@ public class BattleManager : MonoBehaviour
     public void PlayButtonBeep()
     {
         AudioManager.instance.PlaySFX(beepSound);
+    }
+    public void PlayItemButtonBeep()
+    {
+        AudioManager.instance.PlaySFX(itemSlotSound);
+    }
+
+    public void FleeBattle()
+    {
+        StartCoroutine(FleeBattleWithDelay());
+    }
+
+    private IEnumerator FleeBattleWithDelay()
+    {
+        int fleeRoll = UnityEngine.Random.Range(0, 100);
+
+        if (fleeRoll <= percentChanceToFlee)
+        {
+            battleNotification.notificationMessage.text = "You successfully escaped the battle!";
+            battleNotification.Activate();
+
+            yield return new WaitForSeconds(battleNotification.awakeTime);
+            EndBattle();
+        }
+        else
+        {
+            battleNotification.notificationMessage.text = "You failed to flee!";
+            battleNotification.Activate();
+
+            yield return new WaitForSeconds(battleNotification.awakeTime);
+            NextTurn();
+        }
+    }
+
+    public void OpenItemsMenu()
+    {
+        itemsMenu.SetActive(true);
+
+        ShowItems();
+        SelectFirstItem();
+    }
+
+    public void CloseItemsMenu()
+    {
+        itemsMenu.SetActive(false);
+        itemCharacterSelectionMenu.SetActive(false);
+    }
+
+    public void ShowItems()
+    {
+        GameManager.instance.SortItems();
+
+        int i = 0;
+        foreach (ItemButton itemButton in itemButtons)
+        {
+            itemButton.buttonValue = i;
+
+            string currentItem = GameManager.instance.itemsHeld[i];
+            int currentItemAmount = GameManager.instance.numberOfItems[i];
+
+            if (currentItem == "" || currentItemAmount == 0 || !GameManager.instance.GetItemDetails(currentItem).isItem)
+            {
+                itemButton.buttonImage.gameObject.SetActive(false);
+                itemButton.amountText.text = "";
+                itemButton.gameObject.SetActive(false);
+            }
+            else
+            {
+                itemButton.gameObject.SetActive(true);
+                itemButton.buttonImage.gameObject.SetActive(true);
+
+                itemButton.buttonImage.sprite = GameManager.instance.GetItemDetails(currentItem).itemSprite;
+                itemButton.amountText.text = currentItemAmount.ToString();
+            }
+
+            i++;
+        }
+
+        isInventoryEmpty = CheckIfInventoryIsEmpty();
+        if (isInventoryEmpty)
+        {
+            itemName.text = "Nothing";
+            itemDescription.text = "Your inventory is empty! Go find something to keep.";
+
+            useButton.SetActive(false);
+        }
+    }
+
+    private bool CheckIfInventoryIsEmpty()
+    {
+        bool isInventoryEmpty = true;
+        int[] itemNumbers = GameManager.instance.numberOfItems;
+
+        foreach (int number in itemNumbers)
+        {
+            if (number > 0)
+            {
+                isInventoryEmpty = false;
+            }
+        }
+
+        return isInventoryEmpty;
+    }
+
+    public void SelectItem(Item selectedItem)
+    {
+        itemCharacterSelectionMenu.SetActive(false);
+
+        // Highlight selected item, un-highlight all others
+        string selectedItemString = selectedItem.itemName;
+        int i = 0;
+        foreach (ItemButton itemButton in itemButtons)
+        {
+            string currentItemString = GameManager.instance.itemsHeld[i];
+
+            itemButtonToggles[i].ToggleButton(currentItemString == selectedItemString);
+
+            i++;
+        }
+
+        activeItem = selectedItem;
+
+        if (activeItem.isItem)
+        {
+            useButton.gameObject.SetActive(true);
+        }
+
+        if (activeItem.isWeapon || activeItem.isArmor)
+        {
+            useButton.gameObject.SetActive(false);
+        }
+
+        itemName.text = activeItem.itemName;
+        itemDescription.text = activeItem.description;
+    }
+
+    public void SelectFirstItem()
+    {
+        // Select the first item
+        string firstItemName = GameManager.instance.itemsHeld[0];
+        int firstItemNumber = GameManager.instance.numberOfItems[0];
+        if (firstItemName != "" && firstItemNumber != 0)
+        {
+            Item firstItem = GameManager.instance.GetItemDetails(firstItemName);
+            SelectItem(firstItem);
+        }
+    }
+
+    public void OpenItemPlayerChoicePanel()
+    {
+        itemCharacterSelectionMenu.SetActive(true);
+
+        List<BattleCharacter> activePlayers = new List<BattleCharacter>();
+        activePlayerBattlerSlots = new List<int>();
+
+        int j = 0;
+        foreach (BattleCharacter battler in activeBattlers)
+        {
+            if (battler.isPlayer)
+            {
+                activePlayers.Add(battler);
+                activePlayerBattlerSlots.Add(j);
+            }
+
+            j++;
+        }
+
+        int i = 0;
+        foreach (Text playerButton in itemCharacterNames)
+        {
+            if (i >= activePlayers.Count || activePlayers[i].currentHP <= 0)
+            {
+                itemCharacterNames[i].transform.parent.gameObject.SetActive(false);
+            }
+            else
+            { 
+                itemCharacterNames[i].text = activePlayers[i].characterName;
+            }
+
+            i++;
+        }
+    }
+
+    public void CloseItemPlayerChoicePanel()
+    {
+        itemCharacterSelectionMenu.SetActive(false);
+    }
+
+    public void UseItem(int selectedCharacter)
+    {
+        activeItem.UseItem(activePlayerBattlerSlots[selectedCharacter]);
+        UpdateUIStats();
+
+        CloseItemPlayerChoicePanel();
+        CloseItemsMenu();
+
+        NextTurn();
+    }
+
+    public void DisplayItemBoost(int selectedCharacter, int amount, string type)
+    {
+        Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
+
+        Instantiate(itemDisplay, activeBattlers[selectedCharacter].transform.position, activeBattlers[selectedCharacter].transform.rotation, effectsParent.transform).SetBoost(amount, type);
     }
 }
