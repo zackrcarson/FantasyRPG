@@ -16,6 +16,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] GameObject battleUI = null;
     [SerializeField] int battleMusic = 0;
     [SerializeField] float backgroundFadeTime = 1f;
+    [SerializeField] float battleEndDelay = 1.5f;
 
     [Header("Battle Settings")]
     [SerializeField] int percentChanceToFlee = 35;
@@ -27,6 +28,7 @@ public class BattleManager : MonoBehaviour
     [Header("Effects")]
     [SerializeField] GameObject effectsParent = null;
     [SerializeField] GameObject enemyAttackEffect = null;
+    [SerializeField] GameObject playerItemEffect = null;
     [SerializeField] DamageDisplay damageDisplay = null;
     [SerializeField] ManaDisplay manaDisplay = null;
     [SerializeField] ItemDisplayEffect itemDisplay = null;
@@ -48,6 +50,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] Text[] playerNames = null;
     [SerializeField] Text[] playerHPs = null;
     [SerializeField] Text[] playerMPs = null;
+    [SerializeField] Color deadPlayerTextColor;
 
     [Header("Items Menu")]
     [SerializeField] public GameObject itemsMenu = null;
@@ -168,14 +171,11 @@ public class BattleManager : MonoBehaviour
                 battler.currentHP = 0;
             }
 
-            if (battler.currentHP == 0)
-            {
-                // TODO: Handle Dead Battler
-            }
-            else
+            if (battler.currentHP > 0)
             {
                 if (battler.isPlayer)
                 {
+                    battler.Alive();
                     allPlayersDead = false;
                 }
                 else
@@ -242,6 +242,8 @@ public class BattleManager : MonoBehaviour
 
     private IEnumerator FadeOutBattleScene()
     {
+        yield return new WaitForSeconds(battleEndDelay);
+
         AudioManager.instance.PlayMusic(FindObjectOfType<CameraController>().musicToPlay);
 
         uiButtons.SetActive(false);
@@ -342,7 +344,7 @@ public class BattleManager : MonoBehaviour
     private IEnumerator DelayedEnemyAttack()
     {
         turnWaiting = false;
-
+        
         yield return new WaitForSeconds(enemyAttackDelay);
 
         EnemyAttack();
@@ -368,6 +370,7 @@ public class BattleManager : MonoBehaviour
             }
         }
 
+        activeBattlers[currentTurn].Attack();
         Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
 
         DealDamage(selectedTarget, movePower);
@@ -404,6 +407,11 @@ public class BattleManager : MonoBehaviour
 
         Instantiate(damageDisplay, activeBattlers[targetNumber].transform.position, activeBattlers[targetNumber].transform.rotation, effectsParent.transform).SetDamage(damageToGive);
 
+        if (activeBattlers[targetNumber].currentHP <= 0)
+        {
+            StartCoroutine(activeBattlers[targetNumber].Dead());
+        }
+
         UpdateUIStats();
     }
 
@@ -429,6 +437,13 @@ public class BattleManager : MonoBehaviour
                 playerNames[i].text = playerData.characterName;
                 playerHPs[i].text = Mathf.Clamp(playerData.currentHP, 0, int.MaxValue).ToString() + "/" + playerData.maxHP;
                 playerMPs[i].text = Mathf.Clamp(playerData.currentMP, 0, int.MaxValue).ToString() + "/" + playerData.maxMP;
+
+                if (playerData.currentHP <= 0)
+                {
+                    playerNames[i].color = deadPlayerTextColor;
+                    playerHPs[i].color = deadPlayerTextColor;
+                    playerMPs[i].color = deadPlayerTextColor;
+                }
             }
             else
             {
@@ -449,6 +464,7 @@ public class BattleManager : MonoBehaviour
             }
         }
 
+        activeBattlers[currentTurn].Attack();
         Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
 
         if (isCastingSpell)
@@ -488,11 +504,15 @@ public class BattleManager : MonoBehaviour
         {
             targetButton.gameObject.SetActive(enemies.Count > i);
 
-            if (enemies.Count > i)
+            if (enemies.Count > i && activeBattlers[enemies[i]].currentHP > 0)
             {
                 targetButton.moveName = moveName;
                 targetButton.activeBattlerTarget = enemies[i];
                 targetButton.targetName.text = activeBattlers[enemies[i]].characterName;
+            }
+            else
+            {
+                targetButton.gameObject.SetActive(false);
             }
 
             i++;
@@ -749,6 +769,8 @@ public class BattleManager : MonoBehaviour
     public void DisplayItemBoost(int selectedCharacter, int amount, string type)
     {
         Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
+
+        Instantiate(playerItemEffect, activeBattlers[selectedCharacter].transform.position, activeBattlers[selectedCharacter].transform.rotation, effectsParent.transform);
 
         Instantiate(itemDisplay, activeBattlers[selectedCharacter].transform.position, activeBattlers[selectedCharacter].transform.rotation, effectsParent.transform).SetBoost(amount, type);
     }
