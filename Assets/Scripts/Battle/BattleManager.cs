@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System;
+using UnityEngine.SceneManagement;
 
 public class BattleManager : MonoBehaviour
 {
@@ -14,9 +15,15 @@ public class BattleManager : MonoBehaviour
     [SerializeField] GameObject battleScene = null;
     [SerializeField] SpriteRenderer battleBackground = null;
     [SerializeField] GameObject battleUI = null;
+    [SerializeField] Sprite[] backgroundImages = null;
     [SerializeField] int battleMusic = 0;
+    [SerializeField] int gameOverMusic = 8;
+    [SerializeField] int victorySound = 9;
+    [SerializeField] int fleeSound = 10;
     [SerializeField] float backgroundFadeTime = 1f;
-    [SerializeField] float battleEndDelay = 1.5f;
+    [SerializeField] float battleEndDelay1 = 1.5f;
+    [SerializeField] float battleEndDelay2 = 0.5f;
+    [SerializeField] float battleEndDelay3 = 1.5f;
 
     [Header("Battle Settings")]
     [SerializeField] int percentChanceToFlee = 35;
@@ -75,6 +82,9 @@ public class BattleManager : MonoBehaviour
     // Cached References
     Color enoughManaNameColor = new Color(1f, 1f, 1f, 1f);
     Color enoughManaCostColor = new Color(1f, 1f, 1f, 1f);
+    Color defaultNameColor;
+    Color defaultHPColor;
+    Color defaultMPColor;
 
     // State Variables
     [HideInInspector] public bool isBattleActive = false;
@@ -87,6 +97,7 @@ public class BattleManager : MonoBehaviour
     Item activeItem = null;
     bool turnWaiting = false;
     bool isInventoryEmpty = false;
+    bool battleEnding = false;
 
     private void Awake()
     {
@@ -98,6 +109,9 @@ public class BattleManager : MonoBehaviour
     {
         enoughManaNameColor = battleMagicButtons[0].nameText.color;
         enoughManaCostColor = battleMagicButtons[0].costText.color;
+        defaultNameColor = playerNames[0].color;
+        defaultHPColor = playerHPs[0].color;
+        defaultMPColor = playerMPs[0].color;
 
         itemButtonToggles = new ButtonToggle[itemButtons.Length];
         for (int i = 0; i < itemButtons.Length; i++)
@@ -112,6 +126,10 @@ public class BattleManager : MonoBehaviour
         {
             BattleStart(new string[] { "Eyeball", "Spider", "Skeleton"});
         }
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            BattleStart(new string[] { "Eyeball"});
+        }
 
         if (isBattleActive)
         {
@@ -123,12 +141,37 @@ public class BattleManager : MonoBehaviour
     {
         if (isBattleActive) { return; }
 
+        LoadBackground();
+
+        battleEnding = false;
         isBattleActive = true;
         GameManager.instance.isBattleActive = true;
 
         transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.x);
 
         StartCoroutine(FadeInBattleScene(enemiesToSpawn));
+    }
+
+    private void LoadBackground()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+
+        if (sceneName == "Countryside")
+        {
+            battleBackground.sprite = backgroundImages[0];
+        }
+        else if (sceneName == "Cave")
+        {
+            battleBackground.sprite = backgroundImages[1];
+        }
+        else if (sceneName == "Town")
+        {
+            battleBackground.sprite = backgroundImages[2];
+        }
+        else
+        {
+            battleBackground.sprite = backgroundImages[3];
+        }
     }
 
     private void CurrentTurn()
@@ -187,16 +230,7 @@ public class BattleManager : MonoBehaviour
 
         if (allPlayersDead || allEnemiesDead)
         {
-            if (allEnemiesDead)
-            {
-                // TODO: End Battle in Victory. Turn off remaining battlers before fading out
-            }
-            else
-            {
-                // TODO: End Battle in Failure. Turn off remaining battlers before fading out
-            }
-
-            EndBattle();
+            EndBattle(allEnemiesDead, false);
         }
         else
         {
@@ -235,42 +269,130 @@ public class BattleManager : MonoBehaviour
         UpdateUIStats();
     }
 
-    private void EndBattle()
+    private void EndBattle(bool isVictorious, bool didFlee)
     {
-        StartCoroutine(FadeOutBattleScene());
+        if (isVictorious)
+        {
+            if (!battleEnding)
+            {
+                StartCoroutine(FadeOutBattleScreenVictory(didFlee));
+            }
+        }
+        else
+        {
+            StartCoroutine(FadeOutBattleScreenGameOver());
+        }
     }
 
-    private IEnumerator FadeOutBattleScene()
+    private IEnumerator FadeOutBattleScreenVictory(bool didFlee)
     {
-        yield return new WaitForSeconds(battleEndDelay);
+        battleEnding = true;
+        isBattleActive = false;
 
+        if (didFlee)
+        {
+            AudioManager.instance.PlaySFX(fleeSound);
+        }
+        else
+        {
+            yield return new WaitForSeconds(battleEndDelay1);
+            AudioManager.instance.PlaySFX(victorySound);
+        }
+        
         AudioManager.instance.PlayMusic(FindObjectOfType<CameraController>().musicToPlay);
 
         uiButtons.SetActive(false);
+        targetMenu.SetActive(false);
+        magicMenu.SetActive(false);
+        itemsMenu.SetActive(false);
         battleUI.SetActive(false);
 
-        // TODO: Figure out how to make other battles happen again.
+        yield return new WaitForSeconds(battleEndDelay2);
+
+        UIFade.instance.CallFadeOut();
+
+        yield return new WaitForSeconds(battleEndDelay3);
+
+        RefreshGameManagerStats();
+        ResetBattleManager();
+
+        UIFade.instance.CallFadeIn();
+    }
+
+    private IEnumerator FadeOutBattleScreenGameOver()
+    {
+        isBattleActive = false;
+        uiButtons.SetActive(false);
+        targetMenu.SetActive(false);
+        magicMenu.SetActive(false);
+        itemsMenu.SetActive(false);
+        battleUI.SetActive(false);
+
+        yield return new WaitForSeconds(battleEndDelay1);
+        
+        UIFade.instance.CallFadeOut();
+        AudioManager.instance.PlayMusic(gameOverMusic);
+
+        yield return new WaitForSeconds(battleEndDelay3);
+
+        battleScene.SetActive(false);
+
+        SceneLoader.LoadSceneByName("Game Over");
+        UIFade.instance.CallFadeIn();
+    }
+
+    public void ResetBattleManager()
+    {
         foreach (BattleCharacter battler in activeBattlers)
         {
             Destroy(battler.gameObject);
         }
 
-        while (true)
-        {
-            float newAlpha = Mathf.MoveTowards(battleBackground.color.a, 0f, (1f * Time.deltaTime) / backgroundFadeTime);
-            battleBackground.color = new Color(battleBackground.color.r, battleBackground.color.g, battleBackground.color.b, newAlpha);
-
-            if (battleBackground.color.a == 0f)
-            {
-                break;
-            }
-
-            yield return null;
-        }
-
+        battleBackground.color = new Color(battleBackground.color.r, battleBackground.color.g, battleBackground.color.b, 0f);
         battleScene.SetActive(false);
         GameManager.instance.isBattleActive = false;
         isBattleActive = false;
+        activeBattlers.Clear();
+        currentTurn = 0;
+        isCastingSpell = false;
+        currentSpellCost = 0;
+        selectedCharacterTurnSlot = 0;
+        activePlayerBattlerSlots.Clear();
+        activeItem = null;
+        turnWaiting = false;
+        isInventoryEmpty = false;
+    }
+
+    private void RefreshGameManagerStats()
+    {
+        foreach (BattleCharacter battler in activeBattlers)
+        {
+            if (battler.isPlayer)
+            {
+                foreach (CharacterStats playerStat in GameManager.instance.playerStatsArray)
+                {
+                    if (battler.characterName == playerStat.characterName)
+                    {
+                        if (battler.currentHP <= 0)
+                        {
+                            playerStat.currentHP = 1;
+                        }
+                        else
+                        {
+                            playerStat.currentHP = battler.currentHP;
+                        }
+
+                        playerStat.currentMP = battler.currentMP;
+                        playerStat.maxHP = battler.maxHP;
+                        playerStat.maxMP = battler.maxMP;
+                        playerStat.defense = battler.defense;
+                        playerStat.strength = battler.strength;
+                        playerStat.armorPower = battler.armorPower;
+                        playerStat.weaponPower = battler.weaponPower;
+                    }
+                }
+            }
+        }
     }
 
     private void LoadInPlayers()
@@ -347,7 +469,10 @@ public class BattleManager : MonoBehaviour
         
         yield return new WaitForSeconds(enemyAttackDelay);
 
-        EnemyAttack();
+        if (activeBattlers[currentTurn].currentHP > 0)
+        {
+            EnemyAttack();
+        }
 
         yield return new WaitForSeconds(enemyAttackDelay);
 
@@ -443,6 +568,12 @@ public class BattleManager : MonoBehaviour
                     playerNames[i].color = deadPlayerTextColor;
                     playerHPs[i].color = deadPlayerTextColor;
                     playerMPs[i].color = deadPlayerTextColor;
+                }
+                else
+                {
+                    playerNames[i].color = defaultNameColor;
+                    playerHPs[i].color = defaultHPColor;
+                    playerMPs[i].color = defaultMPColor;
                 }
             }
             else
@@ -589,7 +720,8 @@ public class BattleManager : MonoBehaviour
             battleNotification.Activate();
 
             yield return new WaitForSeconds(battleNotification.awakeTime);
-            EndBattle();
+
+            EndBattle(true, true);
         }
         else
         {

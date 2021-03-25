@@ -1031,9 +1031,19 @@ MonoBehaviour:
   battleScene: {fileID: 1153158173729354957}
   battleBackground: {fileID: 4025838099757959747}
   battleUI: {fileID: 2327171236657299101}
+  backgroundImages:
+  - {fileID: 21300000, guid: d330684629bb9cd4daa49df8677ff91f, type: 3}
+  - {fileID: 21300000, guid: 16af20c94d442ab4c8bff6c6a7d1885f, type: 3}
+  - {fileID: 21300000, guid: dfce6b7656338c244aefe65269df8585, type: 3}
+  - {fileID: 21300000, guid: 4c38a2b9041c88748add8abf7c31433c, type: 3}
   battleMusic: 0
+  gameOverMusic: 8
+  victorySound: 9
+  fleeSound: 10
   backgroundFadeTime: 1.7
-  battleEndDelay: 1.5
+  battleEndDelay1: 1.5
+  battleEndDelay2: 0.5
+  battleEndDelay3: 1.5
   percentChanceToFlee: 45
   enemyAttackDelay: 1.25
   movesList:

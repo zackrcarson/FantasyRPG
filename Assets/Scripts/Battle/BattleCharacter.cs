@@ -27,7 +27,7 @@ public class BattleCharacter : MonoBehaviour
     Sprite aliveSprite = null;
 
     // State Variables
-    bool isDead = false;
+    //bool isDead = false;
 
     private void Start()
     {
@@ -43,8 +43,7 @@ public class BattleCharacter : MonoBehaviour
 
     public IEnumerator Dead()
     {
-        isDead = true;
-
+        //isDead = true;
         animator.SetBool("isDead", true);
 
         yield return new WaitForSeconds(deathAnimationDelay);

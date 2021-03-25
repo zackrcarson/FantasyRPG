@@ -47,3 +47,4 @@ MonoBehaviour:
   UIScreenPrefab: {fileID: 4193811351279642557, guid: 47a814889d59a9148ae765f450bf2e66, type: 3}
   gameManagerPrefab: {fileID: 6519322531104377731, guid: 9006065ae3ac083478bdb8a33006c080, type: 3}
   audioManagerPrefab: {fileID: 2185077079929086882, guid: 56217ac984bf6bf4bbb73d2e8f3f1f7a, type: 3}
+  battleManagerPrefab: {fileID: 2051221250164187512, guid: 0603e09bad794f243919234384d8675d, type: 3}

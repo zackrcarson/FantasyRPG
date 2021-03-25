@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Dialogue : MonoBehaviour
@@ -7,9 +5,9 @@ public class Dialogue : MonoBehaviour
     // Config Parameters
     [SerializeField] string NPCName = null;
     [TextArea] [SerializeField] string[] dialogueLines = null;
-    [SerializeField] bool shouldActivateQuest = false;
+    //[SerializeField] bool shouldActivateQuest = false;
     [SerializeField] string questToMark = null;
-    [SerializeField] bool markQuestComplete = true;
+    [SerializeField] bool markQuestComplete = false;
 
     // State variables
     bool canActivate = false;
@@ -18,7 +16,7 @@ public class Dialogue : MonoBehaviour
     {
         if (GameMenu.instance.isPaused()) { return; }
 
-        if (shouldActivateQuest && canActivate && !DialogueManager.instance.dialogueBox.activeInHierarchy)
+        if (canActivate && !DialogueManager.instance.dialogueBox.activeInHierarchy)
         {
             if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump") || Input.GetButtonDown("Submit"))
             {

@@ -7,6 +7,7 @@ public class EssentialsLoader : MonoBehaviour
     [SerializeField] GameObject UIScreenPrefab = null;
     [SerializeField] GameManager gameManagerPrefab = null;
     [SerializeField] AudioManager audioManagerPrefab = null;
+    [SerializeField] BattleManager battleManagerPrefab = null;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,11 @@ public class EssentialsLoader : MonoBehaviour
         if (!GameManager.instance)
         {
             Instantiate(gameManagerPrefab);
+        }
+
+        if (!BattleManager.instance)
+        {
+            Instantiate(battleManagerPrefab);
         }
 
         if (!AudioManager.instance)

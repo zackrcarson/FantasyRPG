@@ -37502,6 +37502,8 @@ MonoBehaviour:
   - {fileID: 519098167}
   - {fileID: 514238942}
   mainMenuName: Main Menu
+  loadButton: {fileID: 2673495838680832528}
+  deactiveButtonColor: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 0.59607846}
   openCloseMenuSound: 6
   menuButtonsSound: 5
   itemSlotSound: 8

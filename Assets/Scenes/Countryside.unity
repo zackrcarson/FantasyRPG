@@ -74963,6 +74963,10 @@ PrefabInstance:
       value: Poppy
       objectReference: {fileID: 0}
     - target: {fileID: 4465692176157038548, guid: 42d34492a41c5fb4198c56bb2132cc77, type: 3}
+      propertyPath: markQuestComplete
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465692176157038548, guid: 42d34492a41c5fb4198c56bb2132cc77, type: 3}
       propertyPath: dialogueLines.Array.size
       value: 9
       objectReference: {fileID: 0}

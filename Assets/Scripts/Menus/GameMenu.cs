@@ -13,6 +13,8 @@ public class GameMenu : MonoBehaviour
     [SerializeField] GameObject[] menuWindows = null;
     [SerializeField] ButtonToggle[] menuButtons = null;
     [SerializeField] string mainMenuName = "Main Menu";
+    [SerializeField] GameObject loadButton = null;
+    [SerializeField] Color deactiveButtonColor;
 
     [Header("SFX")]
     [SerializeField] int openCloseMenuSound = 6;
@@ -64,6 +66,7 @@ public class GameMenu : MonoBehaviour
 
     // Cached References
     CharacterStats[] characterStats = null;
+    Color defaultButtonColor;
 
     private void Awake()
     {
@@ -77,6 +80,36 @@ public class GameMenu : MonoBehaviour
         for (int i = 0; i < itemButtons.Length; i++)
         {
             itemButtonToggles[i] = itemButtons[i].gameObject.GetComponent<ButtonToggle>();
+        }
+
+        Image buttonImage = loadButton.GetComponent<Image>();
+        defaultButtonColor = buttonImage.color;
+
+        CheckLoadButton();
+    }
+
+    private void CheckLoadButton()
+    {
+        // Gray out Continue button if no save data found
+        if (!PlayerPrefs.HasKey("Current_Scene"))
+        {
+            Button button = loadButton.GetComponent<Button>();
+            Image buttonImage = loadButton.GetComponent<Image>();
+            Text buttonText = loadButton.GetComponentInChildren<Text>();
+
+            button.enabled = false;
+            buttonImage.color = deactiveButtonColor;
+            buttonText.color = new Color(buttonText.color.r, buttonText.color.g, buttonText.color.b, deactiveButtonColor.a);
+        }
+        else
+        {
+            Button button = loadButton.GetComponent<Button>();
+            Image buttonImage = loadButton.GetComponent<Image>();
+            Text buttonText = loadButton.GetComponentInChildren<Text>();
+
+            button.enabled = true;
+            buttonImage.color = defaultButtonColor;
+            buttonText.color = new Color(buttonText.color.r, buttonText.color.g, buttonText.color.b, 1f);
         }
     }
 
@@ -99,6 +132,7 @@ public class GameMenu : MonoBehaviour
             else
             {
                 menu.SetActive(true);
+                CheckLoadButton();
                 GameManager.instance.gameMenuOpen = true;
 
                 UpdateMainStats();
@@ -435,6 +469,8 @@ public class GameMenu : MonoBehaviour
     {
         GameManager.instance.SaveData();
         QuestManager.instance.SaveQuestData();
+
+        CheckLoadButton();
     }
 
     public void LoadGame()

@@ -7,7 +7,7 @@ public class UIFade : MonoBehaviour
 
     // Config Params
     [SerializeField] Image fadeImage = null;
-    [SerializeField] float fadeSpeed = 1f;
+    [SerializeField] public float fadeSpeed = 1f;
 
     // State Variables
     public bool shouldFadeOut = false;
