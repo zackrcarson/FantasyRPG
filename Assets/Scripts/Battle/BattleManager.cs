@@ -99,6 +99,11 @@ public class BattleManager : MonoBehaviour
     bool isInventoryEmpty = false;
     bool battleEnding = false;
 
+    [HideInInspector] public int battleExp = 0;
+    [HideInInspector] public int battleGold = 0;
+    [HideInInspector] public string[] battleRewards = null;
+    [HideInInspector] public int[] battleRewardNumbers = null;
+
     private void Awake()
     {
         instance = this;
@@ -122,22 +127,13 @@ public class BattleManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            BattleStart(new string[] { "Eyeball", "Spider", "Skeleton"});
-        }
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            BattleStart(new string[] { "Eyeball"});
-        }
-
         if (isBattleActive)
         {
             CurrentTurn();
         }
     }
 
-    private void BattleStart(string[] enemiesToSpawn)
+    public void BattleStart(string[] enemiesToSpawn)
     {
         if (isBattleActive) { return; }
 
@@ -287,7 +283,6 @@ public class BattleManager : MonoBehaviour
     private IEnumerator FadeOutBattleScreenVictory(bool didFlee)
     {
         battleEnding = true;
-        isBattleActive = false;
 
         if (didFlee)
         {
@@ -314,7 +309,7 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(battleEndDelay3);
 
         RefreshGameManagerStats();
-        ResetBattleManager();
+        ResetBattleManager(didFlee);
 
         UIFade.instance.CallFadeIn();
     }
@@ -341,7 +336,7 @@ public class BattleManager : MonoBehaviour
         UIFade.instance.CallFadeIn();
     }
 
-    public void ResetBattleManager()
+    public void ResetBattleManager(bool isFleeing)
     {
         foreach (BattleCharacter battler in activeBattlers)
         {
@@ -350,8 +345,6 @@ public class BattleManager : MonoBehaviour
 
         battleBackground.color = new Color(battleBackground.color.r, battleBackground.color.g, battleBackground.color.b, 0f);
         battleScene.SetActive(false);
-        GameManager.instance.isBattleActive = false;
-        isBattleActive = false;
         activeBattlers.Clear();
         currentTurn = 0;
         isCastingSpell = false;
@@ -361,6 +354,16 @@ public class BattleManager : MonoBehaviour
         activeItem = null;
         turnWaiting = false;
         isInventoryEmpty = false;
+
+        if (isFleeing)
+        {
+            GameManager.instance.isBattleActive = false;
+            isBattleActive = false;
+        }
+        else
+        {
+            BattleReward.instance.OpenRewardScreen(battleExp, battleGold, battleRewards, battleRewardNumbers);
+        }
     }
 
     private void RefreshGameManagerStats()
@@ -874,7 +877,8 @@ public class BattleManager : MonoBehaviour
                 itemCharacterNames[i].transform.parent.gameObject.SetActive(false);
             }
             else
-            { 
+            {
+                itemCharacterNames[i].transform.parent.gameObject.SetActive(true);
                 itemCharacterNames[i].text = activePlayers[i].characterName;
             }
 

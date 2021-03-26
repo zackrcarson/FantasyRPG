@@ -9,6 +9,7 @@ public class GameOver : MonoBehaviour
     [SerializeField] Color deactiveButtonColor;
     [SerializeField] Image fadeImage = null;
     [SerializeField] float fadeSpeed = 1f;
+    [SerializeField] int beepSound = 5;
 
     // State Variables
     bool shouldFadeOut = false;
@@ -71,7 +72,7 @@ public class GameOver : MonoBehaviour
         UIFade.instance.CallFadeOut();
 
         yield return new WaitForSeconds(1.5f);
-        BattleManager.instance.ResetBattleManager();
+        BattleManager.instance.ResetBattleManager(true);
         FindObjectOfType<PlayerController>().GetComponentInChildren<SpriteRenderer>().enabled = true;
 
         GameManager.instance.LoadData();
@@ -87,5 +88,10 @@ public class GameOver : MonoBehaviour
         {
             shouldFadeOut = false;
         }
+    }
+
+    public void PlayButtonBeep()
+    {
+        AudioManager.instance.PlaySFX(beepSound);
     }
 }

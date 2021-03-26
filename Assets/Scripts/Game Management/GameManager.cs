@@ -91,6 +91,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void AddGold(int gold)
+    {
+        currentGold += gold;
+    }
+
     public void AddItem(string itemToAdd)
     {
         int newItemPosition = 0;

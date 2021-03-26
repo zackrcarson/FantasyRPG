@@ -58,6 +58,7 @@ public class GameMenu : MonoBehaviour
     [SerializeField] Text statsArmor = null;
     [SerializeField] Text statsArmorPower = null;
     [SerializeField] Text statsEXP = null;
+    [SerializeField] Text lvlText = null;
 
     // State Variables
     // string selectedItem = null;
@@ -316,6 +317,8 @@ public class GameMenu : MonoBehaviour
         statsArmorPower.text = characterStats[playerNumber].armorPower.ToString();
 
         statsEXP.text = (characterStats[playerNumber].expToNextLevel[characterStats[playerNumber].playerLevel] - characterStats[playerNumber].currentEXP).ToString();
+
+        lvlText.text = "Lvl: " + characterStats[playerNumber].playerLevel;
     }
 
     public void ShowItems()

@@ -45,16 +45,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Elliot
   characterImage: {fileID: 21300000, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
-  playerLevel: 8
-  currentEXP: 860
+  playerLevel: 3
+  currentEXP: 0
   maxLevel: 99
   expToNextLevel: 
   baseEXP: 1000
   exponentialLevelCurveFactor: 1.05
   exponentialHPCurveFactor: 1.05
   exponentialMPCurveFactor: 1.05
-  currentHP: 1
-  currentMP: 5
+  currentHP: 500
+  currentMP: 25
   maxHP: 500
   maxMP: 25
   strength: 22
@@ -108,20 +108,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Quentin
   characterImage: {fileID: -8401692288953904933, guid: cf7a661be4b01d844a60de52dca9b94c, type: 3}
-  playerLevel: 3
-  currentEXP: 532
+  playerLevel: 1
+  currentEXP: 0
   maxLevel: 99
   expToNextLevel: 
   baseEXP: 1000
   exponentialLevelCurveFactor: 1.05
   exponentialHPCurveFactor: 1.05
   exponentialMPCurveFactor: 1.05
-  currentHP: 1
+  currentHP: 200
   currentMP: 30
   maxHP: 200
   maxMP: 30
-  strength: 9
-  defense: 9
+  strength: 14
+  defense: 14
   weaponPower: 0
   armorPower: 0
   equippedWeapon: 
@@ -269,7 +269,7 @@ MonoBehaviour:
   - 
   - 
   - 
-  - Iron Armor
+  - 
   - 
   - 
   - 
@@ -288,7 +288,7 @@ MonoBehaviour:
   - 
   - 
   - 
-  numberOfItems: 00000000000000000000000007000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000
+  numberOfItems: 00000000000000000000000007000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000
   currentGold: 100
   gameMenuOpen: 0
   dialogueActive: 0

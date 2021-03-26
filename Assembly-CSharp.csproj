@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Menus\Shop.cs" />
     <Compile Include="Assets\Scripts\Scene Management\PortalEntrance.cs" />
     <Compile Include="Assets\Scripts\Game Management\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Battle\ItemDisplayEffect.cs" />
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Scene Management\UIFade.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Assets\Scripts\Items\PickupItem.cs" />
     <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Scene Management\PortalExit.cs" />
+    <Compile Include="Assets\Scripts\Menus\GameOver.cs" />
     <Compile Include="Assets\Scripts\Battle\BattleTargetButton.cs" />
     <Compile Include="Assets\Scripts\Game Management\CameraController.cs" />
     <Compile Include="Assets\Scripts\Quests\QuestMarker.cs" />
@@ -91,8 +93,9 @@
     <Compile Include="Assets\Scripts\Quests\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Game Management\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Battle\BattleNotification.cs" />
-    <Compile Include="Assets\Scripts\Battle\ItemDisplayEffect.cs" />
-    <Compile Include="Assets\Scripts\Menus\GameOver.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattleReward.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattleType.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattleStarter.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Udemy RPG Assets\Licence.txt" />

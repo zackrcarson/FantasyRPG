@@ -213,6 +213,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8288694785847620631, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288694785847620631, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288694785847620631, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8288694787104154627}
+    - target: {fileID: 8288694785847620631, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288694785847620631, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayButtonBeep
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288694785847620631, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameOver, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288694785847620631, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8288694786736857658, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
       propertyPath: m_Name
       value: Game Over UI
@@ -301,5 +329,44 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8288694786926555356, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288694786926555356, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288694786926555356, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8288694787104154627}
+    - target: {fileID: 8288694786926555356, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288694786926555356, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayButtonBeep
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288694786926555356, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameOver, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288694786926555356, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+--- !u!114 &8288694787104154627 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8288694786736857663, guid: 5315e977ece659b4394ae0a584d1d493, type: 3}
+  m_PrefabInstance: {fileID: 8288694787104154626}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a88c1f706ecc3854db0e2fc2776d3192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
