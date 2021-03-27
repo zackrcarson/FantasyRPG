@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4465692176157038550}
   - component: {fileID: 4465692176157038549}
   - component: {fileID: 4465692176157038548}
+  - component: {fileID: 2465170262509791386}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1083631147
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fb8cc55af4b7a034584793949fd90500, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -152,3 +153,33 @@ MonoBehaviour:
   NPCName: Poppy
   dialogueLines:
   - n-NPC
+  - Pssst. I heard a secret.
+  - n-PLAYER
+  - What did you hear?
+  - n-NPC
+  - Did you know, that if you jump into a fountain, it will sometimes teleport you
+    to a new place?!
+  - How cool is that! Jump in every fountain you can find!!
+  - n-PLAYER
+  - Thanks for the tip! I think I saw a fountain, I'm going to jump into it!!
+  questToMark: 
+  markQuestComplete: 0
+--- !u!95 &2465170262509791386
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4465692176157038545}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7b91217c97d00ef4caae11316f0d0a52, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

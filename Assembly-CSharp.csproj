@@ -96,6 +96,7 @@
     <Compile Include="Assets\Scripts\Battle\BattleStarter.cs" />
     <Compile Include="Assets\Scripts\Game Management\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Battle\BattleNotification.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\RandomAnimationFrame.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Udemy RPG Assets\Licence.txt" />
