@@ -9,6 +9,8 @@ public class BattleCharacter : MonoBehaviour
     [SerializeField] public string characterName = null;
     [SerializeField] public string[] movesAvailable = null;
     [SerializeField] Sprite deadSprite = null;
+    [SerializeField] RectTransform healthBar;
+    [SerializeField] public ParticleSystem activeBattlerParticles = null;
     [SerializeField] float deathAnimationDelay = 0.8f;
 
     [Header("Character Stats")]
@@ -25,6 +27,7 @@ public class BattleCharacter : MonoBehaviour
     Animator animator = null;
     SpriteRenderer spriteRenderer = null;
     Sprite aliveSprite = null;
+    float healthBarSize;
 
     // State Variables
     //bool isDead = false;
@@ -34,6 +37,9 @@ public class BattleCharacter : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         aliveSprite = spriteRenderer.sprite;
+
+        healthBarSize = healthBar.sizeDelta.x;
+        healthBar.sizeDelta = new Vector2(((float)currentHP / (float)maxHP) * healthBarSize, healthBar.sizeDelta.y);
     }
 
     public void Attack()
@@ -43,6 +49,8 @@ public class BattleCharacter : MonoBehaviour
 
     public IEnumerator Dead()
     {
+        activeBattlerParticles.Stop();
+
         //isDead = true;
         animator.SetBool("isDead", true);
 
@@ -61,5 +69,17 @@ public class BattleCharacter : MonoBehaviour
     public void Alive()
     {
         spriteRenderer.sprite = aliveSprite;
+    }
+
+    public void ProcessHit(int damage)
+    {
+        currentHP -= damage;
+
+        healthBar.sizeDelta = new Vector2(((float)currentHP / (float)maxHP) * healthBarSize, healthBar.sizeDelta.y);
+
+        if (currentHP <= 0)
+        {
+            StartCoroutine(Dead());
+        }
     }
 }

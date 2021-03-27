@@ -191,11 +191,22 @@ public class BattleManager : MonoBehaviour
 
     private void NextTurn()
     {
+        activeBattlers[currentTurn].activeBattlerParticles.Stop();
+
         currentTurn++;
 
         if (currentTurn >= activeBattlers.Count)
         {
             currentTurn = 0;
+        }
+
+        if (activeBattlers[currentTurn].currentHP <= 0)
+        {
+            activeBattlers[currentTurn].activeBattlerParticles.Stop();
+        }
+        else
+        {
+            activeBattlers[currentTurn].activeBattlerParticles.Play();
         }
 
         turnWaiting = true;
@@ -214,6 +225,7 @@ public class BattleManager : MonoBehaviour
             if (battler.currentHP <= 0)
             {
                 battler.currentHP = 0;
+                activeBattlers[currentTurn].activeBattlerParticles.Stop();
             }
 
             if (battler.currentHP > 0)
@@ -238,12 +250,15 @@ public class BattleManager : MonoBehaviour
         {
             while(activeBattlers[currentTurn].currentHP == 0)
             {
+                activeBattlers[currentTurn].activeBattlerParticles.Stop();
+
                 currentTurn++;
                 if (currentTurn >= activeBattlers.Count)
                 {
                     currentTurn = 0;
                 }
             }
+                activeBattlers[currentTurn].activeBattlerParticles.Play();
         }
     }
 
@@ -473,6 +488,8 @@ public class BattleManager : MonoBehaviour
 
         battleUI.SetActive(true);
         uiButtons.SetActive(activeBattlers[currentTurn].isPlayer);
+
+        activeBattlers[currentTurn].activeBattlerParticles.Play();
     }
 
     private IEnumerator DelayedEnemyAttack()
@@ -547,7 +564,8 @@ public class BattleManager : MonoBehaviour
 
         int damageToGive = Mathf.RoundToInt(totalDamage);
 
-        activeBattlers[targetNumber].currentHP -= damageToGive;
+        activeBattlers[targetNumber].ProcessHit(damageToGive);
+
         
         if (isBoss && !activeBattlers[targetNumber].isPlayer)
         {
@@ -557,11 +575,6 @@ public class BattleManager : MonoBehaviour
         else
         {
             Instantiate(damageDisplay, activeBattlers[targetNumber].transform.position, activeBattlers[targetNumber].transform.rotation, effectsParent.transform).SetDamage(damageToGive);
-        }
-
-        if (activeBattlers[targetNumber].currentHP <= 0)
-        {
-            StartCoroutine(activeBattlers[targetNumber].Dead());
         }
 
         UpdateUIStats();
@@ -926,6 +939,8 @@ public class BattleManager : MonoBehaviour
     public void UseItem(int selectedCharacter)
     {
         activeItem.UseItem(activePlayerBattlerSlots[selectedCharacter]);
+
+        activeBattlers[activePlayerBattlerSlots[selectedCharacter]].ProcessHit(0);
         UpdateUIStats();
 
         CloseItemPlayerChoicePanel();
