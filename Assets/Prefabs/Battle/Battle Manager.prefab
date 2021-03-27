@@ -1067,6 +1067,7 @@ MonoBehaviour:
   damageRandomFactorMaximum: 1.1
   effectsParent: {fileID: 175187156916768786}
   enemyAttackEffect: {fileID: 7234392262408426064, guid: 556c3e592d3148342b8268163672614c, type: 3}
+  bossAttackEffect: {fileID: 7234392262408426064, guid: fa8360e82a4f1d24fa8ea7353d37d271, type: 3}
   playerItemEffect: {fileID: 7234392262408426064, guid: 923ac0e80740cca4ca271ddb53707836, type: 3}
   damageDisplay: {fileID: 2464126967210551093, guid: 5c66be3960e484647916f37e9110e376, type: 3}
   manaDisplay: {fileID: 3008869044575458853, guid: 9074a648878a3a343bbb8232a3094b10, type: 3}
@@ -1090,6 +1091,7 @@ MonoBehaviour:
   - {fileID: 182824727857279878, guid: 7195cc7aa1b871840a157cb8589b9680, type: 3}
   - {fileID: 7121131871234954939, guid: c76a5144d26fa7b4695e9dfb74e966a4, type: 3}
   - {fileID: 1833168519116500116, guid: 52291a6bfd4a39944adf6b944de97cb4, type: 3}
+  - {fileID: 3417521343767813714, guid: 8e9f948d32a085a4db9b45cfef26786a, type: 3}
   beepSound: 5
   itemSlotSound: 8
   uiButtons: {fileID: 5212521417037243527}
@@ -1179,6 +1181,10 @@ MonoBehaviour:
   isCastingSpell: 0
   currentSpellCost: 0
   selectedCharacterTurnSlot: 0
+  battleExp: 0
+  battleGold: 0
+  battleRewards: []
+  battleRewardNumbers: 
 --- !u!1 &2302053589127792720
 GameObject:
   m_ObjectHideFlags: 0

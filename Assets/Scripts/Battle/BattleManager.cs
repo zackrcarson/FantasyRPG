@@ -35,6 +35,7 @@ public class BattleManager : MonoBehaviour
     [Header("Effects")]
     [SerializeField] GameObject effectsParent = null;
     [SerializeField] GameObject enemyAttackEffect = null;
+    [SerializeField] GameObject bossAttackEffect = null;
     [SerializeField] GameObject playerItemEffect = null;
     [SerializeField] DamageDisplay damageDisplay = null;
     [SerializeField] ManaDisplay manaDisplay = null;
@@ -98,6 +99,8 @@ public class BattleManager : MonoBehaviour
     bool turnWaiting = false;
     bool isInventoryEmpty = false;
     bool battleEnding = false;
+    bool cannotFlee = false;
+    bool isBoss = false;
 
     [HideInInspector] public int battleExp = 0;
     [HideInInspector] public int battleGold = 0;
@@ -133,9 +136,12 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    public void BattleStart(string[] enemiesToSpawn)
+    public void BattleStart(string[] enemiesToSpawn, bool setCannotFlee, bool boss)
     {
         if (isBattleActive) { return; }
+
+        cannotFlee = setCannotFlee;
+        isBoss = boss;
 
         LoadBackground();
 
@@ -278,6 +284,9 @@ public class BattleManager : MonoBehaviour
         {
             StartCoroutine(FadeOutBattleScreenGameOver());
         }
+
+        cannotFlee = false;
+        isBoss = false;
     }
 
     private IEnumerator FadeOutBattleScreenVictory(bool didFlee)
@@ -499,7 +508,14 @@ public class BattleManager : MonoBehaviour
         }
 
         activeBattlers[currentTurn].Attack();
-        Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
+        if (isBoss)
+        {
+            Instantiate(bossAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
+        }
+        else
+        {
+            Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
+        }
 
         DealDamage(selectedTarget, movePower);
     }
@@ -532,8 +548,16 @@ public class BattleManager : MonoBehaviour
         int damageToGive = Mathf.RoundToInt(totalDamage);
 
         activeBattlers[targetNumber].currentHP -= damageToGive;
-
-        Instantiate(damageDisplay, activeBattlers[targetNumber].transform.position, activeBattlers[targetNumber].transform.rotation, effectsParent.transform).SetDamage(damageToGive);
+        
+        if (isBoss && !activeBattlers[targetNumber].isPlayer)
+        {
+            Vector3 displacementVector = new Vector3(-2f, 0f, 0f);
+            Instantiate(damageDisplay, activeBattlers[targetNumber].transform.position + displacementVector, activeBattlers[targetNumber].transform.rotation, effectsParent.transform).SetDamage(damageToGive);
+        }
+        else
+        {
+            Instantiate(damageDisplay, activeBattlers[targetNumber].transform.position, activeBattlers[targetNumber].transform.rotation, effectsParent.transform).SetDamage(damageToGive);
+        }
 
         if (activeBattlers[targetNumber].currentHP <= 0)
         {
@@ -710,7 +734,15 @@ public class BattleManager : MonoBehaviour
 
     public void FleeBattle()
     {
-        StartCoroutine(FleeBattleWithDelay());
+        if (cannotFlee)
+        {
+            battleNotification.notificationMessage.text = "You can't even attempt to escape this battle, you would get eaten!";
+            battleNotification.Activate();
+        }
+        else
+        {
+            StartCoroutine(FleeBattleWithDelay());
+        }
     }
 
     private IEnumerator FleeBattleWithDelay()

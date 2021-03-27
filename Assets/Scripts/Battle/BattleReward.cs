@@ -15,6 +15,8 @@ public class BattleReward : MonoBehaviour
     int[] numberOfRewards = null;
     int expEarned = 0;
     int goldEarned = 0;
+    [HideInInspector] public bool markQuestComplete = false;
+    [HideInInspector] public string questToComplete = null;
 
     private void Awake()
     {
@@ -68,11 +70,22 @@ public class BattleReward : MonoBehaviour
             }
         }
 
+        int i = 0;
         foreach (string reward in rewardItems)
         {
-            GameManager.instance.AddItem(reward);
+            for (int j = 0; j < numberOfRewards[i]; j++)
+            {
+                GameManager.instance.AddItem(reward);
+            }
+                
+            i++;
         }
 
         GameManager.instance.AddGold(goldEarned);
+
+        if (markQuestComplete)
+        {
+            QuestManager.instance.MarkQuestComplete(questToComplete);
+        }
     }
 }

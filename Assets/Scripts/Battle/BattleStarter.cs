@@ -1,15 +1,24 @@
+using System.Collections;
 using UnityEngine;
 
 public class BattleStarter : MonoBehaviour
 {
     // Config Parameters
     [SerializeField] BattleType[] potentialBattles = null;
+
     [SerializeField] bool activateOnEnter = false;
     [SerializeField] bool activateOnStay = true;
     [SerializeField] bool activateOnExit = false;
     [SerializeField] bool deactivateAfterStarting = false;
+
+    [SerializeField] bool cannotFlee = false;
+    [SerializeField] bool isBoss = false;
+
     [SerializeField] float randomTimeMin = 2f;
     [SerializeField] float randomTimeMax = 10f;
+
+    [SerializeField] bool shouldCompleteQuest = false;
+    [SerializeField] string questToComplete = null;
 
     // State Variables   
     bool isInBattleZone = false;
@@ -27,7 +36,7 @@ public class BattleStarter : MonoBehaviour
     {
         if (!player) { player = FindObjectOfType<PlayerController>(); }
 
-        if (isInBattleZone && player.canMove)
+        if (isInBattleZone && player.canMove && activateOnStay)
         {
             if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
             {
@@ -83,11 +92,22 @@ public class BattleStarter : MonoBehaviour
         BattleManager.instance.battleRewards = battle.rewardItems;
         BattleManager.instance.battleRewardNumbers = battle.rewardItemNumbers;
 
-        BattleManager.instance.BattleStart(battle.enemies);
+        BattleManager.instance.BattleStart(battle.enemies, cannotFlee, isBoss);
+
+        BattleReward.instance.markQuestComplete = shouldCompleteQuest;
+        BattleReward.instance.questToComplete = questToComplete;
 
         if (deactivateAfterStarting)
         {
-            gameObject.SetActive(false);
+            StartCoroutine(DelayedDeactivate());
         }
     }
+
+    private IEnumerator DelayedDeactivate()
+    {
+        yield return new WaitForSeconds(2f);
+
+        gameObject.SetActive(false);
+    }
+
 }
