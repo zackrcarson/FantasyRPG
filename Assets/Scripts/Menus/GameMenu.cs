@@ -60,6 +60,13 @@ public class GameMenu : MonoBehaviour
     [SerializeField] Text statsEXP = null;
     [SerializeField] Text lvlText = null;
 
+    [Header("Notifications")]
+    [SerializeField] Text notificationText = null;
+    [SerializeField] float saveLoadNotificationActiveTime = 3f;
+    [SerializeField] Color saveLoadNotificationColor;
+    [SerializeField] float itemMessageTime = 5f;
+    [SerializeField] Color itemMessageColor;
+
     // State Variables
     // string selectedItem = null;
     Item activeItem = null;
@@ -122,7 +129,7 @@ public class GameMenu : MonoBehaviour
 
     private void CheckPauseButton()
     {
-        if (DialogueManager.instance.isTalking() || Shop.instance.IsShopping() || BattleManager.instance.isBattleActive) { return; }
+        if (LevelUp.instance.isShowingRewards || DialogueManager.instance.isTalking() || Shop.instance.IsShopping() || BattleManager.instance.isBattleActive) { return; }
 
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Fire2"))
         {
@@ -458,7 +465,8 @@ public class GameMenu : MonoBehaviour
 
     public void UseItem(int selectedCharacter)
     {
-        activeItem.UseItem(selectedCharacter);
+        string message = activeItem.UseItem(selectedCharacter);
+        StartCoroutine(ShowNotification(message, itemMessageTime, itemMessageColor));
 
         CloseItemPlayerChoicePanel();
     }
@@ -473,11 +481,15 @@ public class GameMenu : MonoBehaviour
         GameManager.instance.SaveData();
         QuestManager.instance.SaveQuestData();
 
+        StartCoroutine(ShowNotification("Game Saved.", saveLoadNotificationActiveTime, saveLoadNotificationColor));
+
         CheckLoadButton();
     }
 
     public void LoadGame()
     {
+        StartCoroutine(ShowNotification("Game Loaded.", saveLoadNotificationActiveTime, saveLoadNotificationColor));
+
         StartCoroutine(FadeInLoadAndFadeOut());
     }
 
@@ -501,5 +513,16 @@ public class GameMenu : MonoBehaviour
     public void PlaySlotClickSound()
     {
         AudioManager.instance.PlaySFX(itemSlotSound);
+    }
+
+    public IEnumerator ShowNotification(string message, float activeTime, Color messageColor)
+    {
+        notificationText.text = message;
+        notificationText.color = messageColor;
+        notificationText.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(activeTime);
+
+        notificationText.gameObject.SetActive(false);
     }
 }

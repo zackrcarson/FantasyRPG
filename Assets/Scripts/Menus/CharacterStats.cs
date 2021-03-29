@@ -1,5 +1,4 @@
-﻿using UnityEngine.UI;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CharacterStats : MonoBehaviour
 {
@@ -52,20 +51,29 @@ public class CharacterStats : MonoBehaviour
         }
     }
 
-    public void AddEXP(int expToAdd)
+    /// <summary>
+    /// Returns true if the player leveled up.
+    /// </summary>
+    public LevelUpInfo AddEXP(int expToAdd)
     {
         currentEXP += expToAdd;
 
-        if (playerLevel >= maxLevel) { return; }
+        if (playerLevel >= maxLevel) { return null; }
 
         if (currentEXP >= expToNextLevel[playerLevel])
         {
-            LevelUp();
+            return LevelCharacterUp();
+        }
+        else
+        {
+            return null;
         }
     }
 
-    private void LevelUp()
+    private LevelUpInfo LevelCharacterUp()
     {
+        int[] oldLevels = new int[] { playerLevel, maxHP, maxMP, strength, defense };
+
         currentEXP -= expToNextLevel[playerLevel];
 
         playerLevel++;
@@ -85,6 +93,16 @@ public class CharacterStats : MonoBehaviour
 
         currentHP = maxHP;
         currentMP = maxMP;
+
+        int[] newLevels = new int[] { playerLevel, maxHP, maxMP, strength, defense };
+
+        LevelUpInfo newLevelUpInfo = new LevelUpInfo { };
+        newLevelUpInfo.oldLevels = oldLevels;
+        newLevelUpInfo.newLevels = newLevels;
+        newLevelUpInfo.characterName = characterName;
+        newLevelUpInfo.expToNextLevel = expToNextLevel[playerLevel];
+
+        return newLevelUpInfo;
     }
 
     public string GetName()

@@ -1,10 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class BattleReward : MonoBehaviour
 {
     public static BattleReward instance;
-
 
     // Config Parameters
     [SerializeField] Text rewardsText = null;
@@ -53,23 +53,15 @@ public class BattleReward : MonoBehaviour
 
     public void CloseRewardsScreen()
     {
-        AddRewards();
-
         rewardScreen.SetActive(false);
         BattleManager.instance.isBattleActive = false;
         GameManager.instance.isBattleActive = false;
+        
+        AddRewards();
     }
 
     private void AddRewards()
     {
-        foreach (CharacterStats playerStat in GameManager.instance.playerStatsArray)
-        {
-            if (playerStat.gameObject.activeInHierarchy)
-            {
-                playerStat.AddEXP(expEarned);
-            }
-        }
-
         int i = 0;
         foreach (string reward in rewardItems)
         {
@@ -86,6 +78,25 @@ public class BattleReward : MonoBehaviour
         if (markQuestComplete)
         {
             QuestManager.instance.MarkQuestComplete(questToComplete);
+        }
+
+        List<LevelUpInfo> levelUpInfos = new List<LevelUpInfo> { };
+        foreach (CharacterStats playerStat in GameManager.instance.playerStatsArray)
+        {
+            if (playerStat.gameObject.activeInHierarchy)
+            {
+                LevelUpInfo levelUpInfo = playerStat.AddEXP(expEarned);
+
+                if (levelUpInfo != null)
+                {
+                    levelUpInfos.Add(levelUpInfo);
+                }
+            }
+        }
+
+        if (levelUpInfos.Count > 0)
+        {
+            LevelUp.instance.OpenLevelUpScreen(levelUpInfos);
         }
     }
 }

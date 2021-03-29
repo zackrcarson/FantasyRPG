@@ -50,7 +50,7 @@ public class DialogueManager : MonoBehaviour
 
     private void UpdateDialogue()
     {
-        if (GameMenu.instance.isPaused() || BattleManager.instance.isBattleActive || Shop.instance.IsShopping()) { return; }
+        if (LevelUp.instance.isShowingRewards || GameMenu.instance.isPaused() || BattleManager.instance.isBattleActive || Shop.instance.IsShopping()) { return; }
 
         if (dialogueBox.activeInHierarchy && dialogueLines.Length != 0)
         {

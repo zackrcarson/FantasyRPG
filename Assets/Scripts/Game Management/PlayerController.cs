@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
         float xThrow = Input.GetAxisRaw("Horizontal");
         float yThrow = Input.GetAxisRaw("Vertical");
 
-        if (canMove)
+        if (canMove && !LevelUp.instance.isShowingRewards)
         {
             float xSpeed = xThrow * horizontalWalkSpeed;
             float ySpeed = yThrow * verticalWalkSpeed;
@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
 
         if (xThrow == 1 || xThrow == -1 || yThrow == 1 || yThrow == -1)
         {
-            if (canMove)
+            if (canMove && !LevelUp.instance.isShowingRewards)
             {
                 animator.SetFloat("lastMoveX", xThrow);
                 animator.SetFloat("lastMoveY", yThrow);

@@ -26,8 +26,10 @@ public class Item : MonoBehaviour
     [SerializeField] public int weaponStrength = 0;
     [SerializeField] public int armorStrength = 0;
 
-    public void UseItem(int characterToUseOn)
+    public string UseItem(int characterToUseOn)
     {
+        string message = "";
+
         // Dummy holders - won't ever be used in the alternative situation
         int activeBattler = 0;
         CharacterStats selectedCharacter = GameManager.instance.playerStatsArray[0]; 
@@ -60,12 +62,25 @@ public class Item : MonoBehaviour
                 }
                 else
                 {
+                    if (selectedCharacter.currentHP >= selectedCharacter.maxHP)
+                    {
+                        // TODO: Make ergh sound
+                        selectedCharacter.currentHP = selectedCharacter.maxHP;
+                        
+                        return selectedCharacter.characterName + "'s HP is already full!";
+                    }
+
                     selectedCharacter.currentHP += amountToChange;
 
+                    int tempAmountToChange = amountToChange;
                     if (selectedCharacter.currentHP > selectedCharacter.maxHP)
                     {
+                        tempAmountToChange = amountToChange - (selectedCharacter.currentHP - selectedCharacter.maxHP);
+
                         selectedCharacter.currentHP = selectedCharacter.maxHP;
                     }
+
+                    message = "Healed " + selectedCharacter.characterName + " with the " + itemName + " for " + tempAmountToChange + " HP. New HP: " + selectedCharacter.currentHP + "/" + selectedCharacter.maxHP + ".";
                 }
             }
             
@@ -84,12 +99,25 @@ public class Item : MonoBehaviour
                 }
                 else
                 {
+                    if (selectedCharacter.currentMP >= selectedCharacter.maxMP)
+                    {
+                        // TODO: Make ergh sound
+                        selectedCharacter.currentMP = selectedCharacter.maxMP;
+
+                        return selectedCharacter.characterName + "'s MP is already full!";
+                    }
+
                     selectedCharacter.currentMP += amountToChange;
 
+                    int tempAmountToChange = amountToChange;
                     if (selectedCharacter.currentMP > selectedCharacter.maxMP)
                     {
+                        tempAmountToChange = amountToChange - (selectedCharacter.currentMP - selectedCharacter.maxMP);
+
                         selectedCharacter.currentMP = selectedCharacter.maxMP;
                     }
+
+                    message = "Restored " + selectedCharacter.characterName + "'s MP by " + tempAmountToChange + " with the " + itemName + ". New MP: " + selectedCharacter.currentMP + "/" + selectedCharacter.maxMP + ".";
                 }
             }
             
@@ -104,6 +132,8 @@ public class Item : MonoBehaviour
                 else
                 {
                     selectedCharacter.strength += amountToChange;
+
+                    message = "Boosted " + selectedCharacter.characterName + "'s strength by " + amountToChange + " with the " + itemName + ". New strength: " + selectedCharacter.strength + ".";
                 }
             }
             
@@ -118,6 +148,8 @@ public class Item : MonoBehaviour
                 else
                 {
                     selectedCharacter.defense += amountToChange;
+
+                    message = "Boosted " + selectedCharacter.characterName + "'s defense by " + amountToChange + " with the " + itemName + ". New defense: " + selectedCharacter.defense + ".";
                 }
             }
         }
@@ -133,6 +165,8 @@ public class Item : MonoBehaviour
 
                 selectedCharacter.equippedWeapon = itemName;
                 selectedCharacter.weaponPower = weaponStrength;
+
+                message = selectedCharacter.characterName + " equipped the " + itemName + ", with a weapon strength of " + weaponStrength + "."; 
             }
 
             if (isArmor)
@@ -144,9 +178,14 @@ public class Item : MonoBehaviour
 
                 selectedCharacter.equippedArmor = itemName;
                 selectedCharacter.armorPower = armorStrength;
+
+                message = selectedCharacter.characterName + " equipped the " + itemName + ", with an armor strength of " + armorStrength + ".";
+
             }
         }
 
         GameManager.instance.RemoveItem(itemName);
+
+        return message;
     }
 }

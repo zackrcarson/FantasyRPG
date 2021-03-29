@@ -35,6 +35,14 @@ public class Shop : MonoBehaviour
     [SerializeField] Text sellItemDescription = null;
     [SerializeField] Text sellItemValue = null;
 
+    [SerializeField] Text buyValueLabel = null;   
+    [SerializeField] Color notEnoughMoneyColor;
+    [SerializeField] Color notEnoughMoneyButtonColor;
+
+    // Cached References
+    Color enoughMoneyColor;
+    Color enoughMoneyButtonColor;
+
     // State Variables
     [HideInInspector] public string[] itemsForSale = null;
     [HideInInspector] public float depreciationFactor = 0.6f;
@@ -48,6 +56,9 @@ public class Shop : MonoBehaviour
 
     private void Start()
     {
+        enoughMoneyColor = buyItemValue.color;
+        enoughMoneyButtonColor = buyButton.GetComponent<Image>().color;
+
         buyItemButtonToggles = new ButtonToggle[buyItemButtons.Length];
         for (int i = 0; i < buyItemButtons.Length; i++)
         {
@@ -207,6 +218,27 @@ public class Shop : MonoBehaviour
         buyItemName.text = selectedItem.itemName;
         buyItemDescription.text = selectedItem.description;
         buyItemValue.text = selectedItem.cost.ToString() + "g";
+
+        if (selectedItem.cost > GameManager.instance.currentGold)
+        {
+            buyItemValue.color = notEnoughMoneyColor;
+            buyValueLabel.color = notEnoughMoneyColor;
+
+            buyButton.GetComponent<Image>().color = notEnoughMoneyButtonColor;
+
+            Color textColor = buyButton.GetComponentInChildren<Text>().color;
+            textColor = new Color(textColor.r, textColor.g, textColor.b, notEnoughMoneyButtonColor.a);
+        }
+        else
+        {
+            buyItemValue.color = enoughMoneyColor;
+            buyValueLabel.color = enoughMoneyColor;
+
+            buyButton.GetComponent<Image>().color = enoughMoneyButtonColor;
+
+            Color textColor = buyButton.GetComponentInChildren<Text>().color;
+            textColor = new Color(textColor.r, textColor.g, textColor.b, 1f);
+        }
     }
 
     public void SelectSellItem(Item sellItem)
@@ -259,6 +291,14 @@ public class Shop : MonoBehaviour
             GameManager.instance.currentGold -= selectedItem.cost;
 
             GameManager.instance.AddItem(selectedItem.itemName);
+
+            SelectBuyItem(selectedItem);
+
+            // TODO: Play coin jingle sound (And somehow maybe don't play the ui beep sound?)
+        }
+        else
+        {
+            // TODO: Play "ergh" sound - not enough money. (And somehow maybe don't play the ui beep sound?)
         }
 
         goldText.text = GameManager.instance.currentGold.ToString() +"g";

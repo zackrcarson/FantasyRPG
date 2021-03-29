@@ -14,7 +14,7 @@ public class ShopKeeper : MonoBehaviour
 
     private void Update()
     {
-        if (canOpenShop && !Shop.instance.shopMenu.activeInHierarchy)
+        if (!LevelUp.instance.isShowingRewards && canOpenShop && !Shop.instance.shopMenu.activeInHierarchy)
         {
             if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump") || Input.GetButtonDown("Submit"))
             {

@@ -111,6 +111,10 @@ MonoBehaviour:
   affectDefense: 0
   weaponStrength: 0
   armorStrength: 5
+  hpMessageColor: {r: 0.13333334, g: 1, b: 0, a: 0}
+  mpMessageColor: {r: 0, g: 0.6509804, b: 1, a: 0}
+  otherMessageColor: {r: 1, g: 0, b: 0, a: 0}
+  notificationTime: 5
 --- !u!58 &228006232
 CircleCollider2D:
   m_ObjectHideFlags: 0

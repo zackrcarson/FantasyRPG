@@ -54,7 +54,7 @@ MonoBehaviour:
   exponentialHPCurveFactor: 1.05
   exponentialMPCurveFactor: 1.05
   currentHP: 500
-  currentMP: 25
+  currentMP: 20
   maxHP: 500
   maxMP: 25
   strength: 22
@@ -313,4 +313,5 @@ MonoBehaviour:
   - enter the cave
   - quest test
   - save the world
+  - fight the demon
   questMarkersComplete: 
