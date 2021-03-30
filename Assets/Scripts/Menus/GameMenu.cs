@@ -46,6 +46,8 @@ public class GameMenu : MonoBehaviour
 
     [Header("Player Stats Arrays")]
     [SerializeField] GameObject[] statsButtons = null;
+    [SerializeField] GameObject unequipWeaponButton = null;
+    [SerializeField] GameObject unequipArmorButton = null;
     [SerializeField] ButtonToggle[] statsButtonToggles = null;
     [SerializeField] Image statsImage = null;
     [SerializeField] Text statsName = null;
@@ -71,6 +73,7 @@ public class GameMenu : MonoBehaviour
     // string selectedItem = null;
     Item activeItem = null;
     bool isInventoryEmpty = false;
+    int activePlayer = 0;
 
     // Cached References
     CharacterStats[] characterStats = null;
@@ -284,6 +287,38 @@ public class GameMenu : MonoBehaviour
 
     public void ShowPlayerStats(int playerNumber)
     {
+        if (characterStats[playerNumber].equippedWeapon == "")
+        {
+            unequipWeaponButton.GetComponent<Image>().color = deactiveButtonColor;
+
+            Color textColor = unequipWeaponButton.GetComponentInChildren<Text>().color;
+            textColor = new Color(textColor.r, textColor.g, textColor.b, deactiveButtonColor.a);
+        }
+        else
+        {
+            unequipWeaponButton.GetComponent<Image>().color = defaultButtonColor;
+
+            Color textColor = unequipWeaponButton.GetComponentInChildren<Text>().color;
+            textColor = new Color(textColor.r, textColor.g, textColor.b, 1f);
+        }
+
+        if (characterStats[playerNumber].equippedArmor == "")
+        {
+            unequipArmorButton.GetComponent<Image>().color = deactiveButtonColor;
+
+            Color textColor = unequipArmorButton.GetComponentInChildren<Text>().color;
+            textColor = new Color(textColor.r, textColor.g, textColor.b, deactiveButtonColor.a);
+        }
+        else
+        {
+            unequipArmorButton.GetComponent<Image>().color = defaultButtonColor;
+
+            Color textColor = unequipArmorButton.GetComponentInChildren<Text>().color;
+            textColor = new Color(textColor.r, textColor.g, textColor.b, 1f);
+        }
+
+        activePlayer = playerNumber;
+
         int i = 0;
         foreach (ButtonToggle button in statsButtonToggles)
         {
@@ -326,6 +361,44 @@ public class GameMenu : MonoBehaviour
         statsEXP.text = (characterStats[playerNumber].expToNextLevel[characterStats[playerNumber].playerLevel] - characterStats[playerNumber].currentEXP).ToString();
 
         lvlText.text = "Lvl: " + characterStats[playerNumber].playerLevel;
+    }
+
+    public void Unequip(bool isWeapon)
+    {
+        CharacterStats selectedCharacter = characterStats[activePlayer];
+        string message = "";
+
+        if (isWeapon)
+        {
+            if (selectedCharacter.equippedWeapon != "")
+            {
+                string weaponName = selectedCharacter.equippedWeapon;
+                GameManager.instance.AddItem(weaponName);
+
+                selectedCharacter.equippedWeapon = "";
+                selectedCharacter.weaponPower = 0;
+
+                message = selectedCharacter.characterName + " unequipped the " + weaponName + ".";
+            }
+        }
+        else
+        {
+            if (selectedCharacter.equippedArmor != "")
+            {
+                string armorName = selectedCharacter.equippedArmor;
+                GameManager.instance.AddItem(armorName);
+
+                selectedCharacter.equippedArmor = "";
+                selectedCharacter.armorPower = 0;
+
+                message = selectedCharacter.characterName + " unequipped the " + armorName + ".";
+            }
+        }
+
+        StartCoroutine(ShowNotification(message, itemMessageTime, itemMessageColor));
+
+        UpdateMainStats();
+        ShowPlayerStats(activePlayer);
     }
 
     public void ShowItems()
