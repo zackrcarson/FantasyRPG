@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleCharacter : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class BattleCharacter : MonoBehaviour
     [SerializeField] public string[] movesAvailable = null;
     [SerializeField] Sprite deadSprite = null;
     [SerializeField] RectTransform healthBar;
+    [SerializeField] Text enemyNumber = null;
     [SerializeField] public ParticleSystem activeBattlerParticles = null;
     [SerializeField] float deathAnimationDelay = 0.8f;
 
@@ -81,5 +83,11 @@ public class BattleCharacter : MonoBehaviour
         {
             StartCoroutine(Dead());
         }
+    }
+
+    public void ShowEnemyNumber(int number)
+    {
+        enemyNumber.text = number.ToString();
+        enemyNumber.gameObject.SetActive(true);
     }
 }

@@ -670,6 +670,7 @@ public class BattleManager : MonoBehaviour
             i++;
         }
 
+        Dictionary<string, int> enemyNames = new Dictionary<string, int>();
         i = 0;
         foreach (BattleTargetButton targetButton in battleTargetButtons)
         {
@@ -679,7 +680,19 @@ public class BattleManager : MonoBehaviour
             {
                 targetButton.moveName = moveName;
                 targetButton.activeBattlerTarget = enemies[i];
-                targetButton.targetName.text = activeBattlers[enemies[i]].characterName;
+
+                string currentName = activeBattlers[enemies[i]].characterName;
+                if (enemyNames.ContainsKey(currentName))
+                {
+                    enemyNames[currentName]++;
+                    targetButton.targetName.text = activeBattlers[enemies[i]].characterName + " " + enemyNames[currentName];
+                    activeBattlers[enemies[i]].ShowEnemyNumber(enemyNames[currentName]);
+                }
+                else
+                {
+                    enemyNames.Add(currentName, 1);
+                    targetButton.targetName.text = activeBattlers[enemies[i]].characterName;
+                }
             }
             else
             {
