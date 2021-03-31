@@ -38,11 +38,16 @@ public class BattleReward : MonoBehaviour
         {
             if (numberOfRewards[i] <= 1)
             {
-                rewardsText.text += reward + "\n";
+                rewardsText.text += reward;
             }
             else
             {
-                rewardsText.text += reward + " (x" + numberOfRewards[i] + ")\n";
+                rewardsText.text += reward + " (x" + numberOfRewards[i] + ")";
+            }
+
+            if (i < rewardItems.Length - 1)
+            {
+                rewardsText.text += "\n";
             }
 
             i++;
