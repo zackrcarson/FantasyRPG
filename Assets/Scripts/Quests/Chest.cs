@@ -9,6 +9,7 @@ public class Chest : MonoBehaviour
     [SerializeField] int[] treasureListNumbers = null;
     [SerializeField] int coins = 0;
     [SerializeField] float rewardPanelScreenTime = 6f;
+    [SerializeField] Sprite openSprite = null;
 
     // State Variables
     bool canOpen = false;
@@ -34,6 +35,20 @@ public class Chest : MonoBehaviour
         GetComponent<Animator>().SetBool("chestOpen", true);
 
         StartCoroutine(ChestManager.instance.OpenChest(treasureList, treasureListNumbers, coins, rewardPanelScreenTime));
+
+        GenerateGUID guid = GetComponent<GenerateGUID>();
+        if (guid)
+        {
+            ChestManager.instance.ChestOpened(SceneLoader.GetCurrentScene(), guid.GUID);
+        }
+    }
+
+    public void OpenChestOnSceneLoad()
+    {
+        isOpen = true;
+
+        GetComponent<Animator>().enabled = false;
+        GetComponent<SpriteRenderer>().sprite = openSprite;
     }
 
     private void OnTriggerEnter2D(Collider2D otherCollider)

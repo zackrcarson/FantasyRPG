@@ -62,6 +62,12 @@ public class PlayerController : MonoBehaviour
             float xSpeed = xThrow * horizontalWalkSpeed;
             float ySpeed = yThrow * verticalWalkSpeed;
 
+            if (xSpeed != 0 && ySpeed != 0)
+            {
+                xSpeed /= Mathf.Sqrt(2f);
+                ySpeed /= Mathf.Sqrt(2f);
+            }
+
             rigidBody.velocity = new Vector2(xSpeed, ySpeed);
 
             animator.SetFloat("moveX", xThrow);

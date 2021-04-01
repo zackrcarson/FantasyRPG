@@ -267,6 +267,8 @@ public class GameManager : MonoBehaviour
         }
 
         PlayerPrefs.SetInt("PlayerGold", currentGold);
+
+        ChestManager.instance.SaveChestDictionary();
     }
 
     public void LoadData()
@@ -330,5 +332,7 @@ public class GameManager : MonoBehaviour
         }
 
         currentGold = PlayerPrefs.GetInt("PlayerGold", currentGold);
+
+        ChestManager.instance.LoadChestDictionary();
     }
 }

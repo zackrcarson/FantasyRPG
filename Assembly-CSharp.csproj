@@ -101,6 +101,8 @@
     <Compile Include="Assets\Scripts\Battle\BattleNotification.cs" />
     <Compile Include="Assets\Scripts\Quests\Chest.cs" />
     <Compile Include="Assets\Scripts\Quests\ChestManager.cs" />
+    <Compile Include="Assets\Scripts\Quests\ChestMarker.cs" />
+    <Compile Include="Assets\Scripts\Scene Management\GenerateGUID.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Udemy RPG Assets\Licence.txt" />
