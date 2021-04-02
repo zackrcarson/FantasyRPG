@@ -309,9 +309,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questMarkerNames:
   - 
-  - fight the dragon
-  - enter the cave
-  - quest test
-  - save the world
-  - fight the demon
+  - Talk to Poppy.
+  possibleQuests:
+  - Talk to Poppy.
+  - Kill the dragon living in the caves.
+  - Go talk to Julia.
   questMarkersComplete: 

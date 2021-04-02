@@ -50188,10 +50188,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 7278419065052470374, guid: d75b39106035cbe4691ae33bce039e1b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7278419065052470393, guid: d75b39106035cbe4691ae33bce039e1b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -50240,10 +50236,6 @@ PrefabInstance:
       propertyPath: tilemap
       value: 
       objectReference: {fileID: 350082617}
-    - target: {fileID: 7278419065052470394, guid: d75b39106035cbe4691ae33bce039e1b, type: 3}
-      propertyPath: musicToPlay
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75b39106035cbe4691ae33bce039e1b, type: 3}
 --- !u!1001 &886870398
@@ -81727,6 +81719,18 @@ PrefabInstance:
     - target: {fileID: 4465692176157038545, guid: 42d34492a41c5fb4198c56bb2132cc77, type: 3}
       propertyPath: m_Name
       value: NPC_Poppy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465692176157038548, guid: 42d34492a41c5fb4198c56bb2132cc77, type: 3}
+      propertyPath: addNewQuest
+      value: Kill the dragon living in the caves.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465692176157038548, guid: 42d34492a41c5fb4198c56bb2132cc77, type: 3}
+      propertyPath: questToMark
+      value: Talk to Poppy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465692176157038548, guid: 42d34492a41c5fb4198c56bb2132cc77, type: 3}
+      propertyPath: markQuestComplete
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4465692176157038551, guid: 42d34492a41c5fb4198c56bb2132cc77, type: 3}
       propertyPath: m_RootOrder

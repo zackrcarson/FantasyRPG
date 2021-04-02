@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class QuestManager : MonoBehaviour
@@ -5,10 +6,11 @@ public class QuestManager : MonoBehaviour
     public static QuestManager instance;
 
     // Config Parameters
-    [SerializeField] string[] questMarkerNames = null;
-    
+    [SerializeField] public List<string> questMarkerNames = null;
+    [SerializeField] public List<string> possibleQuests = null; // TODO: Remember to re-fill possible quests with all possible quests!!
+
     // State Variables
-    public bool[] questMarkersComplete = null; // TODO: Remove public for testing
+    public List<bool> questMarkersComplete = null; // TODO: add HideInInspector after testing
 
     private void Awake()
     {
@@ -19,10 +21,34 @@ public class QuestManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        questMarkersComplete = new bool[questMarkerNames.Length];
+        questMarkersComplete = new List<bool>();
+        for (int i = 0; i < questMarkerNames.Count; i++)
+        {
+            questMarkersComplete.Add(false);
+        }
     }
 
-    private int GetQuestNumber(string questToFind)
+    public void AddQuest(string questName)
+    {
+        bool alreadyHaveQuest = false;
+
+        foreach (string quest in questMarkerNames)
+        {
+            if (quest == questName)
+            {
+                alreadyHaveQuest = true;
+            }
+        }
+
+        if (!alreadyHaveQuest)
+        {
+            questMarkerNames.Add(questName);
+
+            questMarkersComplete.Add(false);
+        }
+    }
+
+    public int GetQuestNumber(string questToFind)
     {
         int i = 0;
         foreach (string quest in questMarkerNames)
@@ -36,7 +62,7 @@ public class QuestManager : MonoBehaviour
         }
 
         // Always leave the first quest blank, so a 0 does not correspond to a quest 
-        Debug.LogError("Quest " + questToFind + " does not exist.");
+        //Debug.LogError("Quest " + questToFind + " does not exist.");
         return 0;
     }
 
@@ -58,7 +84,10 @@ public class QuestManager : MonoBehaviour
     {
         int questNumber = GetQuestNumber(questToMark);
 
-        questMarkersComplete[questNumber] = true;
+        if (questNumber > 0)
+        {
+            questMarkersComplete[questNumber] = true;
+        }
 
         UpdateLocalQuestObjects();
     }
@@ -105,30 +134,38 @@ public class QuestManager : MonoBehaviour
 
     public void LoadQuestData()
     {
+        questMarkerNames = new List<string>();
+        questMarkersComplete = new List<bool>();
+
+        questMarkerNames.Add("");
+        questMarkersComplete.Add(false);
+
         int i = 0;
-        foreach (string questMarker in questMarkerNames)
+        foreach (string questMarker in possibleQuests)
         {
             // If a new marker is not found in the PlayerPrefs, set it to 0 (false). Else, set it to the saved value.
             int valueToSet = 0;
             if (PlayerPrefs.HasKey("QuestMarker_" + questMarker))
             {
                 valueToSet = PlayerPrefs.GetInt("QuestMarker_" + questMarker);
-            }
 
-            if (valueToSet == 0)
-            {
-                questMarkersComplete[i] = false;
-            }
-            else
-            {
-                questMarkersComplete[i] = true;
+                questMarkerNames.Add(questMarker);
+
+                if (valueToSet == 0)
+                {
+                    questMarkersComplete.Add(false);
+                }
+                else
+                {
+                    questMarkersComplete.Add(true);
+                }
             }
 
             i++;
         }
 
-        QuestObjectActivator[] questObjectActivatos = FindObjectsOfType<QuestObjectActivator>();
-        foreach (QuestObjectActivator questActivator in questObjectActivatos)
+        QuestObjectActivator[] questObjectActivators = FindObjectsOfType<QuestObjectActivator>();
+        foreach (QuestObjectActivator questActivator in questObjectActivators)
         {
             questActivator.CheckCompletion();
         }

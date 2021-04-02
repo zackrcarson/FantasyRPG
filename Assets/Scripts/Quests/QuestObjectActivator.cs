@@ -6,6 +6,8 @@ public class QuestObjectActivator : MonoBehaviour
     [SerializeField] GameObject objectToActivate = null;
     [SerializeField] string questToCheck = null;
     [SerializeField] bool activeIfComplete = true;
+    [SerializeField] bool dontActivateIfQuestComplete = false;
+    [SerializeField] string dontActivateIfQuestCompleteQuest = "";
 
     // State Variables
     bool initialCheckDone = false;
@@ -25,7 +27,21 @@ public class QuestObjectActivator : MonoBehaviour
     {
         if (QuestManager.instance.CheckIfComplete(questToCheck))
         {
-            objectToActivate.SetActive(activeIfComplete);
+            if (dontActivateIfQuestComplete)
+            {
+                if (QuestManager.instance.CheckIfComplete(dontActivateIfQuestCompleteQuest))
+                {
+                    objectToActivate.SetActive(false);
+                }
+                else
+                {
+                    objectToActivate.SetActive(true);
+                }
+            }
+            else
+            {
+                objectToActivate.SetActive(activeIfComplete);
+            }
         }
     }
 }

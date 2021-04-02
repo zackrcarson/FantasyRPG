@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -62,6 +63,11 @@ public class GameMenu : MonoBehaviour
     [SerializeField] Text statsEXP = null;
     [SerializeField] Text lvlText = null;
 
+    [Header("Quests")]
+    [SerializeField] Text[] questTexts = null;
+    [SerializeField] Color completedQuestTextColor;
+    Color defaultQuestTextColor;
+
     [Header("Notifications")]
     [SerializeField] Text notificationText = null;
     [SerializeField] float saveLoadNotificationActiveTime = 3f;
@@ -87,6 +93,8 @@ public class GameMenu : MonoBehaviour
 
     private void Start()
     {
+        defaultQuestTextColor = questTexts[0].color;
+
         itemButtonToggles = new ButtonToggle[itemButtons.Length];
         for (int i = 0; i < itemButtons.Length; i++)
         {
@@ -282,6 +290,54 @@ public class GameMenu : MonoBehaviour
             statsButton.GetComponentInChildren<Text>().text = characterStats[i].characterName;
 
             i++;
+        }
+    }
+
+    public void OpenQuests()
+    {
+        List<string> quests = QuestManager.instance.questMarkerNames;
+        List<bool> questsComplete = QuestManager.instance.questMarkersComplete;
+
+        int n = 1;
+        if (quests.Count > questTexts.Length)
+        {
+            n = (quests.Count - questTexts.Length );
+        }
+
+        bool questFound = false;
+
+        int i = 0;
+        foreach (Text questText in questTexts)
+        {
+            if (quests.Count > i + n && quests[i + n] != "")
+            {
+                questFound = true;
+
+                questText.text = "- " + quests[i + n];
+
+                if (!questsComplete[i + n])
+                {
+                    questText.color = defaultQuestTextColor;
+                }
+                else
+                {
+                    questText.text += " - Completed!";
+                    questText.color = completedQuestTextColor; ;
+                }
+            }
+            else
+            {
+                questText.text = "";
+                questText.color = defaultQuestTextColor;
+            }
+
+            i++;
+        }
+
+        if (!questFound)
+        {
+            questTexts[0].text = "No quests found! Go find some.";
+            questTexts[0].color = defaultQuestTextColor;
         }
     }
 
@@ -551,6 +607,8 @@ public class GameMenu : MonoBehaviour
 
     public void SaveGame()
     {
+        PlayerPrefs.DeleteAll();
+
         GameManager.instance.SaveData();
         QuestManager.instance.SaveQuestData();
 
@@ -570,12 +628,17 @@ public class GameMenu : MonoBehaviour
     {
         GameManager.instance.fadingScreen = true;
         UIFade.instance.CallFadeOut();
+        AudioManager.instance.StopMusic();
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         CloseMenu();
-        GameManager.instance.LoadData();
-        QuestManager.instance.LoadQuestData();
+
+        Destroy(FindObjectOfType<PlayerController>().gameObject);
+        Destroy(GameManager.instance.gameObject);
+        Destroy(AudioManager.instance.gameObject);
+        Destroy(BattleManager.instance.gameObject);
+        SceneLoader.LoadSceneByName("Loading Scene");
     }
 
     public void PlayButtonSound()

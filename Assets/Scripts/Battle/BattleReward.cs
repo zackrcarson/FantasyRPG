@@ -18,6 +18,9 @@ public class BattleReward : MonoBehaviour
     [HideInInspector] public bool markQuestComplete = false;
     [HideInInspector] public string questToComplete = null;
 
+    [HideInInspector] public bool shouldAddQuest = false;
+    [HideInInspector] public string questToAdd = "";
+
     private void Awake()
     {
         instance = this;
@@ -83,6 +86,11 @@ public class BattleReward : MonoBehaviour
         if (markQuestComplete)
         {
             QuestManager.instance.MarkQuestComplete(questToComplete);
+        }
+
+        if (shouldAddQuest)
+        {
+            QuestManager.instance.AddQuest(questToAdd);
         }
 
         List<LevelUpInfo> levelUpInfos = new List<LevelUpInfo> { };

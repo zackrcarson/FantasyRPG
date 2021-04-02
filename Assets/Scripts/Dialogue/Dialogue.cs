@@ -8,6 +8,7 @@ public class Dialogue : MonoBehaviour
     //[SerializeField] bool shouldActivateQuest = false;
     [SerializeField] string questToMark = null;
     [SerializeField] bool markQuestComplete = false;
+    [SerializeField] string addNewQuest = "";
 
     // State variables
     bool canActivate = false;
@@ -22,6 +23,7 @@ public class Dialogue : MonoBehaviour
             {
                 DialogueManager.instance.ShowNewDialogue(dialogueLines, NPCName);
                 DialogueManager.instance.ShouldActivateQuestAtEnd(questToMark, markQuestComplete);
+                DialogueManager.instance.ShouldAddQuestAtEnd(addNewQuest);
             }
         }
     }

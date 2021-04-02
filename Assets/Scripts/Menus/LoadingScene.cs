@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LoadingScene : MonoBehaviour
@@ -15,9 +14,15 @@ public class LoadingScene : MonoBehaviour
 
             if (waitToLoad <= 0)
             {
-                GameManager.instance.LoadData();
-                QuestManager.instance.LoadQuestData();
+                Load();
             }
         }
+    }
+
+    private void Load()
+    {
+        UIFade.instance.CallFadeIn();
+        GameManager.instance.LoadData();
+        QuestManager.instance.LoadQuestData();
     }
 }

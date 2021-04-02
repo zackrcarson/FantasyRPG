@@ -20,6 +20,9 @@ public class BattleStarter : MonoBehaviour
     [SerializeField] bool shouldCompleteQuest = false;
     [SerializeField] string questToComplete = null;
 
+    [SerializeField] bool shouldAddQuest = false;
+    [SerializeField] string questToAdd = "";
+
     // State Variables   
     bool isInBattleZone = false;
     float battleCounter = 10f;
@@ -93,9 +96,19 @@ public class BattleStarter : MonoBehaviour
         BattleManager.instance.battleRewardNumbers = battle.rewardItemNumbers;
 
         BattleManager.instance.BattleStart(battle.enemies, cannotFlee, isBoss);
+        
+        if (QuestManager.instance.GetQuestNumber(questToComplete) > 0)
+        {
+            BattleReward.instance.markQuestComplete = shouldCompleteQuest;
+            BattleReward.instance.questToComplete = questToComplete;
+        }
+        else
+        {
+            BattleReward.instance.markQuestComplete = shouldCompleteQuest;
+        }
 
-        BattleReward.instance.markQuestComplete = shouldCompleteQuest;
-        BattleReward.instance.questToComplete = questToComplete;
+        BattleReward.instance.shouldAddQuest = shouldAddQuest;
+        BattleReward.instance.questToAdd = questToAdd;
 
         if (deactivateAfterStarting)
         {
@@ -105,7 +118,7 @@ public class BattleStarter : MonoBehaviour
 
     private IEnumerator DelayedDeactivate()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(.1f);
 
         gameObject.SetActive(false);
     }

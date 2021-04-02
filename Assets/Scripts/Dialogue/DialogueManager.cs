@@ -26,6 +26,8 @@ public class DialogueManager : MonoBehaviour
     bool markQuestComplete = true;
     bool shouldMarkQuest = true;
 
+    string questToAdd = "";
+
     // Cached References
     PlayerController player = null;
 
@@ -84,6 +86,12 @@ public class DialogueManager : MonoBehaviour
                             {
                                 QuestManager.instance.MarkQuestIncomplete(questToMark);
                             }
+                        }
+
+                        if (questToAdd != "")
+                        {
+                            QuestManager.instance.AddQuest(questToAdd);
+                            questToAdd = "";
                         }
                     }
                 }
@@ -170,5 +178,10 @@ public class DialogueManager : MonoBehaviour
         markQuestComplete = markComplete;
 
         shouldMarkQuest = true;
+    }
+
+    public void ShouldAddQuestAtEnd(string questName)
+    {
+        questToAdd = questName;
     }
 }
