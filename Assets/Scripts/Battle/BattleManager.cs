@@ -16,10 +16,6 @@ public class BattleManager : MonoBehaviour
     [SerializeField] SpriteRenderer battleBackground = null;
     [SerializeField] GameObject battleUI = null;
     [SerializeField] Sprite[] backgroundImages = null;
-    [SerializeField] int battleMusic = 0;
-    [SerializeField] int gameOverMusic = 8;
-    [SerializeField] int victorySound = 9;
-    [SerializeField] int fleeSound = 10;
     [SerializeField] float backgroundFadeTime = 1f;
     [SerializeField] float battleEndDelay1 = 1.5f;
     [SerializeField] float battleEndDelay2 = 0.5f;
@@ -47,10 +43,21 @@ public class BattleManager : MonoBehaviour
     [SerializeField] BattleCharacter[] playerPrefabs = null;
     [SerializeField] BattleCharacter[] enemyPrefabs = null;
 
-    [Header("UI")]
-    [Header("Misc. UI")]
+    [Header("Audio")]
     [SerializeField] int beepSound = 5;
     [SerializeField] int itemSlotSound = 8;
+    [SerializeField] int battleIntro = 33;
+    [SerializeField] int battleMusic = 0;
+    [SerializeField] int gameOverMusic = 8;
+    [SerializeField] int victorySound = 9;
+    [SerializeField] int fleeSound = 10;
+    [SerializeField] int fleeSuccessSound = 41;
+    [SerializeField] int failToFleeSound = 39;
+    [SerializeField] int errorSound = 21;
+    [SerializeField] int gameOverSound = 40;
+
+    [Header("UI")]
+    [Header("Misc. UI")]
     [SerializeField] GameObject uiButtons = null;
     [SerializeField] public BattleNotification battleNotification = null;
 
@@ -264,6 +271,8 @@ public class BattleManager : MonoBehaviour
 
     private IEnumerator FadeInBattleScene(string[] enemiesToSpawn)
     {
+        AudioManager.instance.PlaySFX(battleIntro);
+
         battleScene.SetActive(true);
         AudioManager.instance.PlayMusic(battleMusic);
 
@@ -297,6 +306,7 @@ public class BattleManager : MonoBehaviour
         }
         else
         {
+            AudioManager.instance.PlaySFX(gameOverSound);
             StartCoroutine(FadeOutBattleScreenGameOver());
         }
 
@@ -762,6 +772,7 @@ public class BattleManager : MonoBehaviour
     {
         if (cannotFlee)
         {
+            AudioManager.instance.PlaySFX(errorSound);
             battleNotification.notificationMessage.text = "You can't even attempt to escape this battle, you would get eaten!";
             battleNotification.Activate();
         }
@@ -779,6 +790,7 @@ public class BattleManager : MonoBehaviour
         {
             battleNotification.notificationMessage.text = "You successfully escaped the battle!";
             battleNotification.Activate();
+            AudioManager.instance.PlaySFX(fleeSuccessSound);
 
             yield return new WaitForSeconds(battleNotification.awakeTime);
 
@@ -786,6 +798,7 @@ public class BattleManager : MonoBehaviour
         }
         else
         {
+            AudioManager.instance.PlaySFX(failToFleeSound);
             battleNotification.notificationMessage.text = "You failed to flee!";
             battleNotification.Activate();
 

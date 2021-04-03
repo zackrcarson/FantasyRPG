@@ -2459,3 +2459,2038 @@ System memory in use after: 68.3 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1934.
 Total: 3.539500 ms (FindLiveObjects: 0.443700 ms CreateObjectMapping: 0.132200 ms MarkObjects: 2.869900 ms  DeleteObjects: 0.090100 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001585 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.377 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.3 MB.
+System memory in use after: 68.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1937.
+Total: 2.800800 ms (FindLiveObjects: 0.251300 ms CreateObjectMapping: 0.048000 ms MarkObjects: 2.410800 ms  DeleteObjects: 0.087100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001840 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.855 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.3 MB.
+System memory in use after: 68.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1940.
+Total: 4.266000 ms (FindLiveObjects: 0.247000 ms CreateObjectMapping: 0.065700 ms MarkObjects: 3.873800 ms  DeleteObjects: 0.077200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 76243.337461 seconds.
+  path: Assets/Audio/SFX/Potion.wav
+  artifactKey: Guid(b28ca638ca2039d43a01994d62676d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/Potion.wav using Guid(b28ca638ca2039d43a01994d62676d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3ee7fe5299cfc15c941a71421b03f04') in 0.180203 seconds
+  Import took 0.183621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 112.686810 seconds.
+  path: Assets/Audio/SFX/powerup.wav
+  artifactKey: Guid(2a8f8decc12b2644ba48bfb14122926c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/powerup.wav using Guid(2a8f8decc12b2644ba48bfb14122926c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88227086f5b7367850155a08ebf5d8fd') in 0.030773 seconds
+  Import took 0.034651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 187.462628 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack
+  artifactKey: Guid(4175d6487379db843a9d2479d1ca6850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack using Guid(4175d6487379db843a9d2479d1ca6850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a721804f317ac5b0dd9f52f6f237efc7') in 0.008841 seconds
+  Import took 0.011566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.437979 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/__MACOSX
+  artifactKey: Guid(4aa96cafb840ae045b02ab533cb230bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/__MACOSX using Guid(4aa96cafb840ae045b02ab533cb230bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a36976f7255845ac2435049cf2d383b9') in 0.009261 seconds
+  Import took 0.011903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.829037 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack
+  artifactKey: Guid(63a2240cf2784444bb49ee7da299e3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack using Guid(63a2240cf2784444bb49ee7da299e3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd667c3e106ae3adcb274099a43cbf288') in 0.008359 seconds
+  Import took 0.011247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.674505 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface
+  artifactKey: Guid(9415717cd6587f649ba8104b183445c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface using Guid(9415717cd6587f649ba8104b183445c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f1b97199fed0299c70303b1dbb806d4') in 0.009527 seconds
+  Import took 0.013102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.828257 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface/interface1.wav
+  artifactKey: Guid(914958375071d4946a86dc86f82b02e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface/interface1.wav using Guid(914958375071d4946a86dc86f82b02e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a02bb082afcd91e0e5d83d63b11919b3') in 0.023219 seconds
+  Import took 0.025905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.687406 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory
+  artifactKey: Guid(214e0fccef85eda49b6045305e4a0e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory using Guid(214e0fccef85eda49b6045305e4a0e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f318be373ee31db17111cda6a20b97ad') in 0.010304 seconds
+  Import took 0.013410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.929257 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/armor-light.wav
+  artifactKey: Guid(fa9c4108f8cec3849a72857a0c209edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/armor-light.wav using Guid(fa9c4108f8cec3849a72857a0c209edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53b7e255f1cd053153eb25b66bb0658a') in 0.027714 seconds
+  Import took 0.030665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.851802 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/beads.wav
+  artifactKey: Guid(ee3cb9c7e93d36340bf90a2beac9c1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/beads.wav using Guid(ee3cb9c7e93d36340bf90a2beac9c1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024e5405271b4ddef0a1ca48e9cfa123') in 0.029478 seconds
+  Import took 0.033014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.561772 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/bottle.wav
+  artifactKey: Guid(f7c3c5a3f634ae94b838d29129e2a765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/bottle.wav using Guid(f7c3c5a3f634ae94b838d29129e2a765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b2f5fa558d522a2262ff72e3d06be2b') in 0.029601 seconds
+  Import took 0.032554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.424893 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/bubble.wav
+  artifactKey: Guid(b3c2c3a12e4ba374a97125966630cf76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/bubble.wav using Guid(b3c2c3a12e4ba374a97125966630cf76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b35b40f2fa9e82d872e4e7690e49d538') in 0.031053 seconds
+  Import took 0.041774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.432077 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/bubble2.wav
+  artifactKey: Guid(69e350ff17f378d4d9e86a955cc6b764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/bubble2.wav using Guid(69e350ff17f378d4d9e86a955cc6b764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a483c165151fe4b9fee805af1373d9b') in 0.034118 seconds
+  Import took 0.037058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.886382 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/chainmail2.wav
+  artifactKey: Guid(b6ec0413cd2579f418a2d29ab75d4e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/chainmail2.wav using Guid(b6ec0413cd2579f418a2d29ab75d4e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86f7aad9d84b4ec9163b304fb5c9fab') in 0.015704 seconds
+  Import took 0.026614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.401982 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/chainmail1.wav
+  artifactKey: Guid(bd86eede604a80f41bb2fee06c522815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/chainmail1.wav using Guid(bd86eede604a80f41bb2fee06c522815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48f1ceeada88e8d6bcc5249363f12461') in 0.024201 seconds
+  Import took 0.027693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.717406 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/coin.wav
+  artifactKey: Guid(c85fcbde63610274ba15571da554f6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/coin.wav using Guid(c85fcbde63610274ba15571da554f6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05d378daa67358f7689520d320ceb2c') in 0.018963 seconds
+  Import took 0.029855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.731587 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/coin2.wav
+  artifactKey: Guid(d14381b9b80c8b34eb34e7df81bcda40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/coin2.wav using Guid(d14381b9b80c8b34eb34e7df81bcda40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15d9051270a3f5bf7439f8d4d0583d60') in 0.021118 seconds
+  Import took 0.023841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.439561 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/coin3.wav
+  artifactKey: Guid(b59dc7e1c3264bd4cb064ce559c2608e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/coin3.wav using Guid(b59dc7e1c3264bd4cb064ce559c2608e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc46dbcd4bf1586ffb8ef67380cc0578') in 0.015825 seconds
+  Import took 0.027226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.953502 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/cloth.wav
+  artifactKey: Guid(c1970b4b02f6c1c4896cdeb2b21583ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/cloth.wav using Guid(c1970b4b02f6c1c4896cdeb2b21583ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ff413ce20cf58e67278da51bba5c77') in 0.030615 seconds
+  Import took 0.034539 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001826 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.807 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.4 MB.
+System memory in use after: 71.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1952.
+Total: 1.981000 ms (FindLiveObjects: 0.182500 ms CreateObjectMapping: 0.042100 ms MarkObjects: 1.696600 ms  DeleteObjects: 0.058200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 551.867980 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/cloth-heavy.wav
+  artifactKey: Guid(bb6bfedd24b31cf49809b54e6ffb98cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/cloth-heavy.wav using Guid(bb6bfedd24b31cf49809b54e6ffb98cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e11d401385ac35a1eb033be585390170') in 0.059095 seconds
+  Import took 0.061808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.370524 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/metal-ringing.wav
+  artifactKey: Guid(398b219fdfc81c34392fb464a0da54f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/metal-ringing.wav using Guid(398b219fdfc81c34392fb464a0da54f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2158a29833a489bd08931ecaf98f2a57') in 0.031439 seconds
+  Import took 0.033944 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001617 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.806 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.4 MB.
+System memory in use after: 71.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1956.
+Total: 2.049200 ms (FindLiveObjects: 0.196800 ms CreateObjectMapping: 0.055700 ms MarkObjects: 1.730600 ms  DeleteObjects: 0.064400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 322.910341 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface/interface6.wav
+  artifactKey: Guid(b05fd2d33c940344aa0828de9a3ea0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface/interface6.wav using Guid(b05fd2d33c940344aa0828de9a3ea0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e8ea5ebfb3f080d3dcac3a3bb0b41f') in 0.059682 seconds
+  Import took 0.062496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.377731 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface/interface5.wav
+  artifactKey: Guid(8999a7eb47bbcfc4ea186417a2a02d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface/interface5.wav using Guid(8999a7eb47bbcfc4ea186417a2a02d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a9c7fa25968bec25b99efa226d79c8') in 0.017133 seconds
+  Import took 0.020045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001161 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface/interface5.wav
+  artifactKey: Guid(8999a7eb47bbcfc4ea186417a2a02d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface/interface5.wav using Guid(8999a7eb47bbcfc4ea186417a2a02d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a9c7fa25968bec25b99efa226d79c8') in 0.012841 seconds
+  Import took 0.015541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.166068 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface/interface4.wav
+  artifactKey: Guid(cc2a3351e9ddc4f46a5818fc499267b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface/interface4.wav using Guid(cc2a3351e9ddc4f46a5818fc499267b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4288fddc70ef782f5307076a9d0d1329') in 0.027772 seconds
+  Import took 0.031130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.124187 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface/interface3.wav
+  artifactKey: Guid(ad874b18c7f2605488b5d708bb3cd781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface/interface3.wav using Guid(ad874b18c7f2605488b5d708bb3cd781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '095181573e245cb8772623e80dfa6c48') in 0.020294 seconds
+  Import took 0.030976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.954302 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface/interface2.wav
+  artifactKey: Guid(ee8ec2323eac02742b94fa6bff22b090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/interface/interface2.wav using Guid(ee8ec2323eac02742b94fa6bff22b090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a54ecfa977cea5d0e8dfbf03fc3639d8') in 0.025936 seconds
+  Import took 0.029361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.728882 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/world
+  artifactKey: Guid(a560e93dbdfeadf4caa050ffb5dadbd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/world using Guid(a560e93dbdfeadf4caa050ffb5dadbd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42516cf9c52cc4ac4a422a4d634380de') in 0.007501 seconds
+  Import took 0.010524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.832331 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC
+  artifactKey: Guid(3f94b58ae830f2f4da6e0e851941f73e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC using Guid(3f94b58ae830f2f4da6e0e851941f73e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7dcf6ddec68f2c70ae7339cac78f641') in 0.016403 seconds
+  Import took 0.019371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.611326 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/slime
+  artifactKey: Guid(b095d4687c02b3145b12784cd2f29e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/slime using Guid(b095d4687c02b3145b12784cd2f29e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4c213f1706d774288b33cab7ba85147') in 0.007811 seconds
+  Import took 0.010155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.030777 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/slime/slime1.wav
+  artifactKey: Guid(38f5d1c130fb7d94db2171cd558c0752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/slime/slime1.wav using Guid(38f5d1c130fb7d94db2171cd558c0752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90584be7f18891c7e05c735a08e2ac38') in 0.025041 seconds
+  Import took 0.028028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.884182 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/misc
+  artifactKey: Guid(a9afc9896a564994797dcfd5ea01fa9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/misc using Guid(a9afc9896a564994797dcfd5ea01fa9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5293cb5804014d53207395f95504e355') in 0.016581 seconds
+  Import took 0.019150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.228488 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/misc/random1.wav
+  artifactKey: Guid(a1924cd1286262348ada39d236be85d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/misc/random1.wav using Guid(a1924cd1286262348ada39d236be85d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e17e2584ce7bf26f6a2cb68cd6b5f6') in 0.019938 seconds
+  Import took 0.031697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.358080 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle
+  artifactKey: Guid(d2f85262187b83641a3350d4a198f541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle using Guid(d2f85262187b83641a3350d4a198f541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d2db64b85ac6f07e3dee36dc9f8d79') in 0.016101 seconds
+  Import took 0.018712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.622502 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/sword-unsheathe.wav
+  artifactKey: Guid(7acee644833ea724988031dc23e633b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/sword-unsheathe.wav using Guid(7acee644833ea724988031dc23e633b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25834c85c68329440d93ba115d8d33af') in 0.019911 seconds
+  Import took 0.022375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.024443 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/spell.wav
+  artifactKey: Guid(5e064312758d8ae49b23f3001c6abcb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/spell.wav using Guid(5e064312758d8ae49b23f3001c6abcb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c234df52128876f0ee54b2bb571a4f02') in 0.019890 seconds
+  Import took 0.022817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001064 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/spell.wav
+  artifactKey: Guid(5e064312758d8ae49b23f3001c6abcb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/spell.wav using Guid(5e064312758d8ae49b23f3001c6abcb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c234df52128876f0ee54b2bb571a4f02') in 0.012988 seconds
+  Import took 0.016567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 113.569866 seconds.
+  path: Assets/Audio/SFX/JRPG_UI
+  artifactKey: Guid(84a07aae853b6074a9e99eba151ae4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/JRPG_UI using Guid(84a07aae853b6074a9e99eba151ae4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8112343396eaaf79193d8d73cd862ef') in 0.007646 seconds
+  Import took 0.019528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.254995 seconds.
+  path: Assets/Audio/SFX/JRPG_UI/Error.wav
+  artifactKey: Guid(891b89cbd98340040a4354477895db23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/JRPG_UI/Error.wav using Guid(891b89cbd98340040a4354477895db23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4832e61b84aef96f8461b88245ef5d37') in 0.016098 seconds
+  Import took 0.019229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002455 seconds.
+  path: Assets/Audio/SFX/JRPG_UI/Error.wav
+  artifactKey: Guid(891b89cbd98340040a4354477895db23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/JRPG_UI/Error.wav using Guid(891b89cbd98340040a4354477895db23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4832e61b84aef96f8461b88245ef5d37') in 0.011849 seconds
+  Import took 0.014952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 149.310359 seconds.
+  path: Assets/Audio/SFX/JRPG_UI/BattleIntro.wav
+  artifactKey: Guid(0da1ec10bc9a8f248856d5b75fa11c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/JRPG_UI/BattleIntro.wav using Guid(0da1ec10bc9a8f248856d5b75fa11c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ce14d8a94478d25bae5a20c64f8c9c0') in 0.038950 seconds
+  Import took 0.041830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.154962 seconds.
+  path: Assets/Audio/SFX/JRPG_UI/Purchase.wav
+  artifactKey: Guid(9affe78aa1fb6d24ea9d521609d3ea52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/JRPG_UI/Purchase.wav using Guid(9affe78aa1fb6d24ea9d521609d3ea52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '780532d7e8a9d801850f4aaf5082d55f') in 0.023637 seconds
+  Import took 0.035839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 79.586910 seconds.
+  path: Assets/Audio/SFX/JRPG_UI/Close.wav
+  artifactKey: Guid(2e3ce015109014c498abdee5d963faba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/JRPG_UI/Close.wav using Guid(2e3ce015109014c498abdee5d963faba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca4ead53e64d4e3932b97015a1583577') in 0.019159 seconds
+  Import took 0.021856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.655533 seconds.
+  path: Assets/Audio/SFX/JRPG_UI/Confirm.wav
+  artifactKey: Guid(0d995fcabce4ab54e9cb816ebe14fd1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/JRPG_UI/Confirm.wav using Guid(0d995fcabce4ab54e9cb816ebe14fd1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a3ea7b03ec5264860e52814842036c') in 0.015815 seconds
+  Import took 0.020588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000593 seconds.
+  path: Assets/Audio/SFX/JRPG_UI/Confirm.wav
+  artifactKey: Guid(0d995fcabce4ab54e9cb816ebe14fd1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/JRPG_UI/Confirm.wav using Guid(0d995fcabce4ab54e9cb816ebe14fd1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a3ea7b03ec5264860e52814842036c') in 0.012111 seconds
+  Import took 0.014585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.217543 seconds.
+  path: Assets/Audio/SFX/JRPG_UI/Cursor.wav
+  artifactKey: Guid(85746fc7734bbc34893b3c83785e9135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/JRPG_UI/Cursor.wav using Guid(85746fc7734bbc34893b3c83785e9135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18dce1cb2a177b51bf3bb41f28803a94') in 0.033854 seconds
+  Import took 0.046072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.458326 seconds.
+  path: Assets/Audio/SFX/JRPG_UI/Equip.wav
+  artifactKey: Guid(6f6566c94b1060d4098cf54ad9fa17a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/JRPG_UI/Equip.wav using Guid(6f6566c94b1060d4098cf54ad9fa17a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82500052ebb9d98d0b7bcf88501ca207') in 0.025172 seconds
+  Import took 0.027532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.436901 seconds.
+  path: Assets/Audio/SFX/JRPG_UI/LoadSave.wav
+  artifactKey: Guid(d652c7dee08cc2543a16753f5cf45f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/JRPG_UI/LoadSave.wav using Guid(d652c7dee08cc2543a16753f5cf45f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e8f182a9a51f3c507c34f8043e734b8') in 0.031771 seconds
+  Import took 0.034513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.554794 seconds.
+  path: Assets/Audio/SFX/JRPG_UI/Open.wav
+  artifactKey: Guid(14d303df42fb3b94db81d6f255013420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/JRPG_UI/Open.wav using Guid(14d303df42fb3b94db81d6f255013420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '309cfb4d9ecb274df728b337d5aab3ad') in 0.015326 seconds
+  Import took 0.017771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002802 seconds.
+  path: Assets/Audio/SFX/JRPG_UI/Open.wav
+  artifactKey: Guid(14d303df42fb3b94db81d6f255013420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/JRPG_UI/Open.wav using Guid(14d303df42fb3b94db81d6f255013420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '309cfb4d9ecb274df728b337d5aab3ad') in 0.018705 seconds
+  Import took 0.021907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.238596 seconds.
+  path: Assets/Audio/SFX/JRPG_UI/discard.wav
+  artifactKey: Guid(6f6566c94b1060d4098cf54ad9fa17a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/JRPG_UI/discard.wav using Guid(6f6566c94b1060d4098cf54ad9fa17a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4c5bf8f27ced22e08440aaff4945d2') in 0.028151 seconds
+  Import took 0.030597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 686.837632 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/metal-small1.wav
+  artifactKey: Guid(147d9d62cb086f9458676655d21c819e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/metal-small1.wav using Guid(147d9d62cb086f9458676655d21c819e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb6dbb75b5ff204b25823b235d9349a') in 0.030074 seconds
+  Import took 0.032977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.004788 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/metal-small2.wav
+  artifactKey: Guid(56f43d5c602031a44b055da79305e55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/inventory/metal-small2.wav using Guid(56f43d5c602031a44b055da79305e55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e4aa678620fcb370955db7a3e1ac30') in 0.028125 seconds
+  Import took 0.030954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.778394 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/sword-unsheathe2.wav
+  artifactKey: Guid(60897e9dd1e59f54fadc288be2894e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/sword-unsheathe2.wav using Guid(60897e9dd1e59f54fadc288be2894e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db10a87773abbdac33fffafdd68c2210') in 0.028907 seconds
+  Import took 0.031971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.084141 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/sword-unsheathe3.wav
+  artifactKey: Guid(e79322b6b91d4424d9768bcb30912b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/sword-unsheathe3.wav using Guid(e79322b6b91d4424d9768bcb30912b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2514cc8c880f0008c9c5fa731baf3b82') in 0.014897 seconds
+  Import took 0.018166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002483 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/sword-unsheathe3.wav
+  artifactKey: Guid(e79322b6b91d4424d9768bcb30912b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/sword-unsheathe3.wav using Guid(e79322b6b91d4424d9768bcb30912b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2514cc8c880f0008c9c5fa731baf3b82') in 0.012334 seconds
+  Import took 0.015223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.064661 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/sword-unsheathe4.wav
+  artifactKey: Guid(079ca628bbb98914c9c2db718e604397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/sword-unsheathe4.wav using Guid(079ca628bbb98914c9c2db718e604397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8384ca5def59cef1c26330104bbd3974') in 0.016966 seconds
+  Import took 0.020103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001159 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/sword-unsheathe4.wav
+  artifactKey: Guid(079ca628bbb98914c9c2db718e604397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/sword-unsheathe4.wav using Guid(079ca628bbb98914c9c2db718e604397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8384ca5def59cef1c26330104bbd3974') in 0.016920 seconds
+  Import took 0.019743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.070923 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/sword-unsheathe5.wav
+  artifactKey: Guid(ad3358c137ddadd4fbff035a0b87e62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/sword-unsheathe5.wav using Guid(ad3358c137ddadd4fbff035a0b87e62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92a3f2fe4a22817f42fac91f5d84ce10') in 0.018755 seconds
+  Import took 0.021820 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001710 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.793 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.4 MB.
+System memory in use after: 71.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1960.
+Total: 1.974600 ms (FindLiveObjects: 0.185500 ms CreateObjectMapping: 0.046300 ms MarkObjects: 1.681300 ms  DeleteObjects: 0.060100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001752 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.804 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.4 MB.
+System memory in use after: 71.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1963.
+Total: 2.394400 ms (FindLiveObjects: 0.403400 ms CreateObjectMapping: 0.167500 ms MarkObjects: 1.760700 ms  DeleteObjects: 0.060200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001647 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.783 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 71.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1966.
+Total: 2.383200 ms (FindLiveObjects: 0.347600 ms CreateObjectMapping: 0.108600 ms MarkObjects: 1.863800 ms  DeleteObjects: 0.061700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002483 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.836 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 71.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1969.
+Total: 1.982500 ms (FindLiveObjects: 0.188500 ms CreateObjectMapping: 0.058900 ms MarkObjects: 1.672000 ms  DeleteObjects: 0.061300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001743 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.792 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 71.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1972.
+Total: 2.059400 ms (FindLiveObjects: 0.201000 ms CreateObjectMapping: 0.044400 ms MarkObjects: 1.756700 ms  DeleteObjects: 0.055700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001988 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.078 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 71.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1975.
+Total: 2.266700 ms (FindLiveObjects: 0.221000 ms CreateObjectMapping: 0.073500 ms MarkObjects: 1.879100 ms  DeleteObjects: 0.091700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002057 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.786 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 71.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1978.
+Total: 2.066200 ms (FindLiveObjects: 0.212300 ms CreateObjectMapping: 0.037800 ms MarkObjects: 1.745700 ms  DeleteObjects: 0.069500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001686 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.778 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 71.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1981.
+Total: 2.098800 ms (FindLiveObjects: 0.184900 ms CreateObjectMapping: 0.047900 ms MarkObjects: 1.803600 ms  DeleteObjects: 0.061000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001656 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.795 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 71.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1984.
+Total: 2.062800 ms (FindLiveObjects: 0.211800 ms CreateObjectMapping: 0.044000 ms MarkObjects: 1.721400 ms  DeleteObjects: 0.084000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002368 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.800 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 71.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1987.
+Total: 2.060100 ms (FindLiveObjects: 0.191900 ms CreateObjectMapping: 0.045500 ms MarkObjects: 1.767200 ms  DeleteObjects: 0.054600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001650 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.792 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 71.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1990.
+Total: 2.032000 ms (FindLiveObjects: 0.217100 ms CreateObjectMapping: 0.058000 ms MarkObjects: 1.694600 ms  DeleteObjects: 0.060400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001897 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.832 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 71.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1993.
+Total: 3.858700 ms (FindLiveObjects: 0.395000 ms CreateObjectMapping: 0.122400 ms MarkObjects: 3.249800 ms  DeleteObjects: 0.089200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001953 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.808 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 71.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1996.
+Total: 2.357000 ms (FindLiveObjects: 0.224800 ms CreateObjectMapping: 0.046600 ms MarkObjects: 2.029500 ms  DeleteObjects: 0.055400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2299.948470 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/world/door.wav
+  artifactKey: Guid(c32854cd0526841498d062a4ecfc6a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/world/door.wav using Guid(c32854cd0526841498d062a4ecfc6a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '541e682c304c6c95c8798f3ae4c5f887') in 0.048515 seconds
+  Import took 0.051908 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001806 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.830 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 71.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2000.
+Total: 2.018600 ms (FindLiveObjects: 0.207800 ms CreateObjectMapping: 0.044700 ms MarkObjects: 1.697600 ms  DeleteObjects: 0.066800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 242.395329 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/swing2.wav
+  artifactKey: Guid(3a789ae5a6b41844ab58a60a6e385e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/swing2.wav using Guid(3a789ae5a6b41844ab58a60a6e385e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0924a1aa827696fd5832e9f77494c4') in 0.059452 seconds
+  Import took 0.070670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.268222 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/swing.wav
+  artifactKey: Guid(f8a23b60197b8ca49bd434a01e2e620b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/swing.wav using Guid(f8a23b60197b8ca49bd434a01e2e620b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a4f99222a12389bcd9afca81e6ccc08') in 0.015281 seconds
+  Import took 0.026819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.836492 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/swing3.wav
+  artifactKey: Guid(63288386705d72a4fb177e9e4418a031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/swing3.wav using Guid(63288386705d72a4fb177e9e4418a031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83be51359fc8d930fe0f0739909327d7') in 0.028375 seconds
+  Import took 0.040068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.408951 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/magic1.wav
+  artifactKey: Guid(48930f5257c78704ca1721b6e7efb5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/battle/magic1.wav using Guid(48930f5257c78704ca1721b6e7efb5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ab15f4445e301638a77f1b968d7e6e') in 0.026188 seconds
+  Import took 0.029081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.546269 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/misc/random5.wav
+  artifactKey: Guid(4f470054388b57b42a6267fe793eee78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/misc/random5.wav using Guid(4f470054388b57b42a6267fe793eee78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dc23c449ce63882aa44e84017166293') in 0.015691 seconds
+  Import took 0.018619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002517 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/misc/random5.wav
+  artifactKey: Guid(4f470054388b57b42a6267fe793eee78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/misc/random5.wav using Guid(4f470054388b57b42a6267fe793eee78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dc23c449ce63882aa44e84017166293') in 0.011971 seconds
+  Import took 0.014706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 141.178539 seconds.
+  path: Assets/Audio/SFX/Key Jiggle.wav
+  artifactKey: Guid(06d199ae46b77da45aae145658aaad2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/Key Jiggle.wav using Guid(06d199ae46b77da45aae145658aaad2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c8e67fb6d1b79a56f74f31f99bce11') in 0.027286 seconds
+  Import took 0.030037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 101.266314 seconds.
+  path: Assets/Audio/SFX/reward.wav
+  artifactKey: Guid(b965ee25c9cd2964183f54a34e946662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/reward.wav using Guid(b965ee25c9cd2964183f54a34e946662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56679acc5682d8a5010b47cd467b2810') in 0.030707 seconds
+  Import took 0.033339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.276882 seconds.
+  path: Assets/Audio/SFX/watersplash.flac
+  artifactKey: Guid(e70962aa84169514092cdd8ea6ed8d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/watersplash.flac using Guid(e70962aa84169514092cdd8ea6ed8d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96f455479d4ce47bc3888cdf791d8f5b') in 0.021300 seconds
+  Import took 0.031732 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001791 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.809 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.5 MB.
+System memory in use after: 71.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2004.
+Total: 2.026100 ms (FindLiveObjects: 0.191300 ms CreateObjectMapping: 0.035800 ms MarkObjects: 1.744800 ms  DeleteObjects: 0.052800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 337.452547 seconds.
+  path: Assets/Scenes/Countryside.unity
+  artifactKey: Guid(89430fbac3037214aaeed7be14c0ee8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Countryside.unity using Guid(89430fbac3037214aaeed7be14c0ee8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7870224c279a681ab8976d8ab0e97dda') in 0.019907 seconds
+  Import took 0.022695 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001870 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.819 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.6 MB.
+System memory in use after: 71.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2007.
+Total: 2.403600 ms (FindLiveObjects: 0.360100 ms CreateObjectMapping: 0.048700 ms MarkObjects: 1.925800 ms  DeleteObjects: 0.067400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001610 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.832 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.6 MB.
+System memory in use after: 71.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2010.
+Total: 5.739300 ms (FindLiveObjects: 0.492800 ms CreateObjectMapping: 0.163100 ms MarkObjects: 4.955100 ms  DeleteObjects: 0.125500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 694.638619 seconds.
+  path: Assets/Scenes/Countryside.unity
+  artifactKey: Guid(89430fbac3037214aaeed7be14c0ee8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Countryside.unity using Guid(89430fbac3037214aaeed7be14c0ee8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '474c755dd9059e559047c0115896a577') in 0.022161 seconds
+  Import took 0.025783 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002148 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.838 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.10 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.6 MB.
+System memory in use after: 71.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2013.
+Total: 6.388600 ms (FindLiveObjects: 0.536200 ms CreateObjectMapping: 0.317300 ms MarkObjects: 5.389500 ms  DeleteObjects: 0.141600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004132 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.280 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.6 MB.
+System memory in use after: 71.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2016.
+Total: 4.807100 ms (FindLiveObjects: 0.718900 ms CreateObjectMapping: 0.145200 ms MarkObjects: 3.850400 ms  DeleteObjects: 0.089000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 31617.010908 seconds.
+  path: Assets/Prefabs/Game Elements/Main Camera.prefab
+  artifactKey: Guid(d75b39106035cbe4691ae33bce039e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Game Elements/Main Camera.prefab using Guid(d75b39106035cbe4691ae33bce039e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ba17ae544b2131518551bdeb2d934c') in 0.042208 seconds
+  Import took 0.047307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000877 seconds.
+  path: Assets/Prefabs/Game Elements/Main Camera.prefab
+  artifactKey: Guid(d75b39106035cbe4691ae33bce039e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Game Elements/Main Camera.prefab using Guid(d75b39106035cbe4691ae33bce039e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ba17ae544b2131518551bdeb2d934c') in 0.006071 seconds
+  Import took 0.009088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.901774 seconds.
+  path: Assets/Audio/SFX/Hurt.wav
+  artifactKey: Guid(25c318cd762cbc8499739ec7e05d521d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/Hurt.wav using Guid(25c318cd762cbc8499739ec7e05d521d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7cf20fd23487e1e8acc89d300847bba') in 0.052812 seconds
+  Import took 0.055896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.474809 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/beetle
+  artifactKey: Guid(479072131f03ec0498de529db7826448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/beetle using Guid(479072131f03ec0498de529db7826448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82084edd3e6f93f68cd1c9ef72b0f35') in 0.008915 seconds
+  Import took 0.012386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.854001 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/beetle/bite-small.wav
+  artifactKey: Guid(eab0982b04111764f9b8eba3b85a866a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/beetle/bite-small.wav using Guid(eab0982b04111764f9b8eba3b85a866a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c598a5930d29691dccae686802bbe681') in 0.026254 seconds
+  Import took 0.031019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.601233 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/gutteral beast
+  artifactKey: Guid(8ccc97fd425a20c4696ec7139e92d7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/gutteral beast using Guid(8ccc97fd425a20c4696ec7139e92d7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b6fbca02d6087026b87e517a8127be4') in 0.007674 seconds
+  Import took 0.019098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.747665 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/gutteral beast/mnstr1.wav
+  artifactKey: Guid(fb22bbfc398a2274080cb0a1f9adf056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/gutteral beast/mnstr1.wav using Guid(fb22bbfc398a2274080cb0a1f9adf056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8187624711696e1b293852d2b8432f73') in 0.017352 seconds
+  Import took 0.020439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001890 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/gutteral beast/mnstr1.wav
+  artifactKey: Guid(fb22bbfc398a2274080cb0a1f9adf056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/gutteral beast/mnstr1.wav using Guid(fb22bbfc398a2274080cb0a1f9adf056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8187624711696e1b293852d2b8432f73') in 0.019165 seconds
+  Import took 0.022708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.474620 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/gutteral beast/mnstr11.wav
+  artifactKey: Guid(b56b03944594e58479e409241b55c2ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/gutteral beast/mnstr11.wav using Guid(b56b03944594e58479e409241b55c2ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8309fdfe2cca45468da3f52575d35484') in 0.016451 seconds
+  Import took 0.019473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000721 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/gutteral beast/mnstr11.wav
+  artifactKey: Guid(b56b03944594e58479e409241b55c2ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/gutteral beast/mnstr11.wav using Guid(b56b03944594e58479e409241b55c2ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8309fdfe2cca45468da3f52575d35484') in 0.012199 seconds
+  Import took 0.014811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.552200 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/shade
+  artifactKey: Guid(a605649dbea47e44c88a2b5700cb5ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/shade using Guid(a605649dbea47e44c88a2b5700cb5ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e413e1c038da2697226ac9ef1873103') in 0.008047 seconds
+  Import took 0.011301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.117167 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/giant
+  artifactKey: Guid(130450598484d5743bcf886b422cc959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/giant using Guid(130450598484d5743bcf886b422cc959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4684c9ce0340802d3413590c34a3170') in 0.019107 seconds
+  Import took 0.022143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.633549 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/giant/giant1.wav
+  artifactKey: Guid(a950bf55fd24bd24ab37c6c704d9bf77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/giant/giant1.wav using Guid(a950bf55fd24bd24ab37c6c704d9bf77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57bd536b70665dcd63ac1156fd033adf') in 0.015934 seconds
+  Import took 0.019173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003732 seconds.
+  path: Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/giant/giant1.wav
+  artifactKey: Guid(a950bf55fd24bd24ab37c6c704d9bf77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/rpg_sound_pack/RPG Sound Pack/NPC/giant/giant1.wav using Guid(a950bf55fd24bd24ab37c6c704d9bf77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57bd536b70665dcd63ac1156fd033adf') in 0.010078 seconds
+  Import took 0.013146 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003155 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.590 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.6 MB.
+System memory in use after: 71.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2020.
+Total: 3.608600 ms (FindLiveObjects: 0.385700 ms CreateObjectMapping: 0.094800 ms MarkObjects: 3.020300 ms  DeleteObjects: 0.105300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 877.937002 seconds.
+  path: Assets/Audio/SFX/krank_sounds
+  artifactKey: Guid(3cc2c6fa7666db64f919e8c91f303ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds using Guid(3cc2c6fa7666db64f919e8c91f303ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c676f6fecacf1ce7025c85aa2df34abe') in 0.010842 seconds
+  Import took 0.013616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.694808 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds
+  artifactKey: Guid(2de8ff34623a201498bb4fede516d427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds using Guid(2de8ff34623a201498bb4fede516d427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825d16c9e341b6b99072371db1b5b842') in 0.007930 seconds
+  Import took 0.010734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.012966 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/summer
+  artifactKey: Guid(6d4dff980777d494bbd520fa3a700f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/summer using Guid(6d4dff980777d494bbd520fa3a700f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88784bdb23298da85a67223c4e781fe7') in 0.008397 seconds
+  Import took 0.012078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.456591 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/summer/exit.wav
+  artifactKey: Guid(225e78a08821e964793285be563d1f94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/summer/exit.wav using Guid(225e78a08821e964793285be563d1f94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '104d8c4e89d6c2fa6aab63eafc19a3b9') in 0.054604 seconds
+  Import took 0.057667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.923635 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/summer/anchor_action.wav
+  artifactKey: Guid(0defd2b3d916e7e43a68b3cfb6b55f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/summer/anchor_action.wav using Guid(0defd2b3d916e7e43a68b3cfb6b55f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07b318030308855492128d1e169b68d8') in 0.021716 seconds
+  Import took 0.025008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001871 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/summer/anchor_action.wav
+  artifactKey: Guid(0defd2b3d916e7e43a68b3cfb6b55f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/summer/anchor_action.wav using Guid(0defd2b3d916e7e43a68b3cfb6b55f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07b318030308855492128d1e169b68d8') in 0.012998 seconds
+  Import took 0.017360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.244097 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/summer/link.wav
+  artifactKey: Guid(4057326ee8aa6de46a7b3f20d53c3630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/summer/link.wav using Guid(4057326ee8aa6de46a7b3f20d53c3630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc42f74e78688a265c91ac68e6dee8f') in 0.022114 seconds
+  Import took 0.026055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003762 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/summer/link.wav
+  artifactKey: Guid(4057326ee8aa6de46a7b3f20d53c3630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/summer/link.wav using Guid(4057326ee8aa6de46a7b3f20d53c3630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc42f74e78688a265c91ac68e6dee8f') in 0.015527 seconds
+  Import took 0.019010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.977775 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/summer/magnet_action.wav
+  artifactKey: Guid(7fff4eedacbcce046a2000bbfc1fd0ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/summer/magnet_action.wav using Guid(7fff4eedacbcce046a2000bbfc1fd0ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8e1c30638aea2a37f95bec8ae3bc18f') in 0.021829 seconds
+  Import took 0.025569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.472290 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/summer/magnet_off.wav
+  artifactKey: Guid(505e6623e47f4ba4b85775143545b24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/summer/magnet_off.wav using Guid(505e6623e47f4ba4b85775143545b24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53f6d5bb45c0ddb8f3abef3a3aa7e1d') in 0.026455 seconds
+  Import took 0.030413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.921383 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/summer/part.wav
+  artifactKey: Guid(3563185289de1884a9b69240c2602774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/summer/part.wav using Guid(3563185289de1884a9b69240c2602774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f45e8571c1f645aebdfe5a66831a5d') in 0.047466 seconds
+  Import took 0.050301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.696648 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/water
+  artifactKey: Guid(1cb7d42e1e553a9409cdf10feb565e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/water using Guid(1cb7d42e1e553a9409cdf10feb565e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610166825767a5d2b3d97191416a0e8e') in 0.008341 seconds
+  Import took 0.011014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.718140 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/water/anchor_action.wav
+  artifactKey: Guid(27ada01969834e847b223d5324c9d5ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/water/anchor_action.wav using Guid(27ada01969834e847b223d5324c9d5ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378ba93ca3fe0fe8db162b1c515241e1') in 0.023414 seconds
+  Import took 0.026942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.484814 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/water/magnet_action.wav
+  artifactKey: Guid(b08c5bae3997f24418a6ff46dd6f68d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/water/magnet_action.wav using Guid(b08c5bae3997f24418a6ff46dd6f68d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ea4d6629c15e040ee145ae277bf39a7') in 0.025115 seconds
+  Import took 0.028467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.915333 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/water/magnet_on.wav
+  artifactKey: Guid(2287ac807586ad340a11fa54757f4b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/water/magnet_on.wav using Guid(2287ac807586ad340a11fa54757f4b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41a1451dab445cec569e815a136b16f0') in 0.018748 seconds
+  Import took 0.021750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.404186 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/water/magnet_start.wav
+  artifactKey: Guid(583198e507e95804b89a6d549bee0196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/water/magnet_start.wav using Guid(583198e507e95804b89a6d549bee0196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1817c19c60b6d189c8a9b3406ffe7ae') in 0.022665 seconds
+  Import took 0.035416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.441222 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/water/part.wav
+  artifactKey: Guid(0b782e8515cbc7d44a8a35238748cf9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/water/part.wav using Guid(0b782e8515cbc7d44a8a35238748cf9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed0d7192067b9d0bea1f5ba33fc3445e') in 0.018290 seconds
+  Import took 0.021359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.138964 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/space
+  artifactKey: Guid(ce99e4350c5d64446969ac3cb78fc02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/space using Guid(ce99e4350c5d64446969ac3cb78fc02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f5d77a7e4c969aa1b9ca16d54baf154') in 0.007712 seconds
+  Import took 0.018559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.091540 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/space/wall.wav
+  artifactKey: Guid(45e00ff6f8c7d894f9b04e14b7f7ba02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/space/wall.wav using Guid(45e00ff6f8c7d894f9b04e14b7f7ba02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8317fd2d1597a28398617553e65cbd4') in 0.026298 seconds
+  Import took 0.029164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.039270 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/space/part.wav
+  artifactKey: Guid(d2b2dccb89b888143aa97bf8c32e6899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/space/part.wav using Guid(d2b2dccb89b888143aa97bf8c32e6899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1da5419eff2e9ebed3a194a2d02ac3f') in 0.032422 seconds
+  Import took 0.035169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.133431 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/space/unlink.wav
+  artifactKey: Guid(0d7d0fa7dd9496a4dadca88c7b4a6efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/space/unlink.wav using Guid(0d7d0fa7dd9496a4dadca88c7b4a6efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d8d8e40dd92bfe6670a28b14b6c4e14') in 0.016167 seconds
+  Import took 0.027700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.019329 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/space/anchor_action.wav
+  artifactKey: Guid(a59db9264bdd05f4aa2bf19b50a40b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/space/anchor_action.wav using Guid(a59db9264bdd05f4aa2bf19b50a40b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f050114301eaee60cb0ad6162dd34010') in 0.020062 seconds
+  Import took 0.032056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.032531 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/industry
+  artifactKey: Guid(820e405e4eba75c428ef88246c3d1d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/industry using Guid(820e405e4eba75c428ef88246c3d1d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaba99120ecc93e1f1007c764f4c9f17') in 0.007905 seconds
+  Import took 0.019887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.635895 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/industry/anchor_action.wav
+  artifactKey: Guid(01db50385bc45db4ebbd297b8bf7ea9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/industry/anchor_action.wav using Guid(01db50385bc45db4ebbd297b8bf7ea9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7dfe4d05a175d6aa5a673317125a45f') in 0.023766 seconds
+  Import took 0.027639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.504535 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/industry/exit.wav
+  artifactKey: Guid(88c148f042bab6e41a090ee24945d029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/industry/exit.wav using Guid(88c148f042bab6e41a090ee24945d029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74a1063a51c3af95a62ba535d577b87c') in 0.019714 seconds
+  Import took 0.031137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.806618 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/industry/link.wav
+  artifactKey: Guid(3f795ff9623b0574886de7a6480585c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/industry/link.wav using Guid(3f795ff9623b0574886de7a6480585c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7af7943f34a2af03b57c3bc76e9343ff') in 0.013544 seconds
+  Import took 0.025201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.194200 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/industry/magnet_action.wav
+  artifactKey: Guid(de082b24f8dd7ef408ff0d3bb75d6017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/industry/magnet_action.wav using Guid(de082b24f8dd7ef408ff0d3bb75d6017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5615412ccb5464e6f4e388ebc0464654') in 0.015394 seconds
+  Import took 0.018195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001747 seconds.
+  path: Assets/Audio/SFX/krank_sounds/krank_sounds/industry/magnet_action.wav
+  artifactKey: Guid(de082b24f8dd7ef408ff0d3bb75d6017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/krank_sounds/krank_sounds/industry/magnet_action.wav using Guid(de082b24f8dd7ef408ff0d3bb75d6017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5615412ccb5464e6f4e388ebc0464654') in 0.012520 seconds
+  Import took 0.015050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.712720 seconds.
+  path: Assets/Audio/SFX/Battle Start.wav
+  artifactKey: Guid(de082b24f8dd7ef408ff0d3bb75d6017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/Battle Start.wav using Guid(de082b24f8dd7ef408ff0d3bb75d6017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6802b37f977e083126265b45822fdb25') in 0.023022 seconds
+  Import took 0.025582 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002664 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.965 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.7 MB.
+System memory in use after: 71.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2024.
+Total: 2.388500 ms (FindLiveObjects: 0.217100 ms CreateObjectMapping: 0.050500 ms MarkObjects: 2.056700 ms  DeleteObjects: 0.062900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001685 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.933 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.7 MB.
+System memory in use after: 71.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2027.
+Total: 1.982600 ms (FindLiveObjects: 0.212900 ms CreateObjectMapping: 0.058000 ms MarkObjects: 1.636300 ms  DeleteObjects: 0.074400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 403.623884 seconds.
+  path: Assets/Audio/SFX/Fire.wav
+  artifactKey: Guid(57e179c1b313ce3478e8d6ad02ef7982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/Fire.wav using Guid(57e179c1b313ce3478e8d6ad02ef7982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da0140af913580140369f2c3243f33fc') in 0.053118 seconds
+  Import took 0.055922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 676.267022 seconds.
+  path: Assets/Audio/SFX/fire_spell.wav
+  artifactKey: Guid(23fa32359f6920a4984a6afc387f3c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/fire_spell.wav using Guid(23fa32359f6920a4984a6afc387f3c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4a30a716205e98a39851dce968d55c6') in 0.032968 seconds
+  Import took 0.037024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.589609 seconds.
+  path: Assets/Audio/SFX/Ice Spell.wav
+  artifactKey: Guid(12e911e792d418f4b8704e5a4d37f904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/Ice Spell.wav using Guid(12e911e792d418f4b8704e5a4d37f904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c63d70ede887af3b1973ef443d1bfd10') in 0.017059 seconds
+  Import took 0.019926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002979 seconds.
+  path: Assets/Audio/SFX/Ice Spell.wav
+  artifactKey: Guid(12e911e792d418f4b8704e5a4d37f904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/Ice Spell.wav using Guid(12e911e792d418f4b8704e5a4d37f904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c63d70ede887af3b1973ef443d1bfd10') in 0.014161 seconds
+  Import took 0.016828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.081229 seconds.
+  path: Assets/Prefabs/Battle/Attack Effects/Plasma.prefab
+  artifactKey: Guid(abd36e05b93ceec4d83f1a1f2a454a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Battle/Attack Effects/Plasma.prefab using Guid(abd36e05b93ceec4d83f1a1f2a454a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a9444b1c91b1af2965afc049962ea8') in 0.102047 seconds
+  Import took 0.105635 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002040 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.802 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.8 MB.
+System memory in use after: 71.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2031.
+Total: 2.197800 ms (FindLiveObjects: 0.194800 ms CreateObjectMapping: 0.051400 ms MarkObjects: 1.890700 ms  DeleteObjects: 0.059400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002343 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.005 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.8 MB.
+System memory in use after: 71.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2034.
+Total: 3.117600 ms (FindLiveObjects: 0.376600 ms CreateObjectMapping: 0.086000 ms MarkObjects: 2.529500 ms  DeleteObjects: 0.122300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 516.770028 seconds.
+  path: Assets/Audio/SFX/Death.wav
+  artifactKey: Guid(e4754514adbd07e4193d0f0644340870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/Death.wav using Guid(e4754514adbd07e4193d0f0644340870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9d5f718d646d386e6e5b195d2f6684') in 0.055348 seconds
+  Import took 0.058773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.185263 seconds.
+  path: Assets/Audio/SFX/level up.wav
+  artifactKey: Guid(082f05c08b344014588dd42af76be769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/level up.wav using Guid(082f05c08b344014588dd42af76be769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d562e2d1dcc66045618bd094e1a9f5') in 0.019404 seconds
+  Import took 0.031025 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001727 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.824 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.8 MB.
+System memory in use after: 71.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2038.
+Total: 1.962200 ms (FindLiveObjects: 0.198400 ms CreateObjectMapping: 0.046300 ms MarkObjects: 1.663900 ms  DeleteObjects: 0.052800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001951 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.328 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.8 MB.
+System memory in use after: 71.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2041.
+Total: 4.378200 ms (FindLiveObjects: 0.519400 ms CreateObjectMapping: 0.230100 ms MarkObjects: 3.517200 ms  DeleteObjects: 0.107400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001747 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.872 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.8 MB.
+System memory in use after: 71.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2044.
+Total: 2.494600 ms (FindLiveObjects: 0.297900 ms CreateObjectMapping: 0.073200 ms MarkObjects: 2.033800 ms  DeleteObjects: 0.087900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 757.559334 seconds.
+  path: Assets/Audio/SFX/fail to flee.mp3
+  artifactKey: Guid(aa20335e5d47b8e468a3ef5c19b76a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/fail to flee.mp3 using Guid(aa20335e5d47b8e468a3ef5c19b76a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a13033b2986f5d9aa33f5fd5433a7a7') in 0.055612 seconds
+  Import took 0.058729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.450487 seconds.
+  path: Assets/Audio/SFX/battle reward.wav
+  artifactKey: Guid(0e6a09d37c6b3894eb91cc3585a66f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/battle reward.wav using Guid(0e6a09d37c6b3894eb91cc3585a66f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1d5f06c8e991a3d1111cb936dbcd38b') in 0.043351 seconds
+  Import took 0.045860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.297261 seconds.
+  path: Assets/Audio/SFX/game over.mp3
+  artifactKey: Guid(122b3bb9374f86947a42a6dbd3dcbed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/game over.mp3 using Guid(122b3bb9374f86947a42a6dbd3dcbed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36d92ef5c6fe9a193009f372e116e554') in 0.026460 seconds
+  Import took 0.029210 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001759 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.840 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.8 MB.
+System memory in use after: 71.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2048.
+Total: 2.469900 ms (FindLiveObjects: 0.212000 ms CreateObjectMapping: 0.059800 ms MarkObjects: 2.134100 ms  DeleteObjects: 0.062600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 270.837167 seconds.
+  path: Assets/Audio/SFX/shop bell.wav
+  artifactKey: Guid(0efc20c2d5332024dac0a0dfe6aec8c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/shop bell.wav using Guid(0efc20c2d5332024dac0a0dfe6aec8c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40c039acc17c8801f2eda9076fc44e40') in 0.054846 seconds
+  Import took 0.057810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.516940 seconds.
+  path: Assets/Audio/SFX/UI_Beep.wav
+  artifactKey: Guid(9706fa53d7a32914297d2dda9a0ffc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/UI_Beep.wav using Guid(9706fa53d7a32914297d2dda9a0ffc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c21267bc81ee447556e4b1f0c84a3a') in 0.014656 seconds
+  Import took 0.017345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000978 seconds.
+  path: Assets/Audio/SFX/UI_Beep.wav
+  artifactKey: Guid(9706fa53d7a32914297d2dda9a0ffc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/UI_Beep.wav using Guid(9706fa53d7a32914297d2dda9a0ffc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c21267bc81ee447556e4b1f0c84a3a') in 0.009334 seconds
+  Import took 0.011781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 124.525316 seconds.
+  path: Assets/Audio/SFX/flee sucess.wav
+  artifactKey: Guid(9affe78aa1fb6d24ea9d521609d3ea52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/flee sucess.wav using Guid(9affe78aa1fb6d24ea9d521609d3ea52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd9c10ec172127eca7fd04eebd748ea') in 0.034827 seconds
+  Import took 0.038872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001801 seconds.
+  path: Assets/Audio/SFX/flee sucess.wav
+  artifactKey: Guid(9affe78aa1fb6d24ea9d521609d3ea52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/flee sucess.wav using Guid(9affe78aa1fb6d24ea9d521609d3ea52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd9c10ec172127eca7fd04eebd748ea') in 0.010995 seconds
+  Import took 0.013447 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001774 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.012 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.8 MB.
+System memory in use after: 71.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2052.
+Total: 3.273000 ms (FindLiveObjects: 0.425100 ms CreateObjectMapping: 0.112400 ms MarkObjects: 2.625400 ms  DeleteObjects: 0.084100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002034 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.917 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.8 MB.
+System memory in use after: 71.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2055.
+Total: 2.243000 ms (FindLiveObjects: 0.209300 ms CreateObjectMapping: 0.049100 ms MarkObjects: 1.909900 ms  DeleteObjects: 0.073700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001652 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.917 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.8 MB.
+System memory in use after: 71.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2058.
+Total: 2.418500 ms (FindLiveObjects: 0.212900 ms CreateObjectMapping: 0.049400 ms MarkObjects: 2.097600 ms  DeleteObjects: 0.057900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002409 seconds.
+Callback registration failed. Increase kMaxCallback.
+
+Fatal Error! Callback registration failed. Increase kMaxCallback.
+
+Crash!!!
+SymInit: Symbol-SearchPath: 'E:/Editors/2020.2.6f1/Editor/Data/Mono;.;E:\GameDev\FantasyRPGCourse\QuestForFillory;E:\Editors\2020.2.6f1\Editor;C:\WINDOWS;C:\WINDOWS\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 534, UserName: 'zackr'
+OS-Version: 10.0.0
+E:\Editors\2020.2.6f1\Editor\Unity.exe:Unity.exe (00007FF6E9DB0000), size: 134426624 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.2.6.8515
+C:\WINDOWS\SYSTEM32\ntdll.dll:ntdll.dll (00007FFE0A160000), size: 2031616 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\WINDOWS\System32\KERNEL32.DLL:KERNEL32.DLL (00007FFE08ED0000), size: 729088 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1350
+C:\WINDOWS\System32\KERNELBASE.dll:KERNELBASE.dll (00007FFE07310000), size: 2772992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\WINDOWS\System32\CRYPT32.dll:CRYPT32.dll (00007FFE07620000), size: 1380352 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\WINDOWS\System32\ucrtbase.dll:ucrtbase.dll (00007FFE070D0000), size: 1024000 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1110
+C:\WINDOWS\System32\MSASN1.dll:MSASN1.dll (00007FFE07020000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\System32\USER32.dll:USER32.dll (00007FFE08430000), size: 1654784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\System32\win32u.dll:win32u.dll (00007FFE07830000), size: 135168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1440
+C:\WINDOWS\System32\GDI32.dll:GDI32.dll (00007FFE08350000), size: 155648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+E:\Editors\2020.2.6f1\Editor\libfbxsdk.dll:libfbxsdk.dll (00007FFDB9530000), size: 8974336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.0.0.0
+E:\Editors\2020.2.6f1\Editor\OpenImageDenoise.dll:OpenImageDenoise.dll (00007FFDAA640000), size: 43806720 (result: 0), SymType: '-deferred-', PDB: ''
+E:\Editors\2020.2.6f1\Editor\optix.6.0.0.dll:optix.6.0.0.dll (00007FFDE7370000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.0.0.0
+C:\WINDOWS\System32\gdi32full.dll:gdi32full.dll (00007FFE08070000), size: 1671168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1440
+C:\WINDOWS\System32\msvcp_win.dll:msvcp_win.dll (00007FFE07220000), size: 647168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1110
+C:\WINDOWS\System32\ADVAPI32.dll:ADVAPI32.dll (00007FFE08380000), size: 667648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.752
+C:\WINDOWS\System32\msvcrt.dll:msvcrt.dll (00007FFE09230000), size: 647168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.18362.1
+C:\WINDOWS\System32\sechost.dll:sechost.dll (00007FFE085D0000), size: 618496 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\System32\RPCRT4.dll:RPCRT4.dll (00007FFE09110000), size: 1175552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\System32\SHELL32.dll:SHELL32.dll (00007FFE087D0000), size: 7241728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\WINDOWS\System32\cfgmgr32.dll:cfgmgr32.dll (00007FFE072C0000), size: 303104 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.387
+C:\WINDOWS\System32\shcore.dll:shcore.dll (00007FFE09750000), size: 684032 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\System32\combase.dll:combase.dll (00007FFE09800000), size: 3366912 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\WINDOWS\System32\bcryptPrimitives.dll:bcryptPrimitives.dll (00007FFE07860000), size: 528384 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1237
+C:\WINDOWS\System32\windows.storage.dll:windows.storage.dll (00007FFE078F0000), size: 7843840 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+E:\Editors\2020.2.6f1\Editor\umbraoptimizer64.dll:umbraoptimizer64.dll (00007FFDBFFF0000), size: 1306624 (result: 0), SymType: '-deferred-', PDB: ''
+E:\Editors\2020.2.6f1\Editor\FreeImage.dll:FreeImage.dll (0000000180000000), size: 6414336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.18.0.0
+E:\Editors\2020.2.6f1\Editor\ispc_texcomp.dll:ispc_texcomp.dll (00007FFDBEE60000), size: 1609728 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\WS2_32.dll:WS2_32.dll (00007FFE08F90000), size: 454656 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.387
+C:\WINDOWS\System32\profapi.dll:profapi.dll (00007FFE07090000), size: 122880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\WINDOWS\System32\WLDAP32.dll:WLDAP32.dll (00007FFE0A020000), size: 425984 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.449
+C:\WINDOWS\System32\powrprof.dll:powrprof.dll (00007FFE07040000), size: 303104 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\System32\Normaliz.dll:Normaliz.dll (00007FFE09740000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\System32\UMPDC.dll:UMPDC.dll (00007FFE07010000), size: 65536 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\shlwapi.dll:shlwapi.dll (00007FFE090B0000), size: 335872 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\System32\kernel.appcore.dll:kernel.appcore.dll (00007FFE070B0000), size: 69632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1171
+E:\Editors\2020.2.6f1\Editor\WinPixEventRuntime.dll:WinPixEventRuntime.dll (00007FFE02D60000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.0.1812.6001
+C:\WINDOWS\System32\cryptsp.dll:cryptsp.dll (00007FFE07200000), size: 94208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\System32\ole32.dll:ole32.dll (00007FFE08670000), size: 1404928 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\System32\IMM32.dll:IMM32.dll (00007FFE09D40000), size: 188416 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.387
+E:\Editors\2020.2.6f1\Editor\tbb.dll:tbb.dll (00007FFDE6FE0000), size: 413696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2017.0.2016.1004
+C:\WINDOWS\System32\SETUPAPI.dll:SETUPAPI.dll (00007FFE092D0000), size: 4653056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\System32\bcrypt.dll:bcrypt.dll (00007FFE071D0000), size: 155648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1237
+C:\WINDOWS\System32\OLEAUT32.dll:OLEAUT32.dll (00007FFE09BA0000), size: 806912 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1377
+C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll:VCRUNTIME140.dll (00007FFE048A0000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.28.29334.0
+C:\WINDOWS\System32\WINTRUST.dll:WINTRUST.dll (00007FFE075C0000), size: 376832 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1377
+C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL:CRYPTBASE.DLL (00007FFE06A20000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\SYSTEM32\GLU32.dll:GLU32.dll (00007FFDDEA80000), size: 180224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.387
+C:\WINDOWS\SYSTEM32\MSVCP140.dll:MSVCP140.dll (00007FFE04800000), size: 598016 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.28.29334.0
+C:\WINDOWS\SYSTEM32\OPENGL32.dll:OPENGL32.dll (00007FFDDEE20000), size: 1400832 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.387
+C:\WINDOWS\SYSTEM32\MSVCP120.dll:MSVCP120.dll (00007FFDE6950000), size: 679936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.21005.1
+C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (00007FFE06560000), size: 237568 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\SYSTEM32\MSVCR120.dll:MSVCR120.dll (00007FFDBF270000), size: 978944 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.21005.1
+C:\WINDOWS\SYSTEM32\WINHTTP.dll:WINHTTP.dll (00007FFE04C80000), size: 1024000 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\WINDOWS\SYSTEM32\HID.DLL:HID.DLL (00007FFE05AF0000), size: 57344 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+E:\Editors\2020.2.6f1\Editor\RadeonImageFilters.dll:RadeonImageFilters.dll (00007FFDBEA00000), size: 2535424 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.1.0
+C:\WINDOWS\SYSTEM32\WINMM.dll:WINMM.dll (00007FFE040F0000), size: 147456 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+E:\Editors\2020.2.6f1\Editor\SketchUpAPI.dll:SketchUpAPI.dll (00007FFDB70D0000), size: 8978432 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 19.0.753.0
+C:\WINDOWS\SYSTEM32\VERSION.dll:VERSION.dll (00007FFDF9920000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\SYSTEM32\WSOCK32.dll:WSOCK32.dll (00007FFDF4EA0000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\SYSTEM32\VCRUNTIME140_1.dll:VCRUNTIME140_1.dll (00007FFE047F0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.28.29334.0
+C:\WINDOWS\SYSTEM32\WINMMBASE.dll:WINMMBASE.dll (00007FFE03FE0000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+E:\Editors\2020.2.6f1\Editor\SketchUpCommonPreferences.dll:SketchUpCommonPreferences.dll (00007FFDE6F60000), size: 483328 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 19.0.753.20342
+C:\WINDOWS\SYSTEM32\Secur32.dll:Secur32.dll (00007FFDF68A0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\SYSTEM32\dxcore.dll:dxcore.dll (00007FFE05C50000), size: 131072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\SYSTEM32\SSPICLI.DLL:SSPICLI.DLL (00007FFE06F20000), size: 225280 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1049
+E:\Editors\2020.2.6f1\Editor\OpenRL.dll:OpenRL.dll (0000019DD8120000), size: 12779520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.100.0
+C:\WINDOWS\SYSTEM32\MSVCP100.dll:MSVCP100.dll (0000000072450000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.1
+C:\WINDOWS\SYSTEM32\MSVCR100.dll:MSVCR100.dll (00000000724F0000), size: 860160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.1
+E:\Editors\2020.2.6f1\Editor\embree.dll:embree.dll (00007FFDA9650000), size: 16711680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.14.0.0
+C:\WINDOWS\SYSTEM32\MSWSOCK.DLL:MSWSOCK.DLL (00007FFE06850000), size: 421888 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.815
+E:\Editors\2020.2.6f1\Editor\OpenRL_pthread.dll:OpenRL_pthread.dll (0000019DD8D70000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.9.0.0
+C:\WINDOWS\system32\uxtheme.dll:uxtheme.dll (00007FFE04460000), size: 626688 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\System32\clbcatq.dll:clbcatq.dll (00007FFE09000000), size: 663552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2001.12.10941.16384
+C:\WINDOWS\System32\netprofm.dll:netprofm.dll (00007FFE028F0000), size: 249856 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\System32\npmproxy.dll:npmproxy.dll (00007FFDF8CC0000), size: 65536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\System32\NSI.dll:NSI.dll (00007FFE0A090000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1171
+C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (00007FFDFDB20000), size: 90112 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1171
+C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL:dhcpcsvc.DLL (00007FFDFE1F0000), size: 114688 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1171
+C:\WINDOWS\SYSTEM32\DNSAPI.dll:DNSAPI.dll (00007FFE065A0000), size: 831488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\Program Files\Bonjour\mdnsNSP.dll:mdnsNSP.dll (0000000072DC0000), size: 155648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.0.0.10
+C:\WINDOWS\System32\fwpuclnt.dll:fwpuclnt.dll (00007FFDFCF40000), size: 487424 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\Windows\System32\rasadhlp.dll:rasadhlp.dll (00007FFDFF280000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\SYSTEM32\d3d11.dll:d3d11.dll (00007FFE037E0000), size: 2469888 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\WINDOWS\SYSTEM32\dxgi.dll:dxgi.dll (00007FFE05CE0000), size: 962560 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\System32\DriverStore\FileRepository\nvhw.inf_amd64_de1673c14c0ba0b4\nvldumdx.dll:nvldumdx.dll (00007FFDB4D00000), size: 958464 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 23.21.13.8892
+C:\WINDOWS\System32\imagehlp.dll:imagehlp.dll (00007FFE09DF0000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\system32\rsaenh.dll:rsaenh.dll (00007FFE063D0000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\System32\DriverStore\FileRepository\nvhw.inf_amd64_de1673c14c0ba0b4\nvwgf2umx.dll:nvwgf2umx.dll (00007FFDA1470000), size: 28741632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 23.21.13.8892
+C:\WINDOWS\system32\nvspcap64.dll:nvspcap64.dll (00007FFDAEE60000), size: 2461696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.12.0.84
+C:\WINDOWS\SYSTEM32\ntmarta.dll:ntmarta.dll (00007FFE06050000), size: 200704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\system32\wbem\wbemprox.dll:wbemprox.dll (00007FFDF1400000), size: 69632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\WINDOWS\SYSTEM32\wbemcomn.dll:wbemcomn.dll (00007FFDF1370000), size: 589824 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\WINDOWS\system32\wbem\wbemsvc.dll:wbemsvc.dll (00007FFDF1350000), size: 81920 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\WINDOWS\system32\wbem\fastprox.dll:fastprox.dll (00007FFDF0620000), size: 1052672 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\WINDOWS\SYSTEM32\amsi.dll:amsi.dll (00007FFDED940000), size: 94208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\SYSTEM32\USERENV.dll:USERENV.dll (00007FFE06EF0000), size: 151552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1139
+C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2102.4-0\MpOav.dll:MpOav.dll (00007FFDEA600000), size: 503808 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 4.18.2102.4
+E:\Editors\2020.2.6f1\Editor\cudart64_90.dll:cudart64_90.dll (00007FFDB9FB0000), size: 397312 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.14.11.9000
+C:\WINDOWS\SYSTEM32\opencl.dll:opencl.dll (00007FFDBF5C0000), size: 147456 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.1.1.0
+E:\Editors\2020.2.6f1\Editor\radeonrays.dll:radeonrays.dll (00007FFDB91D0000), size: 552960 (result: 0), SymType: '-deferred-', PDB: ''
+E:\Editors\2020.2.6f1\Editor\Data\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll:mono-2.0-bdwgc.dll (00007FFDA0D00000), size: 7790592 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\PSAPI.DLL:PSAPI.DLL (00007FFE08EC0000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\ProgramData\Microsoft\VisualStudio\Setup\x64\Microsoft.VisualStudio.Setup.Configuration.Native.dll:Microsoft.VisualStudio.Setup.Configuration.Native.dll (00007FFDB7080000), size: 327680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.7.3111.17308
+C:\WINDOWS\SYSTEM32\PROPSYS.dll:PROPSYS.dll (00007FFE04AC0000), size: 983040 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.18362.1440
+C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.1440_none_9e7dbfb9e45e8e67\comctl32.dll:comctl32.dll (00007FFDF7970000), size: 2637824 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.10.18362.1440
+C:\WINDOWS\SYSTEM32\WindowsCodecs.dll:WindowsCodecs.dll (00007FFE00140000), size: 1765376 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1440
+C:\Windows\System32\thumbcache.dll:thumbcache.dll (00007FFDD98D0000), size: 389120 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\SYSTEM32\policymanager.dll:policymanager.dll (00007FFE02730000), size: 561152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\SYSTEM32\msvcp110_win.dll:msvcp110_win.dll (00007FFE02930000), size: 565248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\Windows\System32\MrmCoreR.dll:MrmCoreR.dll (00007FFDF0AB0000), size: 1122304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\Windows\System32\iertutil.dll:iertutil.dll (00007FFDF5110000), size: 2781184 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 11.0.18362.1411
+C:\WINDOWS\SYSTEM32\windows.staterepositorycore.dll:windows.staterepositorycore.dll (00007FFDF87A0000), size: 65536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1171
+C:\Windows\System32\bcp47mrm.dll:bcp47mrm.dll (00007FFDDE6E0000), size: 196608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1440
+C:\Windows\System32\Windows.UI.dll:Windows.UI.dll (00007FFDDE8F0000), size: 1347584 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\Windows\System32\TextInputFramework.dll:TextInputFramework.dll (00007FFDDE850000), size: 643072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\Windows\System32\InputHost.dll:InputHost.dll (00007FFDDE730000), size: 1163264 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\Windows\System32\CoreUIComponents.dll:CoreUIComponents.dll (00007FFE00540000), size: 3317760 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1110
+C:\Windows\System32\CoreMessaging.dll:CoreMessaging.dll (00007FFE04010000), size: 868352 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1316
+C:\WINDOWS\SYSTEM32\wintypes.dll:wintypes.dll (00007FFE01E70000), size: 1384448 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1411
+C:\WINDOWS\WinSxS\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.18362.1440_none_cf68b29f3ef10835\gdiplus.dll:gdiplus.dll (00007FFDF9770000), size: 1728512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1440
+C:\WINDOWS\System32\MSCTF.dll:MSCTF.dll (00007FFE08210000), size: 1265664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1350
+C:\WINDOWS\SYSTEM32\edputil.dll:edputil.dll (00007FFDE49D0000), size: 143360 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1
+C:\Windows\System32\Windows.StateRepositoryPS.dll:Windows.StateRepositoryPS.dll (00007FFDE5C00000), size: 1265664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1171
+C:\WINDOWS\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFE058F0000), size: 2048000 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.18362.1440
+
+========== OUTPUTTING STACK TRACE ==================
+
+0x00007FFE07353B29 (KERNELBASE) RaiseException
+0x00007FF6EC4B6A1D (Unity) EditorMonoConsole::LogToConsoleImplementation
+0x00007FF6EC4B796A (Unity) EditorMonoConsole::LogToConsoleImplementation
+0x00007FF6EE064E9E (Unity) DebugStringToFilePostprocessedStacktrace
+0x00007FF6EE06444F (Unity) DebugStringToFile
+0x00007FF6EA00DAE3 (Unity) CallbackArraySubBase<void (__cdecl*)(MemoryManager::AllocationLogDetails const & __ptr64)>::Register
+0x00007FF6ECC829B9 (Unity) LoadDomainAndUserAssemblies
+0x00007FF6ECC82E6E (Unity) LoadUserAssemblies
+0x00007FF6ED0AF0D8 (Unity) <lambda_79a3ebc38cb5166d44d10a16a21fca24>::operator()
+0x00007FF6ED17A3E2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007FF6ED17C540 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007FF6ED17FCCE (Unity) asio::io_service::run
+0x00007FF6ED0F5FE0 (Unity) RunAssetImportWorkerClientV2
+0x00007FF6ED0F6030 (Unity) RunAssetImporterV2
+0x00007FF6EC60E8D6 (Unity) Application::InitializeProject
+0x00007FF6ECF88B12 (Unity) WinMain
+0x00007FF6EEDF7CA6 (Unity) __scrt_common_main_seh
+0x00007FFE08EE7C24 (KERNEL32) BaseThreadInitThunk
+0x00007FFE0A1CD721 (ntdll) RtlUserThreadStart
+
+========== END OF STACKTRACE ===========
+
+A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
+ * C:/Users/zackr/AppData/Local/Temp/Unity/Editor/Crashes

@@ -9,6 +9,7 @@ public class BattleReward : MonoBehaviour
     // Config Parameters
     [SerializeField] Text rewardsText = null;
     [SerializeField] GameObject rewardScreen = null;
+    [SerializeField] int rewardSound = 37;
 
     // State Variables
     string[] rewardItems = null;
@@ -56,6 +57,7 @@ public class BattleReward : MonoBehaviour
             i++;
         }
 
+        AudioManager.instance.PlaySFX(rewardSound);
         rewardScreen.SetActive(true);
     }
 

@@ -13,6 +13,7 @@ public class LevelUp : MonoBehaviour
     [SerializeField] Text[] oldStatsTexts = null;
     [SerializeField] Text[] newStatsTexts = null;
     [SerializeField] Text expText = null;
+    [SerializeField] int levelUpSound = 38;
 
     // State Variables
     [HideInInspector] public bool isShowingRewards = false;
@@ -75,6 +76,7 @@ public class LevelUp : MonoBehaviour
         nameText.text = name + " Leveled Up!";
         expText.text = expToNextLevel.ToString();
 
+        AudioManager.instance.PlaySFX(levelUpSound);
         levelUpScreen.SetActive(true);
     }
 
