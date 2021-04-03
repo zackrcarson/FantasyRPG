@@ -29,6 +29,29 @@ public class AudioManager : MonoBehaviour
         soundEffects[soundToPlay].Play();
     }
 
+    public void PlayTwoSFXExternal(int sound1, int sound2, float delay)
+    {
+        StartCoroutine(PlayTwoSFX(sound1, sound2, delay));
+    }
+
+    private IEnumerator PlayTwoSFX(int sound1, int sound2, float delay)
+    {
+        if (sound1 >= soundEffects.Length || sound2 >= soundEffects.Length) { yield return null; }
+
+        soundEffects[sound1].Play();
+
+        yield return new WaitForSeconds(soundEffects[sound1].clip.length + delay);
+
+        soundEffects[sound2].Play();
+    }
+
+    public void PlayRandomSFX(int[] soundsToPlay)
+    {
+        int soundToPlay = Random.Range(0, soundsToPlay.Length);
+
+        soundEffects[soundsToPlay[soundToPlay]].Play();
+    }
+
     public void PlayMusic(int musicToPlay)
     {
         if (musicToPlay >= backgroundMusic.Length) { return; }

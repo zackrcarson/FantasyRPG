@@ -28,6 +28,12 @@ public class Item : MonoBehaviour
 
     public string UseItem(int characterToUseOn)
     {
+        int potionSound = GameMenu.instance.potionSound;
+        int powerUpSound = GameMenu.instance.powerUpSound;
+        int errorSound = GameMenu.instance.errorSound;
+        int[] equipSounds = GameMenu.instance.equipSounds;
+        int[] swordSounds = GameMenu.instance.swordSounds;
+
         string message = "";
 
         // Dummy holders - won't ever be used in the alternative situation
@@ -64,7 +70,7 @@ public class Item : MonoBehaviour
                 {
                     if (selectedCharacter.currentHP >= selectedCharacter.maxHP)
                     {
-                        // TODO: Make ergh sound
+                        AudioManager.instance.PlaySFX(errorSound);
                         selectedCharacter.currentHP = selectedCharacter.maxHP;
                         
                         return selectedCharacter.characterName + "'s HP is already full!";
@@ -101,7 +107,7 @@ public class Item : MonoBehaviour
                 {
                     if (selectedCharacter.currentMP >= selectedCharacter.maxMP)
                     {
-                        // TODO: Make ergh sound
+                        AudioManager.instance.PlaySFX(errorSound);
                         selectedCharacter.currentMP = selectedCharacter.maxMP;
 
                         return selectedCharacter.characterName + "'s MP is already full!";
@@ -152,6 +158,8 @@ public class Item : MonoBehaviour
                     message = "Boosted " + selectedCharacter.characterName + "'s defense by " + amountToChange + " with the " + itemName + ". New defense: " + selectedCharacter.defense + ".";
                 }
             }
+
+            AudioManager.instance.PlayTwoSFXExternal(potionSound, powerUpSound, 0.3f);
         }
 
         if (!isBattleActive)
@@ -166,7 +174,9 @@ public class Item : MonoBehaviour
                 selectedCharacter.equippedWeapon = itemName;
                 selectedCharacter.weaponPower = weaponStrength;
 
-                message = selectedCharacter.characterName + " equipped the " + itemName + ", with a weapon strength of " + weaponStrength + "."; 
+                message = selectedCharacter.characterName + " equipped the " + itemName + ", with a weapon strength of " + weaponStrength + ".";
+
+                AudioManager.instance.PlayRandomSFX(swordSounds);
             }
 
             if (isArmor)
@@ -181,6 +191,7 @@ public class Item : MonoBehaviour
 
                 message = selectedCharacter.characterName + " equipped the " + itemName + ", with an armor strength of " + armorStrength + ".";
 
+                AudioManager.instance.PlayRandomSFX(equipSounds);
             }
         }
 

@@ -39,6 +39,11 @@ public class Shop : MonoBehaviour
     [SerializeField] Color notEnoughMoneyColor;
     [SerializeField] Color notEnoughMoneyButtonColor;
 
+    [Header("SFX")]
+    [SerializeField] int shopSound = 29;
+    [SerializeField] int[] coinSounds = new int[] { 11, 12, 13};
+    [SerializeField] int errorSound = 21;
+
     // Cached References
     Color enoughMoneyColor;
     Color enoughMoneyButtonColor;
@@ -74,6 +79,8 @@ public class Shop : MonoBehaviour
 
     public void OpenShop()
     {
+        AudioManager.instance.PlaySFX(shopSound);
+
         shopMenu.SetActive(true);
         OpenBuyMenu();
 
@@ -84,6 +91,8 @@ public class Shop : MonoBehaviour
 
     public void CloseShop()
     {
+        AudioManager.instance.PlaySFX(shopSound);
+
         shopMenu.SetActive(false);
 
         GameManager.instance.shopActive = false;
@@ -294,11 +303,11 @@ public class Shop : MonoBehaviour
 
             SelectBuyItem(selectedItem);
 
-            // TODO: Play coin jingle sound (And somehow maybe don't play the ui beep sound?)
+            AudioManager.instance.PlayRandomSFX(coinSounds);
         }
         else
         {
-            // TODO: Play "ergh" sound - not enough money. (And somehow maybe don't play the ui beep sound?)
+            AudioManager.instance.PlaySFX(errorSound);
         }
 
         goldText.text = GameManager.instance.currentGold.ToString() +"g";
@@ -307,6 +316,8 @@ public class Shop : MonoBehaviour
     public void SellItem()
     {
         if (selectedItem == null) { return; }
+        
+        AudioManager.instance.PlayRandomSFX(coinSounds);
 
         GameManager.instance.currentGold += Mathf.FloorToInt(selectedItem.cost * depreciationFactor);
 

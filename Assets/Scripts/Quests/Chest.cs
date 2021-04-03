@@ -5,11 +5,16 @@ using UnityEngine;
 public class Chest : MonoBehaviour
 {
     // Config Parameters
+    [Header("Treasure")]
     [SerializeField] string[] treasureList = null;
     [SerializeField] int[] treasureListNumbers = null;
     [SerializeField] int coins = 0;
     [SerializeField] float rewardPanelScreenTime = 6f;
+
+    [Header("FX")]
     [SerializeField] Sprite openSprite = null;
+    [SerializeField] int chestOpenSound = 30;
+    [SerializeField] int treasureSound = 31;
 
     // State Variables
     bool canOpen = false;
@@ -31,6 +36,8 @@ public class Chest : MonoBehaviour
 
     private void OpenChest()
     {
+        AudioManager.instance.PlayTwoSFXExternal(chestOpenSound, treasureSound, 0.2f);
+
         isOpen = true;
         GetComponent<Animator>().SetBool("chestOpen", true);
 

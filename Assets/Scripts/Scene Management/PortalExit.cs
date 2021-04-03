@@ -7,6 +7,8 @@ public class PortalExit : MonoBehaviour
     [SerializeField][Tooltip("Scene Description - Portal Number")] string sceneToLoad = null;
     [SerializeField] float loadDelayTimer = 1f;
     [SerializeField] bool shouldLoadAfterFade = false;
+    [SerializeField] bool shouldPlaySound = false;
+    [SerializeField] int soundToPlay = 32;
 
     private void Update()
     {
@@ -30,6 +32,11 @@ public class PortalExit : MonoBehaviour
     {
         if (otherCollider.tag == "Player")
         {
+            if (shouldPlaySound)
+            {
+                AudioManager.instance.PlaySFX(soundToPlay);
+            }
+
             shouldLoadAfterFade = true;
 
             GameManager.instance.fadingScreen = true;

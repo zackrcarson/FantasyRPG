@@ -111,6 +111,11 @@ public class ChestManager : MonoBehaviour
 
     public IEnumerator OpenChest(string[] treasures, int[] treasureNumbers, int coins, float screenTime)
     {
+        if (chestRewardPanel.activeInHierarchy)
+        {
+            chestRewardPanel.SetActive(false);
+        }
+
         GameManager.instance.AddGold(coins);
         rewardsText.text = coins.ToString() + "g\n";
 

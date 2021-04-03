@@ -21,6 +21,13 @@ public class GameMenu : MonoBehaviour
     [SerializeField] int openCloseMenuSound = 6;
     [SerializeField] int menuButtonsSound = 5;
     [SerializeField] int itemSlotSound = 8;
+    [SerializeField] public int[] equipSounds = new int[] { 16, 17, 18, 19, 20 };
+    [SerializeField] public int[] swordSounds = new int[] { 24, 25, 26, 27, 28 };
+    [SerializeField] public int potionSound = 14;
+    [SerializeField] public int powerUpSound = 15;
+    [SerializeField] public int errorSound = 21;
+    [SerializeField] int discardSound = 22;
+    [SerializeField] int saveLoadSound = 23;
 
     [Header("Items Panel Config")]
     [SerializeField] ItemButton[] itemButtons = null;
@@ -81,6 +88,10 @@ public class GameMenu : MonoBehaviour
     bool isInventoryEmpty = false;
     int activePlayer = 0;
 
+    bool canLoad = false;
+    bool canUnequipWeapon = false;
+    bool canUnequipArmor = false;
+
     // Cached References
     CharacterStats[] characterStats = null;
     Color defaultButtonColor;
@@ -112,21 +123,24 @@ public class GameMenu : MonoBehaviour
         // Gray out Continue button if no save data found
         if (!PlayerPrefs.HasKey("Current_Scene"))
         {
-            Button button = loadButton.GetComponent<Button>();
+            canLoad = false;
+            //Button button = loadButton.GetComponent<Button>();
             Image buttonImage = loadButton.GetComponent<Image>();
             Text buttonText = loadButton.GetComponentInChildren<Text>();
 
-            button.enabled = false;
+            //button.enabled = false;
             buttonImage.color = deactiveButtonColor;
             buttonText.color = new Color(buttonText.color.r, buttonText.color.g, buttonText.color.b, deactiveButtonColor.a);
         }
         else
         {
-            Button button = loadButton.GetComponent<Button>();
+            canLoad = true;
+
+            //Button button = loadButton.GetComponent<Button>();
             Image buttonImage = loadButton.GetComponent<Image>();
             Text buttonText = loadButton.GetComponentInChildren<Text>();
 
-            button.enabled = true;
+            //button.enabled = true;
             buttonImage.color = defaultButtonColor;
             buttonText.color = new Color(buttonText.color.r, buttonText.color.g, buttonText.color.b, 1f);
         }
@@ -345,6 +359,8 @@ public class GameMenu : MonoBehaviour
     {
         if (characterStats[playerNumber].equippedWeapon == "")
         {
+            canUnequipWeapon = false;
+
             unequipWeaponButton.GetComponent<Image>().color = deactiveButtonColor;
 
             Color textColor = unequipWeaponButton.GetComponentInChildren<Text>().color;
@@ -352,6 +368,8 @@ public class GameMenu : MonoBehaviour
         }
         else
         {
+            canUnequipWeapon = true;
+
             unequipWeaponButton.GetComponent<Image>().color = defaultButtonColor;
 
             Color textColor = unequipWeaponButton.GetComponentInChildren<Text>().color;
@@ -360,6 +378,8 @@ public class GameMenu : MonoBehaviour
 
         if (characterStats[playerNumber].equippedArmor == "")
         {
+            canUnequipArmor = false;
+
             unequipArmorButton.GetComponent<Image>().color = deactiveButtonColor;
 
             Color textColor = unequipArmorButton.GetComponentInChildren<Text>().color;
@@ -367,6 +387,8 @@ public class GameMenu : MonoBehaviour
         }
         else
         {
+            canUnequipArmor = true;
+
             unequipArmorButton.GetComponent<Image>().color = defaultButtonColor;
 
             Color textColor = unequipArmorButton.GetComponentInChildren<Text>().color;
@@ -421,6 +443,11 @@ public class GameMenu : MonoBehaviour
 
     public void Unequip(bool isWeapon)
     {
+        if ((isWeapon && !canUnequipWeapon) || (!isWeapon && !canUnequipArmor))
+        {
+            AudioManager.instance.PlaySFX(errorSound);
+        }
+
         CharacterStats selectedCharacter = characterStats[activePlayer];
         string message = "";
 
@@ -428,6 +455,11 @@ public class GameMenu : MonoBehaviour
         {
             if (selectedCharacter.equippedWeapon != "")
             {
+                if (canUnequipWeapon)
+                {
+                    AudioManager.instance.PlayRandomSFX(swordSounds);
+                }
+
                 string weaponName = selectedCharacter.equippedWeapon;
                 GameManager.instance.AddItem(weaponName);
 
@@ -441,6 +473,11 @@ public class GameMenu : MonoBehaviour
         {
             if (selectedCharacter.equippedArmor != "")
             {
+                if (canUnequipArmor)
+                {
+                    AudioManager.instance.PlayRandomSFX(equipSounds);
+                }
+
                 string armorName = selectedCharacter.equippedArmor;
                 GameManager.instance.AddItem(armorName);
 
@@ -573,6 +610,11 @@ public class GameMenu : MonoBehaviour
         if (activeItem != null)
         {
             GameManager.instance.RemoveItem(activeItem.itemName);
+            AudioManager.instance.PlaySFX(discardSound);
+        }
+        else
+        {
+            AudioManager.instance.PlaySFX(errorSound);
         }
     }
 
@@ -607,6 +649,8 @@ public class GameMenu : MonoBehaviour
 
     public void SaveGame()
     {
+        AudioManager.instance.PlaySFX(saveLoadSound);
+
         PlayerPrefs.DeleteAll();
 
         GameManager.instance.SaveData();
@@ -619,9 +663,18 @@ public class GameMenu : MonoBehaviour
 
     public void LoadGame()
     {
-        StartCoroutine(ShowNotification("Game Loaded.", saveLoadNotificationActiveTime, saveLoadNotificationColor));
+        if (canLoad)
+        {
+            AudioManager.instance.PlaySFX(saveLoadSound);
 
-        StartCoroutine(FadeInLoadAndFadeOut());
+            StartCoroutine(ShowNotification("Game Loaded.", saveLoadNotificationActiveTime, saveLoadNotificationColor));
+
+            StartCoroutine(FadeInLoadAndFadeOut());
+        }
+        else
+        {
+            AudioManager.instance.PlaySFX(errorSound);
+        }
     }
 
     private IEnumerator FadeInLoadAndFadeOut()

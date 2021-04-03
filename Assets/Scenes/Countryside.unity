@@ -932,6 +932,10 @@ PrefabInstance:
       propertyPath: sceneToLoad
       value: Town
       objectReference: {fileID: 0}
+    - target: {fileID: 4034864812919195185, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
+      propertyPath: shouldPlaySound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4034864812919195199, guid: 633aee1e87654e64a8a7fd64eb27da9d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.752
