@@ -58,6 +58,8 @@ public class BattleManager : MonoBehaviour
     [SerializeField] int errorSound = 21;
     [SerializeField] int gameOverSound = 40;
     [SerializeField] int dodgeSound = 43;
+    [SerializeField] public int enemyDeathSound = 44;
+    [SerializeField] public int playerDeathSound = 45;
 
     [Header("UI")]
     [Header("Misc. UI")]

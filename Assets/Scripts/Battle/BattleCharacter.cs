@@ -62,6 +62,15 @@ public class BattleCharacter : MonoBehaviour
         //isDead = true;
         animator.SetBool("isDead", true);
 
+        if (isPlayer)
+        {
+            AudioManager.instance.PlaySFX(BattleManager.instance.playerDeathSound);
+        }
+        else
+        {
+            AudioManager.instance.PlaySFX(BattleManager.instance.enemyDeathSound);
+        }
+
         yield return new WaitForSeconds(deathAnimationDelay);
 
         if (isPlayer)

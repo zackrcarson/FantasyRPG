@@ -10,7 +10,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource[] soundEffects = null;
     [SerializeField] AudioSource[] backgroundMusic = null;
     [SerializeField] AudioSource talking = null;
-    [SerializeField] float talkingRatePerCharacter = 0.07f;
+    [SerializeField] float talkingRatePerCharacter = 0.02f;
 
     // State Variables
     AudioSource currentSongPlaying = null;
