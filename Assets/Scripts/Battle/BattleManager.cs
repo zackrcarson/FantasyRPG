@@ -531,7 +531,6 @@ public class BattleManager : MonoBehaviour
         {
             AudioManager.instance.PlaySFX(dodgeSound);
 
-            activeBattlers[currentTurn].Attack();
             if (isBoss)
             {
                 Instantiate(bossAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
@@ -540,6 +539,8 @@ public class BattleManager : MonoBehaviour
             {
                 Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
             }
+
+            Instantiate(enemyAttackEffect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
 
             activeBattlers[currentTurn].Attack();
             activeBattlers[selectedTarget].Dodge();
@@ -692,8 +693,16 @@ public class BattleManager : MonoBehaviour
         {
             AudioManager.instance.PlaySFX(dodgeSound);
 
-            activeBattlers[currentTurn].Attack();
             Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
+
+            if (isBoss)
+            {
+                Instantiate(bossAttackEffect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
+            }
+            else
+            {
+                Instantiate(enemyAttackEffect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
+            }
 
             activeBattlers[currentTurn].Attack();
             activeBattlers[selectedTarget].Dodge();
