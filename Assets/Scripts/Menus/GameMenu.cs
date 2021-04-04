@@ -28,6 +28,7 @@ public class GameMenu : MonoBehaviour
     [SerializeField] public int errorSound = 21;
     [SerializeField] int discardSound = 22;
     [SerializeField] int saveLoadSound = 23;
+    [SerializeField] int quitSound = 42;
 
     [Header("Items Panel Config")]
     [SerializeField] ItemButton[] itemButtons = null;
@@ -260,6 +261,8 @@ public class GameMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        AudioManager.instance.PlaySFX(quitSound);
+
         StartCoroutine(FadeAndQuit());
     }
 

@@ -32,8 +32,10 @@ public class BattleManager : MonoBehaviour
     [SerializeField] GameObject effectsParent = null;
     [SerializeField] GameObject enemyAttackEffect = null;
     [SerializeField] GameObject bossAttackEffect = null;
-    [SerializeField] GameObject playerItemEffect = null;
+    [SerializeField] GameObject playerItemEffectHP = null;
+    [SerializeField] GameObject playerItemEffectMP = null;
     [SerializeField] DamageDisplay damageDisplay = null;
+    [SerializeField] DamageDisplay dodgeDisplay = null;
     [SerializeField] ManaDisplay manaDisplay = null;
     [SerializeField] ItemDisplayEffect itemDisplay = null;
 
@@ -55,6 +57,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] int failToFleeSound = 39;
     [SerializeField] int errorSound = 21;
     [SerializeField] int gameOverSound = 40;
+    [SerializeField] int dodgeSound = 43;
 
     [Header("UI")]
     [Header("Misc. UI")]
@@ -522,29 +525,77 @@ public class BattleManager : MonoBehaviour
     {
         int selectedTarget = ChooseRandomPlayer();
 
-        int selectedAttack = UnityEngine.Random.Range(0, activeBattlers[currentTurn].movesAvailable.Length);
-        int movePower = 0;
-        foreach(BattleMove move in movesList)
+        bool canDodge = CanDodge(selectedTarget);
+
+        if (canDodge)
         {
-            if (move.moveName == activeBattlers[currentTurn].movesAvailable[selectedAttack])
+            AudioManager.instance.PlaySFX(dodgeSound);
+
+            activeBattlers[currentTurn].Attack();
+            if (isBoss)
             {
-                Instantiate(move.effect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
-
-                movePower = move.movePower;
+                Instantiate(bossAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
             }
-        }
+            else
+            {
+                Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
+            }
 
-        activeBattlers[currentTurn].Attack();
-        if (isBoss)
-        {
-            Instantiate(bossAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
+            activeBattlers[currentTurn].Attack();
+            activeBattlers[selectedTarget].Dodge();
+
+            if (isBoss && !activeBattlers[selectedTarget].isPlayer)
+            {
+                Vector3 displacementVector = new Vector3(-2f, 0f, 0f);
+                Instantiate(dodgeDisplay, activeBattlers[selectedTarget].transform.position + displacementVector, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
+            }
+            else
+            {
+                Instantiate(dodgeDisplay, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
+            }
         }
         else
         {
-            Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
+            int selectedAttack = UnityEngine.Random.Range(0, activeBattlers[currentTurn].movesAvailable.Length);
+            int movePower = 0;
+            foreach(BattleMove move in movesList)
+            {
+                if (move.moveName == activeBattlers[currentTurn].movesAvailable[selectedAttack])
+                {
+                    Instantiate(move.effect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
+
+                    movePower = move.movePower;
+                }
+            }
+
+            activeBattlers[currentTurn].Attack();
+            if (isBoss)
+            {
+                Instantiate(bossAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
+            }
+            else
+            {
+                Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
+            }
+
+            DealDamage(selectedTarget, movePower);
         }
 
-        DealDamage(selectedTarget, movePower);
+    }
+
+    private bool CanDodge(int selectedTarget)
+    {
+        int percentChanceToDodge = activeBattlers[selectedTarget].dodgeChance;
+        int dodgeRoll = UnityEngine.Random.Range(0, 100);
+
+        if (dodgeRoll <= percentChanceToDodge)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     private int ChooseRandomPlayer()
@@ -635,29 +686,56 @@ public class BattleManager : MonoBehaviour
 
     public void PlayerAttack(string moveName, int selectedTarget)
     {
-        int movePower = 0;
-        foreach (BattleMove move in movesList)
+        bool canDodge = CanDodge(selectedTarget);
+
+        if (canDodge)
         {
-            if (move.moveName == moveName)
+            AudioManager.instance.PlaySFX(dodgeSound);
+
+            activeBattlers[currentTurn].Attack();
+            Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
+
+            activeBattlers[currentTurn].Attack();
+            activeBattlers[selectedTarget].Dodge();
+
+            if (isBoss && !activeBattlers[selectedTarget].isPlayer)
             {
-                Instantiate(move.effect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
-                movePower = move.movePower;
+                Vector3 displacementVector = new Vector3(-2f, 0f, 0f);
+                Instantiate(dodgeDisplay, activeBattlers[selectedTarget].transform.position + displacementVector, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
+            }
+            else
+            {
+                Instantiate(dodgeDisplay, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
             }
         }
-
-        activeBattlers[currentTurn].Attack();
-        Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
-
-        if (isCastingSpell)
+        else
         {
-            Instantiate(manaDisplay, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform).SetMana(currentSpellCost);
+            int movePower = 0;
+            foreach (BattleMove move in movesList)
+            {
+                if (move.moveName == moveName)
+                {
+                    Instantiate(move.effect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
+                    movePower = move.movePower;
+                }
+            }
 
-            isCastingSpell = false;
-            currentSpellCost = 0;
+            activeBattlers[currentTurn].Attack();
+            Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
+
+            if (isCastingSpell)
+            {
+                Instantiate(manaDisplay, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform).SetMana(currentSpellCost);
+
+                isCastingSpell = false;
+                currentSpellCost = 0;
+            }
+
+            DealDamage(selectedTarget, movePower);
+
+
         }
-
-        DealDamage(selectedTarget, movePower);
-
+        
         uiButtons.SetActive(false);
         targetMenu.SetActive(false);
 
@@ -964,22 +1042,49 @@ public class BattleManager : MonoBehaviour
 
     public void UseItem(int selectedCharacter)
     {
-        activeItem.UseItem(activePlayerBattlerSlots[selectedCharacter]);
+        string result = activeItem.UseItem(activePlayerBattlerSlots[selectedCharacter]);
 
-        activeBattlers[activePlayerBattlerSlots[selectedCharacter]].ProcessHit(0);
-        UpdateUIStats();
+        if (result == "True")
+        {
+            activeBattlers[activePlayerBattlerSlots[selectedCharacter]].ProcessHit(0);
+            UpdateUIStats();
 
-        CloseItemPlayerChoicePanel();
-        CloseItemsMenu();
+            CloseItemPlayerChoicePanel();
+            CloseItemsMenu();
 
-        NextTurn();
+            NextTurn();
+        }
+        else
+        {
+            if (result == "False-HP")
+            {
+                battleNotification.notificationMessage.text = activeBattlers[activePlayerBattlerSlots[selectedCharacter]].characterName + " is at full HP! You can't heal them any more.";
+                battleNotification.Activate();
+            }
+            else if (result == "False-MP")
+            {
+                battleNotification.notificationMessage.text = activeBattlers[activePlayerBattlerSlots[selectedCharacter]].characterName + " is at full MP! You can't restore any more.";
+                battleNotification.Activate();
+            }
+        }
     }
 
     public void DisplayItemBoost(int selectedCharacter, int amount, string type)
     {
         Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
 
-        Instantiate(playerItemEffect, activeBattlers[selectedCharacter].transform.position, activeBattlers[selectedCharacter].transform.rotation, effectsParent.transform);
+        GameObject effectToUse = playerItemEffectHP;
+
+        if (type == "Health")
+        {
+            effectToUse = playerItemEffectHP;
+        }
+        else if (type == "Mana")
+        {
+            effectToUse = playerItemEffectMP;
+        }
+
+        Instantiate(effectToUse, activeBattlers[selectedCharacter].transform.position, activeBattlers[selectedCharacter].transform.rotation, effectsParent.transform);
 
         Instantiate(itemDisplay, activeBattlers[selectedCharacter].transform.position, activeBattlers[selectedCharacter].transform.rotation, effectsParent.transform).SetBoost(amount, type);
     }

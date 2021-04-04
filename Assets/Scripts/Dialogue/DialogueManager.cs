@@ -66,9 +66,14 @@ public class DialogueManager : MonoBehaviour
 
                         CheckIfName();
                         dialogueText.text = dialogueLines[currentLine];
+
+                        AudioManager.instance.StopTalking();
+                        AudioManager.instance.Talk(dialogueLines[currentLine].Length);
                     }
                     else
                     {
+                        AudioManager.instance.StopTalking();
+
                         currentLine = 0;
 
                         dialogueBox.SetActive(false);
@@ -120,6 +125,9 @@ public class DialogueManager : MonoBehaviour
 
         CheckIfName();
         dialogueText.text = dialogueLines[currentLine];
+
+        AudioManager.instance.StopTalking();
+        AudioManager.instance.Talk(dialogueLines[currentLine].Length);
 
         if (name == dialogueSignIndicator)
         {

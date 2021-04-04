@@ -9,10 +9,14 @@ public class GameOver : MonoBehaviour
     [SerializeField] Color deactiveButtonColor;
     [SerializeField] Image fadeImage = null;
     [SerializeField] float fadeSpeed = 1f;
+    [SerializeField] int errorSound = 21;
     [SerializeField] int beepSound = 5;
+    [SerializeField] int loadSound = 23;
+    [SerializeField] int quitSound = 42;
 
     // State Variables
     bool shouldFadeOut = false;
+    bool canLoad = false;
 
     private void Start()
     {
@@ -21,13 +25,18 @@ public class GameOver : MonoBehaviour
         // Gray out Continue button if no save data found
         if (!PlayerPrefs.HasKey("Current_Scene"))
         {
-            Button button = continueButton.GetComponent<Button>();
+            canLoad = false;
+            //Button button = continueButton.GetComponent<Button>();
             Image buttonImage = continueButton.GetComponent<Image>();
             Text buttonText = continueButton.GetComponentInChildren<Text>();
 
-            button.enabled = false;
+            //button.enabled = false;
             buttonImage.color = deactiveButtonColor;
             buttonText.color = new Color(buttonText.color.r, buttonText.color.g, buttonText.color.b, deactiveButtonColor.a);
+        }
+        else
+        {
+            canLoad = true;
         }
     }
 
@@ -41,6 +50,7 @@ public class GameOver : MonoBehaviour
 
     public void QuitToMain()
     {
+        AudioManager.instance.PlaySFX(quitSound);
         StartCoroutine(FadeAndQuit());
     }
 
@@ -62,7 +72,16 @@ public class GameOver : MonoBehaviour
 
     public void LoadLastSave()
     {
-        StartCoroutine(FadeInLoadAndFadeOut());
+        if (canLoad)
+        {
+            AudioManager.instance.PlaySFX(loadSound);
+
+            StartCoroutine(FadeInLoadAndFadeOut());
+        }
+        else
+        {
+            AudioManager.instance.PlaySFX(errorSound);
+        }
     }
 
     private IEnumerator FadeInLoadAndFadeOut()

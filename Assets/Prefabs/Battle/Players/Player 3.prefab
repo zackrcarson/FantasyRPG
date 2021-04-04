@@ -304,8 +304,10 @@ MonoBehaviour:
   - Plasma
   deadSprite: {fileID: 21300046, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
   healthBar: {fileID: 222412676}
+  enemyNumber: {fileID: 0}
   activeBattlerParticles: {fileID: 1124559408346156553}
   deathAnimationDelay: 0.8
+  dodgeChance: 15
   currentHP: 0
   maxHP: 0
   currentMP: 0

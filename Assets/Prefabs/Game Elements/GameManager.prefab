@@ -53,7 +53,7 @@ MonoBehaviour:
   exponentialLevelCurveFactor: 1.05
   exponentialHPCurveFactor: 1.05
   exponentialMPCurveFactor: 1.05
-  currentHP: 500
+  currentHP: 200
   currentMP: 20
   maxHP: 500
   maxMP: 25
@@ -116,7 +116,7 @@ MonoBehaviour:
   exponentialLevelCurveFactor: 1.05
   exponentialHPCurveFactor: 1.05
   exponentialMPCurveFactor: 1.05
-  currentHP: 1
+  currentHP: 200
   currentMP: 30
   maxHP: 200
   maxMP: 30

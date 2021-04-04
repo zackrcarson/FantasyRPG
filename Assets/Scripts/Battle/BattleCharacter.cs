@@ -14,6 +14,7 @@ public class BattleCharacter : MonoBehaviour
     [SerializeField] Text enemyNumber = null;
     [SerializeField] public ParticleSystem activeBattlerParticles = null;
     [SerializeField] float deathAnimationDelay = 0.8f;
+    [SerializeField] public int dodgeChance = 15;
 
     [Header("Character Stats")]
     [SerializeField] public int currentHP = 0;
@@ -47,6 +48,11 @@ public class BattleCharacter : MonoBehaviour
     public void Attack()
     {
         animator.SetTrigger("attack");
+    }
+
+    public void Dodge()
+    {
+        animator.SetTrigger("dodge");
     }
 
     public IEnumerator Dead()

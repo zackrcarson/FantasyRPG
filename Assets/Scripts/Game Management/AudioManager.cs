@@ -9,6 +9,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] float defaultFadeTime = 1.5f;
     [SerializeField] AudioSource[] soundEffects = null;
     [SerializeField] AudioSource[] backgroundMusic = null;
+    [SerializeField] AudioSource talking = null;
+    [SerializeField] float talkingRatePerCharacter = 0.07f;
 
     // State Variables
     AudioSource currentSongPlaying = null;
@@ -158,5 +160,29 @@ public class AudioManager : MonoBehaviour
             music.Stop();
             currentSongPlaying = null;
         }
+    }
+
+
+    public void Talk(int numberOfCharacters)
+    {
+        float timeToTalk = (float)numberOfCharacters * talkingRatePerCharacter;
+        
+        StartCoroutine(TalkFortime(timeToTalk));
+    }
+
+    private IEnumerator TalkFortime(float length)
+    {
+        talking.loop = true;
+        talking.Play();
+
+        yield return new WaitForSeconds(length);
+
+        talking.Pause();
+    }
+
+    public void StopTalking()
+    {
+        StopAllCoroutines();
+        talking.Pause();
     }
 }

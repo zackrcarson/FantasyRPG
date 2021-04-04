@@ -4932,8 +4932,10 @@ MonoBehaviour:
   - Ice
   deadSprite: {fileID: 8888318505984086984, guid: cf7a661be4b01d844a60de52dca9b94c, type: 3}
   healthBar: {fileID: 6639465858223692144}
+  enemyNumber: {fileID: 0}
   activeBattlerParticles: {fileID: 5965225099419958604}
   deathAnimationDelay: 0.8
+  dodgeChance: 25
   currentHP: 0
   maxHP: 0
   currentMP: 0

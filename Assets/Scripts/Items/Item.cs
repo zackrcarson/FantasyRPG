@@ -57,13 +57,31 @@ public class Item : MonoBehaviour
             {
                 if (isBattleActive)
                 {
-                    BattleManager.instance.DisplayItemBoost(activeBattler, amountToChange, "Health");
-
-                    BattleManager.instance.activeBattlers[activeBattler].currentHP += amountToChange;
-
-                    if (BattleManager.instance.activeBattlers[activeBattler].currentHP > BattleManager.instance.activeBattlers[activeBattler].maxHP)
+                    if (BattleManager.instance.activeBattlers[activeBattler].currentHP >= BattleManager.instance.activeBattlers[activeBattler].maxHP)
                     {
+                        AudioManager.instance.PlaySFX(errorSound);
+
                         BattleManager.instance.activeBattlers[activeBattler].currentHP = BattleManager.instance.activeBattlers[activeBattler].maxHP;
+
+                        return "False-HP";
+                    }
+                    else
+                    {
+                        AudioManager.instance.PlayTwoSFXExternal(potionSound, powerUpSound, 0.3f);
+
+                        int amountToDisplay = amountToChange;
+
+                        BattleManager.instance.activeBattlers[activeBattler].currentHP += amountToChange;
+
+                        if (BattleManager.instance.activeBattlers[activeBattler].currentHP > BattleManager.instance.activeBattlers[activeBattler].maxHP)
+                        {
+                            amountToDisplay -= (BattleManager.instance.activeBattlers[activeBattler].currentHP - BattleManager.instance.activeBattlers[activeBattler].maxHP);
+                            BattleManager.instance.activeBattlers[activeBattler].currentHP = BattleManager.instance.activeBattlers[activeBattler].maxHP;
+                        }
+                        
+                        BattleManager.instance.DisplayItemBoost(activeBattler, amountToDisplay, "Health");
+
+                        return "True";
                     }
                 }
                 else
@@ -94,13 +112,30 @@ public class Item : MonoBehaviour
             {
                 if (isBattleActive)
                 {
-                    BattleManager.instance.DisplayItemBoost(activeBattler, amountToChange, "Mana");
-
-                    BattleManager.instance.activeBattlers[activeBattler].currentMP += amountToChange;
-
-                    if (BattleManager.instance.activeBattlers[activeBattler].currentMP > BattleManager.instance.activeBattlers[activeBattler].maxMP)
+                    if (BattleManager.instance.activeBattlers[activeBattler].currentMP >= BattleManager.instance.activeBattlers[activeBattler].maxMP)
                     {
+                        AudioManager.instance.PlaySFX(errorSound);
                         BattleManager.instance.activeBattlers[activeBattler].currentMP = BattleManager.instance.activeBattlers[activeBattler].maxMP;
+
+                        return "False-MP";
+                    }
+                    else
+                    {
+                        AudioManager.instance.PlayTwoSFXExternal(potionSound, powerUpSound, 0.3f);
+
+                        int amountToDisplay = amountToChange;
+
+                        BattleManager.instance.activeBattlers[activeBattler].currentMP += amountToChange;
+
+                        if (BattleManager.instance.activeBattlers[activeBattler].currentMP > BattleManager.instance.activeBattlers[activeBattler].maxMP)
+                        {
+                            amountToDisplay -= (BattleManager.instance.activeBattlers[activeBattler].currentMP - BattleManager.instance.activeBattlers[activeBattler].maxMP);
+                            BattleManager.instance.activeBattlers[activeBattler].currentMP = BattleManager.instance.activeBattlers[activeBattler].maxMP;
+                        }
+
+                        BattleManager.instance.DisplayItemBoost(activeBattler, amountToDisplay, "Mana");
+
+                        return "True";
                     }
                 }
                 else
@@ -131,9 +166,13 @@ public class Item : MonoBehaviour
             {
                 if (isBattleActive)
                 {
+                    AudioManager.instance.PlayTwoSFXExternal(potionSound, powerUpSound, 0.3f);
+
                     BattleManager.instance.DisplayItemBoost(activeBattler, amountToChange, "Strength");
 
                     BattleManager.instance.activeBattlers[activeBattler].strength += amountToChange;
+
+                    return "Strength Up";
                 }
                 else
                 {
@@ -147,9 +186,13 @@ public class Item : MonoBehaviour
             {
                 if (isBattleActive)
                 {
+                    AudioManager.instance.PlayTwoSFXExternal(potionSound, powerUpSound, 0.3f);
+
                     BattleManager.instance.DisplayItemBoost(activeBattler, amountToChange, "Defense");
 
                     BattleManager.instance.activeBattlers[activeBattler].defense += amountToChange;
+
+                    return "Defense Up";
                 }
                 else
                 {

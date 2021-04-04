@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float horizontalWalkSpeed = 1f;
     [SerializeField] float xBoundaryOffset = 0.5f;
     [SerializeField] float yBoundaryOffset = 0.5f;
+    [SerializeField] float footStepPitchMin = 0.8f;
+    [SerializeField] float footStepPitchMax = 1.2f;
 
     // State Variables
     [HideInInspector] public string portalName = null;
@@ -15,6 +17,7 @@ public class PlayerController : MonoBehaviour
     // Cached References
     Rigidbody2D rigidBody = null;
     Animator animator = null;
+    AudioSource audioSource = null;
     Vector3 bottomLeftBound = new Vector3(0f, 0f, 0f);
     Vector3 topRightBound = new Vector3(0f, 0f, 0f);
 
@@ -28,6 +31,7 @@ public class PlayerController : MonoBehaviour
     {
         rigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void SingletonPattern()
@@ -123,5 +127,13 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetFloat("lastMoveX", idleDirection.x);
         animator.SetFloat("lastMoveY", idleDirection.y);
+    }
+
+    public void FootStep()
+    {
+        float pitch = Random.Range(footStepPitchMin, footStepPitchMax);
+
+        audioSource.pitch = pitch;
+        audioSource.Play();
     }
 }

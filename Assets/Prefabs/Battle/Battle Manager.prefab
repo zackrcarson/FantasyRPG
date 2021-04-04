@@ -1036,10 +1036,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 16af20c94d442ab4c8bff6c6a7d1885f, type: 3}
   - {fileID: 21300000, guid: dfce6b7656338c244aefe65269df8585, type: 3}
   - {fileID: 21300000, guid: 4c38a2b9041c88748add8abf7c31433c, type: 3}
-  battleMusic: 0
-  gameOverMusic: 8
-  victorySound: 9
-  fleeSound: 10
   backgroundFadeTime: 1.7
   battleEndDelay1: 1.5
   battleEndDelay2: 0.5
@@ -1068,8 +1064,10 @@ MonoBehaviour:
   effectsParent: {fileID: 175187156916768786}
   enemyAttackEffect: {fileID: 7234392262408426064, guid: 556c3e592d3148342b8268163672614c, type: 3}
   bossAttackEffect: {fileID: 7234392262408426064, guid: fa8360e82a4f1d24fa8ea7353d37d271, type: 3}
-  playerItemEffect: {fileID: 7234392262408426064, guid: 923ac0e80740cca4ca271ddb53707836, type: 3}
+  playerItemEffectHP: {fileID: 7234392262408426064, guid: 923ac0e80740cca4ca271ddb53707836, type: 3}
+  playerItemEffectMP: {fileID: 7234392262408426064, guid: ab8eb86d3de7e1345b54269b74a78e93, type: 3}
   damageDisplay: {fileID: 2464126967210551093, guid: 5c66be3960e484647916f37e9110e376, type: 3}
+  dodgeDisplay: {fileID: 2464126967210551093, guid: 2d6a84983e347d84cbaba48d4b2a393e, type: 3}
   manaDisplay: {fileID: 3008869044575458853, guid: 9074a648878a3a343bbb8232a3094b10, type: 3}
   itemDisplay: {fileID: 4308177448674222692, guid: 9eda1d6ba3c54c04dafb84c0996a59cb, type: 3}
   playerPositions:
@@ -1094,6 +1092,16 @@ MonoBehaviour:
   - {fileID: 3417521343767813714, guid: 8e9f948d32a085a4db9b45cfef26786a, type: 3}
   beepSound: 5
   itemSlotSound: 8
+  battleIntro: 33
+  battleMusic: 0
+  gameOverMusic: 8
+  victorySound: 9
+  fleeSound: 10
+  fleeSuccessSound: 41
+  failToFleeSound: 39
+  errorSound: 21
+  gameOverSound: 40
+  dodgeSound: 43
   uiButtons: {fileID: 5212521417037243527}
   battleNotification: {fileID: 2588907826299840457}
   playerNames:
