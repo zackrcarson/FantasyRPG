@@ -1086,10 +1086,17 @@ MonoBehaviour:
   - {fileID: 18006969467699390, guid: 99ff07ee509fea744a848c0cde08b5b6, type: 3}
   - {fileID: 18006969467699390, guid: 6515bf4cec801d14ebef2e7d14272ec8, type: 3}
   enemyPrefabs:
-  - {fileID: 182824727857279878, guid: 7195cc7aa1b871840a157cb8589b9680, type: 3}
-  - {fileID: 7121131871234954939, guid: c76a5144d26fa7b4695e9dfb74e966a4, type: 3}
-  - {fileID: 1833168519116500116, guid: 52291a6bfd4a39944adf6b944de97cb4, type: 3}
+  - {fileID: 820613551757197160, guid: 375d9c07290fbbe4196c2503663ac85d, type: 3}
   - {fileID: 3417521343767813714, guid: 8e9f948d32a085a4db9b45cfef26786a, type: 3}
+  - {fileID: 182824727857279878, guid: 7195cc7aa1b871840a157cb8589b9680, type: 3}
+  - {fileID: 8920145339490720310, guid: 62fac16463cea5e4f9b7a39ce3179352, type: 3}
+  - {fileID: 7504977888437908801, guid: 21fa47616295129418df7c0c1c9fe2b0, type: 3}
+  - {fileID: 7121131871234954939, guid: c76a5144d26fa7b4695e9dfb74e966a4, type: 3}
+  - {fileID: 6241202612217957118, guid: 19c26815ef0a8cd41954d7bf0f2b34d6, type: 3}
+  - {fileID: 4456341689545404466, guid: b0c113a676b31194eaba92c8068dfa22, type: 3}
+  - {fileID: 1833168519116500116, guid: 52291a6bfd4a39944adf6b944de97cb4, type: 3}
+  - {fileID: 8657128406965260231, guid: ae85305ab2dc1a74da3d097f76e53db4, type: 3}
+  - {fileID: 6418059096161967661, guid: fca139cb96999684c9a66acc29bae591, type: 3}
   beepSound: 5
   itemSlotSound: 8
   battleIntro: 33
@@ -1102,6 +1109,8 @@ MonoBehaviour:
   errorSound: 21
   gameOverSound: 40
   dodgeSound: 43
+  enemyDeathSound: 44
+  playerDeathSound: 45
   uiButtons: {fileID: 5212521417037243527}
   battleNotification: {fileID: 2588907826299840457}
   playerNames:
