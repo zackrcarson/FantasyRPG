@@ -123,6 +123,166 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &22624261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 22624262}
+  - component: {fileID: 22624264}
+  - component: {fileID: 22624263}
+  m_Layer: 0
+  m_Name: Battle Zone (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &22624262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22624261}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 43.15, y: -8.72, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &22624263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22624261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &22624264
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22624261}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -4.4250107, y: 2.7971277}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.317543, y: 2.316328}
+  m_EdgeRadius: 0
 --- !u!1001 &30059549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -196,6 +356,166 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6418701924469632070, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
   m_PrefabInstance: {fileID: 30059549}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &33367840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 33367841}
+  - component: {fileID: 33367843}
+  - component: {fileID: 33367842}
+  m_Layer: 0
+  m_Name: Battle Zone (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &33367841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33367840}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.6, y: -9.84, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &33367842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33367840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &33367843
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33367840}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -35.93312, y: -5.842529}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.83757, y: 7.761071}
+  m_EdgeRadius: 0
 --- !u!1001 &67128107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -306,6 +626,166 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &83508314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 83508315}
+  - component: {fileID: 83508317}
+  - component: {fileID: 83508316}
+  m_Layer: 0
+  m_Name: Battle Zone (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &83508315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83508314}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.2, y: -18.39, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &83508316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83508314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &83508317
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83508314}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.3144732, y: 0.0955019}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1912136, y: 1.0368862}
+  m_EdgeRadius: 0
 --- !u!1001 &90172629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1243,6 +1723,326 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 368599514775034371, guid: fdcfa74a072c19c4e98b319df5933e96, type: 3}
   m_PrefabInstance: {fileID: 253838996}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &267435142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 267435143}
+  - component: {fileID: 267435145}
+  - component: {fileID: 267435144}
+  m_Layer: 0
+  m_Name: Battle Zone (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &267435143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267435142}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -45.32, y: -10.14, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &267435144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267435142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &267435145
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267435142}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.8147354, y: 5.3178077}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 17.688347, y: 13.516862}
+  m_EdgeRadius: 0
+--- !u!1 &277217576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 277217577}
+  - component: {fileID: 277217579}
+  - component: {fileID: 277217578}
+  m_Layer: 0
+  m_Name: Battle Zone (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &277217577
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277217576}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 38.32, y: -8.67, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &277217578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277217576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &277217579
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277217576}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -4.311096, y: 2.2845259}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.1535568, y: 1.2911243}
+  m_EdgeRadius: 0
 --- !u!1001 &281372624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1305,6 +2105,487 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6113881996530793386, guid: b37a245cbf450f4439f5d6f4e0066d53, type: 3}
   m_PrefabInstance: {fileID: 281372624}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &303184156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 303184157}
+  - component: {fileID: 303184159}
+  - component: {fileID: 303184158}
+  m_Layer: 0
+  m_Name: Battle Zone (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &303184157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303184156}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 38.08, y: -20.27, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &303184158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303184156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &303184159
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303184156}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.2502975, y: -1.7634773}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.864868, y: 11.423553}
+  m_EdgeRadius: 0
+--- !u!1 &305222522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 305222523}
+  - component: {fileID: 305222525}
+  - component: {fileID: 305222524}
+  m_Layer: 0
+  m_Name: Battle Zone (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &305222523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305222522}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.8, y: -18.19, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &305222524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305222522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &305222525
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305222522}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -33.009666, y: 0.07568264}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 16.684479, y: 7.761072}
+  m_EdgeRadius: 0
+--- !u!1 &317682606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 317682607}
+  - component: {fileID: 317682609}
+  - component: {fileID: 317682608}
+  m_Layer: 0
+  m_Name: Battle Zone (22)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &317682607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317682606}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 37.51, y: -0.52, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &317682608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317682606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Skeleton
+    rewardExp: 354
+    rewardGold: 136
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Gremlin
+    rewardExp: 458
+    rewardGold: 176
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Skeleton
+    - Skeleton
+    rewardExp: 708
+    rewardGold: 276
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Gremlin
+    - Gremlin
+    rewardExp: 908
+    rewardGold: 354
+    rewardItems:
+    - Wooden Sword
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Gremlin
+    - Skeleton
+    rewardExp: 908
+    rewardGold: 354
+    rewardItems:
+    - Mana Potion
+    - Health Potion
+    - Iron Armor
+    rewardItemNumbers: 010000000100000001000000
+  - enemies:
+    - Gremlin
+    - Wasp
+    rewardExp: 603
+    rewardGold: 245
+    rewardItems:
+    - Health Potion
+    - Wooden Sword
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Skeleton
+    - Spider
+    rewardExp: 648
+    rewardGold: 261
+    rewardItems:
+    - Mana Potion
+    - Leather Armor
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Skeleton
+    - Slime
+    rewardExp: 452
+    rewardGold: 181
+    rewardItems:
+    - Mana Potion
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Gremlin
+    - Slime
+    rewardExp: 546
+    rewardGold: 226
+    rewardItems:
+    - Mana Potion
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 2
+  randomTimeMax: 7
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &317682609
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317682606}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.51732635, y: 2.0963268}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.68647, y: 7.075074}
+  m_EdgeRadius: 0
 --- !u!1001 &328069962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47172,6 +48453,166 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &352392096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 352392097}
+  - component: {fileID: 352392099}
+  - component: {fileID: 352392098}
+  m_Layer: 0
+  m_Name: Battle Zone (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &352392097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352392096}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.66, y: -21.16, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &352392098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352392096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &352392099
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352392096}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.2371635, y: 19.326323}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.934151, y: 7.8360634}
+  m_EdgeRadius: 0
 --- !u!1001 &353782076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47726,6 +49167,166 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 368599514775034371, guid: fdcfa74a072c19c4e98b319df5933e96, type: 3}
   m_PrefabInstance: {fileID: 476026248}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &483854786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 483854787}
+  - component: {fileID: 483854789}
+  - component: {fileID: 483854788}
+  m_Layer: 0
+  m_Name: Battle Zone (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &483854787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483854786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.03, y: -20.89, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &483854788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483854786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &483854789
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483854786}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.05773115, y: 12.20873}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.2930155, y: 22.071245}
+  m_EdgeRadius: 0
 --- !u!1001 &493764608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47912,6 +49513,61 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6113881996530793386, guid: b37a245cbf450f4439f5d6f4e0066d53, type: 3}
   m_PrefabInstance: {fileID: 507586175}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &547767035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 547767036}
+  m_Layer: 0
+  m_Name: Battle Zones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &547767036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547767035}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 995038800}
+  - {fileID: 1447765419}
+  - {fileID: 303184157}
+  - {fileID: 1283009486}
+  - {fileID: 1226755235}
+  - {fileID: 22624262}
+  - {fileID: 277217577}
+  - {fileID: 794910759}
+  - {fileID: 483854787}
+  - {fileID: 352392097}
+  - {fileID: 975102904}
+  - {fileID: 903836626}
+  - {fileID: 305222523}
+  - {fileID: 990216369}
+  - {fileID: 33367841}
+  - {fileID: 2138845888}
+  - {fileID: 733770511}
+  - {fileID: 83508315}
+  - {fileID: 267435143}
+  - {fileID: 1796835350}
+  - {fileID: 1676826396}
+  - {fileID: 1507803285}
+  - {fileID: 317682607}
+  - {fileID: 1136532133}
+  - {fileID: 1308137164}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &582713774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49685,6 +51341,166 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6418701924469632070, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
   m_PrefabInstance: {fileID: 6418701923773803683}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &733770510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733770511}
+  - component: {fileID: 733770513}
+  - component: {fileID: 733770512}
+  m_Layer: 0
+  m_Name: Battle Zone (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &733770511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733770510}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.52, y: -18.47, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &733770512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733770510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &733770513
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733770510}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.3779993, y: -0.29835987}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7248325, y: 1.8246098}
+  m_EdgeRadius: 0
 --- !u!1001 &746183759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50119,6 +51935,166 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6113881996530793386, guid: b37a245cbf450f4439f5d6f4e0066d53, type: 3}
   m_PrefabInstance: {fileID: 790462518}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &794910758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 794910759}
+  - component: {fileID: 794910761}
+  - component: {fileID: 794910760}
+  m_Layer: 0
+  m_Name: Battle Zone (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &794910759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794910758}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 45.73, y: -6.52, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &794910760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794910758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &794910761
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794910758}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.9692783, y: 12.254213}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4699211, y: 20.888683}
+  m_EdgeRadius: 0
 --- !u!1001 &832876843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50337,6 +52313,166 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &903836625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 903836626}
+  - component: {fileID: 903836628}
+  - component: {fileID: 903836627}
+  m_Layer: 0
+  m_Name: Battle Zone (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &903836626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903836625}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.18, y: -26.26, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &903836627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903836625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &903836628
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903836625}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -16.418093, y: 0.69018555}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 49.867626, y: 6.5320663}
+  m_EdgeRadius: 0
 --- !u!1001 &914709720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50461,6 +52597,166 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6113881996530793386, guid: b37a245cbf450f4439f5d6f4e0066d53, type: 3}
   m_PrefabInstance: {fileID: 941094178}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &975102903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 975102904}
+  - component: {fileID: 975102906}
+  - component: {fileID: 975102905}
+  m_Layer: 0
+  m_Name: Battle Zone (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &975102904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975102903}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.6, y: -18.46, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &975102905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975102903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &975102906
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975102903}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.8652406, y: 20.194141}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4818802, y: 0.787241}
+  m_EdgeRadius: 0
 --- !u!1001 &978399611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50585,6 +52881,326 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 368599514775034371, guid: fdcfa74a072c19c4e98b319df5933e96, type: 3}
   m_PrefabInstance: {fileID: 980860944}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &990216368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 990216369}
+  - component: {fileID: 990216371}
+  - component: {fileID: 990216370}
+  m_Layer: 0
+  m_Name: Battle Zone (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &990216369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990216368}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.53, y: -1.93, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &990216370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990216368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &990216371
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990216368}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -34.899216, y: -2.8834229}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 12.90538, y: 13.679283}
+  m_EdgeRadius: 0
+--- !u!1 &995038797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 995038800}
+  - component: {fileID: 995038799}
+  - component: {fileID: 995038798}
+  m_Layer: 0
+  m_Name: Battle Zone (0)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &995038798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995038797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &995038799
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995038797}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.7571354, y: -0.74082184}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 31.27232, y: 20.286572}
+  m_EdgeRadius: 0
+--- !u!4 &995038800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995038797}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.25, y: -17.86, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1019095762
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50895,6 +53511,167 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 368599514775034371, guid: fdcfa74a072c19c4e98b319df5933e96, type: 3}
   m_PrefabInstance: {fileID: 1133044673}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1136532132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1136532133}
+  - component: {fileID: 1136532135}
+  - component: {fileID: 1136532134}
+  m_Layer: 0
+  m_Name: Battle Zone (23)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1136532133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136532132}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -21.51, y: -0.46, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1136532134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136532132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Skeleton
+    rewardExp: 354
+    rewardGold: 136
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Gremlin
+    rewardExp: 458
+    rewardGold: 176
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Skeleton
+    - Skeleton
+    rewardExp: 708
+    rewardGold: 276
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Gremlin
+    - Gremlin
+    rewardExp: 908
+    rewardGold: 354
+    rewardItems:
+    - Wooden Sword
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Gremlin
+    - Skeleton
+    rewardExp: 908
+    rewardGold: 354
+    rewardItems:
+    - Mana Potion
+    - Health Potion
+    - Iron Armor
+    rewardItemNumbers: 010000000100000001000000
+  - enemies:
+    - Gremlin
+    - Wasp
+    rewardExp: 603
+    rewardGold: 245
+    rewardItems:
+    - Health Potion
+    - Wooden Sword
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Skeleton
+    - Spider
+    rewardExp: 648
+    rewardGold: 261
+    rewardItems:
+    - Mana Potion
+    - Leather Armor
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Skeleton
+    - Slime
+    rewardExp: 452
+    rewardGold: 181
+    rewardItems:
+    - Mana Potion
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Gremlin
+    - Slime
+    rewardExp: 546
+    rewardGold: 226
+    rewardItems:
+    - Mana Potion
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 2
+  randomTimeMax: 7
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &1136532135
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136532132}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.51732635, y: 2.9180238}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.68647, y: 5.43168}
+  m_EdgeRadius: 0
 --- !u!1001 &1144091785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51324,6 +54101,166 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6113881996530793386, guid: b37a245cbf450f4439f5d6f4e0066d53, type: 3}
   m_PrefabInstance: {fileID: 1223165587}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1226755234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1226755235}
+  - component: {fileID: 1226755237}
+  - component: {fileID: 1226755236}
+  m_Layer: 0
+  m_Name: Battle Zone (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1226755235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226755234}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 38.54, y: -11.41, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1226755236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226755234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &1226755237
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226755234}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -7.9922504, y: 3.236173}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.6832695, y: 5.0603604}
+  m_EdgeRadius: 0
 --- !u!1001 &1259888642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51672,6 +54609,166 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1283009485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1283009486}
+  - component: {fileID: 1283009488}
+  - component: {fileID: 1283009487}
+  m_Layer: 0
+  m_Name: Battle Zone (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1283009486
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283009485}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 31.04, y: -4.97, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1283009487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283009485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &1283009488
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283009485}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -15.302345, y: 3.1225445}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 38.696045, y: 7.560186}
+  m_EdgeRadius: 0
 --- !u!1001 &1294533258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51858,6 +54955,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 368599514775034371, guid: fdcfa74a072c19c4e98b319df5933e96, type: 3}
   m_PrefabInstance: {fileID: 1307775646}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1308137163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1308137164}
+  - component: {fileID: 1308137166}
+  - component: {fileID: 1308137165}
+  m_Layer: 0
+  m_Name: Battle Zone (24)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1308137164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308137163}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -21.51, y: -6.08, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1308137165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308137163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Wizard
+    rewardExp: 634
+    rewardGold: 212
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+    - Iron Sword
+    rewardItemNumbers: 020000000200000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 5
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &1308137166
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308137163}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.51732635, y: -1.4441903}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.68647, y: 14.471449}
+  m_EdgeRadius: 0
 --- !u!1001 &1325787642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57512,6 +60701,166 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 368599514775034371, guid: fdcfa74a072c19c4e98b319df5933e96, type: 3}
   m_PrefabInstance: {fileID: 1432476047}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1447765418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1447765419}
+  - component: {fileID: 1447765421}
+  - component: {fileID: 1447765420}
+  m_Layer: 0
+  m_Name: Battle Zone (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1447765419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447765418}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 31.04, y: -20.27, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1447765420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447765418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &1447765421
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447765418}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.7426891, y: -0.2863083}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.880085, y: 14.377892}
+  m_EdgeRadius: 0
 --- !u!1001 &1473886145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57755,6 +61104,167 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdcfa74a072c19c4e98b319df5933e96, type: 3}
+--- !u!1 &1507803284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1507803285}
+  - component: {fileID: 1507803287}
+  - component: {fileID: 1507803286}
+  m_Layer: 0
+  m_Name: Battle Zone (21)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1507803285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507803284}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -35.07, y: 7.35, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1507803286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507803284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Skeleton
+    rewardExp: 354
+    rewardGold: 136
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Gremlin
+    rewardExp: 458
+    rewardGold: 176
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Skeleton
+    - Skeleton
+    rewardExp: 708
+    rewardGold: 276
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Gremlin
+    - Gremlin
+    rewardExp: 908
+    rewardGold: 354
+    rewardItems:
+    - Wooden Sword
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Gremlin
+    - Skeleton
+    rewardExp: 908
+    rewardGold: 354
+    rewardItems:
+    - Mana Potion
+    - Health Potion
+    - Iron Armor
+    rewardItemNumbers: 010000000100000001000000
+  - enemies:
+    - Gremlin
+    - Wasp
+    rewardExp: 603
+    rewardGold: 245
+    rewardItems:
+    - Health Potion
+    - Wooden Sword
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Skeleton
+    - Spider
+    rewardExp: 648
+    rewardGold: 261
+    rewardItems:
+    - Mana Potion
+    - Leather Armor
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Skeleton
+    - Slime
+    rewardExp: 452
+    rewardGold: 181
+    rewardItems:
+    - Mana Potion
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Gremlin
+    - Slime
+    rewardExp: 546
+    rewardGold: 226
+    rewardItems:
+    - Mana Potion
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 2
+  randomTimeMax: 7
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &1507803287
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507803284}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 32.702576, y: 3.6928349}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 86.72296, y: 11.825657}
+  m_EdgeRadius: 0
 --- !u!1001 &1569353372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66371,6 +69881,166 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1676826395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1676826396}
+  - component: {fileID: 1676826398}
+  - component: {fileID: 1676826397}
+  m_Layer: 0
+  m_Name: Battle Zone (20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1676826396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676826395}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -44.9, y: 4.3, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1676826397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676826395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &1676826398
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676826395}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -5.9194202, y: 4.9281225}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.478977, y: 14.296232}
+  m_EdgeRadius: 0
 --- !u!1001 &1688051766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80849,6 +84519,166 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!1 &1796835349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1796835350}
+  - component: {fileID: 1796835352}
+  - component: {fileID: 1796835351}
+  m_Layer: 0
+  m_Name: Battle Zone (19)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1796835350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796835349}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -37.51, y: 0.86, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1796835351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796835349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &1796835352
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796835349}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.039258957, y: 0.7893445}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4497185, y: 0.9488808}
+  m_EdgeRadius: 0
 --- !u!1001 &1809027966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81593,6 +85423,166 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 368599514775034371, guid: fdcfa74a072c19c4e98b319df5933e96, type: 3}
   m_PrefabInstance: {fileID: 2136861037}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2138845887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2138845888}
+  - component: {fileID: 2138845890}
+  - component: {fileID: 2138845889}
+  m_Layer: 0
+  m_Name: Battle Zone (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2138845888
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138845887}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19.74, y: -18.47, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2138845889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138845887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &2138845890
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138845887}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.9333162, y: -0.29835987}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.6141987, y: 1.8246098}
+  m_EdgeRadius: 0
 --- !u!1001 &2141153465
 PrefabInstance:
   m_ObjectHideFlags: 0
