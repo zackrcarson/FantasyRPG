@@ -247,6 +247,8 @@ MonoBehaviour:
   - {fileID: 6393170219875230404, guid: e1f2df748153eff48adceac478fa1864, type: 3}
   - {fileID: 1853535165451646385, guid: bf472a870f676db4c8157857a3d33116, type: 3}
   - {fileID: 6863449847072564899, guid: e68d028337f5c2247a3dfe57fb49f57c, type: 3}
+  - {fileID: 1237579390784462738, guid: 60fd6081ce5e4ea4b9fed47b17d182e5, type: 3}
+  - {fileID: 7049722342938799605, guid: add589958834304478545d41ca092b62, type: 3}
   itemsHeld:
   - 
   - 

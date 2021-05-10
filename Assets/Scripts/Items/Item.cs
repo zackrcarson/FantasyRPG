@@ -217,7 +217,7 @@ public class Item : MonoBehaviour
                 selectedCharacter.equippedWeapon = itemName;
                 selectedCharacter.weaponPower = weaponStrength;
 
-                message = selectedCharacter.characterName + " equipped the " + itemName + ", with a weapon strength of " + weaponStrength + ".";
+                message = selectedCharacter.characterName + " equipped " + itemName + ". Weapon strength: " + weaponStrength + ".";
 
                 AudioManager.instance.PlayRandomSFX(swordSounds);
             }
@@ -232,7 +232,7 @@ public class Item : MonoBehaviour
                 selectedCharacter.equippedArmor = itemName;
                 selectedCharacter.armorPower = armorStrength;
 
-                message = selectedCharacter.characterName + " equipped the " + itemName + ", with an armor strength of " + armorStrength + ".";
+                message = selectedCharacter.characterName + " equipped " + itemName + ". Armor strength: " + armorStrength + ".";
 
                 AudioManager.instance.PlayRandomSFX(equipSounds);
             }

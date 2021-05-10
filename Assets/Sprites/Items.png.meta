@@ -194,6 +194,9 @@ TextureImporter:
   - first:
       213: 21300126
     second: rpgItems_63
+  - first:
+      213: 8033092973025764044
+    second: Items_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -404,6 +407,27 @@ TextureImporter:
       bones: []
       spriteID: b6e5e0f45d1cc1740b6da76f0a10f90f
       internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc223e07f774b7f60800000000000000
+      internalID: 8033092973025764044
       vertices: []
       indices: 
       edges: []

@@ -74,25 +74,28 @@ public class CharacterStats : MonoBehaviour
     {
         int[] oldLevels = new int[] { playerLevel, maxHP, maxMP, strength, defense };
 
-        currentEXP -= expToNextLevel[playerLevel];
-
-        playerLevel++;
-
-        // odd level gets defense+, even level gets strength+
-        if (playerLevel % 2 == 0)
+        while (currentEXP >= expToNextLevel[playerLevel])
         {
-            strength++;
-        }
-        else
-        {
-            defense++;
-        }
+            currentEXP -= expToNextLevel[playerLevel];
 
-        maxHP = Mathf.FloorToInt(maxHP * exponentialHPCurveFactor);
-        maxMP = Mathf.FloorToInt(maxMP * exponentialMPCurveFactor);
+            playerLevel++;
 
-        currentHP = maxHP;
-        currentMP = maxMP;
+            // odd level gets defense+, even level gets strength+
+            if (playerLevel % 2 == 0)
+            {
+                strength++;
+            }
+            else
+            {
+                defense++;
+            }
+
+            maxHP = Mathf.FloorToInt(maxHP * exponentialHPCurveFactor);
+            maxMP = Mathf.FloorToInt(maxMP * exponentialMPCurveFactor);
+
+            currentHP = maxHP;
+            currentMP = maxMP;
+        }  
 
         int[] newLevels = new int[] { playerLevel, maxHP, maxMP, strength, defense };
 
