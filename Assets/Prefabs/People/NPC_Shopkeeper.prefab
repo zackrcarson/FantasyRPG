@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8147678361872250823}
   - component: {fileID: 8147678361872250817}
   - component: {fileID: 8147678361872250822}
+  - component: {fileID: 8147678362167906271}
   m_Layer: 0
   m_Name: NPC_Shopkeeper
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8147678361872250826}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.98, y: 1.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -154,10 +155,10 @@ MonoBehaviour:
   - Mana Potion
   - Leather Armor
   - Iron Armor
+  - Diamond Armor
   - Wooden Sword
   - Iron Sword
-  - 
-  - 
+  - Diamond Sword
   - 
   - 
   - 
@@ -191,3 +192,22 @@ MonoBehaviour:
   - 
   - 
   depreciationFactor: 0.6
+--- !u!95 &8147678362167906271
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8147678361872250826}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dce89d5994910c4abca07daf8c8f806, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

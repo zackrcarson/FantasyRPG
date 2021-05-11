@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class Dialogue : MonoBehaviour
 {
     // Config Parameters

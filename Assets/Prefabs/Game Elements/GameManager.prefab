@@ -314,6 +314,10 @@ MonoBehaviour:
   - Talk to Poppy.
   possibleQuests:
   - Talk to Poppy.
+  - Find Alice (in the fountain?)
+  - Talk to the rest of your friends in the marketplace.
+  - Find Jane in Northern Fillory.
   - Kill the dragon living in the caves.
-  - Go talk to Julia.
+  - Go talk to Dean Fogg somewhere in Southern Fillory.
+  - 'Explore Fillory while Dean Fogg finds you a way home. '
   questMarkersComplete: 
