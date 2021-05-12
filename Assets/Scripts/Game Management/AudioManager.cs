@@ -182,7 +182,7 @@ public class AudioManager : MonoBehaviour
 
     public void StopTalking()
     {
-        StopAllCoroutines();
+        StopCoroutine("TalkFortime");
         talking.Pause();
     }
 }

@@ -53,11 +53,11 @@ MonoBehaviour:
   exponentialLevelCurveFactor: 1.05
   exponentialHPCurveFactor: 1.05
   exponentialMPCurveFactor: 1.05
-  currentHP: 200
-  currentMP: 20
-  maxHP: 500
-  maxMP: 25
-  strength: 22
+  currentHP: 350
+  currentMP: 35
+  maxHP: 350
+  maxMP: 35
+  strength: 24
   defense: 16
   weaponPower: 0
   armorPower: 0
@@ -116,12 +116,12 @@ MonoBehaviour:
   exponentialLevelCurveFactor: 1.05
   exponentialHPCurveFactor: 1.05
   exponentialMPCurveFactor: 1.05
-  currentHP: 200
+  currentHP: 300
   currentMP: 30
-  maxHP: 200
+  maxHP: 300
   maxMP: 30
-  strength: 14
-  defense: 14
+  strength: 17
+  defense: 17
   weaponPower: 0
   armorPower: 0
   equippedWeapon: 
@@ -250,21 +250,13 @@ MonoBehaviour:
   - {fileID: 1237579390784462738, guid: 60fd6081ce5e4ea4b9fed47b17d182e5, type: 3}
   - {fileID: 7049722342938799605, guid: add589958834304478545d41ca092b62, type: 3}
   itemsHeld:
-  - 
-  - 
-  - 
   - Health Potion
-  - 
-  - 
-  - 
-  - 
   - Mana Potion
   - 
   - 
   - 
   - 
   - 
-  - Leather Armor
   - 
   - 
   - 
@@ -277,26 +269,35 @@ MonoBehaviour:
   - 
   - 
   - 
-  - Wooden Sword
   - 
   - 
   - 
   - 
   - 
   - 
-  - Iron Sword
   - 
   - 
   - 
   - 
   - 
-  numberOfItems: 00000000000000000000000007000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  numberOfItems: 02000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   currentGold: 100
   gameMenuOpen: 0
   dialogueActive: 0
   fadingScreen: 0
   shopActive: 0
   isBattleActive: 0
+  godMode: 0
 --- !u!114 &73720190
 MonoBehaviour:
   m_ObjectHideFlags: 0

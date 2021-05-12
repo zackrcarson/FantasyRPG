@@ -621,12 +621,20 @@ public class BattleManager : MonoBehaviour
 
     private void DealDamage(int targetNumber, int movePower)
     {
-        float offensivePower = activeBattlers[currentTurn].strength + activeBattlers[currentTurn].weaponPower;
-        float defensivePower = activeBattlers[targetNumber].defense + activeBattlers[targetNumber].armorPower;
+        int damageToGive = 0;
+        if (GameManager.instance.godMode && activeBattlers[targetNumber].isPlayer)
+        {
+            damageToGive = 0;
+        }
+        else
+        {
+            float offensivePower = activeBattlers[currentTurn].strength + activeBattlers[currentTurn].weaponPower;
+            float defensivePower = activeBattlers[targetNumber].defense + activeBattlers[targetNumber].armorPower;
 
-        float totalDamage = (offensivePower / defensivePower) * movePower * UnityEngine.Random.Range(damageRandomFactorMinimum, damageRandomFactorMaximum);
+            float totalDamage = (offensivePower / defensivePower) * movePower * UnityEngine.Random.Range(damageRandomFactorMinimum, damageRandomFactorMaximum);
 
-        int damageToGive = Mathf.RoundToInt(totalDamage);
+            damageToGive = Mathf.RoundToInt(totalDamage);
+        }
 
         activeBattlers[targetNumber].ProcessHit(damageToGive);
 
@@ -634,6 +642,7 @@ public class BattleManager : MonoBehaviour
         if (isBoss && !activeBattlers[targetNumber].isPlayer)
         {
             Vector3 displacementVector = new Vector3(-2f, 0f, 0f);
+
             Instantiate(damageDisplay, activeBattlers[targetNumber].transform.position + displacementVector, activeBattlers[targetNumber].transform.rotation, effectsParent.transform).SetDamage(damageToGive);
         }
         else
@@ -726,7 +735,16 @@ public class BattleManager : MonoBehaviour
             {
                 if (move.moveName == moveName)
                 {
-                    Instantiate(move.effect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
+                    if (isBoss)
+                    {
+                        Vector3 displacementVector = new Vector3(-2f, 0f, 0f);
+
+                        Instantiate(move.effect, activeBattlers[selectedTarget].transform.position + displacementVector, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
+                    }
+                    else
+                    {
+                        Instantiate(move.effect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation, effectsParent.transform);
+                    }
                     movePower = move.movePower;
                 }
             }

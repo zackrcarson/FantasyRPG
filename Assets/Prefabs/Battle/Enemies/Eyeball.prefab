@@ -312,10 +312,10 @@ MonoBehaviour:
   maxHP: 250
   currentMP: 0
   maxMP: 0
-  strength: 5
-  defense: 5
-  weaponPower: 5
-  armorPower: 5
+  strength: 18
+  defense: 18
+  weaponPower: 0
+  armorPower: 0
 --- !u!95 &3773974330237114976
 Animator:
   serializedVersion: 3

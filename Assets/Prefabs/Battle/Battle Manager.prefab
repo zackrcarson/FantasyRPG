@@ -1048,16 +1048,16 @@ MonoBehaviour:
     moveCost: 0
     effect: {fileID: 4245709494503376989, guid: 8e439676e74781046a6b4ffc1818b97e, type: 3}
   - moveName: Fire
-    movePower: 50
-    moveCost: 5
+    movePower: 60
+    moveCost: 4
     effect: {fileID: 5558668274046910815, guid: c030124b2166fe1468c8e9f63be22a7f, type: 3}
   - moveName: Ice
-    movePower: 65
-    moveCost: 5
+    movePower: 70
+    moveCost: 6
     effect: {fileID: 991644926657327980, guid: bc296ed40dad26046881f3d710363216, type: 3}
   - moveName: Plasma
-    movePower: 85
-    moveCost: 10
+    movePower: 90
+    moveCost: 8
     effect: {fileID: 5817468755299716964, guid: abd36e05b93ceec4d83f1a1f2a454a19, type: 3}
   damageRandomFactorMinimum: 0.9
   damageRandomFactorMaximum: 1.1

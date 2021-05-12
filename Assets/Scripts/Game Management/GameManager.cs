@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public bool fadingScreen = false;
     [HideInInspector] public bool shopActive = false;
     [HideInInspector] public bool isBattleActive = false;
+    [HideInInspector] public bool godMode = false;
 
     private void Awake()
     {

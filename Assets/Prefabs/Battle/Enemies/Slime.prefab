@@ -5099,12 +5099,12 @@ MonoBehaviour:
   activeBattlerParticles: {fileID: 6241202610656023663}
   deathAnimationDelay: 1.6
   dodgeChance: 40
-  currentHP: 200
-  maxHP: 200
+  currentHP: 150
+  maxHP: 150
   currentMP: 0
   maxMP: 0
-  strength: 20
-  defense: 10
+  strength: 14
+  defense: 14
   weaponPower: 0
   armorPower: 0
 --- !u!95 &6241202612217957119

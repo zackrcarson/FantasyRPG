@@ -16,6 +16,7 @@ public class GameMenu : MonoBehaviour
     [SerializeField] string mainMenuName = "Main Menu";
     [SerializeField] GameObject loadButton = null;
     [SerializeField] Color deactiveButtonColor;
+    [SerializeField] Color godModeDeactiveButtonColor;
 
     [Header("SFX")]
     [SerializeField] int openCloseMenuSound = 6;
@@ -57,6 +58,7 @@ public class GameMenu : MonoBehaviour
     [SerializeField] GameObject[] statsButtons = null;
     [SerializeField] GameObject unequipWeaponButton = null;
     [SerializeField] GameObject unequipArmorButton = null;
+    [SerializeField] GameObject godModeButton = null;
     [SerializeField] ButtonToggle[] statsButtonToggles = null;
     [SerializeField] Image statsImage = null;
     [SerializeField] Text statsName = null;
@@ -82,6 +84,8 @@ public class GameMenu : MonoBehaviour
     [SerializeField] Color saveLoadNotificationColor;
     [SerializeField] float itemMessageTime = 5f;
     [SerializeField] Color itemMessageColor;
+    [SerializeField] Color godModeMessageColor;
+    [SerializeField] float godModeNotificationTime = 5f;
 
     // State Variables
     // string selectedItem = null;
@@ -398,6 +402,15 @@ public class GameMenu : MonoBehaviour
             textColor = new Color(textColor.r, textColor.g, textColor.b, 1f);
         }
 
+        if (GameManager.instance.godMode)
+        {
+            godModeButton.GetComponent<Image>().color = godModeDeactiveButtonColor;
+        }
+        else
+        {
+            godModeButton.GetComponent<Image>().color = defaultButtonColor;
+        }
+
         activePlayer = playerNumber;
 
         int i = 0;
@@ -442,6 +455,28 @@ public class GameMenu : MonoBehaviour
         statsEXP.text = (characterStats[playerNumber].expToNextLevel[characterStats[playerNumber].playerLevel] - characterStats[playerNumber].currentEXP).ToString();
 
         lvlText.text = "Lvl: " + characterStats[playerNumber].playerLevel;
+    }
+
+    public void SwitchGodMode()
+    {
+        GameManager.instance.godMode = !GameManager.instance.godMode;
+
+        string message = "";
+        if (GameManager.instance.godMode)
+        {
+            godModeButton.GetComponent<Image>().color = godModeDeactiveButtonColor;
+
+            message = "God Mode activated. You are now invulnerable.";
+        }
+        else
+        {
+            godModeButton.GetComponent<Image>().color = defaultButtonColor;
+            
+            message = "God Mode deactivated. You are now vulnerable.";
+        }
+
+        AudioManager.instance.PlaySFX(saveLoadSound);
+        StartCoroutine(ShowNotification(message, godModeNotificationTime, godModeMessageColor));
     }
 
     public void Unequip(bool isWeapon)

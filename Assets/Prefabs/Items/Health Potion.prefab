@@ -101,20 +101,16 @@ MonoBehaviour:
   isWeapon: 0
   isArmor: 0
   itemName: Health Potion
-  description: Restores 100 HP
+  description: Restores 250 HP
   itemSprite: {fileID: 21300000, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
-  cost: 5
-  amountToChange: 100
+  cost: 200
+  amountToChange: 250
   affectHP: 1
   affectMP: 0
   affectStrength: 0
   affectDefense: 0
   weaponStrength: 0
   armorStrength: 0
-  hpMessageColor: {r: 0.13333334, g: 1, b: 0, a: 0}
-  mpMessageColor: {r: 0, g: 0.6509804, b: 1, a: 0}
-  otherMessageColor: {r: 1, g: 0, b: 0, a: 0}
-  notificationTime: 5
 --- !u!58 &1883009499
 CircleCollider2D:
   m_ObjectHideFlags: 0

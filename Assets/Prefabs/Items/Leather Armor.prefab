@@ -103,7 +103,7 @@ MonoBehaviour:
   itemName: Leather Armor
   description: Light armor - easy to move in and provides a little protection.
   itemSprite: {fileID: 21300010, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
-  cost: 10
+  cost: 1500
   amountToChange: 0
   affectHP: 0
   affectMP: 0
@@ -111,10 +111,6 @@ MonoBehaviour:
   affectDefense: 0
   weaponStrength: 0
   armorStrength: 5
-  hpMessageColor: {r: 0.13333334, g: 1, b: 0, a: 0}
-  mpMessageColor: {r: 0, g: 0.6509804, b: 1, a: 0}
-  otherMessageColor: {r: 1, g: 0, b: 0, a: 0}
-  notificationTime: 5
 --- !u!58 &228006232
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -83,11 +83,11 @@ public class CharacterStats : MonoBehaviour
             // odd level gets defense+, even level gets strength+
             if (playerLevel % 2 == 0)
             {
-                strength++;
+                strength += 2;
             }
             else
             {
-                defense++;
+                defense += 2;
             }
 
             maxHP = Mathf.FloorToInt(maxHP * exponentialHPCurveFactor);

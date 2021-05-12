@@ -103,7 +103,7 @@ MonoBehaviour:
   itemName: Iron Armor
   description: Heavy iron armor - harder to move in, but it's strong.
   itemSprite: {fileID: 21300014, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
-  cost: 25
+  cost: 3500
   amountToChange: 0
   affectHP: 0
   affectMP: 0
@@ -111,10 +111,6 @@ MonoBehaviour:
   affectDefense: 0
   weaponStrength: 0
   armorStrength: 10
-  hpMessageColor: {r: 0.13333334, g: 1, b: 0, a: 0}
-  mpMessageColor: {r: 0, g: 0.6509804, b: 1, a: 0}
-  otherMessageColor: {r: 1, g: 0, b: 0, a: 0}
-  notificationTime: 5
 --- !u!58 &1018043225
 CircleCollider2D:
   m_ObjectHideFlags: 0
