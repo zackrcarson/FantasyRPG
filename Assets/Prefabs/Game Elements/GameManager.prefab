@@ -53,12 +53,12 @@ MonoBehaviour:
   exponentialLevelCurveFactor: 1.05
   exponentialHPCurveFactor: 1.05
   exponentialMPCurveFactor: 1.05
-  currentHP: 350
-  currentMP: 35
-  maxHP: 350
-  maxMP: 35
-  strength: 24
-  defense: 16
+  currentHP: 450
+  currentMP: 40
+  maxHP: 450
+  maxMP: 40
+  strength: 23
+  defense: 17
   weaponPower: 0
   armorPower: 0
   equippedWeapon: 
@@ -116,12 +116,12 @@ MonoBehaviour:
   exponentialLevelCurveFactor: 1.05
   exponentialHPCurveFactor: 1.05
   exponentialMPCurveFactor: 1.05
-  currentHP: 300
-  currentMP: 30
-  maxHP: 300
-  maxMP: 30
-  strength: 17
-  defense: 17
+  currentHP: 400
+  currentMP: 35
+  maxHP: 400
+  maxMP: 35
+  strength: 18
+  defense: 18
   weaponPower: 0
   armorPower: 0
   equippedWeapon: 
