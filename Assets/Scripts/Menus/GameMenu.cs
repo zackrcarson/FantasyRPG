@@ -16,6 +16,9 @@ public class GameMenu : MonoBehaviour
     [SerializeField] GameObject continuePanel = null;
     [SerializeField] GameObject pauseMenuIcon = null;
     [SerializeField] GameObject questMenuIcon = null;
+    [SerializeField] GameObject DiscardConfirmationPanel = null;
+    [SerializeField] GameObject ItemRaycastBlocker = null;
+    [SerializeField] Text DiscardConfirmationText = null;
     [SerializeField] Text questMenuIconNotification = null;
     [SerializeField] ButtonToggle[] menuButtons = null;
     [SerializeField] string mainMenuName = "Main Menu";
@@ -146,6 +149,9 @@ public class GameMenu : MonoBehaviour
             introPanel.SetActive(true);
             continuePanel.SetActive(false);
         }
+
+        DiscardConfirmationPanel.SetActive(false);
+        ItemRaycastBlocker.SetActive(false);
     }
 
     public void CloseIntroPanel()
@@ -378,6 +384,8 @@ public class GameMenu : MonoBehaviour
             i++;
         }
 
+        ItemRaycastBlocker.SetActive(false);
+        DiscardConfirmationPanel.SetActive(false);
         itemCharacterSelectionMenu.SetActive(false);
     }
 
@@ -791,6 +799,23 @@ public class GameMenu : MonoBehaviour
 
     public void DiscardItem()
     {
+        DiscardConfirmationText.text = "Your " + activeItem.itemName + " will be permanently discarded!";
+
+        ItemRaycastBlocker.SetActive(true);
+        DiscardConfirmationPanel.SetActive(true);
+    }
+
+    public void DontDiscard()
+    {
+        DiscardConfirmationPanel.SetActive(false);
+        ItemRaycastBlocker.SetActive(false);
+    }
+
+    public void Discard()
+    {
+        ItemRaycastBlocker.SetActive(false);
+        DiscardConfirmationPanel.SetActive(false);
+
         if (activeItem != null)
         {
             GameManager.instance.RemoveItem(activeItem.itemName);
