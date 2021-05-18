@@ -79,6 +79,7 @@ public class Shop : MonoBehaviour
 
     public void OpenShop()
     {
+        GameMenu.instance.DeactivateIcons();
         AudioManager.instance.PlaySFX(shopSound);
 
         shopMenu.SetActive(true);
@@ -96,6 +97,8 @@ public class Shop : MonoBehaviour
         shopMenu.SetActive(false);
 
         GameManager.instance.shopActive = false;
+
+        GameMenu.instance.ActivateIcons();
     }
 
     public void OpenBuyMenu()

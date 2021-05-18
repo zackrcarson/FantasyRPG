@@ -15,6 +15,8 @@ public class GameMenu : MonoBehaviour
     [SerializeField] GameObject introPanel = null;
     [SerializeField] GameObject continuePanel = null;
     [SerializeField] GameObject pauseMenuIcon = null;
+    [SerializeField] GameObject questMenuIcon = null;
+    [SerializeField] Text questMenuIconNotification = null;
     [SerializeField] ButtonToggle[] menuButtons = null;
     [SerializeField] string mainMenuName = "Main Menu";
     [SerializeField] GameObject loadButton = null;
@@ -33,6 +35,7 @@ public class GameMenu : MonoBehaviour
     [SerializeField] int discardSound = 22;
     [SerializeField] int saveLoadSound = 23;
     [SerializeField] int quitSound = 42;
+    [SerializeField] int newQuestSound = 38;
 
     [Header("Items Panel Config")]
     [SerializeField] ItemButton[] itemButtons = null;
@@ -102,6 +105,8 @@ public class GameMenu : MonoBehaviour
 
     public bool isContinuing = false;
 
+    public bool questNotification = true;
+
     // Cached References
     CharacterStats[] characterStats = null;
     Color defaultButtonColor;
@@ -129,11 +134,15 @@ public class GameMenu : MonoBehaviour
 
         if (isContinuing)
         {
+            DeactivateIcons();
+
             continuePanel.SetActive(true);
             introPanel.SetActive(false);
         }
         else
         {
+            DeactivateIcons();
+
             introPanel.SetActive(true);
             continuePanel.SetActive(false);
         }
@@ -143,12 +152,49 @@ public class GameMenu : MonoBehaviour
     {
         introPanel.SetActive(false);
         continuePanel.SetActive(false);
+
+        AudioManager.instance.PlaySFX(newQuestSound);
+        ActivateIcons();
     }
 
     private void OpenContinuingPanel()
     {
         introPanel.SetActive(false);
         continuePanel.SetActive(true);
+
+        ActivateIcons();
+    }
+
+    public void NewQuestActive()
+    {
+        questNotification = true;
+        questMenuIconNotification.gameObject.SetActive(true);
+    }
+
+    public void NewQuestInactive()
+    {
+        questNotification = false;
+        questMenuIconNotification.gameObject.SetActive(false);
+    }
+
+    public void DeactivateIcons()
+    {
+        pauseMenuIcon.SetActive(false);
+        questMenuIcon.SetActive(false);
+    }
+
+    public void ActivateIcons()
+    {
+        pauseMenuIcon.SetActive(true);
+        questMenuIcon.SetActive(true);
+        if (questNotification)
+        {
+            NewQuestActive();
+        }
+        else
+        {
+            NewQuestInactive();
+        }
     }
 
     private void CheckLoadButton()
@@ -194,11 +240,12 @@ public class GameMenu : MonoBehaviour
             if (menu.activeInHierarchy)
             {
                 CloseMenu();
-                pauseMenuIcon.SetActive(true);
+                ActivateIcons();
             }
             else
             {
-                pauseMenuIcon.SetActive(false);
+                DeactivateIcons();
+
                 menu.SetActive(true);
                 CheckLoadButton();
                 GameManager.instance.gameMenuOpen = true;
@@ -208,6 +255,32 @@ public class GameMenu : MonoBehaviour
             }
 
             AudioManager.instance.PlaySFX(openCloseMenuSound);
+            PlayButtonSound();
+        }
+        else if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (menu.activeInHierarchy)
+            {
+                CloseMenu();
+                ActivateIcons();
+            }
+            else
+            {
+                DeactivateIcons();
+
+                menu.SetActive(true);
+                CheckLoadButton();
+                GameManager.instance.gameMenuOpen = true;
+
+                UpdateMainStats();
+                ShowItems();
+
+                ToggleWindow(2);
+                OpenQuests();
+            }
+
+            AudioManager.instance.PlaySFX(openCloseMenuSound);
+            PlayButtonSound();
         }
     }
 
@@ -215,7 +288,7 @@ public class GameMenu : MonoBehaviour
     {
         if (LevelUp.instance.isShowingRewards || DialogueManager.instance.isTalking() || Shop.instance.IsShopping() || BattleManager.instance.isBattleActive) { return; }
 
-        pauseMenuIcon.SetActive(false);
+        DeactivateIcons();
 
         menu.SetActive(true);
         CheckLoadButton();
@@ -223,6 +296,25 @@ public class GameMenu : MonoBehaviour
 
         UpdateMainStats();
         ShowItems();
+
+        AudioManager.instance.PlaySFX(openCloseMenuSound);
+    }
+
+    public void PressQuestIcon()
+    {
+        if (LevelUp.instance.isShowingRewards || DialogueManager.instance.isTalking() || Shop.instance.IsShopping() || BattleManager.instance.isBattleActive) { return; }
+
+        DeactivateIcons();
+
+        menu.SetActive(true);
+        CheckLoadButton();
+        GameManager.instance.gameMenuOpen = true;
+
+        UpdateMainStats();
+        ShowItems();
+
+        ToggleWindow(2);
+        OpenQuests();
 
         AudioManager.instance.PlaySFX(openCloseMenuSound);
     }
@@ -291,6 +383,9 @@ public class GameMenu : MonoBehaviour
 
     public void CloseMenu()
     {
+        AudioManager.instance.PlaySFX(openCloseMenuSound);
+        PlayButtonSound();
+
         // Close all the windows
         int i = 0;
         foreach (GameObject window in menuWindows)
@@ -309,7 +404,7 @@ public class GameMenu : MonoBehaviour
         GameManager.instance.gameMenuOpen = false;
 
         // Activate the pause menu button
-        pauseMenuIcon.SetActive(true);
+        ActivateIcons();
     }
 
     public void QuitGame()
@@ -409,6 +504,8 @@ public class GameMenu : MonoBehaviour
             questTexts[0].text = "No quests found! Go find some.";
             questTexts[0].color = defaultQuestTextColor;
         }
+
+        questNotification = false;
     }
 
     public void ShowPlayerStats(int playerNumber)

@@ -113,5 +113,9 @@ public class BattleReward : MonoBehaviour
         {
             LevelUp.instance.OpenLevelUpScreen(levelUpInfos);
         }
+        else
+        {
+            GameMenu.instance.ActivateIcons();
+        }
     }
 }

@@ -90,6 +90,7 @@ public class LevelUp : MonoBehaviour
             FindObjectOfType<PlayerController>().CanMove(true);
 
             levelUpScreen.SetActive(false);
+            GameMenu.instance.ActivateIcons();
         }
         else
         {

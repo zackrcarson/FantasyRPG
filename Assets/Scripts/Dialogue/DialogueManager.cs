@@ -77,6 +77,7 @@ public class DialogueManager : MonoBehaviour
                         currentLine = 0;
 
                         dialogueBox.SetActive(false);
+
                         GameManager.instance.dialogueActive = false; 
 
                         if (shouldMarkQuest)
@@ -92,6 +93,8 @@ public class DialogueManager : MonoBehaviour
                                 QuestManager.instance.MarkQuestIncomplete(questToMark);
                             }
                         }
+
+                        GameMenu.instance.ActivateIcons();
 
                         if (questToAdd != "")
                         {
@@ -110,6 +113,8 @@ public class DialogueManager : MonoBehaviour
 
     public void ShowNewDialogue(string[] newLines, string name)
     {
+        GameMenu.instance.DeactivateIcons();
+
         dialogueLines = newLines;
 
         if (name == "")

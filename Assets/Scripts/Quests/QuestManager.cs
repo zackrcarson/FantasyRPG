@@ -7,10 +7,11 @@ public class QuestManager : MonoBehaviour
 
     // Config Parameters
     [SerializeField] public List<string> questMarkerNames = null;
-    [SerializeField] public List<string> possibleQuests = null; // TODO: Remember to re-fill possible quests with all possible quests!!
+    [SerializeField] public List<string> possibleQuests = null; 
+    [SerializeField] int newQuestSound = 38;
 
     // State Variables
-    public List<bool> questMarkersComplete = null; // TODO: add HideInInspector after testing
+    [HideInInspector] public List<bool> questMarkersComplete = null;
 
     private void Awake()
     {
@@ -45,6 +46,9 @@ public class QuestManager : MonoBehaviour
             questMarkerNames.Add(questName);
 
             questMarkersComplete.Add(false);
+
+            GameMenu.instance.NewQuestActive();
+            AudioManager.instance.PlaySFX(newQuestSound);
         }
     }
 

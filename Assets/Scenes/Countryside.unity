@@ -50070,6 +50070,8 @@ Transform:
   - {fileID: 317682607}
   - {fileID: 1136532133}
   - {fileID: 1308137164}
+  - {fileID: 1656748898}
+  - {fileID: 2135999083}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -56605,7 +56607,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -15.302345, y: 3.1225445}
+  m_Offset: {x: -15.302345, y: 5.472204}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -56616,7 +56618,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 38.696045, y: 7.560186}
+  m_Size: {x: 38.696045, y: 2.8608665}
   m_EdgeRadius: 0
 --- !u!1001 &1294533258
 PrefabInstance:
@@ -63416,6 +63418,166 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 368599514775034371, guid: fdcfa74a072c19c4e98b319df5933e96, type: 3}
   m_PrefabInstance: {fileID: 1945810377}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1656748897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1656748898}
+  - component: {fileID: 1656748900}
+  - component: {fileID: 1656748899}
+  m_Layer: 0
+  m_Name: Battle Zone (25)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1656748898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656748897}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 31.04, y: -4.97, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1656748899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656748897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    rewardExp: 203
+    rewardGold: 78
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 311
+    rewardGold: 125
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Slime
+    rewardExp: 98
+    rewardGold: 42
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    rewardExp: 158
+    rewardGold: 61
+    rewardItems: []
+    rewardItemNumbers: 
+  - enemies:
+    - Wasp
+    - Wasp
+    rewardExp: 303
+    rewardGold: 118
+    rewardItems:
+    - Mana Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Wasp
+    - Wasp
+    - Slime
+    rewardExp: 397
+    rewardGold: 165
+    rewardItems:
+    - Health Potion
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Goblin
+    rewardExp: 408
+    rewardGold: 154
+    rewardItems:
+    - Wooden Sword
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    rewardExp: 298
+    rewardGold: 123
+    rewardItems:
+    - Leather Armor
+    rewardItemNumbers: 01000000
+  - enemies:
+    - Spider
+    - Wasp
+    rewardExp: 456
+    rewardGold: 182
+    rewardItems:
+    - Leather Armor
+    - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Goblin
+    - Slime
+    rewardExp: 498
+    rewardGold: 204
+    rewardItems:
+    - Wooden Armor
+    - Mana Potion
+    rewardItemNumbers: 0100000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &1656748900
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656748897}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -7.4085455, y: 1.7497098}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 22.908445, y: 4.60331}
+  m_EdgeRadius: 0
 --- !u!1001 &1659259955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86844,6 +87006,97 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6113881996530793386, guid: b37a245cbf450f4439f5d6f4e0066d53, type: 3}
   m_PrefabInstance: {fileID: 2104356754}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2135999082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2135999083}
+  - component: {fileID: 2135999085}
+  - component: {fileID: 2135999084}
+  m_Layer: 0
+  m_Name: Test Battle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2135999083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135999082}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.25, y: -6.65, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2135999084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135999082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Slime
+    - Slime
+    - Slime
+    rewardExp: 1050
+    rewardGold: 0
+    rewardItems: []
+    rewardItemNumbers: 
+  activateOnEnter: 1
+  activateOnStay: 0
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1
+  randomTimeMax: 4
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &2135999085
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135999082}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.8027444, y: -0.6258929}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.046094, y: 1.2084203}
+  m_EdgeRadius: 0
 --- !u!1001 &2136861037
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -152,6 +152,8 @@ public class BattleManager : MonoBehaviour
     {
         if (isBattleActive) { return; }
 
+        GameMenu.instance.DeactivateIcons();
+
         cannotFlee = setCannotFlee;
         isBoss = boss;
 
@@ -398,6 +400,7 @@ public class BattleManager : MonoBehaviour
         {
             GameManager.instance.isBattleActive = false;
             isBattleActive = false;
+            GameMenu.instance.ActivateIcons();
         }
         else
         {
