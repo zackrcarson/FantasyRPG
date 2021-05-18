@@ -48,7 +48,17 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
-        newGamePanel.SetActive(true);
+        // Open "are you sure?" Panel if there is a save file to be found. Else, go straight into game.
+        if (PlayerPrefs.HasKey("Current_Scene"))
+        {
+            newGamePanel.SetActive(true);
+        }
+        else
+        {
+            FindObjectOfType<MainMenuAudio>().PlayNewGameSound();
+
+            StartNewGame();
+        }
     }
 
     public void BackOutNewGamePanel()
