@@ -14,6 +14,7 @@ public class GameMenu : MonoBehaviour
     [SerializeField] GameObject[] menuWindows = null;
     [SerializeField] GameObject introPanel = null;
     [SerializeField] GameObject continuePanel = null;
+    [SerializeField] GameObject pauseMenuIcon = null;
     [SerializeField] ButtonToggle[] menuButtons = null;
     [SerializeField] string mainMenuName = "Main Menu";
     [SerializeField] GameObject loadButton = null;
@@ -193,9 +194,11 @@ public class GameMenu : MonoBehaviour
             if (menu.activeInHierarchy)
             {
                 CloseMenu();
+                pauseMenuIcon.SetActive(true);
             }
             else
             {
+                pauseMenuIcon.SetActive(false);
                 menu.SetActive(true);
                 CheckLoadButton();
                 GameManager.instance.gameMenuOpen = true;
@@ -206,6 +209,22 @@ public class GameMenu : MonoBehaviour
 
             AudioManager.instance.PlaySFX(openCloseMenuSound);
         }
+    }
+
+    public void PressPauseIcon()
+    {
+        if (LevelUp.instance.isShowingRewards || DialogueManager.instance.isTalking() || Shop.instance.IsShopping() || BattleManager.instance.isBattleActive) { return; }
+
+        pauseMenuIcon.SetActive(false);
+
+        menu.SetActive(true);
+        CheckLoadButton();
+        GameManager.instance.gameMenuOpen = true;
+
+        UpdateMainStats();
+        ShowItems();
+
+        AudioManager.instance.PlaySFX(openCloseMenuSound);
     }
 
     private void UpdateMainStats()
@@ -288,6 +307,9 @@ public class GameMenu : MonoBehaviour
 
         // Activate walking again
         GameManager.instance.gameMenuOpen = false;
+
+        // Activate the pause menu button
+        pauseMenuIcon.SetActive(true);
     }
 
     public void QuitGame()
