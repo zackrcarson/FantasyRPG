@@ -6,6 +6,7 @@ public class MainMenu : MonoBehaviour
     // Config Parameters
     [SerializeField] string newGameScene = "Countryside";
     [SerializeField] string loadGameScene = "Loading Scene";
+    [SerializeField] GameObject newGamePanel = null;
     [SerializeField] GameObject continueButton = null;
     [SerializeField] Color deactiveButtonColor;
     [SerializeField] Image fadeImage = null;
@@ -47,9 +48,19 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
+        newGamePanel.SetActive(true);
+    }
+
+    public void BackOutNewGamePanel()
+    {
+        newGamePanel.SetActive(false);
+    }
+
+    public void StartNewGame()
+    {
         isContinuing = false;
 
-        shouldFadeOut = true;        
+        shouldFadeOut = true;
     }
 
     public void ExitGame()

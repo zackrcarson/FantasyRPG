@@ -15,6 +15,17 @@ public class EssentialsLoader : MonoBehaviour
         if (!UIFade.instance)
         {
             Instantiate(UIScreenPrefab);
+
+            string currentScene = SceneLoader.GetCurrentScene();
+
+            if (currentScene == "Loading Scene")
+            {
+                FindObjectOfType<GameMenu>().isContinuing = true;
+            }
+            else
+            {
+                FindObjectOfType<GameMenu>().isContinuing = false;
+            }
         }
 
         if (!GameManager.instance)

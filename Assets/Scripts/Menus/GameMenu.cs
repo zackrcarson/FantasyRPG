@@ -12,6 +12,8 @@ public class GameMenu : MonoBehaviour
     [SerializeField] public GameObject menu = null;
     [SerializeField] GameObject[] characterStatHolders = null;
     [SerializeField] GameObject[] menuWindows = null;
+    [SerializeField] GameObject introPanel = null;
+    [SerializeField] GameObject continuePanel = null;
     [SerializeField] ButtonToggle[] menuButtons = null;
     [SerializeField] string mainMenuName = "Main Menu";
     [SerializeField] GameObject loadButton = null;
@@ -97,6 +99,8 @@ public class GameMenu : MonoBehaviour
     bool canUnequipWeapon = false;
     bool canUnequipArmor = false;
 
+    public bool isContinuing = false;
+
     // Cached References
     CharacterStats[] characterStats = null;
     Color defaultButtonColor;
@@ -121,6 +125,29 @@ public class GameMenu : MonoBehaviour
         defaultButtonColor = buttonImage.color;
 
         CheckLoadButton();
+
+        if (isContinuing)
+        {
+            continuePanel.SetActive(true);
+            introPanel.SetActive(false);
+        }
+        else
+        {
+            introPanel.SetActive(true);
+            continuePanel.SetActive(false);
+        }
+    }
+
+    public void CloseIntroPanel()
+    {
+        introPanel.SetActive(false);
+        continuePanel.SetActive(false);
+    }
+
+    private void OpenContinuingPanel()
+    {
+        introPanel.SetActive(false);
+        continuePanel.SetActive(true);
     }
 
     private void CheckLoadButton()
@@ -730,6 +757,10 @@ public class GameMenu : MonoBehaviour
         Destroy(AudioManager.instance.gameObject);
         Destroy(BattleManager.instance.gameObject);
         SceneLoader.LoadSceneByName("Loading Scene");
+
+        yield return new WaitForSeconds(1f);
+
+        OpenContinuingPanel();
     }
 
     public void PlayButtonSound()

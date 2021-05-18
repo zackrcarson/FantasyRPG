@@ -8,6 +8,7 @@ public class MainMenuAudio : MonoBehaviour
     [SerializeField] AudioSource SFX = null;
     [SerializeField] AudioSource continueSound = null;
     [SerializeField] AudioSource newGameSound = null;
+    [SerializeField] AudioSource errorSound = null;
 
     // Cached References
     AudioSource music = null;
@@ -47,5 +48,10 @@ public class MainMenuAudio : MonoBehaviour
     public void PlayNewGameSound()
     {
         newGameSound.Play();
+    }
+
+    public void PlayErrorSound()
+    {
+        errorSound.Play();
     }
 }
