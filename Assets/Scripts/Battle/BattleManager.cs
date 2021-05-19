@@ -113,6 +113,7 @@ public class BattleManager : MonoBehaviour
     bool battleEnding = false;
     bool cannotFlee = false;
     bool isBoss = false;
+    bool hasRenamedEnemies = false;
 
     [HideInInspector] public int battleExp = 0;
     [HideInInspector] public int battleGold = 0;
@@ -164,6 +165,8 @@ public class BattleManager : MonoBehaviour
         GameManager.instance.isBattleActive = true;
 
         transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.x);
+
+        hasRenamedEnemies = false;
 
         StartCoroutine(FadeInBattleScene(enemiesToSpawn));
     }
@@ -790,6 +793,8 @@ public class BattleManager : MonoBehaviour
             i++;
         }
 
+        bool didRenameEnemies = false;
+
         Dictionary<string, int> enemyNames = new Dictionary<string, int>();
         i = 0;
         foreach (BattleTargetButton targetButton in battleTargetButtons)
@@ -801,17 +806,23 @@ public class BattleManager : MonoBehaviour
                 targetButton.moveName = moveName;
                 targetButton.activeBattlerTarget = enemies[i];
 
-                string currentName = activeBattlers[enemies[i]].characterName;
-                if (enemyNames.ContainsKey(currentName))
+                if (!hasRenamedEnemies)
                 {
-                    enemyNames[currentName]++;
-                    targetButton.targetName.text = activeBattlers[enemies[i]].characterName + " " + enemyNames[currentName];
-                    activeBattlers[enemies[i]].ShowEnemyNumber(enemyNames[currentName]);
-                }
-                else
-                {
-                    enemyNames.Add(currentName, 1);
-                    targetButton.targetName.text = activeBattlers[enemies[i]].characterName;
+                    string currentName = activeBattlers[enemies[i]].characterName;
+                    if (enemyNames.ContainsKey(currentName))
+                    {
+                        enemyNames[currentName]++;
+                        targetButton.targetName.text = activeBattlers[enemies[i]].characterName + " " + enemyNames[currentName];
+
+
+                        activeBattlers[enemies[i]].ShowEnemyNumber(enemyNames[currentName]);
+                        didRenameEnemies = true;
+                    }
+                    else
+                    {
+                        enemyNames.Add(currentName, 1);
+                        targetButton.targetName.text = activeBattlers[enemies[i]].characterName;
+                    }
                 }
             }
             else
@@ -820,6 +831,11 @@ public class BattleManager : MonoBehaviour
             }
 
             i++;
+        }
+
+        if (didRenameEnemies)
+        {
+            hasRenamedEnemies = true;
         }
     }
 

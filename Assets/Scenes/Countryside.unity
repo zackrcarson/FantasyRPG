@@ -87053,6 +87053,8 @@ MonoBehaviour:
   potentialBattles:
   - enemies:
     - Slime
+    - Slime
+    - Slime
     rewardExp: 1050
     rewardGold: 0
     rewardItems: []
