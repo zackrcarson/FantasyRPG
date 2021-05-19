@@ -89,12 +89,12 @@ public class GameMenu : MonoBehaviour
 
     [Header("Notifications")]
     [SerializeField] Text notificationText = null;
-    [SerializeField] float saveLoadNotificationActiveTime = 3f;
-    [SerializeField] Color saveLoadNotificationColor;
-    [SerializeField] float itemMessageTime = 5f;
-    [SerializeField] Color itemMessageColor;
-    [SerializeField] Color godModeMessageColor;
-    [SerializeField] float godModeNotificationTime = 5f;
+    [SerializeField] float notificationActiveTime = 4f;
+    //[SerializeField] Color saveLoadNotificationColor;
+    //[SerializeField] float itemMessageTime = 5f;
+    //[SerializeField] Color itemMessageColor;
+    //[SerializeField] Color godModeMessageColor;
+    //[SerializeField] float godModeNotificationTime = 5f;
 
     // State Variables
     // string selectedItem = null;
@@ -109,6 +109,8 @@ public class GameMenu : MonoBehaviour
     public bool isContinuing = false;
 
     public bool questNotification = true;
+
+    float notificationTime = 0f;
 
     // Cached References
     CharacterStats[] characterStats = null;
@@ -235,6 +237,16 @@ public class GameMenu : MonoBehaviour
     void Update()
     {
         CheckPauseButton();
+
+        if (notificationTime > 0)
+        {
+            notificationTime -= Time.deltaTime;
+
+            if (notificationTime <= 0)
+            {
+                notificationTime = 0;
+            }
+        }
     }
 
     private void CheckPauseButton()
@@ -630,7 +642,9 @@ public class GameMenu : MonoBehaviour
         }
 
         AudioManager.instance.PlaySFX(saveLoadSound);
-        StartCoroutine(ShowNotification(message, godModeNotificationTime, godModeMessageColor));
+
+        StopNotification();
+        StartCoroutine(ShowNotification(message, notificationActiveTime));
     }
 
     public void Unequip(bool isWeapon)
@@ -680,7 +694,8 @@ public class GameMenu : MonoBehaviour
             }
         }
 
-        StartCoroutine(ShowNotification(message, itemMessageTime, itemMessageColor));
+        StopNotification();
+        StartCoroutine(ShowNotification(message, notificationActiveTime));
 
         UpdateMainStats();
         ShowPlayerStats(activePlayer);
@@ -818,6 +833,9 @@ public class GameMenu : MonoBehaviour
 
         if (activeItem != null)
         {
+            StopNotification();
+            StartCoroutine(ShowNotification("You discarded the " + activeItem.itemName + ".", notificationActiveTime));
+
             GameManager.instance.RemoveItem(activeItem.itemName);
             AudioManager.instance.PlaySFX(discardSound);
         }
@@ -846,7 +864,9 @@ public class GameMenu : MonoBehaviour
     public void UseItem(int selectedCharacter)
     {
         string message = activeItem.UseItem(selectedCharacter);
-        StartCoroutine(ShowNotification(message, itemMessageTime, itemMessageColor));
+
+        StopNotification();
+        StartCoroutine(ShowNotification(message, notificationActiveTime));
 
         CloseItemPlayerChoicePanel();
     }
@@ -865,7 +885,8 @@ public class GameMenu : MonoBehaviour
         GameManager.instance.SaveData();
         QuestManager.instance.SaveQuestData();
 
-        StartCoroutine(ShowNotification("Game Saved.", saveLoadNotificationActiveTime, saveLoadNotificationColor));
+        StopNotification();
+        StartCoroutine(ShowNotification("Game Saved.", notificationActiveTime));
 
         CheckLoadButton();
     }
@@ -876,7 +897,8 @@ public class GameMenu : MonoBehaviour
         {
             AudioManager.instance.PlaySFX(saveLoadSound);
 
-            StartCoroutine(ShowNotification("Game Loaded.", saveLoadNotificationActiveTime, saveLoadNotificationColor));
+            StopNotification();
+            StartCoroutine(ShowNotification("Game Loaded.", notificationActiveTime));
 
             StartCoroutine(FadeInLoadAndFadeOut());
         }
@@ -917,14 +939,34 @@ public class GameMenu : MonoBehaviour
         AudioManager.instance.PlaySFX(itemSlotSound);
     }
 
-    public IEnumerator ShowNotification(string message, float activeTime, Color messageColor)
+    public IEnumerator ShowNotification(string message, float activeTime)
     {
+        if (notificationTime >= 0)
+        {
+            notificationTime = 0;
+            notificationText.gameObject.SetActive(false);
+
+
+            yield return null;
+        }
+
+        notificationTime = activeTime;
+
         notificationText.text = message;
-        notificationText.color = messageColor;
         notificationText.gameObject.SetActive(true);
 
-        yield return new WaitForSeconds(activeTime);
+        while (notificationTime > 0)
+        {
+            yield return null;
+        }
+        //yield return new WaitForSeconds(notificationActiveTime);
 
+        notificationText.gameObject.SetActive(false);
+    }
+
+    public void StopNotification()
+    {
+        StopCoroutine("ShowNotification");
         notificationText.gameObject.SetActive(false);
     }
 }
