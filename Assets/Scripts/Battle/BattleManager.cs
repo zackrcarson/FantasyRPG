@@ -961,62 +961,78 @@ public class BattleManager : MonoBehaviour
             i++;
         }
 
-        isInventoryEmpty = CheckIfInventoryIsEmpty();
+        isInventoryEmpty = CheckIfBattleInventoryIsEmpty();
         if (isInventoryEmpty)
         {
             itemName.text = "Nothing";
-            itemDescription.text = "Your inventory is empty! Go find something to keep.";
+            itemDescription.text = "Your inventory doesn't have anything you can use right now!";
 
             useButton.SetActive(false);
         }
     }
 
-    private bool CheckIfInventoryIsEmpty()
+    private bool CheckIfBattleInventoryIsEmpty()
     {
-        bool isInventoryEmpty = true;
+        bool isInvEmpty = true;
         int[] itemNumbers = GameManager.instance.numberOfItems;
+        string[] itemNames = GameManager.instance.itemsHeld;
 
+        int i = 0;
         foreach (int number in itemNumbers)
         {
-            if (number > 0)
+            Item currentItem = GameManager.instance.GetItemDetails(itemNames[i]);
+
+            if (number > 0 && currentItem.isItem)
             {
-                isInventoryEmpty = false;
+                isInvEmpty = false;
             }
-        }
-
-        return isInventoryEmpty;
-    }
-
-    public void SelectItem(Item selectedItem)
-    {
-        itemCharacterSelectionMenu.SetActive(false);
-
-        // Highlight selected item, un-highlight all others
-        string selectedItemString = selectedItem.itemName;
-        int i = 0;
-        foreach (ItemButton itemButton in itemButtons)
-        {
-            string currentItemString = GameManager.instance.itemsHeld[i];
-
-            itemButtonToggles[i].ToggleButton(currentItemString == selectedItemString);
 
             i++;
         }
 
-        activeItem = selectedItem;
+        return isInvEmpty;
+    }
 
-        if (activeItem.isItem)
+    public void SelectItem(Item selectedItem)
+    {
+        if (!isInventoryEmpty)
         {
-            useButton.gameObject.SetActive(true);
-        }
+            itemCharacterSelectionMenu.SetActive(false);
 
-        if (activeItem.isWeapon || activeItem.isArmor)
+            // Highlight selected item, un-highlight all others
+            string selectedItemString = selectedItem.itemName;
+            int i = 0;
+            foreach (ItemButton itemButton in itemButtons)
+            {
+                string currentItemString = GameManager.instance.itemsHeld[i];
+
+                itemButtonToggles[i].ToggleButton(currentItemString == selectedItemString);
+
+                i++;
+            }
+
+            activeItem = selectedItem;
+
+            if (activeItem.isItem)
+            {
+                useButton.gameObject.SetActive(true);
+            }
+
+            if (activeItem.isWeapon || activeItem.isArmor)
+            {
+                useButton.gameObject.SetActive(false);
+            }
+
+            itemName.text = activeItem.itemName;
+            itemDescription.text = activeItem.description;
+        }
+        else
         {
-            useButton.gameObject.SetActive(false);
-        }
+            itemName.text = "Nothing";
+            itemDescription.text = "Your inventory doesn't have anything you can use right now!";
 
-        itemName.text = activeItem.itemName;
-        itemDescription.text = activeItem.description;
+            useButton.SetActive(false);
+        }
     }
 
     public void SelectFirstItem()

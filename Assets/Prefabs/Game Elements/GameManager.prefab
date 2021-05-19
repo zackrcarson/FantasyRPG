@@ -321,4 +321,5 @@ MonoBehaviour:
   - Kill the dragon living in the caves.
   - Go talk to Dean Fogg somewhere in Southern Fillory.
   - 'Explore Fillory while Dean Fogg finds you a way home. '
+  newQuestSound: 38
   questMarkersComplete: 
