@@ -153,18 +153,31 @@ MonoBehaviour:
   NPCName: Poppy
   dialogueLines:
   - n-NPC
-  - Pssst. I heard a secret.
+  - Quentin! I've been looking everywhere for you.
   - n-PLAYER
-  - What did you hear?
+  - Poppy! Thank goodness I found you.
   - n-NPC
-  - Did you know, that if you jump into a fountain, it will sometimes teleport you
-    to a new place?!
-  - How cool is that! Jump in every fountain you can find!!
+  - Where are we? How did we get here?
+  - And where is everyone else?!
   - n-PLAYER
-  - Thanks for the tip! I think I saw a fountain, I'm going to jump into it!!
+  - I have no idea! One moment we were practicing our spells, and the next I blacked
+    out and woke up in this strange place!!
+  - n-NPC
+  - Well we need to get out of here A.S.A.P.
+  - You know what.. Do you see that fountain over there to the East?
+  - n-PLAYER
+  - Yeah! What about it?
+  - n-NPC
+  - I may have been imagining it, but I swear I saw Alice jump into that fountain!
+  - n-Player
+  - No way! Really?
+  - n-NPC
+  - Yes I promise! Maybe you should go check it out?
+  - Also, I found this chest - it has some pretty useful looking stuff in it!
+  - Maybe you should take them for your journey.
   questToMark: Talk to Poppy.
   markQuestComplete: 1
-  addNewQuest: Kill the dragon living in the caves.
+  addNewQuest: Find Alice (in the fountain?)
 --- !u!95 &3237164801637179103
 Animator:
   serializedVersion: 3

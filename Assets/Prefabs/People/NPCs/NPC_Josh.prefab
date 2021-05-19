@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910675601036515522}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.56, y: -8.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -153,9 +153,24 @@ MonoBehaviour:
   NPCName: Josh
   dialogueLines:
   - n-NPC
-  - Hi
+  - Yoooo Quentin!
+  - I've definitely missed you. We thought you were dead dude!
+  - What happened in that cave?!
   - n-PLAYER
-  - Hi
+  - Good to see you too Josh! I have absolutely NO idea. Last thing I remember I
+    was practicing spells back at Brakebills..
+  - Suddenly I woke up here, In Fillory??
+  - I still can't believe it!
+  - n-NPC
+  - Dude, that's crazy. We've just been chilling and exploring ever since we lost
+    you, Alice, and Poppy.
+  - Did you know there are health potions here? They actually heal you!
+  - And mana potions too! They make it easier to do more magic.
+  - So cool!
+  - n-PLAYER
+  - That's awesome Josh! Thanks for the tip. I'll talk to you later!!
+  - n-NPC
+  - See ya later, Q!
   questToMark: 
   markQuestComplete: 0
   addNewQuest: 

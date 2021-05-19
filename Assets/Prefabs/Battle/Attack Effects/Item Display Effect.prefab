@@ -83,7 +83,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &3853961096566791318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +116,7 @@ MonoBehaviour:
   boostText: {fileID: 3853961097415846473}
   healthColor: {r: 0.22167933, g: 1, b: 0, a: 1}
   manaColor: {r: 0.05724907, g: 0, b: 1, a: 1}
-  defenseColor: {r: 1, g: 0, b: 0, a: 1}
+  defenseColor: {r: 1, g: 0.6862745, b: 0, a: 1}
   strengthColor: {r: 1, g: 0.68598413, b: 0, a: 1}
   lifeTime: 1
   moveSpeed: 1

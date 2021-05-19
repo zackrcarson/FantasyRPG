@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7910986128474171073}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16.09, y: -12.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -153,9 +153,25 @@ MonoBehaviour:
   NPCName: Benedict
   dialogueLines:
   - n-NPC
-  - Hi
+  - Well, hello there!
+  - My name is Benedict! I am Fillory's official Cartographer.
+  - At your service!
   - n-PLAYER
-  - Hi
+  - Wow, that is so cool! I'd love to see a map of Fillory?
+  - n-NPC
+  - No can do! My services are only available for the true king of Fillory!
+  - n-PLAYER
+  - And.. Who is that?
+  - n-NPC
+  - Well, no one, yet!!
+  - It needs to be someone from Earth!
+  - n-PLAYER
+  - I'm from Earth?
+  - n-NPC
+  - Well, what do you say?
+  - Well, good luck on your quest! I must return to my maps. Goodbye.
+  - n-PLAYER
+  - Thank you? Goodbye..
   questToMark: 
   markQuestComplete: 0
   addNewQuest: 

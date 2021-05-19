@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5994472300918723325}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.93, y: -8.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -153,9 +153,14 @@ MonoBehaviour:
   NPCName: Kady
   dialogueLines:
   - n-NPC
-  - Hi
+  - Yo, Quentin.
+  - It's about time. We've been looking for you for months.
   - n-PLAYER
-  - Hi
+  - How could it have been so long?!
+  - n-NPC
+  - Don't ask me! We thought you guys were dead. Maybe you should go talk to Margo..
+  - n-PLAYER
+  - Thanks, Kady.
   questToMark: 
   markQuestComplete: 0
   addNewQuest: 

@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4426220032632299705}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.49, y: -12.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -153,9 +153,17 @@ MonoBehaviour:
   NPCName: Zelda
   dialogueLines:
   - n-NPC
-  - Hi
+  - Hello young man.
+  - My name is Zelda, I'm the head librarian.
   - n-PLAYER
-  - Hi
+  - Hi Zelda, I'm Quentin. What library do you work at?
+  - n-NPC
+  - THE Library.
+  - Don't you dare find yourself overdue.
+  - n-PLAYER
+  - Okay then, thanks for the advice.. It was.. nice meeting you.
+  - n-NPC
+  - Goodbye.
   questToMark: 
   markQuestComplete: 0
   addNewQuest: 

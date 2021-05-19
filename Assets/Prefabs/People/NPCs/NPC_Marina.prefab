@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7553720845768000171}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.34, y: -8.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -153,9 +153,21 @@ MonoBehaviour:
   NPCName: Marina
   dialogueLines:
   - n-NPC
-  - Hi
+  - Well well well..
   - n-PLAYER
-  - Hi
+  - Do I know you?
+  - n-NPC
+  - You must be another kid from the Brakebills crowd.
+  - You guys sure are spreading around here.
+  - I'm Marina. I used to go to Brakebills too.
+  - Until that jerk Dean Fogg kicked me out and stole my memories.
+  - I'm going to find him.
+  - And make him pay..
+  - n-PLAYER
+  - Well, it was nice meeting you! I'm going to go now...
+  - Bye.
+  - n-NPC
+  - See you around, Brakebills.
   questToMark: 
   markQuestComplete: 0
   addNewQuest: 

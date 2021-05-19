@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4821589805832015702
 Transform:
   m_ObjectHideFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4821589805832015703}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.57, y: -8.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -153,12 +153,35 @@ MonoBehaviour:
   NPCName: Margo
   dialogueLines:
   - n-NPC
-  - Hi
+  - Q!!
+  - WHERE HAVE YOU BEEN!
+  - We've been here for 5 months now looking for you!! How could you abandon us??
   - n-PLAYER
-  - Hi
-  questToMark: 
-  markQuestComplete: 0
-  addNewQuest: 
+  - 5 months?!
+  - I was practicing magic with you just a couple of hours ago before I blacked out
+    and woke up in some strange countryside?
+  - n-NPC
+  - Dude! That was Fillory! We came here together after Penny brought us that magical
+    button.
+  - n-PLAYER
+  - We did? I have no memory of that...
+  - AND FILLORY IS REAL?!
+  - n-NPC
+  - Well of course!!! We got separated in those creepy caves 5 months ago and we
+    haven't seen you since..
+  - n-PLAYER
+  - Wow... What happened to me?
+  - Alice and Poppy also don't seem to remember anything either...
+  - n-NPC
+  - We've been gathering intel for the past few months. We think that THE Jane Chatwin
+    is here in Fillory!
+  - We heard talk that she might be somewhere in the Northern reaches of Fillory.
+    Maybe you should go look for her to see if she can help?
+  - n-PLAYER
+  - THE Jane Chatwin?! I think I might faint! I'll go look for her right away.
+  questToMark: Talk to the rest of your friends in the marketplace.
+  markQuestComplete: 1
+  addNewQuest: Find Jane in Northern Fillory.
 --- !u!95 &4821589805832015697
 Animator:
   serializedVersion: 3

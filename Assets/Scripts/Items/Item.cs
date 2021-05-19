@@ -174,7 +174,8 @@ public class Item : MonoBehaviour
 
                     BattleManager.instance.activeBattlers[activeBattler].strength += amountToChange;
 
-                    return "Strength Up";
+                    GameManager.instance.RemoveItem(itemName);
+                    return "True";
                 }
                 else
                 {
@@ -194,7 +195,8 @@ public class Item : MonoBehaviour
 
                     BattleManager.instance.activeBattlers[activeBattler].defense += amountToChange;
 
-                    return "Defense Up";
+                    GameManager.instance.RemoveItem(itemName);
+                    return "True";
                 }
                 else
                 {

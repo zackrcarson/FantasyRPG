@@ -2230,7 +2230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureList.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureList.Array.data[0]
@@ -2246,11 +2246,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureList.Array.data[3]
-      value: Wooden Sword
+      value: Strength Potion
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureListNumbers.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureListNumbers.Array.data[0]
@@ -2981,179 +2981,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: addNewQuest
-      value: Kill the dragon living in the caves.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: questToMark
-      value: Find Jane in Northern Fillory.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: markQuestComplete
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.size
-      value: 38
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[1]
-      value: Oh, Quentin dear!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[2]
-      value: It is so lovely to see you again.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[3]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[4]
-      value: Uhhh, have we met before?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[5]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[6]
-      value: Well, of course! Time traveler, remember?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[7]
-      value: Anyway, there's no time for that now!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[8]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[9]
-      value: Why is that? What's wrong?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[10]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[11]
-      value: Something horrible is happening.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[12]
-      value: A terrible, terrible dragon is living in the caves below me.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[13]
-      value: I've been trying to stop him, but he is too powerful.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[14]
-      value: He's slowly killing everyone in Fillory!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[15]
-      value: You need to stop him Quentin!!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[16]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[17]
-      value: Wow, Jane. If you can't kill him, how could I ever stand a chance?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[18]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[19]
-      value: You can do this Quentin. I have faith in you.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[20]
-      value: If you're too weak now, I'd suggest you practice a bit on other monsters
-        around here and in the caves.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[21]
-      value: They should help prepare you to fight the dragon!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[22]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[23]
-      value: Okay then Jane, I'll do it. I'll defeat the dragon!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[24]
-      value: I take this on as my personal quest.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[25]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[26]
-      value: Why thank you dear! Good luck, and go find Dean Fogg after you've accomplished
-        your task!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[27]
-      value: He should be slinking about somewhere in Southern Fillory..
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[28]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[29]
-      value: Thanks Jane. Where will you be?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[30]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[31]
-      value: Do you mean WHEN will I be?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[32]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[33]
-      value: Very funny!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[34]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[35]
-      value: Goodbye, Quentin
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[36]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929290, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: dialogueLines.Array.data[37]
-      value: Okay then, goodbye Jane..
-      objectReference: {fileID: 0}
     - target: {fileID: 6576306571792929295, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
       propertyPath: m_Name
       value: NPC_Jane
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576306571792929295, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48897f5038bca514c9c2889a482b4add, type: 3}
@@ -53420,86 +53250,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 893750636}
     m_Modifications:
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.size
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[1]
-      value: Well, hello there!
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[2]
-      value: My name is Benedict! I am Fillory's official Cartographer.
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[3]
-      value: At your service!
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[4]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[5]
-      value: Wow, that is so cool! I'd love to see a map of Fillory?
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[6]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[7]
-      value: No can do! My services are only available for the true king of Fillory!
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[8]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[9]
-      value: And.. Who is that?
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[10]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[11]
-      value: Well, no one, yet!!
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[12]
-      value: It needs to be someone from Earth!
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[13]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[14]
-      value: I'm from Earth?
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[15]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[16]
-      value: Well, what do you say?
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[17]
-      value: Well, good luck on your quest! I must return to my maps. Goodbye.
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[18]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910986128474171068, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
-      propertyPath: dialogueLines.Array.data[19]
-      value: Thank you? Goodbye..
-      objectReference: {fileID: 0}
     - target: {fileID: 7910986128474171073, guid: a9d424ecdb18eed449f0742cc2a010e7, type: 3}
       propertyPath: m_Name
       value: NPC_Benedict
@@ -55447,7 +55197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureList.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureList.Array.data[0]
@@ -55458,8 +55208,12 @@ PrefabInstance:
       value: Iron Armor
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
+      propertyPath: treasureList.Array.data[2]
+      value: Strength Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureListNumbers.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureListNumbers.Array.data[0]
@@ -55467,6 +55221,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureListNumbers.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
+      propertyPath: treasureListNumbers.Array.data[2]
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -56048,7 +55806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureList.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureList.Array.data[0]
@@ -56056,7 +55814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureList.Array.data[1]
-      value: Mana Potion
+      value: Defense Potion
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureList.Array.data[2]
@@ -56068,7 +55826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureListNumbers.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureListNumbers.Array.data[0]
@@ -56860,6 +56618,30 @@ MonoBehaviour:
     - Mana Potion
     - Iron Sword
     rewardItemNumbers: 020000000200000001000000
+  - enemies:
+    - Wizard
+    rewardExp: 634
+    rewardGold: 212
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+    rewardItemNumbers: 0200000001000000
+  - enemies:
+    - Wizard
+    rewardExp: 634
+    rewardGold: 212
+    rewardItems:
+    - Mana Potion
+    - Defense Potion
+    rewardItemNumbers: 0200000001000000
+  - enemies:
+    - Wizard
+    rewardExp: 634
+    rewardGold: 212
+    rewardItems:
+    - Health Potion
+    - Strength Potion
+    rewardItemNumbers: 0200000001000000
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0
@@ -63126,6 +62908,26 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Health Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Gremlin
+    - Gremlin
+    - Gremlin
+    rewardExp: 1354
+    rewardGold: 376
+    rewardItems:
+    - Mana Potion
+    - Defense Potion
+    rewardItemNumbers: 0100000001000000
+  - enemies:
+    - Gremlin
+    - Gremlin
+    - Gremlin
+    rewardExp: 1358
+    rewardGold: 366
+    rewardItems:
+    - Health Potion
+    - Strength Potion
     rewardItemNumbers: 0100000001000000
   activateOnEnter: 0
   activateOnStay: 1
@@ -86183,10 +85985,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC_Fogg
       objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852608, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2688561195223852609, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -86230,173 +86028,6 @@ PrefabInstance:
     - target: {fileID: 2688561195223852609, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: addNewQuest
-      value: Explore Fillory while Dean Fogg finds you a way home.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: questToMark
-      value: Go talk to Dean Fogg somewhere in Southern Fillory.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: markQuestComplete
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.size
-      value: 39
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[1]
-      value: Well if it isn't Quentin, dear boy?!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[3]
-      value: Dean Fogg! What on Earth are you doing here?!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[4]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[5]
-      value: Not on Earth, boy! This is Fillory!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[6]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[7]
-      value: So Fillory really is real?
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[8]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[9]
-      value: It would seem so! And there was a terrible dragon on the loose terrifying
-        everybody around!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[10]
-      value: But it seems someone took care of the problem from what I can sense!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[11]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[12]
-      value: That was me!! I killed the dragon for Jane!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[13]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[14]
-      value: 'Oh my, Jane is here! It''s been such a long time.. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[15]
-      value: And congratulations on slaying the dragon!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[16]
-      value: A worthy feat of accomplishment indeed.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[17]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[18]
-      value: Can you help us get home now?
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[19]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[20]
-      value: Why, I thought you had the button?
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[21]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[22]
-      value: No... Penny lost it..
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[23]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[24]
-      value: Ah..
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[25]
-      value: Well, in that case, it seems as though we are stuck here for the time
-        being.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[26]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[27]
-      value: There has to be something we can do!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[28]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[29]
-      value: I'm on the search for a way out, if you want you should go take your
-        time and explore Fillory to the fullest.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[30]
-      value: Here, anything could happen!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[31]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[32]
-      value: Maybe I could become King of Fillory?
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[33]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[34]
-      value: Ah, maybe..
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[35]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[36]
-      value: Alright, goodbye Dean Fogg. Let us know if you find a way home.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[37]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 2688561195223852611, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
-      propertyPath: dialogueLines.Array.data[38]
-      value: Goodbye, Mr. Coldwater!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7abc1fed29ce80c43be9ef7e0b127f12, type: 3}
@@ -86698,6 +86329,7 @@ Transform:
   - {fileID: 248733656}
   - {fileID: 1249410046}
   - {fileID: 278929013}
+  - {fileID: 3567022905751903256}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -87052,7 +86684,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potentialBattles:
   - enemies:
-    - Slime
     - Slime
     - Slime
     rewardExp: 1050
@@ -87442,7 +87073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureList.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureList.Array.data[0]
@@ -87453,8 +87084,12 @@ PrefabInstance:
       value: Iron Sword
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
+      propertyPath: treasureList.Array.data[2]
+      value: Defense Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureListNumbers.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
       propertyPath: treasureListNumbers.Array.data[0]
@@ -87464,9 +87099,196 @@ PrefabInstance:
       propertyPath: treasureListNumbers.Array.data[1]
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8678188467485037590, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
+      propertyPath: treasureListNumbers.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2220669899355266308, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 022f99a3dc6bca14d845135dfafbed48, type: 3}
+--- !u!4 &3567022905751903256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3567022905751903260}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.59, y: -5.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1931127971}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &3567022905751903257
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3567022905751903260}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 2113922277
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1336440320741484319, guid: 6dcb1eb4562a65148931fea6691976d0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &3567022905751903258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3567022905751903260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d7cdb19c6cc6f498ac0c8fec0607df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasureList:
+  - Health Potion
+  - Mana Potion
+  - Strength Potion
+  - Defense Potion
+  - Leather Armor
+  - Wooden Sword
+  treasureListNumbers: 020000000200000001000000010000000100000001000000
+  coins: 100
+  rewardPanelScreenTime: 6
+  openSprite: {fileID: -93750458980389090, guid: 6dcb1eb4562a65148931fea6691976d0, type: 3}
+  chestOpenSound: 30
+  treasureSound: 31
+--- !u!61 &3567022905751903259
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3567022905751903260}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.63046336, y: 0.28062725}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 1.375, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1380773, y: 0.631454}
+  m_EdgeRadius: 0
+--- !u!1 &3567022905751903260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3567022905751903256}
+  - component: {fileID: 3567022905751903257}
+  - component: {fileID: 3567022905751903262}
+  - component: {fileID: 3567022905751903263}
+  - component: {fileID: 3567022905751903259}
+  - component: {fileID: 3567022905751903258}
+  - component: {fileID: 7957067112220018123}
+  m_Layer: 0
+  m_Name: Chest (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &3567022905751903262
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3567022905751903260}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.62056184, y: 0.5670798}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 1.375, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2695193, y: 0.86157846}
+  m_EdgeRadius: 0
+--- !u!95 &3567022905751903263
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3567022905751903260}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 14f4dd6382df3a641a381680f4793fe1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &3685035387197390278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87474,80 +87296,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 893750636}
     m_Modifications:
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: addNewQuest
-      value: Find Alice (in the fountain?)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.size
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[1]
-      value: Quentin! I've been looking everywhere for you.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[3]
-      value: Poppy! Thank goodness I found you.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[5]
-      value: Where are we? How did we get here?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[6]
-      value: And where is everyone else?!
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[8]
-      value: I have no idea! One moment we were practicing our spells, and the next
-        I blacked out and woke up in this strange place!!
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[9]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[10]
-      value: Well we need to get out of here A.S.A.P.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[11]
-      value: You know what.. Do you see that fountain over there to the East?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[12]
-      value: n-PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[13]
-      value: Yeah! What about it?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[14]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[15]
-      value: I may have been imagining it, but I swear I saw Alice jump into that
-        fountain!
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[16]
-      value: n-Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[17]
-      value: No way! Really?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[18]
-      value: n-NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
-      propertyPath: dialogueLines.Array.data[19]
-      value: Yes I promise! Maybe you should go check it out?
-      objectReference: {fileID: 0}
     - target: {fileID: 3685035387676205458, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -87676,3 +87424,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
+--- !u!114 &7957067112220018123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3567022905751903260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2199ed71ebb254ca8d33f5042797bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gUID: 74dd42f3-6c03-41f4-9e86-87374cea9930

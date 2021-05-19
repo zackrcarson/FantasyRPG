@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7025583920562866251}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13.45, y: -12.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -153,9 +153,24 @@ MonoBehaviour:
   NPCName: Todd
   dialogueLines:
   - n-NPC
-  - Hi
+  - Ayyyy Quentin!
   - n-PLAYER
-  - Hi
+  - Hey Todd! What are you doing here?
+  - n-NPC
+  - I accidentally got sucked in with you guys when Penny took you to Fillory with
+    his magic button!
+  - And then we lost you, Alice, and Poppy in the caves!
+  - Man I miss my dorm..
+  - n-PLAYER
+  - Are we really in Fillory? I've been dreaming of this my entire life!
+  - n-NPC
+  - Of course we are Dude! We've spent nearly half a year here!
+  - n-PLAYER
+  - This is the first I'm hearing of it...
+  - n-NPC
+  - You should go talk to Margo! She knows a lot more about it than me.
+  - n-PLAYER
+  - Bye, Todd!
   questToMark: 
   markQuestComplete: 0
   addNewQuest: 

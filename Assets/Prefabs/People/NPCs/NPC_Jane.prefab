@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6576306571792929288
 Transform:
   m_ObjectHideFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6576306571792929295}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.27, y: -12.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -153,12 +153,48 @@ MonoBehaviour:
   NPCName: Jane
   dialogueLines:
   - n-NPC
-  - Hi
+  - Oh, Quentin dear!
+  - It is so lovely to see you again.
   - n-PLAYER
-  - Hi
-  questToMark: 
-  markQuestComplete: 0
-  addNewQuest: 
+  - Uhhh, have we met before?
+  - n-NPC
+  - Well, of course! Time traveler, remember?
+  - Anyway, there's no time for that now!
+  - n-PLAYER
+  - Why is that? What's wrong?
+  - n-NPC
+  - Something horrible is happening.
+  - A terrible, terrible dragon is living in the caves below me.
+  - I've been trying to stop him, but he is too powerful.
+  - He's slowly killing everyone in Fillory!
+  - You need to stop him Quentin!!
+  - n-PLAYER
+  - Wow, Jane. If you can't kill him, how could I ever stand a chance?
+  - n-NPC
+  - You can do this Quentin. I have faith in you.
+  - If you're too weak now, I'd suggest you practice a bit on other monsters around
+    here and in the caves.
+  - They should help prepare you to fight the dragon!
+  - n-PLAYER
+  - Okay then Jane, I'll do it. I'll defeat the dragon!
+  - I take this on as my personal quest.
+  - n-NPC
+  - Why thank you dear! Good luck, and go find Dean Fogg after you've accomplished
+    your task!
+  - He should be slinking about somewhere in Southern Fillory..
+  - n-PLAYER
+  - Thanks Jane. Where will you be?
+  - n-NPC
+  - Do you mean WHEN will I be?
+  - n-PLAYER
+  - Very funny!
+  - n-NPC
+  - Goodbye, Quentin
+  - n-PLAYER
+  - Okay then, goodbye Jane..
+  questToMark: Find Jane in Northern Fillory.
+  markQuestComplete: 1
+  addNewQuest: Kill the dragon living in the caves.
 --- !u!95 &6576306571792929289
 Animator:
   serializedVersion: 3

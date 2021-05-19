@@ -34,6 +34,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] GameObject bossAttackEffect = null;
     [SerializeField] GameObject playerItemEffectHP = null;
     [SerializeField] GameObject playerItemEffectMP = null;
+    [SerializeField] GameObject playerItemEffectStrDef = null;
     [SerializeField] DamageDisplay damageDisplay = null;
     [SerializeField] DamageDisplay dodgeDisplay = null;
     [SerializeField] ManaDisplay manaDisplay = null;
@@ -1146,6 +1147,10 @@ public class BattleManager : MonoBehaviour
         else if (type == "Mana")
         {
             effectToUse = playerItemEffectMP;
+        }
+        else if (type == "Strength" || type == "Defense")
+        {
+            effectToUse = playerItemEffectStrDef;
         }
 
         Instantiate(effectToUse, activeBattlers[selectedCharacter].transform.position, activeBattlers[selectedCharacter].transform.rotation, effectsParent.transform);

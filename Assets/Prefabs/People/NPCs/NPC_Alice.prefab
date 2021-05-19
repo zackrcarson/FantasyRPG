@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2478746977688474695
 Transform:
   m_ObjectHideFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2478746977688474692}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.89, y: -8.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -153,12 +153,25 @@ MonoBehaviour:
   NPCName: Alice
   dialogueLines:
   - n-NPC
-  - Hi
+  - Quentin! Oh my gosh thank goodness you found me!
   - n-PLAYER
-  - Hi
-  questToMark: 
-  markQuestComplete: 0
-  addNewQuest: 
+  - Alice!! Did I just... Come through that fountain...?
+  - n-NPC
+  - Yes you did! There is some REALLY weird magic around here.
+  - It seems as though these fountains allow us to travel between worlds!
+  - Remember which fountain you just came out of though.. Easy to get lost around
+    here!
+  - n-PLAYER
+  - Wow! This is just.. Incredible! But how will we find our way home..?
+  - n-NPC
+  - I don't know!! But I think I did see the rest of our friends over there in the
+    marketplace..
+  - Maybe you should go talk to them! They might know more than we do..
+  - n-PLAYER
+  - On my way!
+  questToMark: Find Alice (in the fountain?)
+  markQuestComplete: 1
+  addNewQuest: Talk to the rest of your friends in the marketplace.
 --- !u!95 &2478746977688474694
 Animator:
   serializedVersion: 3

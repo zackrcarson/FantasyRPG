@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5820841958560892666}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.47, y: -8.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -153,9 +153,20 @@ MonoBehaviour:
   NPCName: Julia
   dialogueLines:
   - n-NPC
-  - Hi
+  - Q.
   - n-PLAYER
-  - Hi
+  - Julia..
+  - n-NPC
+  - It's great to see you again after so long.
+  - n-PLAYER
+  - You too, old friend.
+  - n-NPC
+  - Did you know there are some monsters hiding in town?
+  - I think I might have even seen a few wizards hanging out near the pools..
+  - n-PLAYER
+  - I'll have to check that out, but maybe I should talk to Margo first..
+  - n-NPC
+  - Farewell, Quentin
   questToMark: 
   markQuestComplete: 0
   addNewQuest: 

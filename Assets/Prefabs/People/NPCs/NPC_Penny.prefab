@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172471210285814775}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.26, y: -8.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -153,9 +153,26 @@ MonoBehaviour:
   NPCName: Penny
   dialogueLines:
   - n-NPC
-  - Hi
+  - Yo, loser
   - n-PLAYER
-  - Hi
+  - Good to see you too, Penny..
+  - n-NPC
+  - You've been gone for months. We thought you stole my magic button and abandoned
+    us here in Fillory!
+  - Either that or you died.
+  - n-PLAYER
+  - Well, I'm not dead..
+  - n-NPC
+  - So you don't have my magic button?
+  - n-PLAYER
+  - What button?
+  - n-NPC
+  - Ugh.
+  - Whatever.
+  - Did you see that cool shop in the countryside? I bet they have some cool stuff
+    to buy.
+  - n-PLAYER
+  - Bye Penny..
   questToMark: 
   markQuestComplete: 0
   addNewQuest: 

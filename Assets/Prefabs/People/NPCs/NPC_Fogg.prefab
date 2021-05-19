@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2688561195223852609
 Transform:
   m_ObjectHideFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2688561195223852608}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13.73, y: -8.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -153,12 +153,49 @@ MonoBehaviour:
   NPCName: Fogg
   dialogueLines:
   - n-NPC
-  - Hi
+  - Well if it isn't Quentin, dear boy?!
   - n-PLAYER
-  - Hi
-  questToMark: 
-  markQuestComplete: 0
-  addNewQuest: 
+  - Dean Fogg! What on Earth are you doing here?!
+  - n-NPC
+  - Not on Earth, boy! This is Fillory!
+  - n-PLAYER
+  - So Fillory really is real?
+  - n-NPC
+  - It would seem so! And there was a terrible dragon on the loose terrifying everybody
+    around!
+  - But it seems someone took care of the problem from what I can sense!
+  - n-PLAYER
+  - That was me!! I killed the dragon for Jane!
+  - n-NPC
+  - 'Oh my, Jane is here! It''s been such a long time.. '
+  - And congratulations on slaying the dragon!
+  - A worthy feat of accomplishment indeed.
+  - n-PLAYER
+  - Can you help us get home now?
+  - n-NPC
+  - Why, I thought you had the button?
+  - n-PLAYER
+  - No... Penny lost it..
+  - n-NPC
+  - Ah..
+  - Well, in that case, it seems as though we are stuck here for the time being.
+  - n-PLAYER
+  - There has to be something we can do!
+  - n-NPC
+  - I'm on the search for a way out, if you want you should go take your time and
+    explore Fillory to the fullest.
+  - Here, anything could happen!
+  - n-PLAYER
+  - Maybe I could become King of Fillory?
+  - n-NPC
+  - Ah, maybe..
+  - n-PLAYER
+  - Alright, goodbye Dean Fogg. Let us know if you find a way home.
+  - n-NPC
+  - Goodbye, Mr. Coldwater!
+  questToMark: Go talk to Dean Fogg somewhere in Southern Fillory.
+  markQuestComplete: 1
+  addNewQuest: Explore Fillory while Dean Fogg finds you a way home.
 --- !u!95 &2688561195223852610
 Animator:
   serializedVersion: 3

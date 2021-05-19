@@ -1066,6 +1066,7 @@ MonoBehaviour:
   bossAttackEffect: {fileID: 7234392262408426064, guid: fa8360e82a4f1d24fa8ea7353d37d271, type: 3}
   playerItemEffectHP: {fileID: 7234392262408426064, guid: 923ac0e80740cca4ca271ddb53707836, type: 3}
   playerItemEffectMP: {fileID: 7234392262408426064, guid: ab8eb86d3de7e1345b54269b74a78e93, type: 3}
+  playerItemEffectStrDef: {fileID: 6997968347825163071, guid: db393099f678ffb4583144e54ee11809, type: 3}
   damageDisplay: {fileID: 2464126967210551093, guid: 5c66be3960e484647916f37e9110e376, type: 3}
   dodgeDisplay: {fileID: 2464126967210551093, guid: 2d6a84983e347d84cbaba48d4b2a393e, type: 3}
   manaDisplay: {fileID: 3008869044575458853, guid: 9074a648878a3a343bbb8232a3094b10, type: 3}
