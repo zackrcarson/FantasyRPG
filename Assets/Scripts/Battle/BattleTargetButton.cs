@@ -10,11 +10,6 @@ public class BattleTargetButton : MonoBehaviour
 
     public void PressButton()
     {
-        if (BattleManager.instance.isCastingSpell)
-        {
-            BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].currentMP -= BattleManager.instance.currentSpellCost;
-        }
-
         BattleManager.instance.PlayerAttack(moveName, activeBattlerTarget);
     }
 

@@ -27,6 +27,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] BattleMove[] movesList = null;
     [SerializeField] float damageRandomFactorMinimum = 0.9f;
     [SerializeField] float damageRandomFactorMaximum = 1.1f;
+    [SerializeField] int missedSpellCost = 2;
 
     [Header("Effects")]
     [SerializeField] GameObject effectsParent = null;
@@ -709,6 +710,13 @@ public class BattleManager : MonoBehaviour
 
         if (canDodge)
         {
+            if (isCastingSpell)
+            {
+                activeBattlers[currentTurn].currentMP -= missedSpellCost;
+
+                Instantiate(manaDisplay, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform).SetMana(missedSpellCost);
+            }
+
             AudioManager.instance.PlaySFX(dodgeSound);
 
             Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation, effectsParent.transform);
@@ -740,6 +748,11 @@ public class BattleManager : MonoBehaviour
             int movePower = 0;
             foreach (BattleMove move in movesList)
             {
+                if (isCastingSpell)
+                {
+                    activeBattlers[currentTurn].currentMP -= currentSpellCost;
+                }
+
                 if (move.moveName == moveName)
                 {
                     if (isBoss)
