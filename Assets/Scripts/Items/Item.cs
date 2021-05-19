@@ -80,6 +80,7 @@ public class Item : MonoBehaviour
                         }
                         
                         BattleManager.instance.DisplayItemBoost(activeBattler, amountToDisplay, "Health");
+                        GameManager.instance.RemoveItem(itemName);
 
                         return "True";
                     }
@@ -135,6 +136,7 @@ public class Item : MonoBehaviour
 
                         BattleManager.instance.DisplayItemBoost(activeBattler, amountToDisplay, "Mana");
 
+                        GameManager.instance.RemoveItem(itemName);
                         return "True";
                     }
                 }
