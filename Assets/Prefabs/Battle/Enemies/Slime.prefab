@@ -5098,7 +5098,7 @@ MonoBehaviour:
   enemyNumber: {fileID: 6241202611461117292}
   activeBattlerParticles: {fileID: 6241202610656023663}
   deathAnimationDelay: 1.6
-  dodgeChance: 40
+  dodgeChance: 25
   currentHP: 150
   maxHP: 150
   currentMP: 0
