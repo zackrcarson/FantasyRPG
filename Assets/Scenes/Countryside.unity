@@ -123,166 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &22624261
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 22624262}
-  - component: {fileID: 22624264}
-  - component: {fileID: 22624263}
-  m_Layer: 0
-  m_Name: Battle Zone (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &22624262
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22624261}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 43.15, y: -8.72, z: 76.50635}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &22624263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22624261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potentialBattles:
-  - enemies:
-    - Slime
-    - Slime
-    rewardExp: 203
-    rewardGold: 78
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Slime
-    - Slime
-    - Slime
-    rewardExp: 311
-    rewardGold: 125
-    rewardItems:
-    - Health Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Slime
-    rewardExp: 98
-    rewardGold: 42
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Wasp
-    rewardExp: 158
-    rewardGold: 61
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Wasp
-    - Wasp
-    rewardExp: 303
-    rewardGold: 118
-    rewardItems:
-    - Mana Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Wasp
-    - Wasp
-    - Slime
-    rewardExp: 397
-    rewardGold: 165
-    rewardItems:
-    - Health Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Goblin
-    rewardExp: 408
-    rewardGold: 154
-    rewardItems:
-    - Wooden Sword
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Spider
-    rewardExp: 298
-    rewardGold: 123
-    rewardItems:
-    - Leather Armor
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Spider
-    - Wasp
-    rewardExp: 456
-    rewardGold: 182
-    rewardItems:
-    - Leather Armor
-    - Health Potion
-    rewardItemNumbers: 0100000001000000
-  - enemies:
-    - Goblin
-    - Slime
-    rewardExp: 498
-    rewardGold: 204
-    rewardItems:
-    - Wooden Armor
-    - Mana Potion
-    rewardItemNumbers: 0100000001000000
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
-  shouldCompleteQuest: 0
-  questToComplete: 
-  shouldAddQuest: 0
-  questToAdd: 
---- !u!61 &22624264
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22624261}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -4.4250107, y: 2.7971277}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 7.317543, y: 2.316328}
-  m_EdgeRadius: 0
 --- !u!1001 &30059549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -385,8 +225,8 @@ Transform:
   m_LocalPosition: {x: 6.6, y: -9.84, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 13
+  m_Father: {fileID: 88092439}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &33367842
 MonoBehaviour:
@@ -484,8 +324,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -503,7 +343,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -35.93312, y: -5.842529}
+  m_Offset: {x: -35.34213, y: -4.926486}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -514,7 +354,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.83757, y: 7.761071}
+  m_Size: {x: 9.655571, y: 7.4655743}
   m_EdgeRadius: 0
 --- !u!1001 &67128107
 PrefabInstance:
@@ -627,7 +467,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &83508314
+--- !u!1 &88092438
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -635,158 +475,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 83508315}
-  - component: {fileID: 83508317}
-  - component: {fileID: 83508316}
+  - component: {fileID: 88092439}
   m_Layer: 0
-  m_Name: Battle Zone (17)
+  m_Name: Lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &83508315
+--- !u!4 &88092439
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83508314}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.2, y: -18.39, z: 76.50635}
+  m_GameObject: {fileID: 88092438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 995038800}
+  - {fileID: 1447765419}
+  - {fileID: 303184157}
+  - {fileID: 1283009486}
+  - {fileID: 1226755235}
+  - {fileID: 277217577}
+  - {fileID: 483854787}
+  - {fileID: 352392097}
+  - {fileID: 903836626}
+  - {fileID: 305222523}
+  - {fileID: 990216369}
+  - {fileID: 33367841}
+  - {fileID: 267435143}
+  - {fileID: 1656748898}
+  - {fileID: 1809046224}
+  - {fileID: 2052684787}
+  - {fileID: 1525774731}
   m_Father: {fileID: 547767036}
-  m_RootOrder: 16
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &83508316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83508314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potentialBattles:
-  - enemies:
-    - Slime
-    - Slime
-    rewardExp: 203
-    rewardGold: 78
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Slime
-    - Slime
-    - Slime
-    rewardExp: 311
-    rewardGold: 125
-    rewardItems:
-    - Health Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Slime
-    rewardExp: 98
-    rewardGold: 42
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Wasp
-    rewardExp: 158
-    rewardGold: 61
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Wasp
-    - Wasp
-    rewardExp: 303
-    rewardGold: 118
-    rewardItems:
-    - Mana Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Wasp
-    - Wasp
-    - Slime
-    rewardExp: 397
-    rewardGold: 165
-    rewardItems:
-    - Health Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Goblin
-    rewardExp: 408
-    rewardGold: 154
-    rewardItems:
-    - Wooden Sword
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Spider
-    rewardExp: 298
-    rewardGold: 123
-    rewardItems:
-    - Leather Armor
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Spider
-    - Wasp
-    rewardExp: 456
-    rewardGold: 182
-    rewardItems:
-    - Leather Armor
-    - Health Potion
-    rewardItemNumbers: 0100000001000000
-  - enemies:
-    - Goblin
-    - Slime
-    rewardExp: 498
-    rewardGold: 204
-    rewardItems:
-    - Wooden Armor
-    - Mana Potion
-    rewardItemNumbers: 0100000001000000
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
-  shouldCompleteQuest: 0
-  questToComplete: 
-  shouldAddQuest: 0
-  questToAdd: 
---- !u!61 &83508317
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83508314}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -3.3144732, y: 0.0955019}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.1912136, y: 1.0368862}
-  m_EdgeRadius: 0
 --- !u!1001 &90172629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1925,8 +1652,8 @@ Transform:
   m_LocalPosition: {x: -8.32, y: 7.35, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 29
+  m_Father: {fileID: 836824424}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &263743469
 MonoBehaviour:
@@ -2045,8 +1772,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 2
-  randomTimeMax: 7
+  randomTimeMin: 1.5
+  randomTimeMax: 4
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -2106,8 +1833,8 @@ Transform:
   m_LocalPosition: {x: -45.32, y: -10.14, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 17
+  m_Father: {fileID: 88092439}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &267435144
 MonoBehaviour:
@@ -2205,8 +1932,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -2224,7 +1951,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.8147354, y: 5.3178077}
+  m_Offset: {x: -2.3761806, y: 5.8497033}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2235,7 +1962,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 17.688347, y: 13.516862}
+  m_Size: {x: 16.565456, y: 12.453071}
   m_EdgeRadius: 0
 --- !u!1 &277217576
 GameObject:
@@ -2266,8 +1993,8 @@ Transform:
   m_LocalPosition: {x: 38.32, y: -8.67, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 6
+  m_Father: {fileID: 88092439}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &277217578
 MonoBehaviour:
@@ -2365,8 +2092,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -2701,7 +2428,7 @@ Transform:
   m_LocalPosition: {x: 38.08, y: -20.27, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
+  m_Father: {fileID: 88092439}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &303184158
@@ -2800,8 +2527,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -2819,7 +2546,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.2502975, y: -1.7634773}
+  m_Offset: {x: -1.2502975, y: -2.0503407}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2830,7 +2557,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.864868, y: 11.423553}
+  m_Size: {x: 7.864868, y: 10.849827}
   m_EdgeRadius: 0
 --- !u!1 &305222522
 GameObject:
@@ -2861,8 +2588,8 @@ Transform:
   m_LocalPosition: {x: -13.8, y: -18.19, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 11
+  m_Father: {fileID: 88092439}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &305222524
 MonoBehaviour:
@@ -2960,8 +2687,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -2979,7 +2706,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -33.009666, y: 0.07568264}
+  m_Offset: {x: -33.216515, y: -0.48576307}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2990,7 +2717,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16.684479, y: 7.761072}
+  m_Size: {x: 16.270782, y: 6.6381807}
   m_EdgeRadius: 0
 --- !u!1 &317682606
 GameObject:
@@ -3021,8 +2748,8 @@ Transform:
   m_LocalPosition: {x: 37.51, y: -0.52, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 21
+  m_Father: {fileID: 836824424}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &317682608
 MonoBehaviour:
@@ -3121,8 +2848,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 2
-  randomTimeMax: 7
+  randomTimeMin: 1.5
+  randomTimeMax: 3
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -49120,8 +48847,8 @@ Transform:
   m_LocalPosition: {x: -3.66, y: -21.16, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 9
+  m_Father: {fileID: 88092439}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &352392098
 MonoBehaviour:
@@ -49219,8 +48946,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -49238,7 +48965,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.2371635, y: 20.729107}
+  m_Offset: {x: -3.5618787, y: 20.729107}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -49249,7 +48976,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9341507, y: 5.030493}
+  m_Size: {x: 2.2847202, y: 5.0304947}
   m_EdgeRadius: 0
 --- !u!1001 &353782076
 PrefabInstance:
@@ -49851,8 +49578,8 @@ Transform:
   m_LocalPosition: {x: -13.03, y: -20.89, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 8
+  m_Father: {fileID: 88092439}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &483854788
 MonoBehaviour:
@@ -49950,8 +49677,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -49969,7 +49696,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05773115, y: 12.20873}
+  m_Offset: {x: -0.43656588, y: 12.614623}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -49980,7 +49707,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.2930155, y: 22.071245}
+  m_Size: {x: 8.535346, y: 21.259459}
   m_EdgeRadius: 0
 --- !u!1001 &493764608
 PrefabInstance:
@@ -50195,36 +49922,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 995038800}
-  - {fileID: 1447765419}
-  - {fileID: 303184157}
-  - {fileID: 1283009486}
-  - {fileID: 1226755235}
-  - {fileID: 22624262}
-  - {fileID: 277217577}
-  - {fileID: 794910759}
-  - {fileID: 483854787}
-  - {fileID: 352392097}
-  - {fileID: 903836626}
-  - {fileID: 305222523}
-  - {fileID: 990216369}
-  - {fileID: 33367841}
-  - {fileID: 2138845888}
-  - {fileID: 733770511}
-  - {fileID: 83508315}
-  - {fileID: 267435143}
-  - {fileID: 1796835350}
-  - {fileID: 1676826396}
-  - {fileID: 1507803285}
-  - {fileID: 317682607}
-  - {fileID: 1136532133}
-  - {fileID: 1308137164}
-  - {fileID: 1656748898}
-  - {fileID: 1809046224}
-  - {fileID: 2052684787}
-  - {fileID: 1525774731}
-  - {fileID: 974933506}
-  - {fileID: 263743468}
+  - {fileID: 88092439}
+  - {fileID: 836824424}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -52183,166 +51882,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6418701924469632070, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
   m_PrefabInstance: {fileID: 6418701923773803683}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &733770510
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 733770511}
-  - component: {fileID: 733770513}
-  - component: {fileID: 733770512}
-  m_Layer: 0
-  m_Name: Battle Zone (16)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &733770511
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733770510}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.52, y: -18.47, z: 76.50635}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &733770512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733770510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potentialBattles:
-  - enemies:
-    - Slime
-    - Slime
-    rewardExp: 203
-    rewardGold: 78
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Slime
-    - Slime
-    - Slime
-    rewardExp: 311
-    rewardGold: 125
-    rewardItems:
-    - Health Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Slime
-    rewardExp: 98
-    rewardGold: 42
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Wasp
-    rewardExp: 158
-    rewardGold: 61
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Wasp
-    - Wasp
-    rewardExp: 303
-    rewardGold: 118
-    rewardItems:
-    - Mana Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Wasp
-    - Wasp
-    - Slime
-    rewardExp: 397
-    rewardGold: 165
-    rewardItems:
-    - Health Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Goblin
-    rewardExp: 408
-    rewardGold: 154
-    rewardItems:
-    - Wooden Sword
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Spider
-    rewardExp: 298
-    rewardGold: 123
-    rewardItems:
-    - Leather Armor
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Spider
-    - Wasp
-    rewardExp: 456
-    rewardGold: 182
-    rewardItems:
-    - Leather Armor
-    - Health Potion
-    rewardItemNumbers: 0100000001000000
-  - enemies:
-    - Goblin
-    - Slime
-    rewardExp: 498
-    rewardGold: 204
-    rewardItems:
-    - Wooden Armor
-    - Mana Potion
-    rewardItemNumbers: 0100000001000000
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
-  shouldCompleteQuest: 0
-  questToComplete: 
-  shouldAddQuest: 0
-  questToAdd: 
---- !u!61 &733770513
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733770510}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -3.3779993, y: -0.29835987}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.7248325, y: 1.8246098}
-  m_EdgeRadius: 0
 --- !u!1001 &746183759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53617,8 +53156,8 @@ Transform:
   m_LocalPosition: {x: 45.73, y: -6.52, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 7
+  m_Father: {fileID: 836824424}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &794910760
 MonoBehaviour:
@@ -53716,8 +53255,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 5
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -53872,6 +53411,45 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 368599514775034371, guid: fdcfa74a072c19c4e98b319df5933e96, type: 3}
   m_PrefabInstance: {fileID: 832876843}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &836824423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 836824424}
+  m_Layer: 0
+  m_Name: Upper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &836824424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836824423}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 794910759}
+  - {fileID: 1676826396}
+  - {fileID: 1507803285}
+  - {fileID: 317682607}
+  - {fileID: 1136532133}
+  - {fileID: 1308137164}
+  - {fileID: 1662803908}
+  - {fileID: 974933506}
+  - {fileID: 263743468}
+  m_Father: {fileID: 547767036}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &863025889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54149,8 +53727,8 @@ Transform:
   m_LocalPosition: {x: -14.18, y: -26.26, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 10
+  m_Father: {fileID: 88092439}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &903836627
 MonoBehaviour:
@@ -54248,8 +53826,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -54267,7 +53845,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -8.249834, y: 0.69018555}
+  m_Offset: {x: -8.249834, y: 0.2469387}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -54278,7 +53856,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 28.216038, y: 6.5320663}
+  m_Size: {x: 28.216038, y: 5.6455727}
   m_EdgeRadius: 0
 --- !u!1001 &914709720
 PrefabInstance:
@@ -54521,8 +54099,8 @@ Transform:
   m_LocalPosition: {x: -8.32, y: 7.35, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 28
+  m_Father: {fileID: 836824424}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &974933507
 MonoBehaviour:
@@ -54641,8 +54219,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 2
-  randomTimeMax: 7
+  randomTimeMin: 1.5
+  randomTimeMax: 4
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -54826,8 +54404,8 @@ Transform:
   m_LocalPosition: {x: 4.53, y: -1.93, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 12
+  m_Father: {fileID: 88092439}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &990216370
 MonoBehaviour:
@@ -54925,8 +54503,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -54944,7 +54522,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -34.899216, y: -2.8834229}
+  m_Offset: {x: -34.30822, y: -2.4106264}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -54955,7 +54533,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 12.90538, y: 13.679283}
+  m_Size: {x: 11.723389, y: 12.73369}
   m_EdgeRadius: 0
 --- !u!1 &995038797
 GameObject:
@@ -55071,8 +54649,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -55090,7 +54668,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.7571354, y: 2.4902515}
+  m_Offset: {x: 1.0200949, y: 2.1316724}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -55101,7 +54679,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 31.27232, y: 13.824425}
+  m_Size: {x: 29.025225, y: 13.107266}
   m_EdgeRadius: 0
 --- !u!4 &995038800
 Transform:
@@ -55114,7 +54692,7 @@ Transform:
   m_LocalPosition: {x: 9.25, y: -17.86, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
+  m_Father: {fileID: 88092439}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1019095762
@@ -55542,8 +55120,8 @@ Transform:
   m_LocalPosition: {x: -21.51, y: -0.46, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 22
+  m_Father: {fileID: 836824424}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1136532134
 MonoBehaviour:
@@ -55642,8 +55220,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 2
-  randomTimeMax: 7
+  randomTimeMin: 1.5
+  randomTimeMax: 3
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -56488,7 +56066,7 @@ Transform:
   m_LocalPosition: {x: 38.54, y: -11.41, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
+  m_Father: {fileID: 88092439}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1226755236
@@ -56587,8 +56165,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -56606,7 +56184,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -7.9922504, y: 3.236173}
+  m_Offset: {x: -7.609764, y: 3.6186578}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -56617,7 +56195,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.6832695, y: 5.0603604}
+  m_Size: {x: 3.9182968, y: 4.2953906}
   m_EdgeRadius: 0
 --- !u!1001 &1229682806
 PrefabInstance:
@@ -57207,7 +56785,7 @@ Transform:
   m_LocalPosition: {x: 31.04, y: -4.97, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
+  m_Father: {fileID: 88092439}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1283009487
@@ -57306,8 +56884,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -57325,7 +56903,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -15.302345, y: 5.472204}
+  m_Offset: {x: -14.96767, y: 5.472204}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -57336,7 +56914,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 38.696045, y: 2.8608665}
+  m_Size: {x: 38.026695, y: 2.8608665}
   m_EdgeRadius: 0
 --- !u!1001 &1294533258
 PrefabInstance:
@@ -57553,8 +57131,8 @@ Transform:
   m_LocalPosition: {x: -21.51, y: -6.08, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 23
+  m_Father: {fileID: 836824424}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1308137165
 MonoBehaviour:
@@ -57608,8 +57186,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 5
+  randomTimeMin: 1.5
+  randomTimeMax: 3
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -57627,7 +57205,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.51732635, y: -1.4441903}
+  m_Offset: {x: 0.51732635, y: -0.35084867}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -57638,7 +57216,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.68647, y: 14.471449}
+  m_Size: {x: 5.68647, y: 12.284766}
   m_EdgeRadius: 0
 --- !u!1 &1316425040
 GameObject:
@@ -63628,7 +63206,7 @@ Transform:
   m_LocalPosition: {x: 31.04, y: -20.27, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
+  m_Father: {fileID: 88092439}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1447765420
@@ -63727,8 +63305,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -63746,7 +63324,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.7426891, y: -0.2863083}
+  m_Offset: {x: -1.7426891, y: -0.6687932}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -63757,7 +63335,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.880085, y: 14.377892}
+  m_Size: {x: 6.880085, y: 13.612922}
   m_EdgeRadius: 0
 --- !u!1001 &1473886145
 PrefabInstance:
@@ -64031,8 +63609,8 @@ Transform:
   m_LocalPosition: {x: -35.07, y: 7.35, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 20
+  m_Father: {fileID: 836824424}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1507803286
 MonoBehaviour:
@@ -64151,8 +63729,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 2
-  randomTimeMax: 7
+  randomTimeMin: 1.5
+  randomTimeMax: 4
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -64212,8 +63790,8 @@ Transform:
   m_LocalPosition: {x: -42.37, y: -25.91, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 27
+  m_Father: {fileID: 88092439}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1525774732
 MonoBehaviour:
@@ -64311,8 +63889,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -64712,8 +64290,8 @@ Transform:
   m_LocalPosition: {x: 31.04, y: -4.97, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 24
+  m_Father: {fileID: 88092439}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1656748899
 MonoBehaviour:
@@ -64811,8 +64389,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -64830,7 +64408,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -7.4085455, y: 1.7497098}
+  m_Offset: {x: -6.935749, y: 2.1634064}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -64841,7 +64419,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 22.908445, y: 4.60331}
+  m_Size: {x: 21.962852, y: 3.775917}
   m_EdgeRadius: 0
 --- !u!1001 &1659259955
 PrefabInstance:
@@ -64910,6 +64488,122 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 368599514775034371, guid: fdcfa74a072c19c4e98b319df5933e96, type: 3}
   m_PrefabInstance: {fileID: 139573443}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1662803907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1662803908}
+  - component: {fileID: 1662803910}
+  - component: {fileID: 1662803909}
+  m_Layer: 0
+  m_Name: Battle Zone (30)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1662803908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662803907}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -21.51, y: -6.08, z: 76.50635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 836824424}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1662803909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662803907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Wizard
+    rewardExp: 634
+    rewardGold: 212
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+    - Iron Sword
+    rewardItemNumbers: 020000000200000001000000
+  - enemies:
+    - Wizard
+    rewardExp: 634
+    rewardGold: 212
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+    rewardItemNumbers: 0200000001000000
+  - enemies:
+    - Wizard
+    rewardExp: 634
+    rewardGold: 212
+    rewardItems:
+    - Mana Potion
+    - Defense Potion
+    rewardItemNumbers: 0200000001000000
+  - enemies:
+    - Wizard
+    rewardExp: 634
+    rewardGold: 212
+    rewardItems:
+    - Health Potion
+    - Strength Potion
+    rewardItemNumbers: 0200000001000000
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  isBoss: 0
+  randomTimeMin: 1.5
+  randomTimeMax: 3
+  shouldCompleteQuest: 0
+  questToComplete: 
+  shouldAddQuest: 0
+  questToAdd: 
+--- !u!61 &1662803910
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662803907}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.699316, y: -7.620093}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.3224907, y: 1.8832464}
+  m_EdgeRadius: 0
 --- !u!1 &1674425776
 GameObject:
   m_ObjectHideFlags: 0
@@ -73205,8 +72899,8 @@ Transform:
   m_LocalPosition: {x: -44.9, y: 4.3, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 19
+  m_Father: {fileID: 836824424}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1676826397
 MonoBehaviour:
@@ -73304,8 +72998,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 5
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -87782,166 +87476,6 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
---- !u!1 &1796835349
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1796835350}
-  - component: {fileID: 1796835352}
-  - component: {fileID: 1796835351}
-  m_Layer: 0
-  m_Name: Battle Zone (19)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1796835350
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796835349}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.51, y: 0.86, z: 76.50635}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1796835351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796835349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potentialBattles:
-  - enemies:
-    - Slime
-    - Slime
-    rewardExp: 203
-    rewardGold: 78
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Slime
-    - Slime
-    - Slime
-    rewardExp: 311
-    rewardGold: 125
-    rewardItems:
-    - Health Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Slime
-    rewardExp: 98
-    rewardGold: 42
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Wasp
-    rewardExp: 158
-    rewardGold: 61
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Wasp
-    - Wasp
-    rewardExp: 303
-    rewardGold: 118
-    rewardItems:
-    - Mana Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Wasp
-    - Wasp
-    - Slime
-    rewardExp: 397
-    rewardGold: 165
-    rewardItems:
-    - Health Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Goblin
-    rewardExp: 408
-    rewardGold: 154
-    rewardItems:
-    - Wooden Sword
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Spider
-    rewardExp: 298
-    rewardGold: 123
-    rewardItems:
-    - Leather Armor
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Spider
-    - Wasp
-    rewardExp: 456
-    rewardGold: 182
-    rewardItems:
-    - Leather Armor
-    - Health Potion
-    rewardItemNumbers: 0100000001000000
-  - enemies:
-    - Goblin
-    - Slime
-    rewardExp: 498
-    rewardGold: 204
-    rewardItems:
-    - Wooden Armor
-    - Mana Potion
-    rewardItemNumbers: 0100000001000000
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
-  shouldCompleteQuest: 0
-  questToComplete: 
-  shouldAddQuest: 0
-  questToAdd: 
---- !u!61 &1796835352
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796835349}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.039258957, y: 0.7893445}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.4497185, y: 0.9488808}
-  m_EdgeRadius: 0
 --- !u!1001 &1804506965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88120,8 +87654,8 @@ Transform:
   m_LocalPosition: {x: 9.25, y: -24.48, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 25
+  m_Father: {fileID: 88092439}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1809046225
 MonoBehaviour:
@@ -88219,8 +87753,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -89124,8 +88658,8 @@ Transform:
   m_LocalPosition: {x: -31.51, y: -25.91, z: 76.50635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 26
+  m_Father: {fileID: 88092439}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2052684788
 MonoBehaviour:
@@ -89223,8 +88757,8 @@ MonoBehaviour:
   deactivateAfterStarting: 0
   cannotFlee: 0
   isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
+  randomTimeMin: 2
+  randomTimeMax: 6
   shouldCompleteQuest: 0
   questToComplete: 
   shouldAddQuest: 0
@@ -89242,7 +88776,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -11.836475, y: -0.5979748}
+  m_Offset: {x: -11.836475, y: -0.8639221}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -89253,7 +88787,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9579887, y: 3.9557457}
+  m_Size: {x: 2.9579887, y: 3.423851}
   m_EdgeRadius: 0
 --- !u!4 &2072517704 stripped
 Transform:
@@ -89384,166 +88918,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 368599514775034371, guid: fdcfa74a072c19c4e98b319df5933e96, type: 3}
   m_PrefabInstance: {fileID: 2136861037}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2138845887
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2138845888}
-  - component: {fileID: 2138845890}
-  - component: {fileID: 2138845889}
-  m_Layer: 0
-  m_Name: Battle Zone (15)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2138845888
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138845887}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.74, y: -18.47, z: 76.50635}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 547767036}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2138845889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138845887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80e41e1d756f9734e833df3508e256f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potentialBattles:
-  - enemies:
-    - Slime
-    - Slime
-    rewardExp: 203
-    rewardGold: 78
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Slime
-    - Slime
-    - Slime
-    rewardExp: 311
-    rewardGold: 125
-    rewardItems:
-    - Health Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Slime
-    rewardExp: 98
-    rewardGold: 42
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Wasp
-    rewardExp: 158
-    rewardGold: 61
-    rewardItems: []
-    rewardItemNumbers: 
-  - enemies:
-    - Wasp
-    - Wasp
-    rewardExp: 303
-    rewardGold: 118
-    rewardItems:
-    - Mana Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Wasp
-    - Wasp
-    - Slime
-    rewardExp: 397
-    rewardGold: 165
-    rewardItems:
-    - Health Potion
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Goblin
-    rewardExp: 408
-    rewardGold: 154
-    rewardItems:
-    - Wooden Sword
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Spider
-    rewardExp: 298
-    rewardGold: 123
-    rewardItems:
-    - Leather Armor
-    rewardItemNumbers: 01000000
-  - enemies:
-    - Spider
-    - Wasp
-    rewardExp: 456
-    rewardGold: 182
-    rewardItems:
-    - Leather Armor
-    - Health Potion
-    rewardItemNumbers: 0100000001000000
-  - enemies:
-    - Goblin
-    - Slime
-    rewardExp: 498
-    rewardGold: 204
-    rewardItems:
-    - Wooden Armor
-    - Mana Potion
-    rewardItemNumbers: 0100000001000000
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  isBoss: 0
-  randomTimeMin: 1
-  randomTimeMax: 4
-  shouldCompleteQuest: 0
-  questToComplete: 
-  shouldAddQuest: 0
-  questToAdd: 
---- !u!61 &2138845890
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138845887}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -2.9333162, y: -0.29835987}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.6141987, y: 1.8246098}
-  m_EdgeRadius: 0
 --- !u!1001 &2141153465
 PrefabInstance:
   m_ObjectHideFlags: 0
