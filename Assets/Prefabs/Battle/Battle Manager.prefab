@@ -1040,7 +1040,7 @@ MonoBehaviour:
   battleEndDelay1: 1.5
   battleEndDelay2: 0.5
   battleEndDelay3: 1.5
-  percentChanceToFlee: 45
+  percentChanceToFlee: 25
   enemyAttackDelay: 1.25
   movesList:
   - moveName: Slash
@@ -1061,6 +1061,7 @@ MonoBehaviour:
     effect: {fileID: 5817468755299716964, guid: abd36e05b93ceec4d83f1a1f2a454a19, type: 3}
   damageRandomFactorMinimum: 0.9
   damageRandomFactorMaximum: 1.1
+  missedSpellCost: 2
   effectsParent: {fileID: 175187156916768786}
   enemyAttackEffect: {fileID: 7234392262408426064, guid: 556c3e592d3148342b8268163672614c, type: 3}
   bossAttackEffect: {fileID: 7234392262408426064, guid: fa8360e82a4f1d24fa8ea7353d37d271, type: 3}
