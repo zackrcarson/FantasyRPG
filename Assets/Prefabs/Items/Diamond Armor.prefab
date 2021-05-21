@@ -104,7 +104,7 @@ MonoBehaviour:
   description: Diamond armor - It's the hardest armor you've ever seen! Surprisingly
     light.
   itemSprite: {fileID: -5104863414077870803, guid: 53ee19b10658a7341a343a7078d67d11, type: 3}
-  cost: 8000
+  cost: 10000
   amountToChange: 0
   affectHP: 0
   affectMP: 0

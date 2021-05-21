@@ -103,7 +103,7 @@ MonoBehaviour:
   itemName: Iron Sword
   description: A sharp, strong sword!
   itemSprite: {fileID: 21300078, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
-  cost: 3000
+  cost: 2500
   amountToChange: 0
   affectHP: 0
   affectMP: 0

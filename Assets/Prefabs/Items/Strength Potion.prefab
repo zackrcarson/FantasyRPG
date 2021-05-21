@@ -103,7 +103,7 @@ MonoBehaviour:
   itemName: Strength Potion
   description: Permenantly increases your strength by 1!
   itemSprite: {fileID: -488721925442295091, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
-  cost: 600
+  cost: 700
   amountToChange: 1
   affectHP: 0
   affectMP: 0

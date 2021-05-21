@@ -103,7 +103,7 @@ MonoBehaviour:
   itemName: Wooden Sword
   description: A flimsy sword made of wood - it isn't very strong!
   itemSprite: {fileID: 21300074, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
-  cost: 1000
+  cost: 600
   amountToChange: 0
   affectHP: 0
   affectMP: 0

@@ -103,7 +103,7 @@ MonoBehaviour:
   itemName: Leather Armor
   description: Light armor - easy to move in and provides a little protection.
   itemSprite: {fileID: 21300010, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
-  cost: 1500
+  cost: 900
   amountToChange: 0
   affectHP: 0
   affectMP: 0

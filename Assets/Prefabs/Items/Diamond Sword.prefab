@@ -103,7 +103,7 @@ MonoBehaviour:
   itemName: Diamond Sword
   description: The sharpest, strongest sword!
   itemSprite: {fileID: 2816722345077529173, guid: 53ee19b10658a7341a343a7078d67d11, type: 3}
-  cost: 7000
+  cost: 9000
   amountToChange: 0
   affectHP: 0
   affectMP: 0
