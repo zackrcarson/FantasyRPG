@@ -198,4 +198,17 @@ public class DialogueManager : MonoBehaviour
     {
         questToAdd = questName;
     }
+
+    public void StopTalking()
+    {
+        AudioManager.instance.StopTalking();
+
+        currentLine = 0;
+
+        dialogueBox.SetActive(false);
+
+        GameManager.instance.dialogueActive = false;
+
+        GameMenu.instance.ActivateIcons();
+    }
 }

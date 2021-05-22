@@ -155,6 +155,11 @@ public class BattleManager : MonoBehaviour
     {
         if (isBattleActive) { return; }
 
+        if (DialogueManager.instance.isTalking())
+        {
+            DialogueManager.instance.StopTalking();
+        }
+
         GameMenu.instance.DeactivateIcons();
 
         cannotFlee = setCannotFlee;
@@ -305,6 +310,11 @@ public class BattleManager : MonoBehaviour
         LoadInEnemies(enemiesToSpawn);
         StartTurns();
         UpdateUIStats();
+
+        if (DialogueManager.instance.isTalking())
+        {
+            DialogueManager.instance.StopTalking();
+        }
     }
 
     private void EndBattle(bool isVictorious, bool didFlee)
