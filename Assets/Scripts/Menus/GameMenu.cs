@@ -277,10 +277,15 @@ public class GameMenu : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (menu.activeInHierarchy)
+            if (menu.activeInHierarchy && menuWindows[2].activeInHierarchy)
             {
                 CloseMenu();
                 ActivateIcons();
+            }
+            else if (menu.activeInHierarchy && !menuWindows[2].activeInHierarchy)
+            {
+                ToggleWindow(2);
+                OpenQuests();
             }
             else
             {

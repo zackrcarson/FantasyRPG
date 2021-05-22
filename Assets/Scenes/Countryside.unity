@@ -89336,7 +89336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
       propertyPath: dialogueLines.Array.data[18]
-      value: n-Player
+      value: n-PLAYER
       objectReference: {fileID: 0}
     - target: {fileID: 3685035387676205457, guid: 6f2bb7e66b5b1b147b0a04aef65a0910, type: 3}
       propertyPath: dialogueLines.Array.data[19]

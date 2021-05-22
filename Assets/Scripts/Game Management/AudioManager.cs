@@ -17,6 +17,9 @@ public class AudioManager : MonoBehaviour
     float currentSongVolume = 1f;
     bool isFading = false;
 
+    // Cached References
+    Coroutine talkingCoroutine = null;
+
     private void Awake()
     {
         instance = this;
@@ -166,8 +169,8 @@ public class AudioManager : MonoBehaviour
     public void Talk(int numberOfCharacters)
     {
         float timeToTalk = (float)numberOfCharacters * talkingRatePerCharacter;
-        
-        StartCoroutine(TalkFortime(timeToTalk));
+
+        talkingCoroutine = StartCoroutine(TalkFortime(timeToTalk));
     }
 
     private IEnumerator TalkFortime(float length)
@@ -182,7 +185,10 @@ public class AudioManager : MonoBehaviour
 
     public void StopTalking()
     {
-        StopCoroutine("TalkFortime");
+        if (talkingCoroutine != null)
+        {
+            StopCoroutine(talkingCoroutine);
+        }
         talking.Pause();
     }
 }

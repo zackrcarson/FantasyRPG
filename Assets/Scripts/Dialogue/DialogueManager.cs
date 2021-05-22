@@ -67,6 +67,7 @@ public class DialogueManager : MonoBehaviour
                         CheckIfName();
                         dialogueText.text = dialogueLines[currentLine];
 
+                        
                         AudioManager.instance.StopTalking();
                         AudioManager.instance.Talk(dialogueLines[currentLine].Length);
                     }
