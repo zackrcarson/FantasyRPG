@@ -90385,19 +90385,20 @@ PrefabInstance:
         your next quest is.  Press Q to open the Quests screen.
 
         - Make sure
-        to check out the shop, where you can find useful items for sale!
+        to check out the shop, where you can find useful items for sale.
 
-        Space/Enter/Left
-        Mouse to talk and pickup items'
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[4]
-      value: '- Be aware! If you stray from the path you may meet some unfriendly
-        creatures... The further you stray, the nastier they become!
+      value: '- Try to find all of the chests! You never know what you''ll find..
 
 
         -
-        Don''t want a challenge? Check out God Mode from the stats screen!
+        Be aware! If you stray from the path you may meet some unfriendly creatures...
+        The further you stray, the nastier they become!
+
+
 
 
 
@@ -90406,9 +90407,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[5]
-      value: '
+      value: '- Don''t want a challenge? Check out God Mode from the stats screen!
 
-        Good luck! Try not to die...
+
+        Good
+        luck! Try not to die...
 
 
 

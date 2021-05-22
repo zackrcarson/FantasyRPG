@@ -1040,7 +1040,7 @@ MonoBehaviour:
   battleEndDelay1: 1.5
   battleEndDelay2: 0.5
   battleEndDelay3: 1.5
-  percentChanceToFlee: 25
+  percentChanceToFlee: 30
   enemyAttackDelay: 1.25
   movesList:
   - moveName: Slash
@@ -2819,7 +2819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8355cd3ba7f8000469f357990423ab1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  awakeTime: 2
+  awakeTime: 1
   notificationMessage: {fileID: 2588907827561814898}
 --- !u!1 &2588907826305297357
 GameObject:

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class BattleNotification : MonoBehaviour
 {
     // Config Parameters
-    [SerializeField] public float awakeTime = 2f;
+    [SerializeField] public float awakeTime = 1f;
 
     // Cached References
     [SerializeField] public Text notificationMessage = null;

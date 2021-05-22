@@ -162,6 +162,8 @@ public class GameMenu : MonoBehaviour
         continuePanel.SetActive(false);
 
         AudioManager.instance.PlaySFX(newQuestSound);
+
+        NewQuestActive();
         ActivateIcons();
     }
 
@@ -184,7 +186,7 @@ public class GameMenu : MonoBehaviour
         questNotification = false;
         questMenuIconNotification.gameObject.SetActive(false);
     }
-
+    
     public void DeactivateIcons()
     {
         pauseMenuIcon.SetActive(false);
@@ -369,6 +371,11 @@ public class GameMenu : MonoBehaviour
 
     private void UpdateStats(int characterNumber, CharacterStats characterStat)
     {
+        if (characterStat.currentMP < 0)
+        {
+            characterStat.currentMP = 0;
+        }
+
         nameTexts[characterNumber].text = characterStat.characterName;
         HPTexts[characterNumber].text = "HP: " + characterStat.currentHP + "/" + characterStat.maxHP;
         MPTexts[characterNumber].text = "MP: " + characterStat.currentMP + "/" + characterStat.maxMP;
@@ -597,6 +604,11 @@ public class GameMenu : MonoBehaviour
 
         statsImage.sprite = characterStats[playerNumber].characterImage;
         statsName.text = "" + characterStats[playerNumber].characterName;
+
+        if (characterStats[playerNumber].currentMP < 0)
+        {
+            characterStats[playerNumber].currentMP = 0;
+        }
 
         statsHP.text = "" + characterStats[playerNumber].currentHP + "/" + characterStats[playerNumber].maxHP;
         statsMP.text = "" + characterStats[playerNumber].currentMP + "/" + characterStats[playerNumber].maxMP;
@@ -921,6 +933,9 @@ public class GameMenu : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
+        DeactivateIcons();
+        NewQuestInactive();
+
         CloseMenu();
 
         Destroy(FindObjectOfType<PlayerController>().gameObject);
@@ -929,9 +944,11 @@ public class GameMenu : MonoBehaviour
         Destroy(BattleManager.instance.gameObject);
         SceneLoader.LoadSceneByName("Loading Scene");
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.1f);
 
         OpenContinuingPanel();
+
+        yield return new WaitForSeconds(1f);
     }
 
     public void PlayButtonSound()

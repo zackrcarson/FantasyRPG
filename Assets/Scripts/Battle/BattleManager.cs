@@ -758,13 +758,13 @@ public class BattleManager : MonoBehaviour
             int movePower = 0;
             foreach (BattleMove move in movesList)
             {
-                if (isCastingSpell)
-                {
-                    activeBattlers[currentTurn].currentMP -= currentSpellCost;
-                }
-
                 if (move.moveName == moveName)
                 {
+                    if (isCastingSpell)
+                    {
+                        activeBattlers[currentTurn].currentMP -= currentSpellCost;
+                    }
+
                     if (isBoss)
                     {
                         Vector3 displacementVector = new Vector3(-2f, 0f, 0f);
