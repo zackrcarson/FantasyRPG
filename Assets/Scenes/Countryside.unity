@@ -50852,13 +50852,17 @@ PrefabInstance:
       propertyPath: dialogueLines.Array.data[0]
       value: '
 
-        NO FISHING!'
+        NO FISHING!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[1]
       value: '
 
-        WE''RE SERIOUS!!'
+        WE''RE SERIOUS!!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[2]
@@ -54061,11 +54065,17 @@ PrefabInstance:
       propertyPath: dialogueLines.Array.data[0]
       value: '
 
-        No Fishing!'
+        No Fishing!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Also, there's some dangerous monsters living up here.
+      value: '
+
+        Also, there''s some dangerous monsters living up here.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[2]
@@ -55303,17 +55313,25 @@ PrefabInstance:
       propertyPath: dialogueLines.Array.data[0]
       value: '
 
-        BEWARE!'
+        BEWARE!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Dangerous creatures reside in these caves.
+      value: '
+
+        Dangerous creatures reside in these caves.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[2]
       value: '
 
-        ENTER AT YOUR OWN RISK!'
+        ENTER AT YOUR OWN RISK!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632070, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: m_RootOrder
@@ -56335,13 +56353,17 @@ PrefabInstance:
       propertyPath: dialogueLines.Array.data[0]
       value: '
 
-        NO FISHING!'
+        NO FISHING!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[1]
       value: '
 
-        Please, our fish are sentient!b'
+        Please, our fish are sentient!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[2]
@@ -56743,17 +56765,25 @@ PrefabInstance:
       propertyPath: dialogueLines.Array.data[0]
       value: '
 
-        BEWARE!'
+        BEWARE!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Dangerous creatures reside in these caves.
+      value: '
+
+        Dangerous creatures reside in these caves.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[2]
       value: '
 
-        ENTER AT YOUR OWN RISK!'
+        ENTER AT YOUR OWN RISK!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632070, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: m_RootOrder
@@ -64653,11 +64683,17 @@ PrefabInstance:
       propertyPath: dialogueLines.Array.data[0]
       value: '
 
-        No Fishing!'
+        No Fishing!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Also, there's some dangerous monsters living up here.
+      value: '
+
+        Also, there''s some dangerous monsters living up here.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[2]
@@ -88203,7 +88239,10 @@ PrefabInstance:
       propertyPath: dialogueLines.Array.data[0]
       value: '
 
-        NO FISHING!'
+        NO FISHING!
+
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[1]
@@ -89282,17 +89321,25 @@ PrefabInstance:
       propertyPath: dialogueLines.Array.data[0]
       value: '
 
-        BEWARE!'
+        BEWARE!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Dangerous creatures reside in these caves.
+      value: '
+
+        Dangerous creatures reside in these caves.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[2]
       value: '
 
-        ENTER AT YOUR OWN RISK!'
+        ENTER AT YOUR OWN RISK!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632070, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: m_RootOrder
@@ -89430,17 +89477,25 @@ PrefabInstance:
       propertyPath: dialogueLines.Array.data[0]
       value: '
 
-        BEWARE!'
+        BEWARE!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Dangerous creatures reside in these caves.
+      value: '
+
+        Dangerous creatures reside in these caves.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[2]
       value: '
 
-        ENTER AT YOUR OWN RISK!'
+        ENTER AT YOUR OWN RISK!
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632070, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: m_RootOrder
@@ -90351,8 +90406,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6418701924469632068, guid: 7d6381fe8b2092f46a133fd020c98121, type: 3}
       propertyPath: dialogueLines.Array.data[5]
-      value: 'Good luck! Try not to die...
+      value: '
 
+        Good luck! Try not to die...
 
 
 
